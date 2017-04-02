@@ -1,0 +1,306 @@
+// Header
+// Contains SCSS for navbar
+
+.header {
+
+  height: 46px;
+
+  @include breakpoint(medium up) {
+    height: 58px;
+  }
+
+  z-index: 99;
+  // border-bottom: 1px solid black;
+  box-shadow: 0 2px 4px 0 #bcbcbc;
+}
+
+.header-nav {
+  $_this: &;
+
+  width: 100%;
+
+  padding: {
+    top: 10px;
+    bottom: 15px;
+  }
+
+  background-color: transparent;
+
+  &.is-stuck {
+    // Set white background for sticky nav
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(#bcbcbc, .9);
+
+    @include breakpoint(medium up) {
+      animation-name: sticky-header-show;
+      animation-duration: .3s;
+      animation-timing-function: cubic-bezier(.62, .48, .33, 1);
+      animation-iteration-count: 1;
+    }
+
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 840px;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+
+    padding: {
+      left: 20px;
+      right: 20px;
+    }
+
+    @include breakpoint(840px) {
+      padding: {
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__left {
+    //display: none;
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    //@include breakpoint(medium up) {
+    //  display: block;
+    //}
+  }
+
+  &__developers {
+    position: relative;
+    // top: 16px; // to align baseline
+    top: 10px; // to align vertically
+    left: 9px;
+    font-variant: small-caps;
+  }
+
+  &__right {
+    flex: 0 0 calc(100% + 40px);
+    max-width: calc(100% + 40px);
+    margin: {
+      left: -20px;
+      right: -20px;
+      bottom: -10px;
+    }
+
+    @include breakpoint(medium up) {
+      flex: 0 1 auto;
+      max-width: 100%;
+      margin: {
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__logo {
+    // Logo is SVG, set 'fill'
+    .nulabLogo {
+      width: 84px;
+      height: 26px;
+      fill: white;
+      vertical-align: top;
+
+      // Set properties for header-gray.php
+      &.-dark {
+        fill: $darkgray;
+      }
+    }
+
+    .is-stuck & {
+      // Change color to gray on sticky nav
+      .nulabLogo {
+        fill: $darkgray;
+      }
+    }
+  }
+
+  &__mobile {
+    flex: 0 1 auto;
+    & > .menu-icon {
+      vertical-align: middle;
+      &:focus {
+        outline: 0 none;
+      }
+
+      .is-stuck & {
+        &:after {
+          background-color: $darkgray;
+          box-shadow: 0 7px 0 $darkgray, 0 14px 0 $darkgray;
+        }
+      }
+    }
+
+    &.-dark {
+      & > .menu-icon {
+        &:after {
+          background-color: $darkgray;
+          box-shadow: 0 7px 0 $darkgray, 0 14px 0 $darkgray;
+        }
+      }
+    }
+  }
+
+  &__menu { // ul
+    display: block;
+    list-style: none;
+    align-items: center;
+    margin: {
+      top: 10px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    padding: {
+      top: 20px;
+      bottom: 20px;
+    }
+    background-color: rgba(#74758b, .95);
+    @include breakpoint(medium up) {
+      display: flex;
+      padding: {
+        top: 0;
+        bottom: 0;
+      }
+      margin-top: 0;
+      background-color: transparent;
+    }
+  }
+
+  &__menu-item { // li
+    flex: 0 0 auto;
+    text-align: center;
+
+    // Setting Solution dropdown
+    &--solution {
+      &:before {
+        display: none;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 15px;
+        background-color: transparent;
+      }
+      #{$_this}__menu-link {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          right: 50%;
+          width: 0;
+          height: 0;
+          margin-top: -5px;
+          transform: translateX(50%);
+          border: {
+            width: 25px;
+            style: solid;
+            color: transparent;
+          }
+          border-top: 0 none;
+          border-bottom: 15px solid rgba($darkgray, .95);
+          visibility: hidden;
+          opacity: 0;
+          transition: opacity .2s linear 0s, visibility .2s linear 0s;
+        }
+      }
+      #{$_this}__dropdown {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .2s linear 0s, visibility .2s linear 0s;
+
+        @include breakpoint(medium up) {
+          display: block;
+        }
+      }
+      &.is-show {
+        &:before {
+          display: block;
+        }
+        #{$_this}__menu-link {
+          &:after {
+            @include breakpoint(medium up) {
+              visibility: visible;
+              opacity: 1;
+            }
+
+          }
+        }
+        #{$_this}__dropdown {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+    }
+  }
+
+  &__menu-link {
+    display: inline-block;
+    line-height: 1;
+
+    &.btn--navbar {
+      @include ja {
+        position: relative;
+        top: -1px;
+      }
+    }
+
+    &:not(.btn--navbar) {
+      padding: .7rem 1rem;
+      color: white;
+      &:hover {
+        color: $link-hover-color;
+        //color: darken(white, 10);
+      }
+
+      // Set gray color for header-gray.php
+      &.-dark {
+        @include breakpoint(medium up) {
+          color: $link-color;
+          &:hover {
+            //color: lighten($darkgray, 10);
+            color: $link-hover-color;
+          }
+        }
+
+      }
+
+      // Change text color to $darkgray for
+      // all list items EXCEPT 'Contact Us'
+      .is-stuck & {
+        @include breakpoint(medium up) {
+          color: $link-color;
+          &:hover {
+            //color: lighten($darkgray, 10);
+            color: $link-hover-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes sticky-header-show {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

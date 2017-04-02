@@ -1,0 +1,53 @@
+// language-switch.scss
+// ===================================================
+
+.language-switch {
+  list-style: none;
+  margin: {
+    left: 10px;
+    bottom: 0;
+  }
+
+  &__item {
+    position: relative;
+    top: 9px;
+    left: 9px;
+    display: inline-block;
+    padding: 0 10px;
+    list-style: none;
+    line-height: 1;
+    &:first-child {
+      &:after {
+        content: '|';
+        color: $darkgray;
+        position: absolute;
+        left: 100%;
+        top: 1px;
+
+        .-dark &, .is-stuck & {
+          color: $darkgray;
+        }
+      }
+    }
+  }
+
+  &__link {
+    color: $darkgray;
+    font-weight: 700;
+    text-decoration: none;
+    @include fz(13);
+    &:hover, &:focus {
+      //color: darken($darkgray, 10);
+      color: $link-hover-color;
+    }
+
+    .-dark &, .is-stuck & {
+      color: $link-color;
+      &:hover, &:focus {
+        //color: lighten($darkgray, 10);
+        color: $link-hover-color;
+      }
+    }
+
+  }
+}

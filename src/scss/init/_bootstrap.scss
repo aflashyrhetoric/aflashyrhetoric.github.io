@@ -1,0 +1,17 @@
+// bootstrap.scss
+// =============================================================
+
+// Base
+
+html {
+  // max-width: 1920px;
+  // margin: auto;
+  // Set root font size for REM.
+  font-size: 16px;
+}
+
+body {
+  color: $darkgray;
+  text-size-adjust: 100%;
+  @include setFontDefault;
+}

@@ -1,0 +1,9 @@
+// foundation overrides
+
+//print media overrides 
+@media print, screen and (min-width: 40em) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+//future breakpoint overrides here

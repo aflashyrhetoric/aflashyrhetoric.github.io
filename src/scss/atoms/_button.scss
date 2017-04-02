@@ -1,0 +1,178 @@
+// buttons.scss
+// ========================================
+
+// Btn
+.btn {
+  font-family: 'proxima-nova', sans-serif;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+  transition: background-color .2s ease 0s;
+  @include fz(14);
+
+  // Variants
+  &--normal {
+    background-color: $darkgray;
+    &:hover {
+      background-color: lighten($darkgray, 10);
+      color: white;
+    }
+    &:visited {
+      color: white;
+    }
+  }
+
+  &--primary {
+    background-color: $purple;
+    &:hover {
+      background-color: lighten($purple, 10);
+      color: white;
+    }
+    &:visited {
+      color: white;
+    }
+  }
+
+  &--accent {
+    background-color: $light-green-accent;
+    &:hover {
+      background-color: lighten($light-green-accent, 10);
+      color: white;
+    }
+  }
+
+  &--navbar {
+    background-color: transparent;
+    padding: 5px 10px;
+    margin-left: 0;
+    min-width: 100px;
+    justify-content: center;
+
+    border-radius: 0;
+    border: 1px solid $orange-alt-accent;
+
+    color: $orange-alt-accent;
+    @include fz(14);
+    font-weight: bold;
+
+    box-shadow: inset 0 0 0 .5px $orange-alt-accent; // make .5px inset border
+
+    &:hover {
+      background-color: $orange-alt-accent;
+      color: white;
+    }
+
+    @include ja {
+      padding-top: 6px;
+      padding-bottom: 4px;
+    }
+  }
+
+  &--nulab {
+    background: $darkgray;
+    &:hover {
+      background: darken($darkgray, 10);
+      color: white;
+    }
+  }
+
+  &--typetalk {
+    background: $typetalk-red;
+    &:hover {
+      background: darken($typetalk-red, 10);
+      color: white;
+    }
+
+    &:visited {
+      color: white;
+    }
+  }
+
+  &--cacoo {
+    background: $cacoo-blue;
+    &:hover {
+      background: darken($cacoo-blue, 10);
+      color: white;
+    }
+
+    &:visited {
+      color: white;
+    }
+  }
+
+  &--backlog {
+    background: $backlog-green;
+    &:hover {
+      background: darken($backlog-green, 10);
+      color: white;
+    }
+  }
+
+  &--yellow {
+    background: $yellow;
+    color: white;
+    font-weight: bold;
+    &:hover {
+      background: darken($yellow, 10);
+      color: white;
+    }
+  }
+
+  //
+  // For button with icon
+  // Markup example:
+  //  <a class="btn btn--primary btn--icon">
+  //    <span class="btn--icon__inner">
+  //      <i class="icon-..."></i>
+  //      Button Text
+  //    </span>
+  //  </a>
+  //
+  &--icon {
+    &__inner {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: inherit;
+      font-size: inherit;
+
+      [class*="icon"] {
+        margin-right: 9px;
+      }
+    }
+  }
+
+  // Modifiers
+  &.-rounded { border-radius: 50px; }
+  // &.-outline {}
+
+  // Sizing
+  &.-sz-sm { // small button
+    padding: {
+      top: 6px;
+      bottom: 6px;
+      left: 20px;
+      right: 20px;
+    }
+    @include fz(15);
+    font-weight: bold;
+    line-height: 1.6;
+  }
+
+  &.-sz-lg { // large button
+    padding: {
+      left: 40px;
+      right: 40px;
+    }
+    @include fz(20);
+    font-weight: bold;
+    line-height: 1.6;
+  }
+}
+

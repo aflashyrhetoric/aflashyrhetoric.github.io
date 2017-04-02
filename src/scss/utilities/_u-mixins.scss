@@ -1,0 +1,98 @@
+// mixin.scss
+// =============================================================
+
+// helper classes
+// ==============
+
+// font-size
+@mixin fz($size) {
+  $size-rem: rem-calc($size);
+  font-size: #{$size}px;
+  font-size: #{$size-rem};
+}
+
+// utilities
+// =========
+
+// For restoring only bottom margin
+@mixin only-margin-bottom($margin) {
+  margin: {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: $margin;
+  }
+}
+
+// For creating arrows easily
+@mixin arrow-up ($size, $color) {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 1200;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid $color;
+}
+
+// clearfix
+@mixin clearfix {
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// Hides on mobile (good for images)
+@mixin hide-on-mobile() {
+  display: none;
+  @include breakpoint(medium up) {
+    display: block;
+  }
+}
+
+// language
+// ==============================
+
+// for lang ja (japanese)
+@mixin ja {
+  html[lang="ja"] & {
+    @content;
+  }
+}
+
+// for lang en (English)
+@mixin en {
+  html[lang="en-US"] & {
+    @content;
+  }
+}
+
+
+// styles
+// =============
+
+@mixin app-color-modifiers {
+  &.-cacoo {
+    color: $cacoo-blue;
+  }
+  &.-typetalk {
+    color: $typetalk-red;
+  }
+  &.-backlog {
+    color: $backlog-green;
+  }
+}
+
+@mixin app-bg-color-modifiers {
+  &.-cacoo {
+    background-color: $cacoo-blue;
+  }
+  &.-typetalk {
+    background-color: $typetalk-red;
+  }
+  &.-backlog {
+    background-color: $backlog-green;
+  }
+}

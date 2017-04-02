@@ -1,0 +1,49 @@
+# Create a "Languages" table
+[Languages]
+[Languages.en]
+title = "Developers Nulab Website"
+blog_id = 1
+
+# A nested table for english social media links
+[Languages.en.params]
+twitter_id = "nulabinc"
+twitter_link = "http://twitter.com/nulabinc"
+twitter_cacoo_id = "cacoocom"
+twitter_cacoo_link = "http://twitter.com/cacoocom"
+twitter_backlog_id = "backlogtool"
+twitter_backlog_link = "http://twitter.com/backlogtool"
+twitter_typetalk_id = "typetalkin"
+twitter_typetalk_link = "http://twitter.com/typetalkin"
+
+facebook_link = "https://www.facebook.com/nulabinc"
+backlog_link = "http://backlogtool.com/"
+backlog_pricing_link = "http://backlogtool.com/pricing/"
+cacoo_help_link = "https://support.cacoo.com/hc/en-us/"
+typetalk_help_link = "https://typetalk.zendesk.com/hc/en-us/"
+typetalk_iOS_link = "https://itunes.apple.com/app/typetalk/id756503889?mt=8"
+typetalk_android_link = "https://play.google.com/store/apps/details?id=typetalk.android"
+developer_link = "http://developer.nulab-inc.com/"
+
+[Languages.ja]
+title = "Developers Nulab Website JAPANESE"
+blog_id = 2
+
+# A nested table for english social media links
+[Languages.ja.params]
+twitter_id = "nulabjp"
+twitter_link = "http://twitter.com/nulabjp"
+twitter_cacoo_id = "cacooapp"
+twitter_cacoo_link = "http://twitter.com/cacooapp"
+twitter_backlog_id = "backlogapp"
+twitter_backlog_link = "http://twitter.com/backlogapp"
+twitter_typetalk_id = "typetalkin_jp"
+twitter_typetalk_link = "http://twitter.com/typetalkin_jp"
+
+facebook_link = "https://www.facebook.com/NulabJP"
+backlog_link = "http://www.backlog.jp/"
+backlog_pricing_link = "http://www.backlog.jp/license/"
+cacoo_help_link = "https://support.cacoo.com/hc/ja/"
+typetalk_help_link = "https://typetalk.zendesk.com/hc/ja/"
+typetalk_iOS_link = "https://itunes.apple.com/jp/app/typetalk/id756503889?mt=8"
+typetalk_android_link = "https://play.google.com/store/apps/details?id=typetalk.android&hl=ja"
+developer_link = "http://developer.nulab-inc.com/ja"

@@ -1,0 +1,255 @@
+// home.scss
+
+.page--home {
+  padding: {
+    top: 45px;
+  };   
+  max-width: 80%;
+  margin: auto;
+  @include breakpoint(medium up) {
+    padding-top: 75px; 
+  }
+
+  .home {
+    &__header-wrapper {
+      text-align: center;
+      max-width: 730px; // value taken from Zeplin
+      margin: auto;
+    }
+
+    &__header {
+      margin-bottom: 1.5rem;
+      text-align: center;
+      @include fz(40);
+      @include breakpoint(medium up) {
+        @include fz(50);
+      }
+    }
+    &__subheader {
+      text-align: center;
+      margin-bottom: 40px;
+      @include fz(20);
+      @include breakpoint(medium up) {
+        text-align: left;
+        @include fz(25);
+      }
+    }
+    &__cta-wrapper {
+      text-align: center;
+    }
+    &__cta-text {
+      @include fz(18);
+      margin-bottom: 40px;
+    }
+  }
+
+  .app-api {
+    &__container {
+      @include flex-grid-row($size: 1080px);
+      padding-bottom: 35px;
+    }
+    &__item {
+      padding: 1rem;
+      text-align: center;
+      @include flex-grid-column($columns: 12);
+      @include breakpoint(medium up) {
+        @include flex-grid-column($columns: 6);
+      }
+      @include breakpoint(large up) {
+        @include flex-grid-column($columns: 4);
+      }
+    }
+    &__button {
+      font-weight: bold;
+      // padding: {
+      //   left: ;
+      //   right: 0;
+      // }
+      @include fz(20);
+      @include breakpoint(large up) {
+        min-width: 225px; 
+      }
+    }
+    &__image {
+      display: block;
+      max-width: 160px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    &__description {
+      @include fz(20);
+      line-height: 26px;
+      text-align: left;
+      max-width: 225px;
+      margin: {
+        left: auto;
+        right: auto;
+        bottom: 40px;
+      };
+    }
+  }
+
+  // Build something NU
+  .build-something {
+
+    &__container {
+      width: 100%;
+      background-color: $offwhite;
+
+      margin-bottom: 60px;
+      padding: {
+        top: 40px;
+        left: 20px;
+        right: 20px;
+      }        
+      @include breakpoint(large up) {
+        padding: {
+          left: 40px;
+          right: 40px;
+        }        
+      }
+    }
+    &__header {
+      @include fz(25);
+      font-weight: bold;
+      color: $purple;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__subheader {
+      @include fz(20);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &__container .api-description {
+      &__wrapper {
+        padding: 1rem;
+        @include flex-grid-row($size: 100%);
+      }
+
+      &__item {
+        padding: 1rem;
+
+        // On small, do (1) layout
+        @include flex-grid-column($columns: 12);
+
+        // On mediums, do a (1 2)/3 layout.
+        // @include breakpoint(medium up) {
+        //   &:nth-child(1),
+        //   &:nth-child(2) {
+        //     @include flex-grid-column($columns: 6);
+        //   }
+        //   @include flex-grid-column($columns: 12);
+        // }
+
+        // On lg, do (1 1 1) layout
+        @include breakpoint(large up) {
+          @include flex-grid-column($columns: 4);
+        }
+
+        // On larger screens, push right slightly to achieve horizontal balance
+        @include breakpoint(large up) {
+          position: relative;
+          left: 20px;
+        }
+      }
+
+      &__heading, 
+      &__description {
+        @include fz(16);
+      }
+
+      &__heading {
+        color: $purple;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      &__description {
+        line-height: 22px;
+        text-align: left;
+        @include breakpoint(large up) {
+          max-width: 250px;
+        }
+      }
+    }
+
+  }
+
+  .getting-started {
+    &__container {
+      @include flex-grid-row($size: 1080px);
+      margin-bottom: 50px;
+    }
+    &__header {
+      @include flex-grid-column($columns: 12);
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    &__inner {
+      background-color: $purple;
+      height: 100%;
+      padding: 2rem;
+      @include breakpoint(large up) {
+        padding: 2rem;
+      }
+
+      // Vertically spread items
+      @include flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+    }
+
+    &__divider {
+      width: 40%;
+      border-bottom: 1px solid white;
+    }
+
+    // Purple card
+    &__item {
+
+      padding: 0;
+      margin-bottom: 1rem;
+
+      @include flex-grid-column($columns: 12, $gutters: 0);
+      @include breakpoint(large up) {
+        @include flex-grid-column($columns: 4, $gutters: 2rem);
+        margin-bottom: 0;
+      }
+
+
+      &-header,
+      &-text {
+        color: white;
+      }
+
+      &-header {
+        @include fz(20);
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      &-text {
+        @include fz(16);
+        line-height: 22px;
+      }
+    }
+
+    &__list {
+      &-item {
+        @include fz(16);
+        color: white;
+      }
+      &-link {
+        color: white;
+        font-weight: bold;
+        &:hover {
+          color: darken(white, 20);
+        }
+      }
+    }
+  }
+}

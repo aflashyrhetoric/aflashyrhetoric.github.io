@@ -1,0 +1,32 @@
+// footer.scss
+// =============================================================
+
+.footer {
+  padding: {
+    top: 25px;
+    bottom: 25px;
+  } 
+  background-color: $offwhite;
+  &__list {
+    text-align: center;
+    list-style-type: none;
+    margin-bottom: 1rem;
+
+    &:last-child() {
+      margin-bottom: 0;
+    }
+  }
+  &__list-item {
+    @include fz(14);
+    display: inline-block;
+    margin: 1rem;
+    &.-image {
+      margin: 5px;
+    }
+  }
+
+  .nu-footer__social-icons-image {
+    height: 35px;
+    width: 35px;
+  }
+}

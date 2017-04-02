@@ -1,0 +1,44 @@
+// colors.scss
+// =============================================================
+
+// app colors
+// =====
+$typetalk-red: #ff6455;
+$typetalk-red-light: #fda59f;
+$cacoo-blue: #4c7ebf;
+$cacoo-blue-light: #98b5d8;
+$backlog-green: #4cbd9b;
+$backlog-green-light: #99d7c5;
+
+// primary colors
+// =====
+$white: #fff;
+$offwhite: #f2f2f2;
+$offgray: #f9f9f9;
+$gray: #ececec;
+$mediumgray: #c6c4c7;
+$lightgray: #74758b;
+$darkgray: #75768b;
+$steel: $darkgray;
+$green: $backlog-green;
+$purple: #7e67c5;
+$yellow: #f6a623;
+
+// accent colors
+// =====
+$orange-accent: #f3a536;
+$orange-alt-accent: $yellow;
+$green-accent: #51bc9c;
+$light-green-accent: #50e3c2;
+$lightest-green-accent: #f3fffc;
+
+// success/error colors
+$error-red: #ff001f;
+$success-green: #40b289;
+
+
+// link color
+// ==========
+
+$link-color: $steel;
+$link-hover-color: #50e3c2;
