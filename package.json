@@ -33,7 +33,7 @@
     "webpack": "^2.2.1"
   },
   "main": "index.js",
-  "repository": "nulab@nulab.git.backlog.jp:/NUWEB/nulab-developer-website.git",
-  "author": "Nulab <kevin@nulab-inc.com>",
+  "repository": "git@github.com:aflashyrhetoric/aflashyrhetoric.github.io",
+  "author": "Kevin <kevin@adelie.co>",
   "license": "MIT"
 }
