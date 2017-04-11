@@ -1,0 +1,18 @@
+.hero {
+  &__container {
+    width: 100%;
+  }
+  &__inner {
+    @include flex-grid-row($size: 80%);
+  }
+  &__left {
+    @include flex-grid-column($columns: 4);
+  }
+  &__right {
+    @include flex-grid-column($columns: 8);
+  }
+  &__img {
+    max-width: 250px;
+    border-radius: 100%;
+  }
+}

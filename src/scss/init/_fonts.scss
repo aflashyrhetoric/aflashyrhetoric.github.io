@@ -4,8 +4,8 @@
 // Defining font family
 // ==============================
 
-$fontDefault: 'proxima-nova', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
-$fontDefaultJa: 'proxima-nova', Hiragino Sans, 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Roboto, Arial, sans-serif !default;
+$fontDefault: 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontDefaultJa: 'Helvetica', 'Arial', Hiragino Sans, 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Roboto, Arial, sans-serif !default;
 $fontHighlight: 'Gilroy', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 $fontHighlightJa: 'Gilroy', Hiragino Sans, 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Roboto, Arial, sans-serif !default;
 
@@ -28,47 +28,3 @@ $fontHighlightJa: 'Gilroy', Hiragino Sans, 'Hiragino Kaku Gothic ProN', Meiryo, 
 
 // @font-face Settings
 // ==============================
-
-// Add Gilroy Font (regular and bold)
-@font-face {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
-  src:
-    url('./../../themes/nulab-inc/assets/fonts/gilroy-regular-webfont.woff2') format('woff2'),
-    url('./../../themes/nulab-inc/assets/fonts/gilroy-regular-webfont.woff') format('woff');
-}
-
-@font-face {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: bold;
-  src:
-    url('./../../themes/nulab-inc/assets/fonts/gilroy-bold-webfont.woff2') format('woff2'),
-    url('./../../themes/nulab-inc/assets/fonts/gilroy-bold-webfont.woff') format('woff');
-}
-
-// [Japanese] Hiragino Sans Settings for Mac (above El Capitan)
-@font-face {
-  font-family: 'Hiragino Sans';
-  src: local(HiraginoSans-W3);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Hiragino Sans';
-  src: local(HiraginoSans-W4);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Hiragino Sans';
-  src: local(HiraginoSans-W6);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Hiragino Sans';
-  src: local(HiraginoSans-W6);
-  font-weight: 700;
-}
