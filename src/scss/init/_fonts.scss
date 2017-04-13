@@ -4,26 +4,18 @@
 // Defining font family
 // ==============================
 
-$fontDefault: 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
-$fontDefaultJa: 'Helvetica', 'Arial', Hiragino Sans, 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Roboto, Arial, sans-serif !default;
+$fontBody: 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 $fontHighlight: 'Gilroy', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
-$fontHighlightJa: 'Gilroy', Hiragino Sans, 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Roboto, Arial, sans-serif !default;
 
 // mixins for font-family
 // ==============================
 
-@mixin setFontDefault {
-  font-family: $fontDefault;
-  @include ja {
-    font-family: $fontDefaultJa;
-  }
+@mixin setFontBody {
+  font-family: $fontBody;
 }
 
 @mixin setFontHighlight {
   font-family: $fontHighlight;
-  @include ja {
-    font-family: $fontHighlightJa;
-  }
 }
 
 // @font-face Settings

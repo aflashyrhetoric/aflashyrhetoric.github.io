@@ -2,7 +2,7 @@
  * ----------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-  @include setFontDefault;
+  @include setFontBody;
   font-weight: normal;
   margin: 0;
   margin-bottom: 8px;
@@ -19,7 +19,7 @@ h2 {
 }
 
 p {
-  @include setFontDefault;
+  @include setFontBody;
   @include fz(16);
 }
 
@@ -35,7 +35,7 @@ dl {
 a {
   color: $link-color;
   transition: color .2s ease 0s;
-  @include setFontDefault;
+  @include setFontBody;
   
   &:hover {
     cursor: pointer;
@@ -50,25 +50,6 @@ a {
     color: $purple;
     &:hover {
       color: $link-hover-color;
-    }
-  }
-
-  &.-typetalk {
-    color: $typetalk-red;
-    &:hover {
-      color: darken($typetalk-red, 10);
-    }
-  }
-  &.-cacoo {
-    color: $cacoo-blue;
-    &:hover {
-      color: darken($cacoo-blue, 10);
-    }
-  }
-  &.-backlog {
-    color: $backlog-green;
-    &:hover {
-      color: darken($backlog-green, 10);
     }
   }
 }

@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  color: $darkgray;
+  color: $gray;
   text-size-adjust: 100%;
-  @include setFontDefault;
+  @include setFontBody;
 }

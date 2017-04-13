@@ -1,18 +1,35 @@
 .hero {
   &__container {
     width: 100%;
+    padding: 2rem;
   }
   &__inner {
-    @include flex-grid-row($size: 80%);
+    @include flex-grid-row($size: 40%);
   }
   &__left {
     @include flex-grid-column($columns: 4);
   }
   &__right {
     @include flex-grid-column($columns: 8);
+    text-align: right;
   }
   &__img {
-    max-width: 250px;
+    max-width: 200px;
     border-radius: 100%;
+  }
+
+  &__container {
+
+    .upper-text {
+      &__wrapper {
+        margin-bottom: 4rem;
+      }
+      &__header {
+        font-size: 2rem;
+      }
+      &__subheader {
+        font-size: 1.5rem;
+      }
+    }
   }
 }
