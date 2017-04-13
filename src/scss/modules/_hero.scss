@@ -2,6 +2,7 @@
   &__container {
     width: 100%;
     padding: 2rem;
+    background-color: $black;
   }
   &__inner {
     @include flex-grid-row($size: 40%);
@@ -29,6 +30,17 @@
       }
       &__subheader {
         font-size: 1.5rem;
+      }
+    }
+
+    .lower-text {
+      &__wrapper {
+
+      }
+
+      &__text {
+        font-size: 1rem;
+        line-height: .5rem;
       }
     }
   }

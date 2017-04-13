@@ -6,7 +6,8 @@
     top: 25px;
     bottom: 25px;
   } 
-  background-color: $gray;
+  // background-color: $gray;
+  border: 1px solid gray;
   &__list {
     text-align: center;
     list-style-type: none;
