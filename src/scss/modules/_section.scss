@@ -1,0 +1,19 @@
+// section.scss
+
+body {
+}
+
+.section {
+
+  &__inner {
+    background-color: $purple;
+  }
+
+  &__label {
+    background-color: $purple;
+    min-height: 40px;
+    padding: 1rem;
+    width: 100%;
+    width: 200px;
+  }
+}
