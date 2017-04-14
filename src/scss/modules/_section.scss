@@ -1,8 +1,6 @@
 // section.scss
 
-body {
-}
-
+$_label-height: 40px;
 .section {
 
   &__container {
@@ -28,5 +26,6 @@ body {
     text-align: right;
     position: relative;
     right: 0;
+    bottom: 30px;
   }
 }
