@@ -11,8 +11,8 @@
     @include flex-grid-column($columns: 4);
   }
   &__right {
-    @include flex-grid-column($columns: 8);
     text-align: right;
+    @include flex-grid-column($columns: 8);
   }
   &__img {
     max-width: 200px;

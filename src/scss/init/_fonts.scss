@@ -4,8 +4,8 @@
 // Defining font family
 // ==============================
 
-$fontBody: 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
-$fontHighlight: 'Gilroy', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontBody: 'Iosevka', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontHighlight: 'Iosevka', 'Gilroy', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 
 // mixins for font-family
 // ==============================
@@ -20,3 +20,13 @@ $fontHighlight: 'Gilroy', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif
 
 // @font-face Settings
 // ==============================
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/static/fonts/iosevka-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/static/fonts/iosevka-extralight.ttf') format('truetype');
+}

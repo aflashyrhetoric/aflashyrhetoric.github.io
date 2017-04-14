@@ -5,15 +5,28 @@ body {
 
 .section {
 
+  &__container {
+    @include flex-grid-row($size: 100%);
+  }
+
   &__inner {
     background-color: $purple;
+    margin: auto;
+    position: relative;
+    min-height: 400px;
+    @include flex-grid-column($columns: 10);
+    @include breakpoint(medium up) {
+      @include flex-grid-column($columns: 5);
+    }
   }
 
   &__label {
     background-color: $purple;
     min-height: 40px;
     padding: 1rem;
-    width: 100%;
-    width: 200px;
+    width: 300px;
+    text-align: right;
+    position: relative;
+    right: 0;
   }
 }
