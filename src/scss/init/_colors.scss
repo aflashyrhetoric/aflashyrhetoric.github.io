@@ -4,6 +4,7 @@
 $white: #fff;
 $gray: #ebebeb;
 $offwhite: $gray;
+$medgray: #aaadad;
 $darkgray: lighten($black, 5);
 $black: #222222;
 
@@ -11,4 +12,4 @@ $purple: #54004f;
 $lightpurple: lighten(#54004f, 10);
 
 $link-color: $white;
-$link-hover-color: darken($white, 10);
+$link-hover-color: darken($white, 15);

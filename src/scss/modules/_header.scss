@@ -2,20 +2,25 @@
 // Contains SCSS for navbar
 
 .header {
-  width: 100%;
+  @include flex-grid-row($size: 100%);
 }
 
 .navbar {
   background-color: $black;
-  width: 50%;
   margin: auto;
   height: 55px;
   display: flex;
   justify-content: center;
+  @include flex-grid-column($columns: 8);
+  @include breakpoint(medium up) {
+    @include flex-grid-column($columns: 6);
+  }
+
   &__list {
     margin: auto;
     text-align: center;
   }
+
   &__list-item {
     display: inline;
     margin: {
@@ -23,6 +28,7 @@
       right: 8px;
     }
   }
+
   &__list-link {
     font-size: 23px;
   }

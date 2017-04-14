@@ -5,6 +5,8 @@
 // ==============================
 
 $fontBody: 'Iosevka', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontLight: 'Iosevka-light', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontHeavy: 'Iosevka-heavy', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 $fontHighlight: 'Iosevka', 'Gilroy', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 
 // mixins for font-family
@@ -12,6 +14,12 @@ $fontHighlight: 'Iosevka', 'Gilroy', 'Helvetica Neue', Helvetica, Roboto, Arial,
 
 @mixin setFontBody {
   font-family: $fontBody;
+}
+@mixin setFontLight {
+  font-family: $fontLight;
+}
+@mixin setFontHeavy {
+  font-family: $fontHeavy;
 }
 
 @mixin setFontHighlight {
@@ -27,6 +35,11 @@ $fontHighlight: 'Iosevka', 'Gilroy', 'Helvetica Neue', Helvetica, Roboto, Arial,
 }
 
 @font-face {
-  font-family: 'Iosevka';
+  font-family: 'Iosevka-light';
   src: url('/static/fonts/iosevka-extralight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Iosevka-heavy';
+  src: url('/static/fonts/iosevka-heavy.ttf') format('truetype');
 }
