@@ -10,6 +10,7 @@ $_label-height: 60px;
 
   &__inner {
     background-color: $gray;
+    color: $black;
     border: $__label-border-width solid $purple;
     margin: auto;
     position: relative;
@@ -18,6 +19,11 @@ $_label-height: 60px;
     @include breakpoint(medium up) {
       @include flex-grid-column($columns: 6);
     }
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
   }
 
   &__label {
@@ -41,5 +47,9 @@ $_label-height: 60px;
       font-size: 24px;
       color: $purple;
     }
+  }
+
+  &__projects {
+
   }
 }

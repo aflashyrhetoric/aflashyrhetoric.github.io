@@ -5,7 +5,7 @@
     background-color: $black;
   }
   &__inner {
-    @include flex-grid-row($size: 40%);
+    @include flex-grid-row($size: 50%);
   }
   &__left {
     @include flex-grid-column($columns: 4);
