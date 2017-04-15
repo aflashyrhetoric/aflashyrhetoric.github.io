@@ -1,5 +1,6 @@
 name = "mosu"
-thumbnail = "static/img/projects/mosu.png"
+thumbnail = "/img/projects/mosu.png"
+thumbnail2 = "/img/projects/mosu@2x.png"
 url = "http://mosu.io"
 tagline = "Minimize the stress of the job hunt."
 description = "Mosu helps you manage your job hunt by keeping track of your current job applications, resumes & documents, recruiter contacts, and more."
