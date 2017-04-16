@@ -2,8 +2,6 @@
 title = "Coding Is Not That Hard"
 +++
 
-# Coding is not that hard
-
 Within the past two years, about a dozen people told me they’re extremely interested in learning how to code. Today, _none_ of them are programmers, developers, or even hobby coders. Most of them, as far as I know, have never even opened a text editor.
 
 The conversation always goes the same way. They want to learn, they have ideas, but it’s all _too hard_. One of my more determined friends — an art major — admired the idea of focusing on a single project all day, but he would routinely shudder at the sight of actual code.
@@ -28,7 +26,7 @@ Initially, I did what all older people would do: I asked him what he was interes
 
 In his book, **_Blue Like Jazz_**, Donald Miller says, “_Sometimes you have to watch somebody love something before you can love it yourself_.” So I started talking about what I do.
 
-#### “I’m a web developer. I build sites by typing words on a screen.”
+> “I’m a web developer. I build sites by typing words on a screen.”
 
 He didn’t immediately understand how words on a screen (that is, how _code_) could result in a functioning program, so I used atoms as a metaphor. When specific atoms are arranged in a certain way, you get all kinds of things with different behaviors and properties. Water, rifles, tacos — everything was built with atoms. The metaphor wasn’t perfect, but he seemed to understand the gist.
 

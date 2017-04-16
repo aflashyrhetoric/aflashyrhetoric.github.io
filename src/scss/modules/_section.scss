@@ -34,6 +34,11 @@ $_label-height: 60px;
         @include flex-grid-column($columns: 4, $gutters: 0);
       }
     }
+    &.-wide {
+      @include breakpoint(medium up) {
+        @include flex-grid-column($columns: 8, $gutters: 0);
+      }
+    }
 
 
   }
@@ -47,7 +52,7 @@ $_label-height: 60px;
     }
     height: $_label-height;
     padding: 1rem;
-    width: 200px;
+    // width: 200px;
     text-align: center;
     position: absolute;
     top: -$_label-height;
@@ -66,9 +71,35 @@ $_label-height: 60px;
       width: 100px;
       right: 30px;
     }
+    &.-post {
+      width: 400px;
+      right: 30px;
+    }
   }
 
   &__projects {
     width: 100%;
+  }
+
+  &__content {
+    padding: 1rem;
+    h1, 
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: bold;
+    }
+    p, li {
+      font-size: 20px;
+    }
+    ul, ol {
+      padding-left: 1rem;
+    }
+    a {
+      color: $purple;
+      font-weight: bold;
+    }
   }
 }

@@ -2,8 +2,6 @@
 title = "The Dangers of Blindly Loving Your Tools"
 +++
 
-# The Dangers of Blindly Loving Your Tools
-
 I once heard two friends arguing. One of them had recently come upon a windfall of cash, and wanted to make a big purchase: an upscale sports car. Upon hearing this, his miserly friend fired back, “you don’t even go places! Don’t buy a Porsche to drive to 711.”
 
 When I heard this biting exchange, I chuckled. But as I shampooed my hair into a glorious, frothy bubble afro later that night, I realized it was a much-needed lesson for web developers.

@@ -2,8 +2,6 @@
 title = "Websites Are Like Pants"
 +++
 
-### Websites Are Like Pants
-
 In 2005, psychologist Barry Schwartz took the stage at TEDGlobal in Oxford and proposed an idea: that “more is less.” You can [watch the full video here](https://www.ted.com/talks/barry_schwartz_on_the_paradox_of_choice?language=en), but the core idea is simple. To quote Schwartz, “With so many options to choose from, people find it very difficult to choose _at all_.” He tells a simple anecdote to that effect: many years ago, when he walked into a clothing store, there were only a few pairs of jeans to choose from. Other than size, there wasn’t much variation.
 
 The modern denim landscape, he laments, is not so simple. There’s boot cut, straight cut, skinny, acid-washed, “raw denim,” low-rider…it goes on. A hundred variations and a thousand brands to choose from. Faced with so many options, Schwartz is left to wonder: “_which_?”

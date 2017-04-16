@@ -2,8 +2,6 @@
 title = "Good Design Is Not Subjective."
 +++
 
-### Good Design Is Not Subjective.
-
 There are times when the difference between two choices is completely lateral — two substitutable alternatives that are equal in importance and consequence. If you’re craving some fruit, it doesn’t matter whether you choose the apple or the orange. In these instances, it’s okay to defer to preference, precedent, or a coin toss. But these cases are the (rare) exception, not the rule.
 
 Apples and oranges are both fruit, but on the off-chance that you’re a pirate with scurvy, you’re absolutely better off with the orange because it has more Vitamin C. Even with something as trivial as choosing a fruit, there are legitimate factors to consider, such as allergies and nutritional needs.
