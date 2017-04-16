@@ -5,16 +5,27 @@
   &__list {
     margin: 0;
     padding: 0;
+    flex-flow: row wrap;
   }
 
   &__list.-projects {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding: 1rem;
   }
 
   &__list-item {
     display: inline-block;
+    text-align: center;
+    a { 
+      display: inline-block;
+      min-width: 107px;
+      height: 100%;
+      &:hover {
+        background-color: $purple;
+      }
+    }
   }
 
   &__list-post {
@@ -26,12 +37,40 @@
       color: $black;
       &:hover {
         color: $purple;
+        // &:after {
+        //   content: 'click to read';
+        //   position: absolute;
+        //   right: 20px;
+        //   color: lighten($purple, 10);
+        // }
+      }
+    }
+    &:first-child {
+      &:after {
+        content: 'latest';
+        font-style: italic;
+        position: absolute;
+        font-size: 14px;
+        top: 14px;
+        right: 20px;
+        color: darken($gray, 15);
+        pointer-events: none;
+
+        // Adds an ugly badge
+        // display: block;
+        // background-color: $gray;
+        // border: 7px solid $purple;
+        // border-left: none;
+        // height: 50px;
+        // right: -102px;
+      }
+      &:hover {
       }
     }
 
     &:hover {
-      // background-color: $purple;
-      background: linear-gradient(to right, $purple, $gray);
+      background-color: $purple;
+      // background: linear-gradient(to right, $purple, $gray);
       a {
         color: $white;
       }
@@ -40,7 +79,6 @@
 
   &__list-image {
     height: 75px;
-    object-fit: contain;
     margin: 1rem;
   }
 }

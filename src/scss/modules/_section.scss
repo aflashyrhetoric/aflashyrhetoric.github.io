@@ -19,13 +19,22 @@ $_label-height: 60px;
     position: relative;
     // min-height: 150px;
     @include flex-grid-column($columns: 10, $gutters: 0);
-    @include breakpoint(medium up) {
-      @include flex-grid-column($columns: 6, $gutters: 0);
-    }
-
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+
+
+    &.-regular {
+      @include breakpoint(medium up) {
+        @include flex-grid-column($columns: 6, $gutters: 0);
+      }
+    }
+    &.-thin {
+      @include breakpoint(medium up) {
+        @include flex-grid-column($columns: 4, $gutters: 0);
+      }
+    }
+
 
   }
 
