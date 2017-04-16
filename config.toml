@@ -1,9 +1,5 @@
-# Languages (for more, go to "languages.toml")
-# languageCode = "en"
-defaultContentLanguage = "en"
 baseurl = "kevinoh.me"
 theme = "aflashyrhetoric-theme"
-version = "1489528364429"
 
 # This makes the content of the content/backlog route properly
 # [permalinks]

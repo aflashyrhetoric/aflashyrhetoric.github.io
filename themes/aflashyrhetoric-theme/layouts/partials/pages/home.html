@@ -38,3 +38,24 @@
     </div>
   </div>
 </div>
+
+<div class="section__container">
+  <div class="section__inner">
+    <div class="section__label -blog">
+      <h2 class="section__label-text">blog</h2>
+    </div>
+
+    <div class="section__projects">
+      <ul class="project-box__list">
+        {{ range where .Data.Pages "Section" "posts" }}
+          <li class="project-box__list-post">
+            <a href="{{ .RelPermalink }}">
+              {{ .Title }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+

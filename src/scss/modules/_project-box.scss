@@ -5,11 +5,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin: 0;
+    padding: 0;
   }
 
   &__list-item {
     display: inline-block;
-
   }
 
   &__list-image {
