@@ -1,16 +1,41 @@
 // _project-box.scss
 
 .project-box {
+
   &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     margin: 0;
     padding: 0;
   }
 
+  &__list.-projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
   &__list-item {
     display: inline-block;
+  }
+
+  &__list-post {
+    list-style-type: none;
+    a {
+      display: block;
+      padding: 1rem;
+      width: 100%;
+      color: $black;
+      &:hover {
+        color: $purple;
+      }
+    }
+
+    &:hover {
+      // background-color: $purple;
+      background: linear-gradient(to right, $purple, $gray);
+      a {
+        color: $white;
+      }
+    }
   }
 
   &__list-image {
