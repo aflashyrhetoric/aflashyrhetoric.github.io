@@ -29,7 +29,9 @@
       <ul class="project-box__list">
         {{ range .Site.Data.projects }}
           <li class="project-box__list-item">
-            <img src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
+            <a target="_blank" href="{{ .url }} ">
+              <img class="project-box__list-image" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
+            </a>
           </li>
         {{ end }}
       </ul>

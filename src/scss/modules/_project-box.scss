@@ -1,1 +1,20 @@
 // _project-box.scss
+
+.project-box {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__list-item {
+    display: inline-block;
+
+  }
+
+  &__list-image {
+    height: 75px;
+    object-fit: contain;
+    margin: 1rem;
+  }
+}
