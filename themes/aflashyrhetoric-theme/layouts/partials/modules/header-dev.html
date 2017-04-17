@@ -1,5 +1,14 @@
 <header class="header">
-  <nav class="navbar {{ if eq .Section "posts" }} -full-width {{ end }}">
+  <nav class="navbar 
+  
+  {{ if eq .Section "posts" }} 
+    -full-width 
+  {{ end }}
+
+  {{ if eq .Section "projects" }} 
+    -full-width 
+  {{ end }}
+  ">
     <ul class="navbar__list">
       <li class="navbar__list-item"><a href="/" class="navbar__list-link">home</a></li>
       <li class="navbar__list-item"><a href="/about" class="navbar__list-link">about</a></li>

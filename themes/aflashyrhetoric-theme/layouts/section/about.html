@@ -15,19 +15,11 @@
 <div class="section__container">
   <div class="section__inner -thin">
     <div class="section__label -post">
-      <h2 class="section__label-text">all blog posts</h2>
+      <h2 class="section__label-text">about kevin oh</h2>
     </div>
 
-    <div class="section__projects">
-      <ul class="project-box__list">
-        {{ range where .Data.Pages "Section" "posts" }}
-          <li class="project-box__list-post">
-            <a href="{{ .Permalink }}">
-              {{ .Title }}
-            </a>
-          </li>
-        {{ end }}
-      </ul>
+    <div class="section__content">
+      {{ .Content }}
     </div>
   </div>
 </div>
