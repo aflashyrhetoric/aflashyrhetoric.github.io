@@ -1,0 +1,34 @@
+<!-- Page for a single web post in the posts/ dir -->
+
+<!-- Include head tag manually -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <title>{{ .Title }}</title>
+</head>
+
+{{ partial "modules/header-dev" . }}
+
+<div class="section__container">
+  <div class="section__inner -regular">
+    <div class="section__label -project-box">
+      <h2 class="section__label-text">project box</h2>
+    </div>
+
+    <div class="section__projects">
+      <ul class="project-box__list -projects">
+        {{ range .Site.Data.projects }}
+          <li class="project-box__list-item">
+            <a target="_blank" href="{{ .url }} ">
+              <img class="project-box__list-image" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+
+
