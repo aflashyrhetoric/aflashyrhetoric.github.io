@@ -11,24 +11,25 @@
 
 {{ partial "modules/header-dev" . }}
 
+
 <div class="section__container">
-  <div class="section__inner -regular">
-    <div class="section__label -project-box">
-      <h2 class="section__label-text">project box</h2>
+  <div class="section__inner -thin">
+    <div class="section__label -post">
+      <h2 class="section__label-text">all blog posts</h2>
     </div>
 
     <div class="section__projects">
-        {{ range .Site.Data.projects }}
-            <a target="_blank" href="{{ .url }} ">
-              <img class="project-box__list-image" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
+      <ul class="project-box__list">
+        {{ range where .Data.projects }}
+          <li class="project-box__list-post">
+            <a href="{{ .Permalink }}">
+              {{ .Title }}
             </a>
           </li>
-          <div class="section__content">
-            {{ .description }}
-          </div>
         {{ end }}
+      </ul>
     </div>
   </div>
 </div>
 
-
+{{ partial "modules/footer-dev" }}

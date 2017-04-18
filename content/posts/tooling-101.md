@@ -38,6 +38,8 @@ npm install
 npm start
 ```
 
-As beginners do this over and over, 
+When I was learning, I would do this over and over without an understanding of what was happening.
+
+---
 
 <small>By the way, this is in no way an attack on the maintainers of those tools. Managing documentation that is universally understood and meticulously updated is impossible. Creating and maintaining tutorials on top of that is a massive task as well. Nevertheless, the opaque or exclusive language in beginner-oriented resources is, to me, a "sand-in-your-eyes" type of problem, so this series aims to move some of the burden from the individual resources</small>

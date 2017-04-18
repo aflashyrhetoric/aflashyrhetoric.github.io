@@ -1,7 +1,7 @@
 // section.scss
 
 $__label-border-width: 7px;
-$_label-height: 60px;
+$_label-height: 50px;
 .section {
 
   &__container {
@@ -51,7 +51,11 @@ $_label-height: 60px;
       left: $__label-border-width solid $purple;
     }
     height: $_label-height;
-    padding: 1rem;
+    padding:{
+      top: .5rem;
+      left: 1rem;
+      right: 1.2rem;
+    }
     // width: 200px;
     text-align: center;
     position: absolute;
@@ -72,7 +76,7 @@ $_label-height: 60px;
       right: 30px;
     }
     &.-post {
-      width: unset;
+      width: normal;
       right: 30px;
     }
   }
