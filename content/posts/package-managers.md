@@ -2,7 +2,7 @@
 date = "2017-04-17T18:42:48-04:00"
 title = "Tooling 101: Package Managers"
 series = "tooling101"
-draft = true
+draft = false
 +++
 
 <small>
@@ -13,8 +13,9 @@ draft = true
 
 ### Series Introduction
 
-Zoom back to 2012. I'm in my dorm room trying to learn Ruby on Rails. Everything is going smoothly! Rails seems magical - and [not in the bad way]. I try to add a feature or two, and my progress comes to a screeching halt. I see mentions of "gems" everywhere. 
+Zoom back to 2012. I'm in my dorm room trying to learn Ruby on Rails. Everything is going smoothly! Rails seems magical - perhaps a bit too much. I try to add a feature or two, and my progress comes to a screeching halt. I am imprisoned in a jail of "gems". 
 
+And thus, I was introduced to the world of Package Managers.
 
 ### 
 

@@ -15,9 +15,9 @@ While the barriers to web development are substantially lower than many other fi
 
 By "obstacles," I don't mean the inherent difficulty in learning a new field, nor the complexity of advanced web development topics. I'm referring to the snags that slow progress without benefit.
 
-For example, consider the act of running. If you want to get better, you must train often and build endurance. Overcoming the exhaustion of training and the task of perfecting your form is a **relevant obstacle**. 
+For example, consider the act of *going for a jog*. Running. If you want to get better, you must train often and build endurance. Overcoming the exhaustion of training and the task of perfecting your running form is a **relevant obstacle**. 
 
-But if you're running on a particularly windy day at the beach and sand keeps blowing in your eyes - that's just some bulllshiiiiiiiiiiiiit.
+But if you're running on a particularly windy day at the beach and sand keeps blowing in your eyes - that just sucks for no reason.
 
 I'm writing this series to help eliminate the latter, because when I was starting out, most of the tutorials assumed that the reader had knowledge of things like:
 
@@ -27,9 +27,16 @@ I'm writing this series to help eliminate the latter, because when I was startin
 - configuration files (e.g: `package.json`, `nginx.conf`, `webpack.config.js`)
 - and more.
 
-When creating documentation, there's always a tricky decision to be made: If you create some app that depends on all of the aforementioned tools, should your "Getting Started" tutorial explain those tools or not?
 
-Typically, they don't, instead opting for either minimally-descripive "copy-and-paste" code chunks.
+At best, docs will include simple one-liner annotations, like so:
+
+
+```
+// Install dependencies
+npm install
+```
+
+Or worse, they omit annotations completely: 
 
 ```
 git clone git@github.com:someguy/someapp.git
@@ -38,7 +45,9 @@ npm install
 npm start
 ```
 
-When I was learning, I would do this over and over without an understanding of what was happening.
+When I was learning, I would do this over and over without an understanding of what was happening. I was uncomfortable letting tools "do the magic" for me while I was in the dark.
+
+I hope this guide serves as a helpful primer for those who are like me.
 
 ---
 
