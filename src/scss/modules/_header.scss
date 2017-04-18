@@ -6,7 +6,7 @@
   a, 
   p, 
   ul li {
-    font-family: 'iosevka', sans-serif;
+    font-family: 'Iosevka-light', sans-serif !important;
   }
   @include flex-grid-row($size: 100%);
 }
@@ -27,6 +27,7 @@
 
 
   &__list {
+    width: 100%;
     margin: auto;
     text-align: center;
   }
