@@ -4,16 +4,20 @@
 // Defining font family
 // ==============================
 
-$fontBody: 'Iosevka', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontBody: 'adelle', adelle, 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 $fontLight: 'Iosevka-light', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 $fontHeavy: 'Iosevka-heavy', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
-$fontHighlight: 'Iosevka', 'Gilroy', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontHighlight: 'Iosevka', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontStandard: 'Iosevka', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 
 // mixins for font-family
 // ==============================
 
 @mixin setFontBody {
   font-family: $fontBody;
+}
+@mixin setFontStandard {
+  font-family: $fontStandard;
 }
 @mixin setFontLight {
   font-family: $fontLight;

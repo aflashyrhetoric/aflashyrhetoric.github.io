@@ -46,6 +46,10 @@
         line-height: .5rem;
         color: $medgray;
         @include setFontLight;
+        a {
+          @include setFontStandard;
+          font-weight: bold;
+        }
       }
     }
   }

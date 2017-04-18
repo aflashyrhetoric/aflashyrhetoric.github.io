@@ -82,6 +82,7 @@ $_label-height: 60px;
   }
 
   &__content {
+    @include setFontBody;
     padding: 1rem;
     h1, 
     h2,
