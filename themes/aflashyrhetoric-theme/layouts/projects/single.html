@@ -1,0 +1,33 @@
+<!-- Page for a single web post in the posts/ dir -->
+
+<!-- Include head tag manually -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <title>{{ .Title }}</title>
+</head>
+
+{{ partial "modules/header-dev" . }}
+
+<div class="project__container">
+  <div class="project__hero">
+    <div class="project__left">
+      <img class="project__logo" src="/img/projects/mosu.png" srcset="/img/projects/mosu.png@2x 2x">
+       <h2 class="project__name">
+        {{ .Title }}
+       </h2>
+
+       <p class="project__tagline">
+       {{ range where .Site.Pages "Project" .Title }}
+        {{ .name }}
+       {{ end }}
+       </p>
+
+    </div>
+    
+  </div>
+</div>
+
+{{ partial "modules/footer-dev" }}

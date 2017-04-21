@@ -4,5 +4,6 @@ thumbnail2 = "/img/projects/project@2x.png"
 url = ""
 tagline = ""
 description = ""
+future_plans = ""
 weight = 
 +++

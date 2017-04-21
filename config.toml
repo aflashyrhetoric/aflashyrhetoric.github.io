@@ -1,6 +1,9 @@
 baseurl = "kevinoh.me"
 theme = "aflashyrhetoric-theme"
 
+[taxonomies]
+project = "projects"
+
 # This makes the content of the content/backlog route properly
 # [permalinks]
 # backlog = "/docs/backlog/api/1/:filename"
