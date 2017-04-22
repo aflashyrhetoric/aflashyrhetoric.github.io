@@ -1,4 +1,5 @@
 name = "Night Messenger"
+filename = "nightmessenger"
 thumbnail = "/img/projects/nightmessenger.png"
 thumbnail2 = "/img/projects/nightmessenger@2x.png"
 url = "https://chrome.google.com/webstore/detail/night-messenger/hjhnmilbfdehpgfcojlmmooknnkhgdmh?hl=en"

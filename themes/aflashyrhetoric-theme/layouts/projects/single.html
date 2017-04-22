@@ -14,16 +14,13 @@
 <div class="project__container">
   <div class="project__hero">
     <div class="project__left">
-      <img class="project__logo" src="/img/projects/mosu.png" srcset="/img/projects/mosu.png@2x 2x">
-       <h2 class="project__name">
+      <img class="project__logo" src="{{ .Site.Data.projects.mosu.thumbnail }}" srcset="{{ .Site.Data.projects.mosu.thumbnail2 }} 2x">
+      <h2 class="project__name">
         {{ .Title }}
-       </h2>
-
-       <p class="project__tagline">
-       {{ range where .Site.Pages "Project" .Title }}
-        {{ .name }}
-       {{ end }}
-       </p>
+      </h2>
+      <p class="project__tagline">
+        {{ .Site.Data.projects.Title.name }}
+      </p>
 
     </div>
     

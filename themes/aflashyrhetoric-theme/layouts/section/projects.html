@@ -19,7 +19,7 @@
 
     <div class="section__projects">
         {{ range sort .Site.Data.projects "ByWeight reverse" }}
-            <a target="_blank" href="{{ .url }} ">
+            <a target="_blank" href="/projects/{{ .filename }}">
               <img class="project-box__list-image" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
             </a>
           </li>
