@@ -62,10 +62,10 @@ $_label-height: 50px;
     top: -$_label-height;
     &-text {
       line-height: 24px;
-      font-family: "Iosevka";
-      font-style: italic;
       font-size: 24px;
       color: $purple;
+      font-weight: 900;
+      @include setFontBody;
     }
     &.-project-box {
       width: 200px;

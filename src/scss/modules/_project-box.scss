@@ -30,6 +30,8 @@
 
   &__list-post {
     list-style-type: none;
+    text-transform: lowercase;
+    @include setFontBody;
     a {
       display: block;
       padding: 1rem;

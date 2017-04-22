@@ -3,7 +3,7 @@
 
 // Btn
 .btn {
-  font-family: 'proxima-nova', sans-serif;
+  @include setFontBody;
   display: inline-block;
   padding: 8px 20px;
   border-radius: 8px;
