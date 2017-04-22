@@ -12,7 +12,7 @@ html {
 
 body {
   background: linear-gradient(to bottom, #deffd3, #ffcece);
-  min-height: 800px;
+  // min-height: 800px;
   color: $gray;
   text-size-adjust: 100%;
   @include setFontBody;
