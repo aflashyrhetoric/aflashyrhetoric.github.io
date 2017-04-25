@@ -12,6 +12,10 @@
     font-size: 1rem;
   }
   @include flex-grid-row($size: 100%);
+
+  &.-no-margin-bottom {
+    margin-bottom: 0;
+  }
 }
 
 .navbar {

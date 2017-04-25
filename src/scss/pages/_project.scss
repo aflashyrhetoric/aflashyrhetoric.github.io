@@ -1,0 +1,19 @@
+// page projects
+
+.page-projects {
+  @include flex-grid-row($size: 100%);
+  background-color: $black;
+
+  &__heading-wrapper{
+    @include flex-grid-column($columns: 12);
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__heading {
+    @include setFontBody;
+  }
+
+}

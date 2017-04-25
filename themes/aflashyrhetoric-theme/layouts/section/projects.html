@@ -1,34 +1,33 @@
 <!-- Page for a single web post in the posts/ dir -->
-
 <!-- Include head tag manually -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <title>{{ .Title }}</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <title>{{ .Title }}</title>
+  </head>
 
-{{ partial "modules/header-dev" . }}
+  {{ partial "modules/header-dev" . }}
 
-<div class="section__container">
-  <div class="section__inner -regular">
-    <div class="section__label -project-box">
-      <h2 class="section__label-text">project box</h2>
+  <div class="page-projects">
+    <div class="page-projects__heading-wrapper">
+      <h2 class="page-projects__heading">projects</h2>
     </div>
+    <div class="project__container">
 
-    <div class="section__projects">
-        {{ range sort .Site.Data.projects "ByWeight reverse" }}
-            <a target="_blank" href="/projects/{{ .filename }}">
-              <img class="project-box__list-image" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
-            </a>
-          </li>
-          <div class="section__content">
-            {{ .description }}
-          </div>
-        {{ end }}
-    </div>
+      {{ range sort .Site.Data.projects "ByWeight reverse" }}
+
+      <div class="project__card">
+        <a target="_blank" href="/projects/{{ .filename }}">
+          <img class="" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
+        </a>
+        <p class="project__description">
+          {{ .description }}
+        </p>
+      </div>
+      
+    {{ end }}
   </div>
-</div>
-
-
+</div>  
+{{ partial "modules/footer-dev" . }}

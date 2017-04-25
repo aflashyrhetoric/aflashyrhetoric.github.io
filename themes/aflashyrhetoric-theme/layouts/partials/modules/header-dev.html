@@ -1,4 +1,9 @@
+{{ if eq .Title "Projects" }}
+<header class="header -no-margin-bottom">
+{{ else }}
 <header class="header">
+{{ end }}
+
   <nav class="navbar 
   
   {{ if eq .Section "posts" }} 
