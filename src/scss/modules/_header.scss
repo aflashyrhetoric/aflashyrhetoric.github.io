@@ -11,6 +11,7 @@
     text-transform: uppercase;
     font-size: 1rem;
   }
+  
   @include flex-grid-row($size: 100%);
 
   &.-no-margin-bottom {

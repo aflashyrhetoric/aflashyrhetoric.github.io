@@ -5,37 +5,30 @@
 .btn {
   @include setFontBody;
   display: inline-block;
-  padding: 8px 20px;
+  padding: 14px 18px;
   border-radius: 8px;
   cursor: pointer;
 
   color: white;
+  font-weight: bold;
   text-decoration: none;
   text-align: center;
 
   transition: background-color .2s ease 0s;
-  @include fz(14);
+  @include fz(20);
 
   // Variants
-  &--normal {
-    background-color: $gray;
-    &:hover {
-      background-color: lighten($gray, 10);
-      color: white;
-    }
-    &:visited {
-      color: white;
-    }
-  }
 
   &--primary {
-    background-color: $purple;
+    background-color: white;
+    color: $purple;
+    &:visited {
+      background-color: white;
+      color: $purple;
+    }
     &:hover {
       background-color: lighten($purple, 10);
-      color: white;
-    }
-    &:visited {
-      color: white;
+      color: $white;
     }
   }
 

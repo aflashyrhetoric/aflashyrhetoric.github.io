@@ -2,11 +2,11 @@
 
 .page-projects {
   @include flex-grid-row($size: 100%);
-  background-color: $black;
 
   &__heading-wrapper{
     @include flex-grid-column($columns: 12);
-    height: 320px;
+    background-color: $black;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,6 +14,67 @@
 
   &__heading {
     @include setFontBody;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .project {
+    &__container {
+      padding: 2rem;
+      @include flex-grid-row($size: 100%);
+    }
+    &__card {
+      margin-bottom: 2rem;
+      @include flex-grid-column($columns: 12);
+      @include breakpoint(large up) {
+        @include flex-grid-column($columns: 6, $gutters: 2rem);
+      }
+    }
+    &__card-inner {
+      text-align: center;
+      position: relative;
+      padding: 2rem;
+      padding-top: 4rem;
+      min-width: 220px;
+      min-height: 480px;
+      border-radius: 4px;
+      background-color: $purple;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    &__title {
+      margin-bottom: 1rem;
+      font-weight: bold;
+      line-height: 1;
+      text-transform: lowercase;
+      text-align: center;
+      @include setFontLight;
+    }
+    &__description {
+      text-align: center;
+      display: inline-block;
+      margin: auto;
+      max-width: 420px;
+      @include fz(16);
+    }
+    &__learn-more {
+      text-align: center;
+      display: inline-block;
+      margin: auto;
+      @include breakpoint(medium up) {
+        max-width: 200px;
+      }
+    }
+    &__image {
+      width: 75px;
+      margin: {
+        left: auto;
+        right: auto;
+        bottom: 4rem;
+      }
+      display: inline-block;
+      text-align: center;
+    }
   }
 
 }

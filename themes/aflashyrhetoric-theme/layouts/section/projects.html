@@ -12,21 +12,24 @@
 
   <div class="page-projects">
     <div class="page-projects__heading-wrapper">
-      <h2 class="page-projects__heading">projects</h2>
+      <h1 class="page-projects__heading">projects</h1>
+        {{ .Content }}
     </div>
+
     <div class="project__container">
-
       {{ range sort .Site.Data.projects "ByWeight reverse" }}
-
-      <div class="project__card">
-        <a target="_blank" href="/projects/{{ .filename }}">
-          <img class="" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
-        </a>
-        <p class="project__description">
-          {{ .description }}
-        </p>
-      </div>
-      
+        <div class="project__card">
+          <div class="project__card-inner">
+            <a class="project__image"href="/projects/{{ .filename }}">
+              <img src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
+            </a>
+            <h3 class="project__title">{{ .name }}</h3>
+            <p class="project__description">
+              {{ .description }}
+            </p>
+            <a href="/projects/{{ .filename }}" class="project__learn-more btn btn--primary">Learn More</a>
+          </div>
+        </div>
     {{ end }}
   </div>
 </div>  
