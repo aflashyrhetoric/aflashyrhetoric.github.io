@@ -21,7 +21,7 @@
   .project {
     &__container {
       padding: 2rem;
-      @include flex-grid-row($size: 100%);
+      @include flex-grid-row($size: 1080px);
     }
     &__card {
       margin-bottom: 2rem;
@@ -43,12 +43,12 @@
       flex-flow: column nowrap;
     }
     &__title {
-      margin-bottom: 1rem;
+      margin-bottom: .8rem;
       font-weight: bold;
       line-height: 1;
       text-transform: lowercase;
       text-align: center;
-      @include setFontLight;
+      @include setFontStandard;
     }
     &__description {
       text-align: center;
