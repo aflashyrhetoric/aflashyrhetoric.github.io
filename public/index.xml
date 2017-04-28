@@ -5,7 +5,151 @@
     <link>/kevinoh.me/index.xml</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 27 Apr 2017 18:04:36 -0400</lastBuildDate>
     <atom:link href="/kevinoh.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>building the nulab developer site</title>
+      <link>/kevinoh.me/posts/developer-site/</link>
+      <pubDate>Thu, 27 Apr 2017 18:04:36 -0400</pubDate>
+      
+      <guid>/kevinoh.me/posts/developer-site/</guid>
+      <description>
+
+&lt;h2 id=&#34;building-the-nulab-developer-website&#34;&gt;Building the Nulab Developer Website&lt;/h2&gt;
+
+&lt;p&gt;My latest project at &lt;a href=&#34;http://nulab-inc.com&#34;&gt;Nulab&lt;/a&gt; was to migrate over the old website from Drupal. It had become somewhat clumsy to manage, and they wanted a new solution.&lt;/p&gt;
+
+&lt;p&gt;After initially considering WordPress, we ultimately landed on &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a static site generator (SSG) written in Go.&lt;/p&gt;
+
+&lt;p&gt;An SSG was perfect for our use-case.&lt;/p&gt;
+
+&lt;h3 id=&#34;consider-the-following&#34;&gt;Consider the following:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;With any reference-type website, speed is a priority. SSGs excel here.&lt;/li&gt;
+&lt;li&gt;Hugo (and many SSGs) use Markdown files. Markdown is the de-facto standard for publishing now, and it is easier to manage than data in a database.&lt;/li&gt;
+&lt;li&gt;Hosting is generally cheaper.&lt;/li&gt;
+&lt;li&gt;The data for the site would change pretty infrequently.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h3&gt;
+
+&lt;p&gt;This website would need to display the APIs for Nulab&amp;rsquo;s 3 current products. So, 3 APIs = 3 datasets. Unfortunately, each dataset was stored differently. One was stored in a database. The other one was written in a proprietary markup format. Move to Step One.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-mining-the-data&#34;&gt;1. Mining The Data&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tooling 101: Package Managers</title>
+      <link>/kevinoh.me/posts/package-managers/</link>
+      <pubDate>Mon, 17 Apr 2017 18:42:48 -0400</pubDate>
+      
+      <guid>/kevinoh.me/posts/package-managers/</guid>
+      <description>
+
+&lt;p&gt;&lt;small&gt;
+  &lt;em&gt;This is part 1 of an introductory series on web development tooling.&lt;/em&gt;
+&lt;/small&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;series-introduction&#34;&gt;Series Introduction&lt;/h3&gt;
+
+&lt;p&gt;Zoom back to 2012. I&amp;rsquo;m in my dorm room trying to learn &lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Ruby on Rails&lt;/a&gt;. Everything is going smoothly! Rails seems magical - perhaps a bit too much. I try to add a feature or two, and my progress comes to a screeching halt. I&amp;rsquo;m chasing down errors in the terminal with no conception of what&amp;rsquo;s going on.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;What the hell is a &amp;ldquo;gem&amp;rdquo;?!?!?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And thus, I was introduced to the world of Package Managers.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s review some of the more popular ones.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Associated Language&lt;/th&gt;
+&lt;th&gt;Package Manager(s)&lt;/th&gt;
+&lt;th&gt;Configuration Filename&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Javascript&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://yarnpkg.com/en/&#34;&gt;yarn&lt;/a&gt;, &lt;a href=&#34;https://www.npmjs.com/&#34;&gt;npm&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;package.json&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ruby&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://bundler.io/&#34;&gt;Bundler&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Gemfile&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;PHP&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://getcomposer.org/&#34;&gt;Composer&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;composer.json&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Go&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/Masterminds/glide&#34;&gt;Glide&lt;/a&gt;, &lt;a href=&#34;https://golang.org/cmd/go/#hdr-Download_and_install_packages_and_dependencies&#34;&gt;&amp;ldquo;go get&amp;rdquo;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;glide.yaml&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://bower.io/&#34;&gt;Bower&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;bower.json&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;so-what-is-a-package-manager&#34;&gt;So, what is a package manager?&lt;/h4&gt;
+
+&lt;p&gt;Package managers make it easy for you to use other people&amp;rsquo;s code in your own projects to add functionality. Code that you add (or &amp;ldquo;install&amp;rdquo;) to your own project in this manner are referred to as &amp;ldquo;packages&amp;rdquo; or &amp;ldquo;dependencies.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Package managers come in the form of command-line interfaces, so you will need a terminal such as &lt;a href=&#34;https://www.iterm2.com/&#34;&gt;iTerm2&lt;/a&gt; or &lt;a href=&#34;http://cmder.net/&#34;&gt;cmder&lt;/a&gt; to use them.&lt;/p&gt;
+
+&lt;h4 id=&#34;how-do-they-work&#34;&gt;How do they work?&lt;/h4&gt;
+
+&lt;p&gt;Each package manager has its own instructions on installing the tool, so I won&amp;rsquo;t go into that here. But once installed, they tend to function very similarly.&lt;/p&gt;
+
+&lt;h4 id=&#34;first-they-re-all-terminal-based-utilities&#34;&gt;First, they&amp;rsquo;re all terminal-based utilities.&lt;/h4&gt;
+
+&lt;p&gt;Typically, the name of the package manager is the name of the command. For example, to do something with the Yarn package manager, you will type &lt;code&gt;yarn&lt;/code&gt; into the terminal, followed by some secondary command. (More on that later.)&lt;/p&gt;
+
+&lt;h4 id=&#34;next-they-all-use-a-configuration-file&#34;&gt;Next, they all use a configuration file.&lt;/h4&gt;
+
+&lt;p&gt;This is a file that contains information about your project&amp;rsquo;s dependencies. Different package managers use different formats for this file, although &lt;code&gt;.json&lt;/code&gt; (short for &amp;ldquo;Javascript Object Notation&amp;rdquo;) is one of the most common.&lt;/p&gt;
+
+&lt;p&gt;You can create and edit this file just like you would with any ordinary file, but some package managers have ways to generate it easily. NPM, for example has &lt;code&gt;npm init&lt;/code&gt;, which will handily give you a line-by-line prompt to create &lt;code&gt;package.json&lt;/code&gt; - the configuration file for &lt;code&gt;npm&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Each package manager will also have ways to easily add (and sometimes remove) dependencies without having to manually edit the configuration file. For example, to add &lt;code&gt;foobar&lt;/code&gt; as an NPM dependency and install it, you type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install -S foobar
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s similar for composer:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;composer require foobar
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adelie Developer&#39;s Group</title>
+      <link>/kevinoh.me/projects/adg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kevinoh.me/projects/adg/</guid>
+      <description>&lt;p&gt;Mosu&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Coding Is Not That Hard</title>
@@ -137,6 +281,10 @@
       <guid>/kevinoh.me/posts/design/</guid>
       <description>
 
+&lt;p&gt;&lt;small&gt;&lt;em&gt;This post was written back when Adelie was openly accepting new inquiries and projects.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;There are times when the difference between two choices is completely lateral — two substitutable alternatives that are equal in importance and consequence. If you’re craving some fruit, it doesn’t matter whether you choose the apple or the orange. In these instances, it’s okay to defer to preference, precedent, or a coin toss. But these cases are the (rare) exception, not the rule.&lt;/p&gt;
 
 &lt;p&gt;Apples and oranges are both fruit, but on the off-chance that you’re a pirate with scurvy, you’re absolutely better off with the orange because it has more Vitamin C. Even with something as trivial as choosing a fruit, there are legitimate factors to consider, such as allergies and nutritional needs.&lt;/p&gt;
@@ -236,12 +384,46 @@
     </item>
     
     <item>
+      <title>Milton Bros.</title>
+      <link>/kevinoh.me/projects/milton-bros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kevinoh.me/projects/milton-bros/</guid>
+      <description>&lt;p&gt;Mosu&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mosu</title>
+      <link>/kevinoh.me/projects/mosu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kevinoh.me/projects/mosu/</guid>
+      <description>&lt;p&gt;Mosu&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Night Messenger</title>
+      <link>/kevinoh.me/projects/nightmessenger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kevinoh.me/projects/nightmessenger/</guid>
+      <description>&lt;p&gt;Mosu&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>The Dangers of Blindly Loving Your Tools</title>
       <link>/kevinoh.me/posts/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/kevinoh.me/posts/tools/</guid>
       <description>
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;This post was written back when Adelie was openly accepting new inquiries and projects.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;I once heard two friends arguing. One of them had recently come upon a windfall of cash, and wanted to make a big purchase: an upscale sports car. Upon hearing this, his miserly friend fired back, “you don’t even go places! Don’t buy a Porsche to drive to 711.”&lt;/p&gt;
 
@@ -335,9 +517,9 @@
 
 &lt;p&gt;By &amp;ldquo;obstacles,&amp;rdquo; I don&amp;rsquo;t mean the inherent difficulty in learning a new field, nor the complexity of advanced web development topics. I&amp;rsquo;m referring to the snags that slow progress without benefit.&lt;/p&gt;
 
-&lt;p&gt;For example, consider the act of running. If you want to get better, you must train often and build endurance. Overcoming the exhaustion of training and the task of perfecting your form is a &lt;strong&gt;relevant obstacle&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For example, consider the act of &lt;em&gt;going for a jog&lt;/em&gt;. Running. If you want to get better, you must train often and build endurance. Overcoming the exhaustion of training and the task of perfecting your running form is a &lt;strong&gt;relevant obstacle&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;But if you&amp;rsquo;re running on a particularly windy day at the beach and sand keeps blowing in your eyes - that&amp;rsquo;s just some bulllshiiiiiiiiiiiiit.&lt;/p&gt;
+&lt;p&gt;But if you&amp;rsquo;re running on a particularly windy day at the beach and sand keeps blowing in your eyes - that just sucks for no reason.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m writing this series to help eliminate the latter, because when I was starting out, most of the tutorials assumed that the reader had knowledge of things like:&lt;/p&gt;
 
@@ -349,9 +531,13 @@
 &lt;li&gt;and more.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;When creating documentation, there&amp;rsquo;s always a tricky decision to be made: If you create some app that depends on all of the aforementioned tools, should your &amp;ldquo;Getting Started&amp;rdquo; tutorial explain those tools or not?&lt;/p&gt;
+&lt;p&gt;At best, docs will include simple one-liner annotations, like so:&lt;/p&gt;
 
-&lt;p&gt;Typically, they don&amp;rsquo;t, instead opting for either minimally-descripive &amp;ldquo;copy-and-paste&amp;rdquo; code chunks.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// Install dependencies
+npm install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or worse, they omit annotations completely:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git clone git@github.com:someguy/someapp.git
 cd someapp
@@ -359,7 +545,9 @@ npm install
 npm start
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;When I was learning, I would do this over and over without an understanding of what was happening.&lt;/p&gt;
+&lt;p&gt;When I was learning, I would do this over and over without an understanding of what was happening. I was uncomfortable letting tools &amp;ldquo;do the magic&amp;rdquo; for me while I was in the dark.&lt;/p&gt;
+
+&lt;p&gt;I hope this guide serves as a helpful primer for those who are like me.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -369,11 +557,15 @@ npm start
     
     <item>
       <title>Websites Are Like Pants</title>
-      <link>/kevinoh.me/posts/websites_pants/</link>
+      <link>/kevinoh.me/posts/websites-are-pants</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/kevinoh.me/posts/websites_pants/</guid>
+      <guid>/kevinoh.me/posts/websites-are-pants</guid>
       <description>
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;This post was written back when Adelie was openly accepting new inquiries and projects.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;In 2005, psychologist Barry Schwartz took the stage at TEDGlobal in Oxford and proposed an idea: that “more is less.” You can &lt;a href=&#34;https://www.ted.com/talks/barry_schwartz_on_the_paradox_of_choice?language=en&#34;&gt;watch the full video here&lt;/a&gt;, but the core idea is simple. To quote Schwartz, “With so many options to choose from, people find it very difficult to choose &lt;em&gt;at all&lt;/em&gt;.” He tells a simple anecdote to that effect: many years ago, when he walked into a clothing store, there were only a few pairs of jeans to choose from. Other than size, there wasn’t much variation.&lt;/p&gt;
 

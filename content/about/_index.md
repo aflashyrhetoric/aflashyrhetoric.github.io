@@ -52,5 +52,5 @@ I use Sublime Text 3 w/ vim keybindings. Chrome, iTerm2. Laravel + React are my 
 - To my sister Yuna, who taught me how to hope.
 - To my beautiful girlfriend Rebecca, who has seen me through thick and thin and continues to support and inspire me everyday.
 - To my friends Billy, Jaden, Squan, Jonathan, Rachel, Helen, Jenna. My squad is :fire:.
-- To the awesome 
+- To the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you!
 - To you, you beautiful soul :cat:

@@ -2,7 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/kevinoh.me/posts/developer-site/</loc>
+    <lastmod>2017-04-27T18:04:36-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/kevinoh.me/posts/package-managers/</loc>
+    <lastmod>2017-04-17T18:42:48-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/kevinoh.me/</loc>
+    <lastmod>2017-04-27T18:04:36-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -12,10 +23,15 @@
   
   <url>
     <loc>/kevinoh.me/posts/</loc>
+    <lastmod>2017-04-27T18:04:36-04:00</lastmod>
   </url>
   
   <url>
     <loc>/kevinoh.me/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>/kevinoh.me/projects/adg/</loc>
   </url>
   
   <url>
@@ -27,6 +43,23 @@
   </url>
   
   <url>
+    <loc>/kevinoh.me/projects/milton-bros/</loc>
+  </url>
+  
+  <url>
+    <loc>/kevinoh.me/projects/mosu/</loc>
+  </url>
+  
+  <url>
+    <loc>/kevinoh.me/projects/nightmessenger/</loc>
+  </url>
+  
+  <url>
+    <loc>/kevinoh.me/projects/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/kevinoh.me/posts/tools/</loc>
   </url>
   
@@ -35,7 +68,7 @@
   </url>
   
   <url>
-    <loc>/kevinoh.me/posts/websites_pants/</loc>
+    <loc>/kevinoh.me/posts/websites-are-pants</loc>
   </url>
   
 </urlset>

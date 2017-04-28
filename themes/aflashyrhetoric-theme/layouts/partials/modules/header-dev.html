@@ -1,22 +1,18 @@
-{{ if eq .Title "Projects" }}
+{{ if eq .Title "Projects" -}}
 <header class="header -no-margin-bottom">
-{{ else }}
+{{ else -}}
 <header class="header">
-{{ end }}
-
+{{ end -}}
   <nav class="navbar 
-  
-  {{ if eq .Section "posts" }} 
+  {{ if eq .Section "posts" -}} 
     -full-width 
-  {{ end }}
-
-  {{ if eq .Section "about" }} 
+  {{ end -}}
+  {{ if eq .Section "about" -}} 
     -full-width 
-  {{ end }}
-
-  {{ if eq .Section "projects" }} 
+  {{ end -}}
+  {{ if eq .Section "projects" -}} 
     -full-width 
-  {{ end }}
+  {{ end -}}
   ">
     <ul class="navbar__list">
       <li class="navbar__list-item"><a href="/" class="navbar__list-link">home</a></li>

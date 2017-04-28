@@ -11,20 +11,19 @@
 
 {{ partial "modules/header-dev" . }}
 
-<div class="project__container">
-  <div class="project__hero">
-    <div class="project__left">
-      <img class="project__logo" src="{{ .Site.Data.projects.mosu.thumbnail }}" srcset="{{ .Site.Data.projects.mosu.thumbnail2 }} 2x">
-      <h2 class="project__name">
-        {{ .Title }}
-      </h2>
-      <p class="project__tagline">
-        {{ .Site.Data.projects.Title.name }}
-      </p>
-
-    </div>
-    
+  <div class="page-project-single">
+    <div class="project-single__hero">
+    {{ range $.Site.Data.projects }}
+    {{ if eq (lower .name) (lower $.Title) }}
+      <img class="project-box__list-image" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
+      <h1 class="project-single__heading">{{ .name }}</h1>
+      <h2 class="project-single__subheading">{{ .tagline }}</h2>
+      </div>
+      <div class="project__about">
+        {{ $.Content }}
+      </div>
+      {{ end }}
+    {{ end }}
   </div>
-</div>
 
 {{ partial "modules/footer-dev" }}

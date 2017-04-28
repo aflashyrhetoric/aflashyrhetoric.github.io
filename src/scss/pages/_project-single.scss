@@ -1,0 +1,21 @@
+// page project single
+
+.page-project-single {
+  // Collapse border
+  margin-top: -80px;
+  background-color: $black;
+  .project-single {
+    &__hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      padding: 2rem;
+    }
+    &__subheading {
+      font-style: italic;
+      @include fz(24);
+      @include setFontLight;
+    }
+  }
+}
