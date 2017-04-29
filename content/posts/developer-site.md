@@ -3,8 +3,6 @@ date = "2017-04-27T18:04:36-04:00"
 title = "building the nulab developer site"
 +++
 
-## Building the Nulab Developer Website
-
 My latest project at [Nulab](http://nulab-inc.com) was to migrate over the old website from Drupal. It had become somewhat clumsy to manage, and they wanted a new solution.
 
 After initially considering WordPress, we ultimately landed on [Hugo](http://gohugo.io), a static site generator (SSG) written in Go. 

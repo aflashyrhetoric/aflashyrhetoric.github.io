@@ -14,15 +14,25 @@ $_label-height: 50px;
   &__inner {
     background-color: $gray;
     color: $black;
-    border: $__label-border-width solid $purple;
-    margin: auto;
     position: relative;
+    border-top: $__label-border-width solid $purple;
     // min-height: 150px;
-    @include flex-grid-column($columns: 10, $gutters: 0);
+    @include flex-grid-column($columns: 12, $gutters: 0);
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 
+    @include breakpoint(medium up) {
+      border: $__label-border-width solid $purple;
+      margin: auto;
+      @include flex-grid-column($columns: 11, $gutters: 0);
+    }
+
+    @include breakpoint(large up) {
+      border: $__label-border-width solid $purple;
+      margin: auto;
+      @include flex-grid-column($columns: 10, $gutters: 0);
+    }
 
     &.-regular {
       @include breakpoint(medium up) {
@@ -86,8 +96,9 @@ $_label-height: 50px;
   }
 
   &__content {
-    @include setFontBody;
+
     padding: 1rem;
+    @include setFontBody;
     h1, 
     h2,
     h3,
