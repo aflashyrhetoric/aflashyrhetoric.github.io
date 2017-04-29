@@ -25,8 +25,11 @@
   height: 55px;
   display: flex;
   justify-content: center;
-  @include flex-grid-column($columns: 8);
+  @include flex-grid-column($columns: 12);
   @include breakpoint(medium up) {
+    @include flex-grid-column($columns: 9);
+  }
+  @include breakpoint(large up) {
     @include flex-grid-column($columns: 6);
   }
   &.-full-width {
