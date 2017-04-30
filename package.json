@@ -7,8 +7,8 @@
     "postbuild": "node update-config-version.js"
   },
   "dependencies": {
-    "normalize.css": "^5.0.0",
-    "foundation-sites": "^6.3.0"
+    "foundation-sites": "^6.3.0",
+    "normalize.css": "^5.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -23,6 +23,7 @@
     "import-glob-loader": "^1.1.0",
     "json2md": "^1.5.7",
     "node-sass": "^4.5.0",
+    "path": "^0.12.7",
     "postcss-csscomb": "^1.0.2",
     "postcss-csso": "^2.0.0",
     "postcss-loader": "^1.3.3",

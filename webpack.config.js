@@ -1,8 +1,6 @@
 const webpack = require('webpack')
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
-const BabiliPlugin = require("babili-webpack-plugin");
 
 var config = {
     entry: [
@@ -82,7 +80,6 @@ if (process.env.NODE_ENV !== 'production') {
     });
     config.plugins = config.plugins.concat([
         new webpack.optimize.AggressiveMergingPlugin(),
-        new BabiliPlugin()
     ]);
 }
 
