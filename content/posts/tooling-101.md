@@ -27,7 +27,6 @@ I'm writing this series to help eliminate the latter, because when I was startin
 - configuration files (e.g: `package.json`, `nginx.conf`, `webpack.config.js`)
 - and more.
 
-
 At best, docs will include simple one-liner annotations, like so:
 
 
@@ -47,7 +46,7 @@ npm start
 
 When I was learning, I would do this over and over without an understanding of what was happening. I was uncomfortable letting tools "do the magic" for me while I was in the dark.
 
-I hope this guide serves as a helpful primer for those who are like me.
+I hope this guide serves as a helpful primer for those who are like me. The first post will be on **Package Managers**.
 
 ---
 

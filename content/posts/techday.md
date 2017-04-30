@@ -1,5 +1,4 @@
 +++
-date = "2017-04-18T18:14:54-04:00"
 title = "Tech Day 2017"
 draft = true
 +++

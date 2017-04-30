@@ -37,7 +37,7 @@
 
   &--accent {
     background-color: $lightpurple;
-    color: white;
+    color: white !important;
     &:hover {
       background-color: lighten($lightpurple, 10);
       color: white;

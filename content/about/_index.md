@@ -47,10 +47,11 @@ I use Sublime Text 3 w/ vim keybindings. Chrome, iTerm2. Laravel + React are my 
 
 ---
 
-#### Shout outs?
-- To my parents Kelly 춘실 Kim and 명남. You taught me patience, true humility, persistence, grace, and selflessness. 
+#### Shout-Outs!
+- To my parents, Kelly 춘실 Kim and 오명남. You taught me patience, true humility, persistence, grace, and selflessness. 
 - To my sister Yuna, who taught me how to hope.
+- To the Moon cousins, who taught me how to be bold, chase my interests relentlessly, complain less, and to build others up.
 - To my beautiful girlfriend Rebecca, who has seen me through thick and thin and continues to support and inspire me everyday.
-- To my friends Billy, Jaden, Squan, Jonathan, Rachel, Helen, Jenna. My squad is :fire:.
-- To the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you!
-- To you, you beautiful soul :cat:
+- To my friends Billy, Jaden, Squan, Jonathan, Rachel, Helen, Jenna. My squad is :fire:. I love you all.
+- To the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you.
+- To my amazingly talented coworkers and colleagues and Nulab. Working alongside every one of you is a pleasure and I learn new things all the time. お疲れさま!
