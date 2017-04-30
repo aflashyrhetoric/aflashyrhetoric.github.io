@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>/kevinoh.me/posts/index.xml</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="/kevinoh.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Coding Is Not That Hard</title>
+      <link>/kevinoh.me/posts/coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kevinoh.me/posts/coding/</guid>
+      <description>
+
+&lt;p&gt;Within the past two years, about a dozen people told me they’re extremely interested in learning how to code. Today, &lt;em&gt;none&lt;/em&gt; of them are programmers, developers, or even hobby coders. Most of them, as far as I know, have never even opened a text editor.&lt;/p&gt;
+
+&lt;p&gt;The conversation always goes the same way. They want to learn, they have ideas, but it’s all &lt;em&gt;too hard&lt;/em&gt;. One of my more determined friends — an art major — admired the idea of focusing on a single project all day, but he would routinely shudder at the sight of actual code.&lt;/p&gt;
+
+&lt;p&gt;In his words: “That crazy $%@! just makes me…just…ugh dude.” He clutched his side in mock pain and limped away.&lt;/p&gt;
+
+&lt;p&gt;I want to explore the reason they gave for not learning — that &lt;em&gt;it’s too hard&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;To be clear: I’m not going to try and say that coding is a walk in the park. A newbie cannot manage Facebook’s back-end systems. Obviously. Every programmer I know, myself included, worked very hard to untangle and understand the abstract concepts of programming, computer science, and development. Coding is most certainly &lt;em&gt;not easy&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But it’s probably easier than you think&lt;/strong&gt;. And that’s what important.&lt;/p&gt;
+
+&lt;h3 id=&#34;true-story-time&#34;&gt;True Story Time!&lt;/h3&gt;
+
+&lt;p&gt;We’ll call him John. John is a bright kid with a good heart, but by his own admission, he was never the left-brained type. He likes basketball, &lt;em&gt;League Of Legends&lt;/em&gt;, and watching movies.&lt;/p&gt;
+
+&lt;p&gt;Two years ago, I was a staff member at a community event — details omitted for anonymity. John was there, and he seemed distracted. He was fidgeting anxiously — twiddling his thumbs and tapping his feet. Later, I saw him storm off. He slammed the door behind him. I followed.&lt;/p&gt;
+
+&lt;p&gt;He eventually confessed that his college applications were due in a week, but he hadn’t picked a major. He was so anxious that he couldn’t focus on anything else.&lt;/p&gt;
+
+&lt;p&gt;Initially, I did what all older people would do: I asked him what he was interested in. This led to a predictably useless end point: “I like a lot of things, but I don’t like any of them &lt;em&gt;enough&lt;/em&gt;.”&lt;/p&gt;
+
+&lt;p&gt;In his book, &lt;strong&gt;&lt;em&gt;Blue Like Jazz&lt;/em&gt;&lt;/strong&gt;, Donald Miller says, “&lt;em&gt;Sometimes you have to watch somebody love something before you can love it yourself&lt;/em&gt;.” So I started talking about what I do.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“I’m a web developer. I build sites by typing words on a screen.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;He didn’t immediately understand how words on a screen (that is, how &lt;em&gt;code&lt;/em&gt;) could result in a functioning program, so I used atoms as a metaphor. When specific atoms are arranged in a certain way, you get all kinds of things with different behaviors and properties. Water, rifles, tacos — everything was built with atoms. The metaphor wasn’t perfect, but he seemed to understand the gist.&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+
+&lt;p&gt;I stepped through some more examples with him. An hour later, we were talking about puzzles, loops, and simple algorithms.&lt;/p&gt;
+
+&lt;p&gt;And that’s when I realized. When non-coders see code, they see the text itself, not the ideas that drive the text. (It’s an obvious realization in hindsight, but yeah.) And in so doing, they miss out on everything: the elegance of the concepts, the fun of building something from scratch, the raw ingenuity of it all.&lt;/p&gt;
+
+&lt;p&gt;These are qualities that everyone has an appreciation for, not just some rare breed of human known as a &lt;em&gt;programmer.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s my goal with this post:&lt;/p&gt;
+
+&lt;p&gt;To make non-programmers realize that they &lt;em&gt;already understand, intuitively, many of the basics of programming&lt;/em&gt;. I’m going to give you extremely basic introductions to four essential concepts in programming: &lt;strong&gt;syntax, variables, control flow/conditionals, and algorithms&lt;/strong&gt;. My guess is: you won’t struggle at all to understand them.&lt;/p&gt;
+
+&lt;h4 id=&#34;1-syntax&#34;&gt;1. Syntax&lt;/h4&gt;
+
+&lt;p&gt;This definitely not is a in English valid sentence!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How It Relates To Code&lt;/strong&gt;: You probably stumbled through the above sentence a little bit. That’s because the syntax of that sentence is messed up. The order of words matter, both in English and in coding languages.&lt;/p&gt;
+
+&lt;p&gt;Just like we expect certain patterns of speech, so do computers — the only difference lies in the languages used.&lt;/p&gt;
+
+&lt;h4 id=&#34;2-variables&#34;&gt;2. Variables&lt;/h4&gt;
+
+&lt;p&gt;You’re moving to LA to pursue a rapping career. Good on you. You’ve got stuff to pack, and different things have to go in different boxes. You use labels to help keep your junk organized.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How It Relates To Code&lt;/strong&gt;: A code variable is like the label on a box. Since you can use a box to store anything (clothes, headphones, cats, etc), labels help you know what’s inside the box without having to open it up.&lt;/p&gt;
+
+&lt;p&gt;Computers do the same thing — they use a system of “boxes and labels” to store data. (This is a simplification, obviously.)&lt;/p&gt;
+
+&lt;h4 id=&#34;3-control-flow-conditionals&#34;&gt;3. Control Flow &amp;amp; Conditionals&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Question:&lt;/em&gt; Are you at least 18 years old?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If yes, you CAN watch R-rated movies.&lt;/li&gt;
+&lt;li&gt;If not, you CANNOT watch R-rated movies.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How It Relates To Code&lt;/strong&gt;: Computer programs have to account for a lot of different possibilities. They test for conditions, just like we do every day. They just do it a lot faster.&lt;/p&gt;
+
+&lt;p&gt;By checking for conditions like this, a well-coded program can handle many different cases. This is referred to as &lt;em&gt;control flow:&lt;/em&gt; controlling the flow of the program, usually based on conditions.&lt;/p&gt;
+
+&lt;h4 id=&#34;4-algorithms&#34;&gt;4. Algorithms&lt;/h4&gt;
+
+&lt;p&gt;You’ve probably heard this word from some movie as part of a techno-babble speech. It basically just means a set of decision-making steps that help you get something done. And you have a bunch of algorithms already “built” into you!&lt;/p&gt;
+
+&lt;h4 id=&#34;your-morning-preparation-algorithm-probably&#34;&gt;Your Morning Preparation Algorithm, probably:&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Wake up.&lt;/li&gt;
+&lt;li&gt;Is it a week day? If so, continue to Step 3. If not, go back to sleep.&lt;/li&gt;
+&lt;li&gt;Go to the bathroom.&lt;/li&gt;
+&lt;li&gt;Brush your teeth.&lt;/li&gt;
+&lt;li&gt;Are you a girl? If so, proceed to Step 6. If not, skip to Step 7.&lt;/li&gt;
+&lt;li&gt;Do you have a makeup routine? If so, do your makeup routine. If not, proceed to Step 7.&lt;/li&gt;
+&lt;li&gt;Are you on a diet? If so, get an apple. If not, bust out three poptarts.&lt;/li&gt;
+&lt;li&gt;Eat whatever you created in Step 7.&lt;/li&gt;
+&lt;li&gt;Go to work.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is an algorithm in plain English. It’s a single set of steps, but it’ll yield different results on different days and for different people. It may also utilize variables.&lt;/p&gt;
+
+&lt;p&gt;For example, steps 7 and 8 could be rewritten like this to use variables:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Are you on a diet? If so, BREAKFAST is apple. If not, BREAKFAST is poptarts.&lt;/li&gt;
+&lt;li&gt;Eat BREAKFAST.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;How It Relates To Code&lt;/strong&gt;: Programmers write programs containing algorithms, variables, and control flow to get stuff done. To solve some problem.&lt;/p&gt;
+
+&lt;p&gt;As you can see, all of these concepts sort of stack on each other. I think that’s sweet.&lt;/p&gt;
+
+&lt;h4 id=&#34;some-closing-thoughts&#34;&gt;Some Closing Thoughts&lt;/h4&gt;
+
+&lt;p&gt;For anyone who has been thinking about code as some arcane, cryptic art, it’s not. It’s certainly not easy, and it will uncomfortably bend your mind, but for some of you, it will absolutely be worth the effort. Coding encourages you to approach problems in new ways, to view situations more objectively, to juggle and consider many factors, and to constantly seek optimal solutions. And many of the fundamental concepts are things you already understand!&lt;/p&gt;
+
+&lt;p&gt;So, I hope that’s enough to whet your appetite. I’ve only &lt;em&gt;barely&lt;/em&gt; scratched the surface, but this is only a blog post after all. Hopefully it’s a decent start that piqued your curiosity a little more. If you have any questions at all, feel free to email me directly at &lt;a href=&#34;mailto:aflashyrhetoric@gmail.com&#34;&gt;aflashyrhetoric@gmail.com&lt;/a&gt;. Otherwise, good luck.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;By &lt;a href=&#34;https://medium.com/@aflashyrhetoric&#34;&gt;Kevin Oh&lt;/a&gt; on &lt;a href=&#34;https://medium.com/p/c9a051d29a3a&#34;&gt;&lt;time class=&#34;dt-published&#34; datetime=&#34;2016-02-12T22:09:12.741Z&#34;&gt;February 12, 2016&lt;/time&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Good Design Is Not Subjective.</title>
+      <link>/kevinoh.me/posts/design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kevinoh.me/posts/design/</guid>
+      <description>
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;This post was written back when Adelie was openly accepting new inquiries and projects.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;There are times when the difference between two choices is completely lateral — two substitutable alternatives that are equal in importance and consequence. If you’re craving some fruit, it doesn’t matter whether you choose the apple or the orange. In these instances, it’s okay to defer to preference, precedent, or a coin toss. But these cases are the (rare) exception, not the rule.&lt;/p&gt;
+
+&lt;p&gt;Apples and oranges are both fruit, but on the off-chance that you’re a pirate with scurvy, you’re absolutely better off with the orange because it has more Vitamin C. Even with something as trivial as choosing a fruit, there are legitimate factors to consider, such as allergies and nutritional needs.&lt;/p&gt;
+
+&lt;h4 id=&#34;in-other-words-there-is-nearly-always-a-better-choice&#34;&gt;In other words, there is nearly always a better choice.&lt;/h4&gt;
+
+&lt;p&gt;If even only by a little bit. Color is a great example of this. Many perceive all colors as being approximate equals: swap out red for blue — who cares! And indeed, if you’re just choosing your new home wallpaper, all colors &lt;em&gt;are&lt;/em&gt; equal in terms of importance. No one color is more qualified than another. It’s all up to you. Your home might end up looking like a mess of exploded condiment packets, but if it suits your taste, then it’s a success.&lt;/p&gt;
+
+&lt;p&gt;But suppose you’re trying to encourage sales on a website. Is it &lt;em&gt;really&lt;/em&gt; the best idea to make everything scarlet red? Probably not, since we associate red with words and concepts like “&lt;em&gt;stop”&lt;/em&gt; and “&lt;em&gt;error.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re trying to romance your partner with a Valentine’s Day Card, would you use bright green paper? Probably not. A deep red would play on our culture’s existing symbolic association with &lt;em&gt;love&lt;/em&gt; and &lt;em&gt;romance&lt;/em&gt; and may be more appropriate.&lt;/p&gt;
+
+&lt;p&gt;Again: &lt;em&gt;there is nearly always a better choice.&lt;/em&gt; A choice that is objectively superior.&lt;/p&gt;
+
+&lt;h4 id=&#34;good-design-is-not-completely-subjective&#34;&gt;Good design is not (completely) subjective.&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Good&lt;/em&gt; design is a standard built upon rational, defensible models and rules — a matter of function, not form. It is the foundation. This may be a bit of a semantic argument, but it’s an important one. Certain design choices may reflect a designer’s particular design philosophies and there’s certainly some wiggle room, but &lt;em&gt;they’re not personal opinions&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;If a good designer advocates against the use of red, it’s not simply because he or she hates red. It’s because they understand _red — _its cultural connotations, its scientific relationship to other colors in the scheme or palette, etc — and they believe that its use would be either suboptimal or legitimately harmful. Treating this recommendation as being “the designer’s own personal opinion,” and subsequently dismissing it as such, is &lt;em&gt;wrong&lt;/em&gt;. It undermines their experience, impedes their ability to their job, and significantly reduces the amount of value that they can provide to you. It assumes that the designer’s job is simply to perform the “grunt work” of choosing a few colors. But that is not what a graphic designer does.&lt;/p&gt;
+
+&lt;h4 id=&#34;design-is-a-skilled-mental-process-that-manifests-in-some-tangible-or-visible-end-product-or-result&#34;&gt;Design is a skilled, mental process that manifests in some tangible or visible end product or result.&lt;/h4&gt;
+
+&lt;p&gt;The graphic designer’s task is to solve problems with visual designs. To consider the role of color, composition, contrast and more, and to produce a solution that effectively balances all these considerations. But reducing a graphic designer’s worth to simply the assets — color palettes, logos — they provide is misinformed and counterproductive.&lt;/p&gt;
+
+&lt;p&gt;A software engineer’s task is to solve problems with well-designed software. To consider software design patterns, team size, maintainability and more, and to produce software that works. But reducing a graphic designer’s worth to simply the features they spit out is misinformed and counterproductive.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-real-world-example&#34;&gt;A Real World Example&lt;/h3&gt;
+
+&lt;p&gt;A client once approached me to make a website for their educational organization. They wanted to express that they foster and encourage cultural diversity. Great! That’s a noble goal.&lt;/p&gt;
+
+&lt;p&gt;As a web designer, I began thinking of ways to accomplish this with a website. I had two initial suggestions off the top of my head:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First, I wanted to showcase their photos of their student body by putting a gallery on the website. This was &lt;em&gt;proof&lt;/em&gt; that they actually support children from all cultures; it proved that they actually cared, that they weren’t trying to use “cultural diversity” as an advertising buzzword.&lt;/li&gt;
+&lt;li&gt;Second, I wanted them to create a dedicated “Mission Statements” type page, where they could elaborate further on their beliefs and values.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I genuinely believe that these were two solid starting points. I proposed the ideas to the client, but was promptly rejected. They claimed that the best way to express a sense of diversity was by using fabric textures and animal prints all over the website. Particularly, they wanted to use cheetah prints, leopard prints, and zebra prints.&lt;/p&gt;
+
+&lt;p&gt;I legitimately considered it, but ultimately decided that using such prints would be “bad” for the following reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Reduces Readability.&lt;/strong&gt; Try reading black text over a zebra print.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Visually Distracting.&lt;/strong&gt; This website’s purpose was to educate students. Having several different fabric textures will be visually distracting. The focus should be on the content itself.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ambiguous Purpose.&lt;/strong&gt; While, in my client’s mind, a zebra print may evoke a sense of “cultural diversity,” that’s not going to be true for everyone. I imagine most people would just be confused.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Potentially Offensive.&lt;/strong&gt; Let’s be frank. Including zebra prints because there are zebras in Africa, and because you want to communicate that you welcome African American students — it’s not exactly the most subtle way to go about it!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Because of these reasons, I advised against using fabric textures. I asserted that a sense of “cultural diversity” could be communicated through other means.&lt;/p&gt;
+
+&lt;p&gt;I was met with a stern, disappointed look and was told, “I’ll run your idea past my team.” When I offered to explain, he insisted we move on to the next item: multi-colored dropdowns.&lt;/p&gt;
+
+&lt;h4 id=&#34;a-design-recommendation-is-not-my-personal-opinion&#34;&gt;A Design Recommendation Is Not My Personal Opinion&lt;/h4&gt;
+
+&lt;p&gt;He referred to my suggestion as “my &lt;em&gt;idea.”&lt;/em&gt; I’m not trying to nitpick at phrasing, but his word choice does reveal something about the way he perceived the exchange. The decision to not use fabric textures became &lt;em&gt;my&lt;/em&gt; idea, my personal opposition. I didn’t expect a new client to blindly trust in my ability, but his insistence that we move on told me &lt;em&gt;he wasn’t even interested in my thought process.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;He viewed my suggestion as my personal opinion. My personal preference. He thought that I simply didn’t like the fabric textures, in the same way someone might not like the color blue, or the flavor of vanilla. And you don’t ask somebody to explain their preference for vanilla. Why would you! That makes no sense.&lt;/p&gt;
+
+&lt;p&gt;And that is the problem: there is a fundamental mismatch between the way the general public &lt;em&gt;views&lt;/em&gt; design work and the truth of what &lt;em&gt;design really is&lt;/em&gt; and how it really works&lt;em&gt;.&lt;/em&gt; It’s not “just our opinion.” We operate based on design principles, whether it’s color theory or software engineering best practices.&lt;/p&gt;
+
+&lt;p&gt;To be clear, though: I don’t blame them for this misunderstanding.&lt;/p&gt;
+
+&lt;p&gt;I don’t blame my client for having the attitude he had and for feeling the frustration he felt. Color is a seemingly elementary concept — it’s something that we have known all our lives. I had the luxury of having several friends with an interest in fine arts; if I hadn’t known them, who knows? I may not have known about color theory at all.&lt;/p&gt;
+
+&lt;p&gt;It’s wholly understandable for the average person to &lt;em&gt;assume&lt;/em&gt; that they’re just as qualified as a graphic designer to discuss color, since they don’t know about complementary colors, “color psychology,” etc. But I do think it’s time that we rethink our perception of “creative design” from just “a semi-professional hobby” to a skilled, legitimate craft that takes years of study and practice to master.&lt;/p&gt;
+
+&lt;p&gt;Now, I’ve been using color (and graphic designers) as the operative example, but my point extends to all design work, whether it’s programming software, writing an article, or even just planning a really great social event. These are all their own massive domains of knowledge, and we should acknowledge that there’s far more nuance than is apparent at first glance. But how can we do that?&lt;/p&gt;
+
+&lt;p&gt;I think it all comes down to how we communicate. There are two sides to this coin: the designers and the ones who hire (or work with) them. Here are my basic recommendations for both of those parties.&lt;/p&gt;
+
+&lt;h4 id=&#34;to-the-designers&#34;&gt;To The Designers&lt;/h4&gt;
+
+&lt;p&gt;Try not to get frustrated. Don’t play the &lt;em&gt;I Know More Than You About This&lt;/em&gt; card, even though it’s tempting to. Don’t expect them to fully understand the nuances of what you do, that’s not their job.&lt;/p&gt;
+
+&lt;p&gt;Do explain things, but avoid technical terms and translate things into terms that they’ll intuitively understand. (Most often in business, this means profits and money.) Don’t be afraid of saying, “trust me on this,” but say it sparingly and with caution. Manage expectations from the get-go and explicitly communicate timeframes.&lt;/p&gt;
+
+&lt;p&gt;Be respectful. Be willing to compromise.&lt;/p&gt;
+
+&lt;h4 id=&#34;to-the-clients-the-bosses-the-leaders&#34;&gt;To The Clients, The Bosses, &amp;amp; The Leaders&lt;/h4&gt;
+
+&lt;p&gt;Try not to get frustrated. Don’t micromanage. Don’t play the &lt;em&gt;I Sign Your Paychecks&lt;/em&gt; card, even though it’s tempting to. Don’t go into a meeting with decisions already made. Don’t operate based on money alone.&lt;/p&gt;
+
+&lt;p&gt;Do accept that there is probably far more nuance to the decision than you realize. &lt;strong&gt;Do accept that your designer’s prescriptions are not just personal opinions, and should be given serious weight.&lt;/strong&gt; Be willing to listen, and ask questions. Trust in your designers to “just get the work done” every now and then — it’s what you’re paying them for.&lt;/p&gt;
+
+&lt;p&gt;Be respectful. Be willing to compromise.&lt;/p&gt;
+
+&lt;h4 id=&#34;conversations-are-the-key&#34;&gt;Conversations Are The Key&lt;/h4&gt;
+
+&lt;p&gt;The problem I’ve described is a subtle, widespread one — it’s not exactly something that is fixed overnight. That’s not the goal — I don’t expect this post to be some magic salve that causes a worldwide explosion of productivity. But I also don’t want it to be a purely theoretical exercise, an article that makes you go “huh,” and then gets forgotten on the commute to work.&lt;/p&gt;
+
+&lt;p&gt;I implore all readers, both designers and bosses, to have those awkward conversations about the nature of design work, cooperation, and trust. To tiptoe and explore that those tricky themes for themselves. As design work becomes more corporate, it’s tempting (from a managerial standpoint) to view designers as just the assets they produce, but this attitude is moving backwards. It’s divisive, alienating, and hurts more than just the designers, it hurts businesses as a whole. I firmly believe that the first actionable step toward achieving a healthy, productive, and cooperative professional working climate is to slow down and have more earnest conversations. Conversations are key.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;By &lt;a href=&#34;https://medium.com/@aflashyrhetoric&#34;&gt;Kevin Oh&lt;/a&gt; on &lt;a href=&#34;https://medium.com/p/7591f75d79dc&#34;&gt;&lt;time class=&#34;dt-published&#34; datetime=&#34;2016-02-05T16:18:28.792Z&#34;&gt;February 5, 2016&lt;/time&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Dangers of Blindly Loving Your Tools</title>
+      <link>/kevinoh.me/posts/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kevinoh.me/posts/tools/</guid>
+      <description>
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;This post was written back when Adelie was openly accepting new inquiries and projects.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I once heard two friends arguing. One of them had recently come upon a windfall of cash, and wanted to make a big purchase: an upscale sports car. Upon hearing this, his miserly friend fired back, “you don’t even go places! Don’t buy a Porsche to drive to 711.”&lt;/p&gt;
+
+&lt;p&gt;When I heard this biting exchange, I chuckled. But as I shampooed my hair into a glorious, frothy bubble afro later that night, I realized it was a much-needed lesson for web developers.&lt;/p&gt;
+
+&lt;h4 id=&#34;let-s-break-it-down&#34;&gt;Let’s Break It Down.&lt;/h4&gt;
+
+&lt;p&gt;The quote itself plays on the relationship between utilization and cost. In other words: don’t pay for a Porsche if you’re not going to use it to its fullest. But the inverse of this idea is that if you are, in fact, going to use the Porsche to blaze across open tundras, then yes — it’s worth it! The quote also acknowledges that there are various &lt;em&gt;kinds&lt;/em&gt; of drivers.&lt;/p&gt;
+
+&lt;p&gt;So far, I’ve simplified the &lt;em&gt;types of drivers&lt;/em&gt; down to two (hilarious) extremes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Those who only drive to 711. (Simple use case)&lt;/li&gt;
+&lt;li&gt;Those who blaze across open tundras. (Sophisticated/advanced use case)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But obviously, it’s not so binary — drivers exist on a diverse horizontal spectrum. And unsurprisingly, a variety of car models and brands exist to accommodate that spectrum.&lt;/p&gt;
+
+&lt;p&gt;I believe this is a functional and healthy model. But I’ve noticed a troubling trend recently.&lt;/p&gt;
+
+&lt;p&gt;All the same analogies exist in the realm of websites and web development: there are different kinds of clients with different kinds of needs. Some clients have modest budgets, others have limitless budgets. Some clients are tech-savvy, others will buy two routers to double their internet speed. (Of course, we love them both just the same!) And just as with cars, a variety of web development tools exist to accommodate the needs of every client.&lt;/p&gt;
+
+&lt;p&gt;But there are developers out there who view these tools as existing on a &lt;em&gt;vertical&lt;/em&gt; spectrum.They indiscriminately endorse one (or few) technologies as being the &lt;em&gt;best&lt;/em&gt;. Of course, in some areas, that are definitive victors. A Javascript library from 2006 isn’t going to hold a candle to modern jQuery. But within the realm of reason, it’s pretty dangerous to view (and use) web technologies this way. It leads to “one size fits all” syndrome, where one tool is used for everything. But you wouldn’t use a hammer to paint a portrait.&lt;/p&gt;
+
+&lt;p&gt;This indirectly hurts the developer, the client, and the industry as a whole.&lt;/p&gt;
+
+&lt;h4 id=&#34;how-it-hurts-the-client&#34;&gt;How It Hurts The Client&lt;/h4&gt;
+
+&lt;p&gt;My parents are entrepreneurs with a successful interior design &amp;amp; reupholstery business. (Hi Mama Oh, Hi Papa Oh!) Several years ago, my mother was approached by some local web developers, who handed her a pamphlet. Intrigued, I read it over.&lt;/p&gt;
+
+&lt;p&gt;They offered to build a website on Shopify with &lt;strong&gt;3–4 static informational pages for $750&lt;/strong&gt;. They hailed Shopify as “the best web platform, hands down,” or something like that. If I’m being extremely generous, replicating their services would have taken me (or any competent web developer) around half of a work day — about 4.5 hours if I’m working efficiently. That amounts to about $170/hr!&lt;/p&gt;
+
+&lt;p&gt;For the services provided, this rate was (and still is) &lt;em&gt;grotesquely&lt;/em&gt; over-inflated. The $750 package didn’t even include the configuration of a functional shopping cart. It was just a static website.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Let’s take a quick look at the numbers.&lt;/strong&gt; Shopify’s lowest plan (that offers an online website) is $29/mo. A year would cost $350. Add it all up, and you get 4 static pages for a &lt;strong&gt;whopping $1100&lt;/strong&gt; for the first year alone. That’s too much. Overkill, much like purchasing a Porsche to drive to 711.&lt;/p&gt;
+
+&lt;h4 id=&#34;how-it-hurts-the-developers-themselves&#34;&gt;How It Hurts The Developers Themselves&lt;/h4&gt;
+
+&lt;p&gt;Relying too heavily on a single tool has a limiting, pigeon-holing effect. Take the case above. If a developer stubbornly only uses Shopify, what do they do for a client that requests changes to their WordPress+WooCommerce website? Do you turn them away? You might be tempted to suggest a full migration from WordPress to Shopify, but that’s a hefty undertaking for the client, both financially and logistically. My guess: they’ll go elsewhere, and that’s lost business.&lt;/p&gt;
+
+&lt;p&gt;It also puts “all your eggs in one basket,” so to speak. What if Shopify goes out of business? That’s extremely unlikely, but things aren’t exactly unchanging in this industry. What if a new tool is released that completely eclipses Shopify in popularity or functionality? This point is more of an afterthought, but it still stands.&lt;/p&gt;
+
+&lt;p&gt;Before I continue, a quick note: I’ve been using Shopify in my examples, since it’s relatively well-known and because Shopify’s back-end is directly seen and used by the client. It affects both parties more directly. But these problems extend to internal tooling as well. If you do all your work with Bootstrap, or if you strictly use NoSQL or Static-Site-Generators or whatever, you may encounter problems.&lt;/p&gt;
+
+&lt;h4 id=&#34;how-it-hurts-the-industry&#34;&gt;How It Hurts The Industry&lt;/h4&gt;
+
+&lt;p&gt;This point isn’t localized to web development, so skip ahead if you want. Everyone’s seen it: anytime a conversation starts to get overly one-sided, it becomes less productive. Consider the arguments between iOS and Android users. Between Mac and PC users. Between Vim and Emacs users. Those forums are a wasteland where each side simply gets further entrenched in their existing views.&lt;/p&gt;
+
+&lt;p&gt;Of course, some playful jest is welcome and fun. (Sublime Text w/ Vintage Mode all the way!) But taken too far — and it very frequently goes too far — it just stagnates productive conversation. I’ve seen many a Quora/Reddit/StackOverflow post where one-sided opinions have resulted in flame wars. Worse still, I’ve seen overly opinionated developers misleading newbies who are trying to get an objective overview of the web development scene.&lt;/p&gt;
+
+&lt;h4 id=&#34;simple-solutions-diversified-tooling-client-focused-workflows&#34;&gt;Simple Solutions: Diversified Tooling &amp;amp; Client-Focused Workflows&lt;/h4&gt;
+
+&lt;p&gt;These problems have a simple solution. Diversify your tools so that you can better accommodate your client, not just yourself.&lt;/p&gt;
+
+&lt;p&gt;As an overview, here are a few examples of how I’d build websites differently depending on the client’s needs. (I’m always open to suggestions, so if you have any, please feel free to share!)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;For extremely simple, static websites:&lt;/strong&gt; I’ll use Jekyll &amp;amp; Github Pages. Typically, these clients have modest budgets anyway, so the free hosting is a big plus.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For simple, general websites:&lt;/strong&gt; SquareSpace provides an amazing starting point — it’s a great value for what they offer, and enabling &lt;em&gt;Developer Mode&lt;/em&gt; allows you to really dig into the templates and customize things to your liking. If a client has past experience with WordPress and prefers it, I’ll probably use WordPress, hosted on Cloudways.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For general e-commerce shops:&lt;/strong&gt; Hehe, yes, I use Shopify. Shopify has proven to be extremely reliable and has a great deal of flexibility out of the box. I’ve also explored the WooCommerce and Etsy platforms and have managed websites on both.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For web applications &amp;amp; heavily customized websites:&lt;/strong&gt; Laravel, hosted on Forge. This framework is fast and a pleasure to use.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A final caveat before we wrap up: &lt;strong&gt;I am not advising all developers to learn every single technology.&lt;/strong&gt; That would completely defy the ideas I espoused in my &lt;a href=&#34;https://medium.com/the-waddle/websites-are-like-pants-13f4e608d199#.bbtmfcmh1&#34;&gt;last blog post&lt;/a&gt;. And I’m not even advising to blindly learning the “latest and greatest” stuff. I am issuing a gentle, friendly reminder to my fellow devs: don’t blindly fall in love with — or become overly dependent on — your tools. A hammer is a hammer, a package manager is a package manager. Learn and master the specific tools that will help your client &lt;em&gt;first&lt;/em&gt;. If every single person in your demographic is using Middleman to blog, maybe it’d be best not to learn Jekyll quite right now. If everyone around you loves and utilizes Rails, it’s okay to postpone learning Laravel or Express. You get the point.&lt;/p&gt;
+
+&lt;p&gt;Vim ftw.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;By &lt;a href=&#34;https://medium.com/@aflashyrhetoric&#34;&gt;Kevin Oh&lt;/a&gt; on &lt;a href=&#34;https://medium.com/p/b9a369f41e53&#34;&gt;&lt;time class=&#34;dt-published&#34; datetime=&#34;2016-01-29T17:31:33.779Z&#34;&gt;January 29, 2016&lt;/time&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tooling 101: Introduction</title>
+      <link>/kevinoh.me/posts/tooling-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kevinoh.me/posts/tooling-101/</guid>
+      <description>
+
+&lt;p&gt;&lt;small&gt;
+  &lt;em&gt;This is part 1 of an introductory series on web development tooling.&lt;/em&gt;
+&lt;/small&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;series-introduction&#34;&gt;Series Introduction&lt;/h3&gt;
+
+&lt;p&gt;While the barriers to web development are substantially lower than many other fields, there&amp;rsquo;s still a bunch of junk that makes it frustrating for beginners to jump in.&lt;/p&gt;
+
+&lt;p&gt;By &amp;ldquo;obstacles,&amp;rdquo; I don&amp;rsquo;t mean the inherent difficulty in learning a new field, nor the complexity of advanced web development topics. I&amp;rsquo;m referring to the snags that slow progress without benefit.&lt;/p&gt;
+
+&lt;p&gt;For example, consider the act of &lt;em&gt;going for a jog&lt;/em&gt;. Running. If you want to get better, you must train often and build endurance. Overcoming the exhaustion of training and the task of perfecting your running form is a &lt;strong&gt;relevant obstacle&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;But if you&amp;rsquo;re running on a particularly windy day at the beach and sand keeps blowing in your eyes - that just sucks for no reason.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m writing this series to help eliminate the latter, because when I was starting out, most of the tutorials assumed that the reader had knowledge of things like:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;package managers (e.g: npm, bundler)&lt;/li&gt;
+&lt;li&gt;version managers (e.g: nvm, rvm)&lt;/li&gt;
+&lt;li&gt;build tools (e.g: gulp, webpack)&lt;/li&gt;
+&lt;li&gt;configuration files (e.g: &lt;code&gt;package.json&lt;/code&gt;, &lt;code&gt;nginx.conf&lt;/code&gt;, &lt;code&gt;webpack.config.js&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;and more.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At best, docs will include simple one-liner annotations, like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Install dependencies
+npm install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or worse, they omit annotations completely:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone git@github.com:someguy/someapp.git
+cd someapp
+npm install
+npm start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When I was learning, I would do this over and over without an understanding of what was happening. I was uncomfortable letting tools &amp;ldquo;do the magic&amp;rdquo; for me while I was in the dark.&lt;/p&gt;
+
+&lt;p&gt;I hope this guide serves as a helpful primer for those who are like me. The first post will be on &lt;strong&gt;Package Managers&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;small&gt;By the way, this is in no way an attack on the maintainers of those tools. Managing documentation that is universally understood and meticulously updated is impossible. Creating and maintaining tutorials on top of that is a massive task as well. Nevertheless, the opaque or exclusive language in beginner-oriented resources is, to me, a &amp;ldquo;sand-in-your-eyes&amp;rdquo; type of problem, so this series aims to move some of the burden from the individual resources&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Websites Are Like Pants</title>
+      <link>/kevinoh.me/posts/websites-are-pants</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kevinoh.me/posts/websites-are-pants</guid>
+      <description>
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;This post was written back when Adelie was openly accepting new inquiries and projects.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In 2005, psychologist Barry Schwartz took the stage at TEDGlobal in Oxford and proposed an idea: that “more is less.” You can &lt;a href=&#34;https://www.ted.com/talks/barry_schwartz_on_the_paradox_of_choice?language=en&#34;&gt;watch the full video here&lt;/a&gt;, but the core idea is simple. To quote Schwartz, “With so many options to choose from, people find it very difficult to choose &lt;em&gt;at all&lt;/em&gt;.” He tells a simple anecdote to that effect: many years ago, when he walked into a clothing store, there were only a few pairs of jeans to choose from. Other than size, there wasn’t much variation.&lt;/p&gt;
+
+&lt;p&gt;The modern denim landscape, he laments, is not so simple. There’s boot cut, straight cut, skinny, acid-washed, “raw denim,” low-rider…it goes on. A hundred variations and a thousand brands to choose from. Faced with so many options, Schwartz is left to wonder: “&lt;em&gt;which&lt;/em&gt;?”&lt;/p&gt;
+
+&lt;p&gt;For the trendsetters and the fashionistas, and for those who simply like to explore their options, an abundance of choice is a wonderful thing. It’s certainly preferable to the past. But there are those who share Schwartz’s lament: sometimes, you just want a new goddamn pair of pants.&lt;/p&gt;
+
+&lt;p&gt;Both of these people deserve to be fulfilled. But the mechanisms required to accommodate them are a bit contradictory:&lt;em&gt;lots of choice&lt;/em&gt; vs &lt;em&gt;very few choices.&lt;/em&gt; What’s a clothing manufacturer (or web developer, in my case) to do?&lt;/p&gt;
+
+&lt;p&gt;Schwartz offers a pithy summary of this dilemma, although it’s more of a resignation than a prescription:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“There’s no question that&lt;/em&gt; some choice &lt;em&gt;is better than&lt;/em&gt; none&lt;em&gt;, but it doesn’t follow from that that&lt;/em&gt; more choice &lt;em&gt;is better than&lt;/em&gt; some choice. &lt;em&gt;There’s some magical amount. I don’t know what it is. “ — Barry Schwartz&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Okay — so how does that relate to web development, and to business overall?&lt;/p&gt;
+
+&lt;h3 id=&#34;websites-are-like-a-pair-of-pants&#34;&gt;Websites are like a pair of pants.&lt;/h3&gt;
+
+&lt;p&gt;Yeah…? Yeah.&lt;/p&gt;
+
+&lt;p&gt;I’m a web developer. I make websites. Some time ago, you’d write some HTML and open it in a browser. Bam, done, you’ve got a web page. It was basic, but it worked, and &lt;a href=&#34;http://motherfuckingwebsite.com/&#34;&gt;it worked well&lt;/a&gt; [NSFW: Language].&lt;/p&gt;
+
+&lt;p&gt;Then came CSS, a shiny new tech that allowed us to &lt;em&gt;style&lt;/em&gt; web pages. Ooh, shnazzy!&lt;/p&gt;
+
+&lt;p&gt;The notion of skillfully &lt;em&gt;designing&lt;/em&gt; a web page — as opposed to just making or writing one — became a thing. Form and style were introduced to what was mostly a mechanical, functional task. (You &lt;em&gt;make&lt;/em&gt; toast, you &lt;em&gt;design&lt;/em&gt; wedding cakes.) Then came Javascript. Now we could make our buttons dance and flash and stuff! &lt;em&gt;Sick.&lt;/em&gt; Then came PHP. User accounts! Forms! Validation!&lt;/p&gt;
+
+&lt;p&gt;(I’m over-simplifying and omitting a ton of details, but you get the point.)&lt;/p&gt;
+
+&lt;p&gt;To list every web tech thingy would take hours, and new stuff comes out every month.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In short:&lt;/strong&gt; dozens of shiny new technologies began to stack on top of each other, giving websites new life and functionality. But with the influx of technology came an influx of &lt;em&gt;choice&lt;/em&gt;. And we loop back to echoing Schwartz simple plea: “&lt;em&gt;which&lt;/em&gt;?”&lt;/p&gt;
+
+&lt;p&gt;There are now hundreds of ways to make a site. &lt;a href=&#34;https://en.wikipedia.org/wiki/Comparison_of_web_frameworks&#34;&gt;I’m not exaggerating&lt;/a&gt;. And since we, as web developers (although this applies to mostly any business offering a service), are the ones who inform clients of their possible options, &lt;em&gt;we&lt;/em&gt; are the ones faced with the dilemma: &lt;strong&gt;how &lt;em&gt;many&lt;/em&gt; choices do I present to my client?”&lt;/strong&gt; And more abstractly, how much decision-making power does each party have?&lt;/p&gt;
+
+&lt;p&gt;If I was a terrible web developer (and just a terrible communicator in general), this is how I would talk to my clients:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Oh, you need a blog?&lt;/strong&gt; Well, you can use WordPress, Tumblr, Ghost, Medium, or Jekyll!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;If it’s an e-commerce store you need,&lt;/strong&gt; worry not, you can use BigCommerce, WooCommerce, Shopify, SquareSpace, OpenCart, or BigCartel!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Do you want some combination of a blog, a shop, and a photo gallery?&lt;/strong&gt; Maybe you’ll need a custom-built site. I can use Laravel, Rails, Grails, Phalcon, Flask, or Express! (Plus trillions more)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;So what’ll it be?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Imagine that bull? To be fair, spitting out a laundry list of names like this (a form of “&lt;a href=&#34;https://en.wikipedia.org/wiki/Name-dropping&#34;&gt;name dropping&lt;/a&gt;”) is tempting for a couple of reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mainly, it frees you from accountability and responsibility, since the client is the one making the choices. You can pull the “_You chose it, not me_” card.&lt;/li&gt;
+&lt;li&gt;It shows how much you know, which is marketable but not helpful.&lt;/li&gt;
+&lt;li&gt;It gives the illusion that you can handle absolutely anything, which may technically be true, but your &lt;em&gt;actual expertise&lt;/em&gt; definitely doesn’t extend to &lt;em&gt;everything&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But again, none of these are valid reasons, and they have drawbacks. Laundry-listing is an inefficient and vaguely pretentious way to communicate; it stagnates meaningful progress, and it should be left to die in the internet forums of 2003.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Consider these alternatives:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;It looks like you need a blog.&lt;/strong&gt; Well, if you have a modest budget and it’s going to be mostly textual content, I recommend Medium. Their WYSIWYG editor is easy to use, and you’ll also reap the benefits of being part of their community!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;If it’s an e-commerce store you need,&lt;/strong&gt; I highly recommend Shopify. There’s a monthly fee, but it pays for itself almost immediately because of its flexibility, stability, and convenience. Etsy is also a viable alternative, since your product is, uh, ceramic astronaut kittens.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Do you want some combination of a blog, a shop, and a photo gallery?&lt;/strong&gt; Well, I’d recommend either WordPress or a custom-built site with Laravel as a starting point. It’s hard to choose one definitively right now, since it depends on several things: the complexity of the project, your budget, and your timeline. Let’s talk more about this on Monday.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Much better.&lt;/em&gt; With these alternatives, I don’t bombard clients with a nondescript list of options. I respectfully offer my recommendations (and the reasoning behind them) to the client. This gives them a starting point, a basic &lt;a href=&#34;https://en.wikipedia.org/wiki/Schema_%28psychology%29&#34;&gt;schema&lt;/a&gt; to start &lt;em&gt;really&lt;/em&gt; understanding what their options are. If I’m unable to make a singular recommendation, I narrow it down to 2 or 3, then open the way to a more nuanced discussion.&lt;/p&gt;
+
+&lt;h3 id=&#34;point-being-listing-a-bevy-of-options-is-unhelpful&#34;&gt;Point being: Listing a bevy of options is unhelpful.&lt;/h3&gt;
+
+&lt;p&gt;Regardless of your industry. My examples and subtler points may cater to web development, but regardless of industry: too much choice seems to have a paralytic effect. It turns your client or customer into Barry Schwartz at the clothing store, unsure and frustrated about how to proceed. In my case, laundry-listing options underutilizes my knowledge and places the burden of choice on the client, who is presumably less informed. It’s a disservice to everyone involved.&lt;/p&gt;
+
+&lt;p&gt;If you go to the doctor with an ache, it’s not his or her job to exhaustively enumerate the fifty-some-odd conditions you may have; it’s their job to diagnose you and then offer their educated prescription.&lt;/p&gt;
+
+&lt;p&gt;If you go to a tailor to get a dress fitted, it’s not their job to detail every possible alteration; it’s their job to take your measurements and, in accordance with modern trends and accepted best practices, make the best cut.&lt;/p&gt;
+
+&lt;p&gt;If you tell me you need a blog, it’s my responsibility to analyze your needs, consider your circumstances and then offer my informed suggestion: that your best bet is with X, as opposed to Y or Z.&lt;/p&gt;
+
+&lt;h3 id=&#34;well-isn-t-that-obvious&#34;&gt;Well, isn’t that obvious?&lt;/h3&gt;
+
+&lt;p&gt;To some (or, I fear, to &lt;em&gt;most&lt;/em&gt;) this is an obvious idea: “_Obviously, the professional should be the one making the recommendations._” If you simplify it, that’s what this entire article boils down to. (Hey, I don’t claim to be breaking new ground in regards to business operations &amp;amp; ethics!)&lt;/p&gt;
+
+&lt;p&gt;But there is a small asterisk to this idea. A simple, &lt;em&gt;practical&lt;/em&gt; realization that was new &lt;em&gt;to me&lt;/em&gt;, one that I wanted to share.&lt;/p&gt;
+
+&lt;p&gt;This model of interaction (where the developer guides the decision-making process) is inherently &lt;em&gt;cooperative&lt;/em&gt;. It requires trust. Particularly, trust in the developer’s ability to do their job.&lt;/p&gt;
+
+&lt;p&gt;(Contrast that to the “laundry-listing method,” which requires neither trust nor cooperation — the client is making all the decisions.)&lt;/p&gt;
+
+&lt;p&gt;Without trust, this process fails. &lt;em&gt;Some&lt;/em&gt; doubt from the client is wholly expected and justified. But sometimes, there will be clients who will &lt;a href=&#34;http://clientsfromhell.net/post/51653810298/i-had-a-client-standing-over-my-shoulder-watching&#34;&gt;literally peer over your shoulder&lt;/a&gt; as you work.&lt;/p&gt;
+
+&lt;p&gt;And here’s the realization that I wanted to share: when this happens, it’s okay to assert yourself. Officially, and on behalf of the business. Or to walk away. In fact, you could do both of those things, in that order.&lt;/p&gt;
+
+&lt;p&gt;Respectfully, of course. As a professional, unconditional respect is a must, but don’t fall into the trap of “unconditional courtesy.”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If a client wants to make a suboptimal (or terrible) choice, I will:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Tell them the potential consequences of their choice&lt;/li&gt;
+&lt;li&gt;Offer my alternative and explain why it’s (probably) objectively better&lt;/li&gt;
+&lt;li&gt;If they wish to continue, it’s up to me to continue or walk away.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;But if it’s the latter — leaving the project — I no longer feel guilty. And you shouldn’t either. Your job is to help your client, to offer them great service at a reasonable rate, and to be respectful — but that doesn’t mean entangling yourself (and your business) in a project destined for failure (or mediocrity).&lt;/p&gt;
+
+&lt;p&gt;If a patient wants to amputate his leg in order to fix a tooth ache, it’s a doctor’s job to dissuade them. If they insist, then it can’t be helped — but that doesn’t mean he has to be the one to perform the surgery. If a prospective client of mine wants to build “the next Facebook” using Tumblr and some “proprietary algorithm” that he scribbled on a napkin, it’s my job to dissuade him. But if he insists, I’m walking away.&lt;/p&gt;
+
+&lt;h3 id=&#34;yes-of-course-i-m-being-a-bit-playful&#34;&gt;Yes, of course, I’m being a bit playful.&lt;/h3&gt;
+
+&lt;p&gt;And a bit overdramatic. The vast majority of clients and customers are wonderful people who aren’t trying to build “the next Facebook” for $100. Jobs go swimmingly, and everyone’s happy.&lt;/p&gt;
+
+&lt;p&gt;But this is an important point that’s often forgotten: that we, as professionals providing a service, are not here to spit out an exhaustive list of possible options. Part of our worth as web developers lies in our ability to produce code, yes. But the other part — I’d argue, the more valuable part — lies in our intangible knowledge and experience. In our ability to guide decisions, solve problems, and make recommendations.&lt;/p&gt;
+
+&lt;p&gt;Whether you’re a web developer writing code, a graphic designer designing an infographic, or a sales associate for a hat manufacturer, I urge you to remember that always: &lt;em&gt;we are more than just the things we make.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;By &lt;a href=&#34;https://medium.com/@aflashyrhetoric&#34;&gt;Kevin Oh&lt;/a&gt; on &lt;a href=&#34;https://medium.com/p/13f4e608d199&#34;&gt;&lt;time class=&#34;dt-published&#34; datetime=&#34;2016-01-22T17:17:37.072Z&#34;&gt;January 22, 2016&lt;/time&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
