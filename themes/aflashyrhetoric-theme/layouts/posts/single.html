@@ -1,0 +1,30 @@
+<!-- Page for a single web post in the posts/ dir -->
+
+<!-- Include head tag manually -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <title>{{ .Title }}</title>
+</head>
+
+{{ partial "modules/header-dev" . }}
+
+<div class="section__container">
+  <div class="section__inner -wide">
+    <div class="section__label -post">
+      <h2 class="section__label-text">{{ .Title }}</h2>
+    </div>
+
+    <div class="section__content">
+      {{ .Content }}
+      <hr>
+      <a class="btn btn--accent" href="/posts">View All Posts</a>
+    </div>
+
+  </div>
+</div>
+
+{{ partial "modules/footer-dev" }}

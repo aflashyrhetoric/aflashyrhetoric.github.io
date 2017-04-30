@@ -1,0 +1,36 @@
+<!-- Page for a single web post in the posts/ dir -->
+<!-- Include head tag manually -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <title>{{ .Title }}</title>
+  </head>
+
+  {{ partial "modules/header-dev" . }}
+
+  <div class="page-projects">
+    <div class="page-projects__heading-wrapper">
+      <h1 class="page-projects__heading">projects</h1>
+        {{ .Content }}
+    </div>
+
+    <div class="project__container">
+      {{ range sort .Site.Data.projects "ByWeight reverse" }}
+        <div class="project__card">
+          <div class="project__card-inner">
+            <a class="project__image"href="/projects/{{ .filename }}">
+              <img src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
+            </a>
+            <h3 class="project__title">{{ .name }}</h3>
+            <p class="project__description">
+              {{ .description }}
+            </p>
+            <a href="/projects/{{ .filename }}" class="project__learn-more btn btn--primary">Learn More</a>
+          </div>
+        </div>
+    {{ end }}
+  </div>
+</div>  
+{{ partial "modules/footer-dev" . }}

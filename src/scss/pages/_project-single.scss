@@ -1,0 +1,44 @@
+// page project single
+
+.page-project-single {
+  // Collapse border
+  margin-top: -80px;
+  .project-single {
+    &__hero {
+      background-color: $black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      padding: 2rem;
+      border-bottom: 1px solid $white;
+    }
+    &__subheading {
+      font-style: italic;
+      @include fz(24);
+      @include setFontLight;
+    }
+    &__about-container {
+    }
+    &__about-text {
+      width: 60%;
+      padding: 2rem;
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      color: $black;
+      background-color: darken($white, 2);
+      border-radius: 4px;
+      box-shadow: 0 2px 2px 2px darken(rgba(0,0,0,.2), 20);
+
+      p, ul li, a {
+        font-size: 18px;
+      }
+      a:not(.btn) {
+        color: $purple;
+        font-weight: bold;
+      }
+    }
+  }
+}

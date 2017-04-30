@@ -1,0 +1,75 @@
+.hero {
+  &__container {
+    width: 100%;
+    padding: 2rem;
+    background-color: $black;
+  }
+  &__inner {
+    @include flex-grid-row($size: 100%);
+    @include breakpoint(medium up) {
+      @include flex-grid-row($size: 80%);
+    }
+    @include breakpoint(large up) {
+      @include flex-grid-row($size: 50%);
+    }
+  }
+  &__left {
+    @include flex-grid-column($columns: 12);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    @include breakpoint(medium up) {
+      margin-bottom: 0;
+      text-align: left;
+      @include flex-grid-column($columns: 4);
+    }
+  }
+  &__right {
+    text-align: center;
+    @include flex-grid-column($columns: 12);
+    @include breakpoint(medium up) {
+      text-align: right;
+      @include flex-grid-column($columns: 8);
+    }
+  }
+  &__img {
+    max-width: 200px;
+    border-radius: 100%;
+  }
+
+  &__container {
+
+    .upper-text {
+      &__wrapper {
+        margin-bottom: 4rem;
+      }
+      &__header {
+        font-size: 2.25rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        @include setFontBody;
+      }
+      &__subheader {
+        font-size: 1rem;
+        a {
+          color: $medgray;
+          @include setFontLight;
+        }
+      }
+    }
+
+    .lower-text {
+      &__text {
+        font-size: 14px;
+        line-height: .5rem;
+        color: $medgray;
+        @include setFontBody;
+        text-transform: uppercase;
+        a {
+          @include setFontBody;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

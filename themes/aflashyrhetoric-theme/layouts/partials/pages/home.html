@@ -1,0 +1,60 @@
+<div class="hero__container">
+    <div class="hero__inner">
+      <div class="hero__left">
+        <img class="hero__img" src="img/kevin.png" srcset="img/kevin@2x.png 2x" alt="Portrait of Kevin Oh">
+      </div>
+
+      <div class="hero__right">
+        <div class="upper-text__wrapper">
+          <h1 class="upper-text__header">kevin oh</h1>
+          <h2 class="upper-text__subheader"><a href="https://github.com/aflashyrhetoric">@aflashyrhetoric</a></h2>
+        </div>
+        <div class="lower-text__wrapper">
+          <p class="lower-text__text">front-end engineer @ <a target="_blank" href="https://nulab-inc.com">nulab</a></p>
+          <p class="lower-text__text">developer, co-founder @ <a target="_blank" href="http://adelieweb.com">adelie</a></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+{{ partial "modules/header-dev" . }}
+
+<div class="section__container">
+  <div class="section__inner -regular">
+    <div class="section__label -project-box">
+      <h2 class="section__label-text">project box</h2>
+    </div>
+
+    <div class="section__projects">
+      <ul class="project-box__list -projects">
+        {{ range .Site.Data.projects }}
+          <li class="project-box__list-item">
+            <a target="_blank" href="projects/{{ .filename }} ">
+              <img class="project-box__list-image" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section__container">
+  <div class="section__inner -thin">
+    <div class="section__label -blog">
+      <h2 class="section__label-text">blog</h2>
+    </div>
+
+    <div class="section__projects">
+      <ul class="project-box__list">
+        {{ range where .Data.Pages "Section" "posts" }}
+          <li class="project-box__list-post">
+            <a href="{{ .RelPermalink }}">
+              {{ .Title }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>

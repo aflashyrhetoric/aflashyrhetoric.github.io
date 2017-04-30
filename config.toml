@@ -1,0 +1,33 @@
+baseurl = "kevinoh.me"
+theme = "aflashyrhetoric-theme"
+
+enableEmoji = true
+
+[taxonomies]
+project = "projects"
+
+# This makes the content of the content/backlog route properly
+# [permalinks]
+# backlog = "/docs/backlog/api/1/:filename"
+# cacoo = "/docs/cacoo/api/1/:filename"
+# typetalk = "/docs/typetalk/api/1/:filename"
+
+# # Categorize API by "app"
+# [taxonomies]
+# app = "apps"
+
+# [languages.en]
+# weight = 0
+# languageName = "English"
+
+# [[languages.en.menu.main]]
+# url    = "/"
+# weight = 0
+
+# [languages.ja]
+# weight = 10
+# languageName = "Japanese"
+
+# [[languages.ja.menu.main]]
+# url    = "/ja"
+# weight = 0

@@ -1,0 +1,59 @@
+// Header
+// Contains SCSS for navbar
+
+.header {
+  margin-bottom:  80px;
+  a, 
+  p, 
+  ul li {
+    // font-family: 'Iosevka-light', sans-serif !important;
+    @include setFontBody;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  
+  @include flex-grid-row($size: 100%);
+
+  &.-no-margin-bottom {
+    margin-bottom: 0;
+  }
+}
+
+.navbar {
+  background-color: $black;
+  margin: auto;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  @include flex-grid-column($columns: 12);
+  @include breakpoint(medium up) {
+    @include flex-grid-column($columns: 9);
+  }
+  @include breakpoint(large up) {
+    @include flex-grid-column($columns: 6);
+  }
+  &.-full-width {
+    @include flex-grid-column($columns: 12);
+  }
+
+
+  &__list {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__list-item {
+    display: inline;
+    margin: {
+      left: 8px;
+      right: 8px;
+    }
+  }
+
+  &__list-link {
+    font-size: 23px;
+  }
+}

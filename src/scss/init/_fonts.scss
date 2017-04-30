@@ -1,0 +1,49 @@
+// fonts.scss
+// ===================================================
+
+// Defining font family
+// ==============================
+
+$fontBody: 'Proxima Nova', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontLight: 'Iosevka-light', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontHeavy: 'Iosevka-heavy', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontHighlight: 'Iosevka', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontStandard: 'Iosevka', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+
+// mixins for font-family
+// ==============================
+
+@mixin setFontBody {
+  font-family: $fontBody;
+}
+@mixin setFontStandard {
+  font-family: $fontStandard;
+}
+@mixin setFontLight {
+  font-family: $fontLight;
+}
+@mixin setFontHeavy {
+  font-family: $fontHeavy;
+}
+
+@mixin setFontHighlight {
+  font-family: $fontHighlight;
+}
+
+// @font-face Settings
+// ==============================
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/iosevka-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Iosevka-light';
+  src: url('/fonts/iosevka-extralight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Iosevka-heavy';
+  src: url('/fonts/iosevka-heavy.ttf') format('truetype');
+}

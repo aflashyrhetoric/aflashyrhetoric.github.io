@@ -1,0 +1,148 @@
+# Site translations
+- id: title
+  translation: "Developers Nulab Website JAPANESE"
+- id: blog_id
+  translation: "2"
+
+# Header / Footer
+- id: developers
+  translation: "developers"
+
+- id: cacoo
+  translation: "Cacoo"
+- id: backlog
+  translation: "Backlog"
+- id: typetalk
+  translation: "Typetalk"
+- id: system_status
+  translation: "System Status"
+- id: privacy_policy
+  translation: "Privacy Policy"
+- id: terms
+  translation: "Terms of Service"
+- id: rights_reserved
+  translation: "© 2016 All  Rights Reserved"
+- id: registered_in_japan
+  translation: "Nulab Inc. is registered in Japan."
+
+## API Links
+- id: typetalk_api
+  translation: "Typetalk API"
+- id: cacoo_api
+  translation: "Cacoo API"
+- id: backlog_api
+  translation: "Backlog API"
+
+## App Links  
+- id: backlog_link
+  translation: "http://www.backlog.jp/"
+- id: backlog_pricing_link
+  translation: "http://www.backlog.jp/license/"
+- id: cacoo_help_link
+  translation: "https://support.cacoo.com/hc/ja/"
+- id: typetalk_help_link
+  translation: "https://typetalk.zendesk.com/hc/ja/"
+- id: typetalk_iOS_link
+  translation: "https://itunes.apple.com/jp/app/typetalk/id756503889?mt=8"
+- id: typetalk_android_link
+  translation: "https://play.google.com/store/apps/details?id=typetalk.android&hl=ja"
+- id: developer_link
+  translation: "http://developer.nulab-inc.com/ja"
+
+# Social Media
+
+## Twitter
+- id: twitter_id
+  translation: "nulabjp"
+- id: twitter_link
+  translation: "http://twitter.com/nulabjp"
+- id: twitter_cacoo_id
+  translation: "cacooapp"
+- id: twitter_cacoo_link
+  translation: "http://twitter.com/cacooapp"
+- id: twitter_backlog_id
+  translation: "backlogapp"
+- id: twitter_backlog_link
+  translation: "http://twitter.com/backlogapp"
+- id: twitter_typetalk_id
+  translation: "typetalkin_jp"
+- id: twitter_typetalk_link
+  translation: "http://twitter.com/typetalkin_jp"
+
+## Facebook
+- id: facebook_link
+  translation: "https://www.facebook.com/NulabJP"
+
+ # PAGES
+ 
+ ## Home
+- id: home_hero_header
+  translation: "On your mark, get set, code!"
+- id: home_hero_subheader
+  translation: "Build fantastic apps using Nulab APIs and get support from our developer community."
+- id: home_typetalk_description
+  translation: "Team chat app tool for sharing documents, files, and information in real-time."
+- id: home_cacoo_description
+  translation: "Simple diagram tool for creating UML models, flowcharts, network diagrams, and more."
+- id: home_backlog_description
+  translation: "Project management, bug tracking, and version control for developers and their teams."
+
+- id: build_something_header
+  translation: "Build something NU"
+- id: build_something_subheader
+  translation: "Use Nulab's API to build integrations and add-ons for Cacoo, Backlog, and Typetalk."
+
+- id: api_item_one_heading
+  translation: "Quick & easy integrations"
+- id: api_item_one_description
+  translation: "Our APIs are documented to a T. Quickly connect your product to ours for the customized workflow you need."
+- id: api_item_two_heading
+  translation: "Provide better experiences"
+- id: api_item_two_description
+  translation: "With over 3 million users worldwide, chances are we have some customers in common with you. Give them a seamless experience from your app to ours."
+- id: api_item_three_heading
+  translation: "Explore the possibilities"
+- id: api_item_three_description
+  translation: "Product development never stops, and it shouldn't. No matter how big or small your integration is, it will make both of our products better."
+
+- id: getting_started_header
+  translation: "Get Started with Nulab APIs"
+
+- id: getting_started_auth_heading
+  translation: "Authentication & Authorization"
+- id: getting_started_auth_paragraph_one
+  translation: "Every service supports its own authorization method."
+- id: getting_started_auth_paragraph_two
+  translation: "If you are just getting started with our API, we recommend that you read this section first to learn how to use credential information."
+- id: getting_started_auth_typetalk
+  translation: "Typetalk Auth"
+- id: getting_started_auth_cacoo
+  translation: "Cacoo Auth"
+- id: getting_started_auth_backlog
+  translation: "Backlog Auth"
+
+- id: getting_started_samples_heading
+  translation: "Code Samples"
+- id: getting_started_samples_paragraph_one
+  translation: "Next, take a look at samples to discover some of the things you can do with our service APIs."
+- id: getting_started_samples_paragraph_two
+  translation: "Starting with existing samples is the best way to to learn how to use API quickly."
+- id: getting_started_samples_typetalk
+  translation: "Typetalk Samples"
+- id: getting_started_samples_cacoo
+  translation: "Cacoo Samples"
+
+- id: getting_started_reference_heading
+  translation: "API Reference"
+- id: getting_started_reference_paragraph_one
+  translation: "This section provides detailed information on each API method including method endpoint URL, available parameters, response format and more."
+- id: getting_started_reference_paragraph_two
+  translation: "This guide helps you with writing your own applications once you are familiar with our API."
+- id: getting_started_reference_typetalk
+  translation: "Typetalk API"
+- id: getting_started_reference_cacoo
+  translation: "Cacoo API"
+- id: getting_started_reference_backlog
+  translation: "Backlog API"
+- id: home_cta
+  translation: "Follow <a href=\"https://twitter.com/nulabinc\">@nulabinc</a> on Twitter to get the latest developer information and updates!"

@@ -1,0 +1,55 @@
+/* General Typography
+ * ----------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  @include setFontBody;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-weight: bold;
+  @include fz(50);
+}
+
+h2 {
+  @include setFontHighlight;
+  @include fz(25);
+}
+
+p {
+  @include setFontBody;
+  @include fz(16);
+}
+
+// Lists
+ul,
+ol,
+dl {
+  margin-top: 0;
+  padding: 0;
+}
+
+// Links
+a {
+  color: $link-color;
+  transition: color .2s ease 0s;
+  @include setFontBody;
+  
+  &:hover {
+    cursor: pointer;
+    color: $link-hover-color;
+  }
+  &:focus {
+    color: $link-hover-color;
+    outline: none;
+  }
+
+  &.link-accent {
+    color: $purple;
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+}

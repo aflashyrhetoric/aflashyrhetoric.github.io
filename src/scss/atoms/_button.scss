@@ -1,0 +1,46 @@
+// buttons.scss
+// ========================================
+
+// Btn
+.btn {
+  @include setFontBody;
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid transparent;
+
+  transition: background-color .2s ease 0s;
+  @include fz(16);
+
+  // Variants
+
+  &--primary {
+    background-color: white;
+    color: $purple;
+    &:visited {
+      background-color: white;
+      color: $purple;
+    }
+    &:hover {
+      // background-color: linear-gradient(to bottom, $purple, lighten($purple, 10));
+      background-color: transparent;
+      border: 3px solid $white;
+      color: $white;
+    }
+  }
+
+  &--accent {
+    background-color: $lightpurple;
+    color: white !important;
+    &:hover {
+      background-color: lighten($lightpurple, 10);
+      color: white;
+    }
+  }
+}
