@@ -1,8 +1,6 @@
 #!/bin/sh
 
-DIR=$(dirname "$0")
-
-cd $DIR/..
+echo "Deployment has been scheduled."
 
 if [[ $(git status -s) ]]
 then
