@@ -11,19 +11,23 @@
 
 {{ partial "modules/header-dev" . }}
 
-  <div class="page-project-single">
-    <div class="project-single__hero">
+<div class="page-project-single">
+  <div class="project-single__hero">
     {{ range $.Site.Data.projects }}
     {{ if eq (lower .name) (lower $.Title) }}
-      <img class="project-box__list-image" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
-      <h1 class="project-single__heading">{{ .name }}</h1>
-      <h2 class="project-single__subheading">{{ .tagline }}</h2>
-      </div>
-      <div class="project__about">
-        {{ $.Content }}
-      </div>
-      {{ end }}
-    {{ end }}
+    <img class="project-box__list-image" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
+    <h1 class="project-single__heading">{{ .name }}</h1>
+    <h2 class="project-single__subheading">{{ .tagline }}</h2>
   </div>
+
+  <div class="project-single__about-container">
+    <div class="project-single__about-text">
+      {{ $.Content }}
+    </div>
+  </div>
+
+  {{ end }}
+  {{ end }}
+</div>
 
 {{ partial "modules/footer-dev" }}
