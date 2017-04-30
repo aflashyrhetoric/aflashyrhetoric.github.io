@@ -3,10 +3,14 @@ title = "Adelie Developer's Group"
 project = "adg"
 +++
 
-Mosu arose out of my personal frustration with the process of job hunting. There are something like a dozen different "job board" websites, each with their own quirks. I found myself running around between ten different accounts, trying to remember which jobs were in which state:
+#### Beer me, Slackbot! :beer:
 
-- Saved, or "To Be Applied To"
-- Application sent
-- Currently interviewing
-- Successfully received an offer
+The Adelie Developer's Group is an online, Slack-based study group for web development with around 30 members (as of May '17). 
 
+The group is beginner-friendly and project-oriented. Currently, some of the members are working on individual developer portfolio websites using modern front-end tooling and best practices. 
+
+The roster for project one can be found [here](http://notes.adelie.co/s/S1A1crdpg).
+
+We use Slack, HackMD, Github, CodePen, YouTube, and other collaborative tools to communicate, share design inspiration, tips, coding help and feedback, and more.
+
+Currently, slots are closed to keep the community small, but extremely inactive members are routinely removed, so you can join the waiting list by [emailing me at aflashyrhetoric@gmail.com](mailto:aflashyrhetoric@gmail.com). Thanks!
