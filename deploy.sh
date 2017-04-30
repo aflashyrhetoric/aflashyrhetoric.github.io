@@ -24,7 +24,7 @@ echo "Running yarn build"
 yarn build
 
 echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
+cd public && git add --A && git commit -m "Publishing to gh-pages (publish.sh)" && git push
 
 echo "Adding CNAME"
 echo kevinoh.me >> CNAME
