@@ -1,4 +1,5 @@
 +++
+date = "2017-04-30T21:36:04-04:00"
 title = "Tooling 101: Introduction"
 series = "tooling101"
 +++
