@@ -1,4 +1,4 @@
-baseurl = "kevinoh.me"
+baseurl = "/"
 theme = "aflashyrhetoric-theme"
 
 enableEmoji = true
