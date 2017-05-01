@@ -26,14 +26,14 @@
   display: flex;
   justify-content: center;
   @include flex-grid-column($columns: 12);
+  &.-full-width {
+    @include flex-grid-column($columns: 12) !important;
+  }
   @include breakpoint(medium up) {
     @include flex-grid-column($columns: 9);
   }
   @include breakpoint(large up) {
     @include flex-grid-column($columns: 6);
-  }
-  &.-full-width {
-    @include flex-grid-column($columns: 12);
   }
 
 

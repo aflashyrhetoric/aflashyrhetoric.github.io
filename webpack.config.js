@@ -70,6 +70,7 @@ if (process.env.NODE_ENV !== 'production') {
         exclude: /node_modules/,
         loader: ExtractTextPlugin.extract({
             filename: "style",
+            fallback: 'style-loader',
             use: [
                 "css-loader",
                 "postcss-loader",
