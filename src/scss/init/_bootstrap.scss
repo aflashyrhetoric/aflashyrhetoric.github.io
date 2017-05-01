@@ -11,6 +11,8 @@ html {
 }
 
 body {
+  position: relative;
+  padding-bottom: 2rem;
   background: linear-gradient(to bottom, #deffd3, #ffcece);
   // min-height: 800px;
   color: $gray;
