@@ -24,9 +24,10 @@ echo "*** Running yarn build"
 yarn build
 
 echo "*** Adding CNAME"
+cd public
 echo kevinoh.me >> CNAME
 
 echo "*** Updating master branch with new output"
-cd public && git add -A && git commit -m "Publishing to master (publish.sh)"
+git add -A && git commit -m "Publishing to master (publish.sh)"
 git push
 
