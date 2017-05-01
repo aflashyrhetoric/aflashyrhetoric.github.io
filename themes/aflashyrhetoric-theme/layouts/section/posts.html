@@ -22,7 +22,7 @@
       <ul class="project-box__list">
         {{ range where .Data.Pages "Section" "posts" }}
           <li class="project-box__list-post">
-            <a href="/projects/{{ .filename }} ">
+            <a href="{{ .URL }}">
               {{ .Title }}
             </a>
           </li>
