@@ -2,65 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>kevinoh.me/posts/tooling-101/</loc>
+    <loc>/posts/tooling-101/</loc>
     <lastmod>2017-04-30T21:36:04-04:00</lastmod>
   </url>
   
   <url>
-    <loc>kevinoh.me/</loc>
-    <lastmod>2017-04-30T21:36:04-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>kevinoh.me/about/</loc>
-  </url>
-  
-  <url>
-    <loc>kevinoh.me/projects/</loc>
-  </url>
-  
-  <url>
-    <loc>kevinoh.me/projects/adg/</loc>
-  </url>
-  
-  <url>
-    <loc>kevinoh.me/posts/coding/</loc>
-  </url>
-  
-  <url>
-    <loc>kevinoh.me/posts/design/</loc>
-  </url>
-  
-  <url>
-    <loc>kevinoh.me/projects/milton-bros/</loc>
-  </url>
-  
-  <url>
-    <loc>kevinoh.me/projects/mosu/</loc>
-  </url>
-  
-  <url>
-    <loc>kevinoh.me/projects/nightmessenger/</loc>
-  </url>
-  
-  <url>
-    <loc>kevinoh.me/posts/</loc>
+    <loc>/</loc>
     <lastmod>2017-04-30T21:36:04-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>kevinoh.me/projects/</loc>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/contradiction/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/adg/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/coding/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/design/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/milton-bros/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/mosu/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/nightmessenger/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2017-04-30T21:36:04-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>kevinoh.me/posts/tools/</loc>
+    <loc>/projects/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>kevinoh.me/posts/websites-are-pants/</loc>
+    <loc>/posts/tools/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/websites-are-pants/</loc>
   </url>
   
 </urlset>

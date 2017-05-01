@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on </title>
-    <link>kevinoh.me/projects/</link>
+    <link>/projects/</link>
     <description>Recent content in Projects on </description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="kevinoh.me/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Adelie Developer&#39;s Group</title>
-      <link>kevinoh.me/projects/adg/</link>
+      <link>/projects/adg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>kevinoh.me/projects/adg/</guid>
+      <guid>/projects/adg/</guid>
       <description>Beer me, Slackbot! 🍺 The Adelie Developer&amp;rsquo;s Group is an online, Slack-based study group for web development with around 30 members (as of May &amp;lsquo;17).
 The group is beginner-friendly and project-oriented. Currently, some of the members are working on individual developer portfolio websites using modern front-end tooling and best practices.
 The roster for project one can be found here.
@@ -23,30 +23,30 @@ We use Slack, HackMD, Github, CodePen, YouTube, and other collaborative tools to
     
     <item>
       <title>Milton Bros</title>
-      <link>kevinoh.me/projects/milton-bros/</link>
+      <link>/projects/milton-bros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>kevinoh.me/projects/milton-bros/</guid>
+      <guid>/projects/milton-bros/</guid>
       <description>Milton &amp;amp; Candle The &amp;ldquo;Milton Bros&amp;rdquo; project was my first soiree into the world of character design! I&amp;rsquo;ve always had ambitions to develop a game - I think it&amp;rsquo;s the ultimate form of expression - and while I&amp;rsquo;m somewhat comfortable in learning the development side of things, creating game art was always an extremely foreign world.
 I designed Milton (pictured) and &amp;ldquo;Candle&amp;rdquo;, among several other bizarre characters, as a way to dive right into experimenting with simple shapes to build memorable characters.</description>
     </item>
     
     <item>
       <title>Mosu</title>
-      <link>kevinoh.me/projects/mosu/</link>
+      <link>/projects/mosu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>kevinoh.me/projects/mosu/</guid>
+      <guid>/projects/mosu/</guid>
       <description>LinkedIn, Hired, Vettery, Indeed, Monster&amp;hellip;&amp;hellip;🙅 Mosu arose out of my personal frustration with the process of job hunting. There are something like a dozen different &amp;ldquo;job board&amp;rdquo; websites, each with their own quirks. I found myself running around between ten different accounts, trying to remember which job applications were in which &amp;ldquo;state&amp;rdquo;:
  Saved, or &amp;ldquo;To Be Applied To&amp;rdquo; Application sent Currently interviewing Successfully received an offer  It was exhausting.</description>
     </item>
     
     <item>
       <title>Night Messenger</title>
-      <link>kevinoh.me/projects/nightmessenger/</link>
+      <link>/projects/nightmessenger/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>kevinoh.me/projects/nightmessenger/</guid>
+      <guid>/projects/nightmessenger/</guid>
       <description>Ow, my eyes 👀 Messenger.com is a relatively little-known messaging interface for Facebook Messenger. It&amp;rsquo;s a great (and less power-hungry) alternative to the little chat window you get as part of the standard Facebook desktop experience.
 I&amp;rsquo;d often work late in the night, and found that using Messenger.com would hurt my eyes. I had somewhat recently discovered the world of Chrome extension development, so I decided to dive in and see if I couldn&amp;rsquo;t make a darker theme for Messenger.</description>
     </item>

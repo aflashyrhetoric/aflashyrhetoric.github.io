@@ -2,51 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on </title>
-    <link>kevinoh.me/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 30 Apr 2017 21:36:04 -0400</lastBuildDate>
     
-	<atom:link href="kevinoh.me/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tooling 101: Introduction</title>
-      <link>kevinoh.me/posts/tooling-101/</link>
+      <link>/posts/tooling-101/</link>
       <pubDate>Sun, 30 Apr 2017 21:36:04 -0400</pubDate>
       
-      <guid>kevinoh.me/posts/tooling-101/</guid>
+      <guid>/posts/tooling-101/</guid>
       <description>This is part 1 of an introductory series on web development tooling. 
 Series Introduction While the barriers to web development are substantially lower than many other fields, there&amp;rsquo;s still a bunch of junk that makes it frustrating for beginners to jump in.
 By &amp;ldquo;obstacles,&amp;rdquo; I don&amp;rsquo;t mean the inherent difficulty in learning a new field, nor the complexity of advanced web development topics. I&amp;rsquo;m referring to the snags that slow progress without benefit.</description>
     </item>
     
     <item>
-      <title>Coding Is Not That Hard</title>
-      <link>kevinoh.me/posts/coding/</link>
+      <title></title>
+      <link>/posts/contradiction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>kevinoh.me/posts/coding/</guid>
+      <guid>/posts/contradiction/</guid>
+      <description>Contradiction I find in myself a contradiction that is seemingly impossible to resolve. Well, actually, it&amp;rsquo;s quite straightforward. But the conclusion feels incomplete, though I know it not to be. The contradiction is this: if I&amp;rsquo;ve learned nothing, it is the finitude of self. We graduated from an era at the invention of the computer - it was the day we escaped, in a meaningful way, our finitude. We managed to reduce and translate all manner of tasks to a calculated flickering of bits, and bent the electron to our will.</description>
+    </item>
+    
+    <item>
+      <title>Coding Is Not That Hard</title>
+      <link>/posts/coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/coding/</guid>
       <description>Within the past two years, about a dozen people told me they’re extremely interested in learning how to code. Today, none of them are programmers, developers, or even hobby coders. Most of them, as far as I know, have never even opened a text editor.
 The conversation always goes the same way. They want to learn, they have ideas, but it’s all too hard. One of my more determined friends — an art major — admired the idea of focusing on a single project all day, but he would routinely shudder at the sight of actual code.</description>
     </item>
     
     <item>
       <title>Good Design Is Not Subjective.</title>
-      <link>kevinoh.me/posts/design/</link>
+      <link>/posts/design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>kevinoh.me/posts/design/</guid>
+      <guid>/posts/design/</guid>
       <description>This post was written back when Adelie was openly accepting new inquiries and projects.
 There are times when the difference between two choices is completely lateral — two substitutable alternatives that are equal in importance and consequence. If you’re craving some fruit, it doesn’t matter whether you choose the apple or the orange. In these instances, it’s okay to defer to preference, precedent, or a coin toss. But these cases are the (rare) exception, not the rule.</description>
     </item>
     
     <item>
       <title>The Dangers of Blindly Loving Your Tools</title>
-      <link>kevinoh.me/posts/tools/</link>
+      <link>/posts/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>kevinoh.me/posts/tools/</guid>
+      <guid>/posts/tools/</guid>
       <description>This post was written back when Adelie was openly accepting new inquiries and projects.
 I once heard two friends arguing. One of them had recently come upon a windfall of cash, and wanted to make a big purchase: an upscale sports car. Upon hearing this, his miserly friend fired back, “you don’t even go places! Don’t buy a Porsche to drive to 711.”
 When I heard this biting exchange, I chuckled.</description>
@@ -54,10 +63,10 @@ When I heard this biting exchange, I chuckled.</description>
     
     <item>
       <title>Websites Are Like Pants</title>
-      <link>kevinoh.me/posts/websites-are-pants/</link>
+      <link>/posts/websites-are-pants/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>kevinoh.me/posts/websites-are-pants/</guid>
+      <guid>/posts/websites-are-pants/</guid>
       <description>This post was written back when Adelie was openly accepting new inquiries and projects.
 In 2005, psychologist Barry Schwartz took the stage at TEDGlobal in Oxford and proposed an idea: that “more is less.” You can watch the full video here, but the core idea is simple. To quote Schwartz, “With so many options to choose from, people find it very difficult to choose at all.” He tells a simple anecdote to that effect: many years ago, when he walked into a clothing store, there were only a few pairs of jeans to choose from.</description>
     </item>
