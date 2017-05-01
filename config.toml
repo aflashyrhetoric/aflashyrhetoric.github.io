@@ -2,7 +2,7 @@ baseurl = "kevinoh.me"
 theme = "aflashyrhetoric-theme"
 
 enableEmoji = true
-canonifyURLs = true
+relativeURLs = true
 
 [taxonomies]
 project = "projects"
