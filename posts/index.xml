@@ -5,9 +5,21 @@
     <link>kevinoh.me/posts/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 30 Apr 2017 21:36:04 -0400</lastBuildDate>
     
 	<atom:link href="kevinoh.me/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tooling 101: Introduction</title>
+      <link>kevinoh.me/posts/tooling-101/</link>
+      <pubDate>Sun, 30 Apr 2017 21:36:04 -0400</pubDate>
+      
+      <guid>kevinoh.me/posts/tooling-101/</guid>
+      <description>This is part 1 of an introductory series on web development tooling. 
+Series Introduction While the barriers to web development are substantially lower than many other fields, there&amp;rsquo;s still a bunch of junk that makes it frustrating for beginners to jump in.
+By &amp;ldquo;obstacles,&amp;rdquo; I don&amp;rsquo;t mean the inherent difficulty in learning a new field, nor the complexity of advanced web development topics. I&amp;rsquo;m referring to the snags that slow progress without benefit.</description>
+    </item>
     
     <item>
       <title>Coding Is Not That Hard</title>
@@ -38,17 +50,6 @@ There are times when the difference between two choices is completely lateral 
       <description>This post was written back when Adelie was openly accepting new inquiries and projects.
 I once heard two friends arguing. One of them had recently come upon a windfall of cash, and wanted to make a big purchase: an upscale sports car. Upon hearing this, his miserly friend fired back, “you don’t even go places! Don’t buy a Porsche to drive to 711.”
 When I heard this biting exchange, I chuckled.</description>
-    </item>
-    
-    <item>
-      <title>Tooling 101: Introduction</title>
-      <link>kevinoh.me/posts/tooling-101/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>kevinoh.me/posts/tooling-101/</guid>
-      <description>This is part 1 of an introductory series on web development tooling. 
-Series Introduction While the barriers to web development are substantially lower than many other fields, there&amp;rsquo;s still a bunch of junk that makes it frustrating for beginners to jump in.
-By &amp;ldquo;obstacles,&amp;rdquo; I don&amp;rsquo;t mean the inherent difficulty in learning a new field, nor the complexity of advanced web development topics. I&amp;rsquo;m referring to the snags that slow progress without benefit.</description>
     </item>
     
     <item>

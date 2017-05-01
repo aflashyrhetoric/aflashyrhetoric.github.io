@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>kevinoh.me/posts/tooling-101/</loc>
+    <lastmod>2017-04-30T21:36:04-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>kevinoh.me/</loc>
+    <lastmod>2017-04-30T21:36:04-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -12,6 +18,7 @@
   
   <url>
     <loc>kevinoh.me/posts/</loc>
+    <lastmod>2017-04-30T21:36:04-04:00</lastmod>
   </url>
   
   <url>
@@ -49,10 +56,6 @@
   
   <url>
     <loc>kevinoh.me/posts/tools/</loc>
-  </url>
-  
-  <url>
-    <loc>kevinoh.me/posts/tooling-101/</loc>
   </url>
   
   <url>
