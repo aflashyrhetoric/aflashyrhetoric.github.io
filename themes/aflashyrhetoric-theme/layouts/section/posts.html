@@ -20,7 +20,7 @@
 
     <div class="section__projects">
       <ul class="project-box__list">
-        {{ range where .Data.Pages "Section" "posts" }}
+        {{ range where .Site.Pages "Section" "posts" }}
           <li class="project-box__list-post">
             <a href="{{ .RelPermalink }}">
               {{ .Title }}
