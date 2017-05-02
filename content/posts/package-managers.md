@@ -10,8 +10,6 @@ series = "tooling101"
 
 ---
 
-# Series Introduction
-
 Zoom back to 2012. I'm in my dorm room trying to learn [Ruby on Rails](http://rubyonrails.org/). Everything is going smoothly! Rails seems magical - perhaps a bit too much. I try to add a feature or two, and my progress comes to a screeching halt. I'm chasing down errors in the terminal with no conception of what's going on. 
 
 > What the hell is a "gem"?!?!?

@@ -10,8 +10,6 @@ series = "tooling101"
 
 ---
 
-### Series Introduction
-
 While the barriers to web development are substantially lower than many other fields, there's still a bunch of junk that makes it frustrating for beginners to jump in.
 
 By "obstacles," I don't mean the inherent difficulty in learning a new field, nor the complexity of advanced web development topics. I'm referring to the snags that slow progress without benefit.
@@ -51,4 +49,4 @@ I hope this guide serves as a helpful primer for those who are like me. The firs
 
 ---
 
-<small>By the way, this is in no way an attack on the maintainers of those tools. Managing documentation that is universally understood and meticulously updated is impossible. Creating and maintaining tutorials on top of that is a massive task as well. Nevertheless, the opaque or exclusive language in beginner-oriented resources is, to me, a "sand-in-your-eyes" type of problem, so this series aims to move some of the burden from the individual resources</small>
+<small>By the way, this is in no way an attack on the maintainers of those tools. Managing documentation that is universally understood and meticulously updated is impossible. Creating and maintaining tutorials on top of that is insane. Nevertheless, the opaque or exclusive language in beginner-oriented resources is, to me, a "sand-in-your-eyes" type of problem, so this series aims to move some of that documentation burden from the individual resources to one coherent location.</small>
