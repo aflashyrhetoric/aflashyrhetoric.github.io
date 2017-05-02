@@ -1,4 +1,7 @@
-# Contradiction
++++
+title = "Contradiction"
+draft = true
++++
 
 I find in myself a contradiction that is seemingly impossible to resolve. Well, actually, it's quite straightforward. But the conclusion *feels* incomplete, though I know it not to be.
 The contradiction is this: if I've learned nothing, it is the finitude of self. We graduated from an era at the invention of the computer - it was the day we escaped, in a meaningful way, our finitude. We managed to reduce and translate all manner of tasks to a calculated flickering of bits, and bent the electron to our will.

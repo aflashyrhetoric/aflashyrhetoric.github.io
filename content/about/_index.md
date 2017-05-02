@@ -1,5 +1,6 @@
 +++
 section = "about"
+title = "Bio"
 +++
 
 # My name is Kevin Oh.
@@ -54,4 +55,4 @@ I use Sublime Text 3 w/ vim keybindings. Chrome, iTerm2. Laravel + React are my 
 - To my beautiful girlfriend Rebecca, who has seen me through thick and thin and continues to support and inspire me everyday.
 - To my friends Billy, Jaden, Squan, Jonathan, Rachel, Helen, Jenna. My squad is :fire:. I love you all.
 - To the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you.
-- To my amazingly talented coworkers and colleagues and Nulab. Working alongside every one of you is a pleasure and I learn new things all the time. お疲れさま!
+- To my amazingly talented coworkers and colleagues and Nulab. Working alongside every one of you is a pleasure and I learn new things all the time. お疲れさま! To Yen-Chieh Chen, thank you for helping me fix the final bug on my site! :sunglasses:

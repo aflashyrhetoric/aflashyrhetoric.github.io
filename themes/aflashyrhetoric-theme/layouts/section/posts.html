@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <title>{{ .Title }}</title>
+  <title>Blog</title>
 </head>
 
 {{ partial "modules/header-dev" . }}
@@ -21,11 +21,13 @@
     <div class="section__projects">
       <ul class="project-box__list">
         {{ range where .Site.Pages "Section" "posts" }}
+          {{ if ne .Title "posts" }}
           <li class="project-box__list-post">
             <a href="{{ .RelPermalink }}">
               {{ .Title }}
             </a>
           </li>
+          {{ end }}
         {{ end }}
       </ul>
     </div>

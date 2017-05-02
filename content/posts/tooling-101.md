@@ -1,11 +1,11 @@
 +++
-date = "2017-04-30T21:36:04-04:00"
+date = "2017-04-10T21:36:04-04:00"
 title = "Tooling 101: Introduction"
 series = "tooling101"
 +++
 
 <small>
-  *This is part 1 of an introductory series on web development tooling.*
+  *This is part 1 of an introductory series on web development tooling. If you're not a developer, this post will be ludicrously boring to you.*
 </small>
 
 ---
@@ -47,7 +47,7 @@ npm start
 
 When I was learning, I would do this over and over without an understanding of what was happening. I was uncomfortable letting tools "do the magic" for me while I was in the dark.
 
-I hope this guide serves as a helpful primer for those who are like me. The first post will be on **Package Managers**.
+I hope this guide serves as a helpful primer for those who are like me. The first post is on [**Package Managers**](/posts/package-managers).
 
 ---
 
