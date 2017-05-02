@@ -25,6 +25,7 @@
   height: 55px;
   display: flex;
   justify-content: center;
+  align-items: center;
   @include flex-grid-column($columns: 12);
   &.-full-width {
     @include flex-grid-column($columns: 12);
@@ -36,6 +37,14 @@
     @include flex-grid-column($columns: 6);
   }
 
+  &__name {
+    font-weight: bold;
+    margin-bottom: 0;
+    display: none;
+    @include breakpoint(medium up) {
+      display: inline;
+    }
+  }
 
   &__list {
     width: 100%;
@@ -43,14 +52,21 @@
     text-align: center;
     display: flex;
     justify-content: space-around;
+    @include breakpoint(medium up) {
+      justify-content: flex-end;
+      &.-is-home {
+        justify-content: space-around;
+      }
+    }
   }
 
   &__list-item {
     display: inline;
     margin: {
-      left: 8px;
-      right: 8px;
+      left: 12px;
+      right: 12px;
     }
+    font-weight: bold;
   }
 
   &__list-link {

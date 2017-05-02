@@ -18,13 +18,13 @@ And thus, I was introduced to the world of Package Managers.
 
 Let's review some of the more popular ones.
 
-Associated Language | Package Manager(s) | Configuration Filename|
---------------------|--------------------|-----------------------|
-Javascript| [yarn](https://yarnpkg.com/en/), [npm](https://www.npmjs.com/)         | package.json
-Ruby      | [Bundler](http://bundler.io/)           | Gemfile
-PHP       | [Composer](https://getcomposer.org/)          | composer.json
-Go        | [Glide](https://github.com/Masterminds/glide), ["go get"](https://golang.org/cmd/go/#hdr-Download_and_install_packages_and_dependencies)            | glide.yaml
-N/A       | [Bower](https://bower.io/)             | bower.json
+Package Manager(s) | Associated Language | Configuration Filename|
+-------------------|---------------------|-----------------------|
+[yarn](https://yarnpkg.com/en/), [npm](https://www.npmjs.com/)          | Javascript | package.json
+[Bundler](http://bundler.io/)            | Ruby      |  Gemfile
+[Composer](https://getcomposer.org/)           | PHP        | composer.json
+[Glide](https://github.com/Masterminds/glide), ["go get"](https://golang.org/cmd/go/#hdr-Download_and_install_packages_and_dependencies)             | Go        |  glide.yaml
+[Bower](https://bower.io/)              | Javascript (kinda?)       |  bower.json
 
 ### So, what is a package manager?
 

@@ -5,7 +5,6 @@ $_label-height: 50px;
 .section {
 
   &__container {
-    @include flex-grid-row($size: 100%);
     &:not(:first-child) {
       margin-bottom: 6rem;
     }
@@ -19,24 +18,12 @@ $_label-height: 50px;
     color: $black;
     position: relative;
     border-top: $__label-border-width solid $purple;
-    // min-height: 150px;
-    @include flex-grid-column($columns: 12, $gutters: 0);
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-
-    @include breakpoint(medium up) {
-      border: $__label-border-width solid $purple;
-      margin: auto;
-      @include flex-grid-column($columns: 11, $gutters: 0);
+    border: {
+      left: $__label-border-width solid $purple;
+      right: $__label-border-width solid $purple;
+      bottom: $__label-border-width solid $purple;
     }
-
-    @include breakpoint(large up) {
-      border: $__label-border-width solid $purple;
-      margin: auto;
-      @include flex-grid-column($columns: 10, $gutters: 0);
-    }
-
+    
     &.-regular {
       @include breakpoint(medium up) {
         @include flex-grid-column($columns: 6, $gutters: 0);
@@ -44,16 +31,30 @@ $_label-height: 50px;
     }
     &.-thin {
       @include breakpoint(medium up) {
+        @include flex-grid-column($columns: 6, $gutters: 0);
+      }
+      @include breakpoint(large up) {
         @include flex-grid-column($columns: 4, $gutters: 0);
       }
     }
     &.-wide {
       @include breakpoint(medium up) {
+        @include flex-grid-column($columns: 11, $gutters: 0);
+      }
+      @include breakpoint(large up) {
         @include flex-grid-column($columns: 8, $gutters: 0);
       }
     }
 
+    @include breakpoint(medium up) {
+      margin: auto;
+      @include flex-grid-column($columns: 11, $gutters: 0);
+    }
 
+    @include breakpoint(large up) {
+      margin: auto;
+      @include flex-grid-column($columns: 10, $gutters: 0);
+    }
   }
 
   &__label {
@@ -89,17 +90,19 @@ $_label-height: 50px;
       right: 30px;
     }
     &.-post {
-      width: normal;
-      right: 30px;
+      @include breakpoint(medium up) {
+        right: 30px;
+      }
     }
   }
 
-  &__projects {
+  &__projects,
+  &__blog,
+  &__about {
     width: 100%;
   }
 
   &__content {
-
     padding: 1rem;
     @include setFontBody;
     h1, 

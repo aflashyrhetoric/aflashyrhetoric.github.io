@@ -66,13 +66,10 @@
         // height: 50px;
         // right: -102px;
       }
-      &:hover {
-      }
     }
 
     &:hover {
       background-color: $purple;
-      // background: linear-gradient(to right, $purple, $gray);
       a {
         color: $white;
       }
