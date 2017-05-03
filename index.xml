@@ -5,8 +5,199 @@
     <link>/index.xml</link>
     <description>Recent content in Hi 엄마! Hi 아빠! on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 17 Apr 2017 18:42:48 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 27 Apr 2017 18:04:36 -0400</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>building the nulab developer site</title>
+      <link>/posts/developer-site/</link>
+      <pubDate>Thu, 27 Apr 2017 18:04:36 -0400</pubDate>
+      
+      <guid>/posts/developer-site/</guid>
+      <description>
+
+&lt;p&gt;My latest project at &lt;a href=&#34;http://nulab-inc.com&#34;&gt;Nulab&lt;/a&gt; was to migrate over the old website from Drupal. It had become somewhat clumsy to manage, and they wanted a new solution.&lt;/p&gt;
+
+&lt;p&gt;After initially considering WordPress, we ultimately landed on &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a static site generator (SSG) written in Go.&lt;/p&gt;
+
+&lt;p&gt;An SSG was perfect for our use-case.&lt;/p&gt;
+
+&lt;h3 id=&#34;consider-the-following&#34;&gt;Consider the following:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;With any reference-type website, speed is a priority. SSGs excel here.&lt;/li&gt;
+&lt;li&gt;Hugo (and many SSGs) use Markdown files. Markdown is the de-facto standard for publishing and is easy to learn.&lt;/li&gt;
+&lt;li&gt;Cheaper hosting - sometimes dramatically cheaper.&lt;/li&gt;
+&lt;li&gt;The data for the site would change pretty infrequently (&lt;em&gt;aka&lt;/em&gt; - the definition of the word &amp;ldquo;static&amp;rdquo;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h3&gt;
+
+&lt;p&gt;This site would need to display the API documentation for Nulab&amp;rsquo;s 3 current products. So, 3 APIs = 3 datasets. Unfortunately, each dataset was stored differently. One data set was stored in a database. The other one was written in a proprietary markup format. I was in charge of the latter - the dataset for an app called Backlog. The entirety of the API documentation was held in a single wiki page (which would be pulled and built for Drupal with scripts).&lt;/p&gt;
+
+&lt;p&gt;I had to convert this long text file for Hugo.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-mining-the-data&#34;&gt;1. Mining The Data&lt;/h3&gt;
+
+&lt;p&gt;We needed to extract the data from Backlog before anything else. Backlog&amp;rsquo;s wiki syntax is very similar to Markdown. This means that basic conversions to Markdown should be easy to do using Javascript&amp;rsquo;s native &lt;code&gt;replace&lt;/code&gt; method with regular expressions.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Backlog Wiki Syntax&lt;/th&gt;
+&lt;th&gt;Markdown&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;{code} some code {/code}&lt;/td&gt;
+&lt;td&gt;`some code`&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;lsquo;italic text&amp;rsquo;&lt;/td&gt;
+&lt;td&gt;*italic text*&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;italic text&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;**bold text**&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;[Google](https://google.com)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;[[Google:https://google.com]]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;First things, I had to import some libraries to help me.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const fs = require(&#39;fs&#39;);
+const path = require(&#39;path&#39;);
+const chalk = require(&#39;chalk&#39;);
+const readline = require(&#39;readline&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;fs&lt;/code&gt; to manage files. &lt;code&gt;path&lt;/code&gt; for managing file paths easily. &lt;code&gt;chalk&lt;/code&gt; allows for colorized messages in the terminal which can improve readability and aid in debugging. &lt;code&gt;readline&lt;/code&gt; allows us to a read a file line-by-line.&lt;/p&gt;
+
+&lt;p&gt;Now, for those regular expression &lt;code&gt;replace&lt;/code&gt;ments:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let result = data.replace(/\*/g, &#39;#&#39;);
+// Convert {code} to ``
+result = result.replace(/({code})/g, &#39;```&#39;);
+result = result.replace(/({\/code})/g, &#39;```\n&#39;);
+// Convert [[a:b]] to [a](b)
+result = result.replace(/(\[\[)([^\:]+)\:(([^\s]+))(\]\])/g, &#39;[$2]($3)&#39;);
+result = result.replace(/(&amp;amp;br;)/g, &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A few more of these later, I was essentially done. Backlog syntax -&amp;gt; Markdown = done.&lt;/p&gt;
+
+&lt;p&gt;The next step was decisively harder, but first we have to review the concept of &lt;strong&gt;Front Matter&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-reviewing-front-matter&#34;&gt;2. Reviewing Front-Matter&lt;/h3&gt;
+
+&lt;p&gt;Front-Matter is a way to include metadata in a Markdown file by having a little bit of &lt;code&gt;yaml&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt;, or &lt;code&gt;toml&lt;/code&gt; at the top of the file.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example in &lt;code&gt;TOML&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-TOML&#34;&gt;title = &amp;quot;Hello World&amp;quot;
+author = &amp;quot;Kevin Oh&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If we were going to use Hugo for our site, it meant we needed to convert all of our content to Markdown files, and populate each file with metadata relevant to that particular section. For example, let&amp;rsquo;s say we want to create an API reference page for &lt;code&gt;someFancyAPIAction&lt;/code&gt;. We would need to create a Markdown file with some title, &lt;code&gt;some-fancy-api-action.md&lt;/code&gt;, with content like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-TOML&#34;&gt;+++
+title = &amp;quot;Some Fancy API Action&amp;quot;
+app = &amp;quot;AwesomeApp&amp;quot;
++++
+
+# Some Fancy API Action
+
+This is where I could discuss the API action/method/endpoint/whatever.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Okay, so front-matter is a way of easily adding metadata to a file.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s recap on what needs to be done.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-quick-recap&#34;&gt;3. Quick Recap&lt;/h3&gt;
+
+&lt;p&gt;We&amp;rsquo;re faced with the following tasks:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Split the huge file containing the entire API documentation into smaller Markdown files.&lt;/li&gt;
+&lt;li&gt;Add front-matter to each of those files that track things like API title, filename, and whether or not the page is for an API item or for a general information page.&lt;/li&gt;
+&lt;li&gt;Support both English + Japanese translations.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;a-split-the-files&#34;&gt;A. Split the files&lt;/h4&gt;
+
+&lt;p&gt;The &lt;code&gt;fs&lt;/code&gt; and &lt;code&gt;readline&lt;/code&gt; modules were a godsend here. But before diving into actual code, I printed out 3 pages of the API documentation to learn its structure and to note any irregular patterns.&lt;/p&gt;
+
+&lt;p&gt;I cautiously made the naive assessment that I&amp;rsquo;d need to parse the entire file line-by-line, gradually &amp;ldquo;building up each page&amp;rdquo; and then &amp;ldquo;snipping off&amp;rdquo; each piece from the larger file by saving it (with the &lt;code&gt;fs&lt;/code&gt; module).&lt;/p&gt;
+
+&lt;p&gt;But then came the wrench in the cogs - these files couldn&amp;rsquo;t just naively be &amp;ldquo;snipped&amp;rdquo; and saved in a folder. Information had to be extracted from the text &lt;em&gt;as it was being parsed&lt;/em&gt; so that the front-matter could be appended to the top of the page.&lt;/p&gt;
+
+&lt;p&gt;The task was now to: &lt;strong&gt;parse the huge file line-by-line, extract all relevant data, reassemble the file with front-matter prepended to the top, and then save it in the correct directory.&lt;/strong&gt; Quite a different task.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d like to say that I used some sort of ingenious cleverness to achieve this, but, meh. It was literally just writing a parser. A script flush with conditional statements, pointer/tracking variables, etc. The algorithm went something like:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Visit each line of code and store it as a string for reference.&lt;/li&gt;
+&lt;li&gt;Create a pointer to the next line of code.&lt;/li&gt;
+&lt;li&gt;If the next line begins with &lt;code&gt;#&lt;/code&gt;, then:
+
+&lt;ul&gt;
+&lt;li&gt;assemble the front matter from the tracking variables,&lt;/li&gt;
+&lt;li&gt;instantiate a ES6 block template string and prepend the front matters to it, then the content&lt;/li&gt;
+&lt;li&gt;save it, clear all necessary tracking variables, and repeat.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I realized that we needed to extract a semantic understanding of the text. More than just snipping, for sure. I could easily and neatly track this data by creating a JSON object to represent each page, which could then be referenced to build the front-matter.&lt;/p&gt;
+
+&lt;p&gt;Two days of work later, it works. I create a script that, when run, takes an input file, an output format (Markdown or JSON), and spits out the data in the new form.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;title&lt;/code&gt; was extracted from lines with &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;s. The &lt;code&gt;filename&lt;/code&gt; front-matter variable was created by lower-casing the &lt;code&gt;title&lt;/code&gt;, replacing whitespace with dashes, and removing apostrophes. So, &lt;code&gt;I&#39;m A Blue Cat!&lt;/code&gt; became &lt;code&gt;im-a-blue-cat.md&lt;/code&gt;. API pages contained a section called &amp;ldquo;Method&amp;rdquo;, so depending on this, I set a boolean &lt;code&gt;isAPI&lt;/code&gt; variable.&lt;/p&gt;
+
+&lt;h4 id=&#34;let-s-save-it-all&#34;&gt;Let&amp;rsquo;s save it all.&lt;/h4&gt;
+
+&lt;p&gt;Finally, once more using the &lt;code&gt;fs&lt;/code&gt; module, I saved each file in the correct place.&lt;/p&gt;
+
+&lt;p&gt;Some pages were top-level pages, others were nested. URL remapping was done with a simple configuration JSON object, which was stored locally and pulled in using &lt;code&gt;require&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;japanese-translations-tho&#34;&gt;Japanese Translations, Tho 😱&lt;/h4&gt;
+
+&lt;p&gt;Hugo is smart enough to change translations based on the file extensions. So, &lt;code&gt;cats.md&lt;/code&gt; is the English version of a text, while &lt;code&gt;cats.ja.md&lt;/code&gt; would be the Japanese translation.&lt;/p&gt;
+
+&lt;p&gt;There was another huge file for the Japanese version of the API documentation. The english version of the script had certain keywords - markers of sorts that when detected, would indicate that a new section had started or ended. My naive approach was to simply swap out the English &amp;ldquo;keywords&amp;rdquo; for the Japanese keywords. However, I immediately noticed this wouldn&amp;rsquo;t work because &lt;strong&gt;the URLs had to remain in English&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;things-get-messy&#34;&gt;Things Get Messy&lt;/h3&gt;
+
+&lt;p&gt;I was able to safely make certain assumptions that made this task infinitely easier. Most notably, I was able to assume that the &lt;em&gt;ordering&lt;/em&gt; of the dataset was the same in both the English and Japanese versions.&lt;/p&gt;
+
+&lt;p&gt;This allowed me to take an expediential,gimme-dat-tech-debt approach, since we were already crunched for time on this project. I duplicated the script I had made to parse the English version and stripped it down to the barebones parsing logic. I then extracted all the &lt;code&gt;#&lt;/code&gt; and &lt;code&gt;##&lt;/code&gt; lines (to extract all headings and subheadings). I saved them in two separate files.&lt;/p&gt;
+
+&lt;p&gt;I then created a Japanese version of my script. Instead of extracting headings from the text, the Japanese version of the script would &amp;ldquo;pop&amp;rdquo; a new value off of the &lt;code&gt;headings-array&lt;/code&gt; and &lt;code&gt;subheadings-array&lt;/code&gt; whenever it detected that the next heading/subheading should be saved. The headings would be reformatted (as mentioned earlier) to become &lt;code&gt;filenames&lt;/code&gt;, which were then tweaked: &lt;code&gt;cat.md&lt;/code&gt; became &lt;code&gt;cat.ja.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It worked like a charm! 🎉&lt;/p&gt;
+
+&lt;p&gt;The Japanese files populated beautifully with English filenames.&lt;/p&gt;
+
+&lt;h3 id=&#34;clean-up&#34;&gt;Clean Up&lt;/h3&gt;
+
+&lt;p&gt;About 90% of the files converted with no flaws, but there were inevitably some hiccups. I went through manually and fixed many of the errors that had simply gone under the radar. It was irritating but the time spent was well worth it.&lt;/p&gt;
+
+&lt;p&gt;Plus - we now have a CLI tool to convert from our proprietary syntax to Markdown and JSON - sweet.&lt;/p&gt;
+
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;The finished site is available &lt;a href=&#34;https://developer.nulab-inc.com&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Tooling 101: Package Managers</title>
