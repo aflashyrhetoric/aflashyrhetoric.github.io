@@ -2,21 +2,29 @@
 date = "2017-04-27T18:04:36-04:00"
 title = "building the nulab developer site"
 slug = "developer-site"
-ogdescription = "Using NodeJS, fs, and regular expressions to parse long-form data!"
+ogdescription = "Using NodeJS, fs, and regular expressions to parse long-form data for use in Hugo, a static site generator."
 +++
 
 My latest project at [Nulab](http://nulab-inc.com) was to migrate over the old website from Drupal. It had become somewhat clumsy to manage, and they wanted a new solution.
 
-After initially considering WordPress, we ultimately landed on [Hugo](http://gohugo.io), a static site generator (SSG) written in Go.
+After initially considering WordPress, we ultimately landed on [Hugo](http://gohugo.io), a static site generator (SSG) written in Go. A SSG was perfect for our use-case.
 
-An SSG was perfect for our use-case.
+### Why we chose a static site generator
 
-### Consider the following:
-
-- With any reference-type website, speed is a priority. SSGs excel here.
+- With any reference-type website, speed was a priority. SSGs excel here.
+- SSGs aren't the most user-friendly, but developers would be the primary users here so it would be OK! :thumbs_up:
 - Hugo (and many SSGs) use Markdown files. Markdown is the de-facto standard for publishing and is easy to learn.
-- Cheaper hosting - sometimes dramatically cheaper.
+- Cheaper hosting - sometimes dramatically cheaper - than something like WordPress.
+- Full control
 - The data for the site would change pretty infrequently (*aka* - the definition of the word "static").
+
+### Why we chose Hugo (over Jekyll / alternatives)
+- **Speed** of compilation with Hugo
+- Hugo's documentation is fantastic
+- Hugo's multilingual support is very good and easy to implement!
+- Our engineers are more familiar with Go/Go Templates than with Ruby/Liquid.
+- Hexo's documentation seemed unclear.
+- Alternatives were less well-supported, with slower release cycles
 
 ### Getting Started
 
@@ -30,7 +38,7 @@ We needed to extract the data from Backlog before anything else. Backlog's wiki 
 
 Backlog Wiki Syntax | Markdown
 --------------------|---------
-{code} some code {/code} | \`some code\`
+`{code} some code {/code}` | \`some code\`
 'italic text' | \*italic text\*
 ''italic text'' | \*\*bold text\*\*
 `[Google](https://google.com)`| `[[Google:https://google.com]]`
