@@ -1,6 +1,7 @@
 +++
 date = "2017-04-27T18:04:36-04:00"
 title = "building the nulab developer site"
+imgSlug = "developer-site"
 +++
 
 My latest project at [Nulab](http://nulab-inc.com) was to migrate over the old website from Drupal. It had become somewhat clumsy to manage, and they wanted a new solution.
