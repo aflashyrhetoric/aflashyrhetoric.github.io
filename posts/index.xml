@@ -16,30 +16,47 @@
       <guid>/posts/developer-site/</guid>
       <description>
 
-&lt;p&gt;My latest project at &lt;a href=&#34;http://nulab-inc.com&#34;&gt;Nulab&lt;/a&gt; was to migrate over the old website from Drupal. It had become somewhat clumsy to manage, and they wanted a new solution.&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
 
-&lt;p&gt;After initially considering WordPress, we ultimately landed on &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a static site generator (SSG) written in Go.&lt;/p&gt;
+&lt;p&gt;My latest project at &lt;a href=&#34;http://nulab-inc.com&#34;&gt;Nulab&lt;/a&gt; was to migrate over the old &lt;a href=&#34;https://developer.nulab-inc.com&#34;&gt;Developer Website&lt;/a&gt; (containing API documentation, mostly) from Drupal to something new. The old site had become somewhat clumsy to manage, and we needed a new solution.&lt;/p&gt;
 
-&lt;p&gt;An SSG was perfect for our use-case.&lt;/p&gt;
+&lt;p&gt;After initially considering WordPress, we ultimately landed on &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a static site generator (SSG) written in Go. An SSG was perfect for our use-case. But migrating the data was non-trivial. But first things first&amp;hellip;&lt;/p&gt;
 
-&lt;h3 id=&#34;consider-the-following&#34;&gt;Consider the following:&lt;/h3&gt;
+&lt;h3 id=&#34;why-migrate-at-all&#34;&gt;Why Migrate At All?&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;With any reference-type website, speed is a priority. SSGs excel here.&lt;/li&gt;
-&lt;li&gt;Hugo (and many SSGs) use Markdown files. Markdown is the de-facto standard for publishing and is easy to learn.&lt;/li&gt;
-&lt;li&gt;Cheaper hosting - sometimes dramatically cheaper.&lt;/li&gt;
-&lt;li&gt;The data for the site would change pretty infrequently (&lt;em&gt;aka&lt;/em&gt; - the definition of the word &amp;ldquo;static&amp;rdquo;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;To Unify Data In One Place&lt;/strong&gt;: Nulab offers 3 apps. Each app possesses an API. But the data (literally, the text data that described the API) was being stored in 3 separate ways. One app used Google sheets, while another stored information in a traditional database, and a third app used a long-form wiki text post. Each app had their own processes for exporting to Drupal.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;To Reduce Overhead&lt;/strong&gt;: While these processes worked, they involved overhead - both technical and mental. Since Nulab is undergoing a company-wide &amp;ldquo;refresh,&amp;rdquo; it was a good time to revamp the Developer Site to match our new branding.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&#34;why-not-wordpress&#34;&gt;&amp;ldquo;Why not WordPress?&amp;rdquo;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Speed.&lt;/strong&gt; SSGs, which deliver static files rather than dynamically-generated pages, excel here.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cost.&lt;/strong&gt; Hosting static files is cheap.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stable&lt;/strong&gt;. There&amp;rsquo;s no CMS. There&amp;rsquo;s no plugins. There&amp;rsquo;s nothing to manage, except for maybe the local version of &lt;code&gt;hugo&lt;/code&gt; itself.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Perfect use case! ⭐️&lt;/strong&gt; Being a reference website, the data for the site would change pretty infrequently.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;why-not-jekyll-or-abcxyz&#34;&gt;Why not Jekyll or abcxyz?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Speed&lt;/strong&gt;, again. Hugo is fast.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Great documentation&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Great multilingual support&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ease of adoption&lt;/strong&gt;: Our engineers are more familiar with Go/Go Templates than with Ruby/Liquid.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Large community&lt;/strong&gt;: In general, this means faster release cycles, less bugs, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We looked at Jekyll and Hexo but Hugo won out.&lt;/p&gt;
 
 &lt;h3 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h3&gt;
 
-&lt;p&gt;This site would need to display the API documentation for Nulab&amp;rsquo;s 3 current products. So, 3 APIs = 3 datasets. Unfortunately, each dataset was stored differently. One data set was stored in a database. The other one was written in a proprietary markup format. I was in charge of the latter - the dataset for an app called Backlog. The entirety of the API documentation was held in a single wiki page (which would be pulled and built for Drupal with scripts).&lt;/p&gt;
+&lt;p&gt;So, again, this site would need to display the API documentation for Nulab&amp;rsquo;s 3 current products. So, 3 APIs = 3 datasets. Unfortunately, each dataset was stored differently. The data for one app, &lt;a href=&#34;https://backlogtool.com&#34;&gt;Backlog&lt;/a&gt;, was written in a proprietary markup format that had to be converted to a form that Hugo understood. Namely: Markdown.&lt;/p&gt;
 
-&lt;p&gt;I had to convert this long text file for Hugo.&lt;/p&gt;
+&lt;h3 id=&#34;1-processing-parsing-the-data&#34;&gt;1. Processing/Parsing The Data&lt;/h3&gt;
 
-&lt;h3 id=&#34;1-mining-the-data&#34;&gt;1. Mining The Data&lt;/h3&gt;
-
-&lt;p&gt;We needed to extract the data from Backlog before anything else. Backlog&amp;rsquo;s wiki syntax is very similar to Markdown. This means that basic conversions to Markdown should be easy to do using Javascript&amp;rsquo;s native &lt;code&gt;replace&lt;/code&gt; method with regular expressions.&lt;/p&gt;
+&lt;p&gt;We needed to extract the data from Backlog before anything else. The data was stored as a huge text file (essentially). Backlog&amp;rsquo;s wiki syntax is very similar to Markdown. This means that basic conversions to Markdown should be easy to do using Javascript&amp;rsquo;s native &lt;code&gt;replace&lt;/code&gt; method with regular expressions.&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -51,7 +68,7 @@
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;{code} some code {/code}&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{code} some code {/code}&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;`some code`&lt;/td&gt;
 &lt;/tr&gt;
 
@@ -93,18 +110,26 @@ result = result.replace(/(\[\[)([^\:]+)\:(([^\s]+))(\]\])/g, &#39;[$2]($3)&#39;)
 result = result.replace(/(&amp;amp;br;)/g, &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;A few more of these later, I was essentially done. Backlog syntax -&amp;gt; Markdown = done.&lt;/p&gt;
+&lt;p&gt;A few more of these later, I was essentially done. Backlog syntax was successfully converting to Markdown.&lt;/p&gt;
 
-&lt;p&gt;The next step was decisively harder, but first we have to review the concept of &lt;strong&gt;Front Matter&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The next step was decisively harder, but to understand why it was necessary, we first have to review the concept of &lt;strong&gt;Front Matter&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;2-reviewing-front-matter&#34;&gt;2. Reviewing Front-Matter&lt;/h3&gt;
 
 &lt;p&gt;Front-Matter is a way to include metadata in a Markdown file by having a little bit of &lt;code&gt;yaml&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt;, or &lt;code&gt;toml&lt;/code&gt; at the top of the file.&lt;/p&gt;
 
-&lt;p&gt;Here&amp;rsquo;s an example in &lt;code&gt;TOML&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example in &lt;code&gt;TOML&lt;/code&gt;, which is Hugo&amp;rsquo;s default:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-TOML&#34;&gt;title = &amp;quot;Hello World&amp;quot;
 author = &amp;quot;Kevin Oh&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and the same in &lt;code&gt;JSON&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;{
+ &amp;quot;title&amp;quot; : &amp;quot;Hello World!&amp;quot;,
+ &amp;quot;author&amp;quot; : &amp;quot;Kevin Oh&amp;quot;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;If we were going to use Hugo for our site, it meant we needed to convert all of our content to Markdown files, and populate each file with metadata relevant to that particular section. For example, let&amp;rsquo;s say we want to create an API reference page for &lt;code&gt;someFancyAPIAction&lt;/code&gt;. We would need to create a Markdown file with some title, &lt;code&gt;some-fancy-api-action.md&lt;/code&gt;, with content like so:&lt;/p&gt;
@@ -137,17 +162,17 @@ This is where I could discuss the API action/method/endpoint/whatever.
 
 &lt;p&gt;The &lt;code&gt;fs&lt;/code&gt; and &lt;code&gt;readline&lt;/code&gt; modules were a godsend here. But before diving into actual code, I printed out 3 pages of the API documentation to learn its structure and to note any irregular patterns.&lt;/p&gt;
 
-&lt;p&gt;I cautiously made the naive assessment that I&amp;rsquo;d need to parse the entire file line-by-line, gradually &amp;ldquo;building up each page&amp;rdquo; and then &amp;ldquo;snipping off&amp;rdquo; each piece from the larger file by saving it (with the &lt;code&gt;fs&lt;/code&gt; module).&lt;/p&gt;
+&lt;p&gt;I cautiously made an initial assessment: we would need to parse the entire file line-by-line, gradually &amp;ldquo;building up each page&amp;rdquo; and then &amp;ldquo;snipping off&amp;rdquo; each piece from the larger file by saving it (with the &lt;code&gt;fs&lt;/code&gt; module).&lt;/p&gt;
 
-&lt;p&gt;But then came the wrench in the cogs - these files couldn&amp;rsquo;t just naively be &amp;ldquo;snipped&amp;rdquo; and saved in a folder. Information had to be extracted from the text &lt;em&gt;as it was being parsed&lt;/em&gt; so that the front-matter could be appended to the top of the page.&lt;/p&gt;
+&lt;p&gt;But then came the wrench in the cogs - these files couldn&amp;rsquo;t just naively be &amp;ldquo;snipped&amp;rdquo; and saved in a folder. Information had to be extracted from the text &lt;em&gt;as it was being parsed&lt;/em&gt; so that the front-matter could be appended to the top of the page. We weren&amp;rsquo;t just dividing up the text file, we were &lt;strong&gt;adding to it&lt;/strong&gt; and &lt;em&gt;then&lt;/em&gt; saving them.&lt;/p&gt;
 
 &lt;p&gt;The task was now to: &lt;strong&gt;parse the huge file line-by-line, extract all relevant data, reassemble the file with front-matter prepended to the top, and then save it in the correct directory.&lt;/strong&gt; Quite a different task.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;d like to say that I used some sort of ingenious cleverness to achieve this, but, meh. It was literally just writing a parser. A script flush with conditional statements, pointer/tracking variables, etc. The algorithm went something like:&lt;/p&gt;
+&lt;p&gt;We needed some sort of parser, so I wrote an elementary one. It felt hacked together: a script flush with conditional statements, pointer/tracking variables, etc., but it worked. The algorithm went something like:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Visit each line of code and store it as a string for reference.&lt;/li&gt;
-&lt;li&gt;Create a pointer to the next line of code.&lt;/li&gt;
+&lt;li&gt;Create a variable pointer to track the next line of code.&lt;/li&gt;
 &lt;li&gt;If the next line begins with &lt;code&gt;#&lt;/code&gt;, then:
 
 &lt;ul&gt;
@@ -157,17 +182,44 @@ This is where I could discuss the API action/method/endpoint/whatever.
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;I realized that we needed to extract a semantic understanding of the text. More than just snipping, for sure. I could easily and neatly track this data by creating a JSON object to represent each page, which could then be referenced to build the front-matter.&lt;/p&gt;
+&lt;p&gt;We needed to build a semantic understanding of the text. I could easily and neatly track this data by creating a JS object to represent each page, which could then be referenced to build the front-matter.&lt;/p&gt;
 
 &lt;p&gt;Two days of work later, it works. I create a script that, when run, takes an input file, an output format (Markdown or JSON), and spits out the data in the new form.&lt;/p&gt;
 
-&lt;p&gt;The &lt;code&gt;title&lt;/code&gt; was extracted from lines with &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;s. The &lt;code&gt;filename&lt;/code&gt; front-matter variable was created by lower-casing the &lt;code&gt;title&lt;/code&gt;, replacing whitespace with dashes, and removing apostrophes. So, &lt;code&gt;I&#39;m A Blue Cat!&lt;/code&gt; became &lt;code&gt;im-a-blue-cat.md&lt;/code&gt;. API pages contained a section called &amp;ldquo;Method&amp;rdquo;, so depending on this, I set a boolean &lt;code&gt;isAPI&lt;/code&gt; variable.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;title&lt;/code&gt; was extracted from lines with &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;s. The &lt;code&gt;filename&lt;/code&gt; front-matter variable was created by lower-casing the &lt;code&gt;title&lt;/code&gt;, replacing whitespace with dashes, and removing apostrophes. So, &lt;code&gt;I&#39;m A Blue Cat&lt;/code&gt; became &lt;code&gt;im-a-blue-cat.md&lt;/code&gt;. API pages contained a section called &amp;ldquo;Method&amp;rdquo;, so depending on whether or not a recorded section contained &lt;code&gt;Method&lt;/code&gt;, I set a boolean &lt;code&gt;isAPI&lt;/code&gt; variable.&lt;/p&gt;
 
 &lt;h4 id=&#34;let-s-save-it-all&#34;&gt;Let&amp;rsquo;s save it all.&lt;/h4&gt;
 
 &lt;p&gt;Finally, once more using the &lt;code&gt;fs&lt;/code&gt; module, I saved each file in the correct place.&lt;/p&gt;
 
-&lt;p&gt;Some pages were top-level pages, others were nested. URL remapping was done with a simple configuration JSON object, which was stored locally and pulled in using &lt;code&gt;require&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Some pages were top-level pages, others were nested. URL remapping was done with a simple configuration JSON object, which was stored locally and pulled in using &lt;code&gt;require&lt;/code&gt;. Something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// config.js
+{
+  &amp;quot;topLevelPages&amp;quot;: [
+    &amp;quot;home&amp;quot;,
+    &amp;quot;getting-started&amp;quot;,
+    &amp;quot;contact&amp;quot;
+  ]
+  &amp;quot;urlMap&amp;quot;: {
+    &amp;quot;error-response&amp;quot;: &amp;quot;/docs/backlog/error-response&amp;quot;,
+    &amp;quot;version-history&amp;quot;: &amp;quot;/docs/backlog/changes&amp;quot;,
+    &amp;quot;oauth-20&amp;quot; : &amp;quot;/docs/backlog/api/2/oauth2&amp;quot;
+  }
+}
+
+// mainscript.js
+let config = require(&#39;./config&#39;);
+if(config.topLevelPages.contains(somePageID)) {
+  // url remapping logic
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Watching the script run was beautiful.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;node conversion-script.js md link-to-the-big-data-file desired-output.md&lt;/code&gt; spat out a Markdown file.
+&lt;code&gt;node conversion-script.js json link-to-the-big-data-file desired-output.json&lt;/code&gt; spat out a JSON file.
+&lt;code&gt;node conversion-script.js hugo link-to-the-big-data-file&lt;/code&gt; first converted the data to markdown, then built an in-memory JSON object, and then used that object to generate front matter with ES6 template strings, and then save each object as a file.&lt;/p&gt;
 
 &lt;h4 id=&#34;japanese-translations-tho&#34;&gt;Japanese Translations, Tho 😱&lt;/h4&gt;
 
@@ -179,17 +231,21 @@ This is where I could discuss the API action/method/endpoint/whatever.
 
 &lt;p&gt;I was able to safely make certain assumptions that made this task infinitely easier. Most notably, I was able to assume that the &lt;em&gt;ordering&lt;/em&gt; of the dataset was the same in both the English and Japanese versions.&lt;/p&gt;
 
-&lt;p&gt;This allowed me to take an expediential,gimme-dat-tech-debt approach, since we were already crunched for time on this project. I duplicated the script I had made to parse the English version and stripped it down to the barebones parsing logic. I then extracted all the &lt;code&gt;#&lt;/code&gt; and &lt;code&gt;##&lt;/code&gt; lines (to extract all headings and subheadings). I saved them in two separate files.&lt;/p&gt;
+&lt;p&gt;This allowed me to take an expediential, gimme-dat-tech-debt approach, since we were already crunched for time on this project. I duplicated the script I had made to parse the English version and stripped it down to the barebones parsing logic. I then extracted all the &lt;code&gt;#&lt;/code&gt; and &lt;code&gt;##&lt;/code&gt; lines (to extract all headings and subheadings). I saved them in two separate files:&lt;/p&gt;
 
-&lt;p&gt;I then created a Japanese version of my script. Instead of extracting headings from the text, the Japanese version of the script would &amp;ldquo;pop&amp;rdquo; a new value off of the &lt;code&gt;headings-array&lt;/code&gt; and &lt;code&gt;subheadings-array&lt;/code&gt; whenever it detected that the next heading/subheading should be saved. The headings would be reformatted (as mentioned earlier) to become &lt;code&gt;filenames&lt;/code&gt;, which were then tweaked: &lt;code&gt;cat.md&lt;/code&gt; became &lt;code&gt;cat.ja.md&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;headings.json&lt;/code&gt; and &lt;code&gt;subheadings.json&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I then created a third duplicate version of my script to process the Japanese and &lt;code&gt;require&lt;/code&gt;d the two JSON files above.&lt;/p&gt;
+
+&lt;p&gt;However, instead of extracting headings from the text like the English version, the Japanese version of the script would &amp;ldquo;pop&amp;rdquo; a new value off of the &lt;code&gt;headings-array&lt;/code&gt; and &lt;code&gt;subheadings-array&lt;/code&gt; whenever it detected that the next heading/subheading should be saved. The headings would be reformatted (as mentioned earlier) to become &lt;code&gt;filenames&lt;/code&gt;, which were then tweaked: &lt;code&gt;cat.md&lt;/code&gt; became &lt;code&gt;cat.ja.md&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;It worked like a charm! 🎉&lt;/p&gt;
 
-&lt;p&gt;The Japanese files populated beautifully with English filenames.&lt;/p&gt;
+&lt;p&gt;The Japanese files populated beautifully with English filenames (which were also used to map their URL paths).&lt;/p&gt;
 
 &lt;h3 id=&#34;clean-up&#34;&gt;Clean Up&lt;/h3&gt;
 
-&lt;p&gt;About 90% of the files converted with no flaws, but there were inevitably some hiccups. I went through manually and fixed many of the errors that had simply gone under the radar. It was irritating but the time spent was well worth it.&lt;/p&gt;
+&lt;p&gt;About 90% of the files converted with no flaws, but there were inevitably some hiccups. I went through manually and fixed many of the errors that had simply gone under the radar. It was irritating but the time spent on automating all of the rest of the data extraction was well worth it, considering there was over 130 API items.&lt;/p&gt;
 
 &lt;p&gt;Plus - we now have a CLI tool to convert from our proprietary syntax to Markdown and JSON - sweet.&lt;/p&gt;
 
