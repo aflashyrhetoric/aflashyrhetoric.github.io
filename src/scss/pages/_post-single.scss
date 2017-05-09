@@ -1,0 +1,41 @@
+// Page: Post (single)
+
+$black: #222222;
+
+.page-post-single {
+  background-color: $white;
+
+  .header {
+    margin-bottom: 0;
+  }
+  .post-single {
+    &__heading-wrapper {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+
+      height: 300px;
+
+      background-color: $black;
+    }
+    &__heading {
+      // text-transform: uppercase;
+    }
+
+    &__content-wrapper {
+      max-width: 800px;
+      padding: 2rem;
+      margin: auto;
+
+      background-color: $white;
+      color: $black;
+      @include setFontBody;
+      a {
+        color: $purple;
+        font-weight: bold;
+      }
+    }
+  }
+}
+

@@ -28,7 +28,6 @@ I'm writing this series to help eliminate the latter, because when I was startin
 
 At best, docs will include simple one-liner annotations, like so:
 
-
 ```
 // Install dependencies
 npm install
