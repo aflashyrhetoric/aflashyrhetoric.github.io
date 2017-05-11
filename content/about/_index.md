@@ -7,7 +7,7 @@ title = "Bio"
 
 Or, *[@aflashyrhetoric](http://twitter.com/aflashyrhetoric)*.
 
-I'm a front-end developer based in New York. Currently working as a *Front-End Engineer* with the excellent team at Nulab. I lead a Slack-based [ study group](/projects/adg) that focuses on building projects to gain practical experience with modern web development technologies. I co-founded Adelie, an open source software collective that currently offers - ahem - zero available products. But don't worry, I'm working on it. :cat:
+I'm a front-end developer based in New York. Currently working as a *Front-End Engineer* with the excellent team at Nulab. I lead a Slack-based [study group](/projects/adg) that focuses on building projects to gain practical experience with modern web development technologies. I co-founded Adelie, an open source software collective that currently offers - ahem - zero available products. But don't worry, I'm working on it. :cat:
 
 On the side, I also serve as a mod over at [/r/webdev](https://reddit.com/r/webdev).
 
@@ -21,9 +21,9 @@ Read about my projects [HERE](/projects).
 I'm currently working with Laravel, React, and Vue on various projects.
 I'm also studying Amazon Web Services, Jenkins CI, Docker, and systems design.
 
-#### Any outside interests?
+#### Outside interests?
 
-Yes! I'm a hobbyist writer & blogger.
+I'm a hobbyist writer & blogger.
 
 **I'm also currently studying:**
 
@@ -32,6 +32,7 @@ Yes! I'm a hobbyist writer & blogger.
 - **game design**, because I feel like it's the ultimate medium of expression
 - **photography**, because life's too beautiful not to capture
 - **video editing / screencasting**, to create helpful webdev-related YouTube content
+- **web scraping** to glean huge amounts of data and get experience with `cron`
 
 Someday, I'd like to learn more about: TensorFlow, machine learning, the stock market, special relativity, StarCraft 2, blob fishes.
 
