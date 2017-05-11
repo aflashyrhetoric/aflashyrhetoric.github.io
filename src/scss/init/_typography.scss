@@ -20,7 +20,11 @@ h2 {
 
 p {
   @include setFontBody;
-  @include fz(16);
+  @include fz(18);
+}
+
+li {
+  @include fz(18);
 }
 
 // Lists

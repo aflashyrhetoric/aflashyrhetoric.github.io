@@ -15,20 +15,19 @@
 
 <body class="page-post-single">
 
-{ partial "modules/header-dev" . }
+{{ partial "modules/header-dev" . }}
 
 <div class="post-single">
   <div class="post-single__heading-wrapper">
     <h1 class="post-single__heading">{{ .Title }}</h1>
+    <h3 class="post-single__subheading">by Kevin Oh</h3>
   </div>
 
   <div class="post-single__content-wrapper">
-    <div class="post-single__content-wrapper">
     {{ .Content }}
-    </      
+    <a class="btn btn--accent" href="/posts">View All Posts</a>
   </div>
 
-  <a class="btn btn--accent" href="/posts">View All Posts</a>
 </div>
 
 

@@ -7,7 +7,7 @@
 /* Paraíso Comment */
 .hljs-comment,
 .hljs-quote {
-  color: #8d8687;
+  color: #948E90;
 }
 
 /* Paraíso Red */
@@ -46,7 +46,7 @@
 .hljs-symbol,
 .hljs-bullet,
 .hljs-addition {
-  color: #48b685;
+  color: #E8FFEA;
 }
 
 /* Paraíso Purple */
@@ -58,7 +58,7 @@
 .hljs {
   display: block;
   overflow-x: auto;
-  background: #2f1e2e;
+  background: $darkpurple;
   color: #a39e9b;
   padding: 0.5em;
 }

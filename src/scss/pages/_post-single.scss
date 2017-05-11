@@ -21,12 +21,25 @@ $black: #222222;
     }
     &__heading {
       // text-transform: uppercase;
+      text-align: center;
+      @include setFontHeavy;
+    }
+    &__subheading {
+      @include setFontBody;
+      text-transform: lowercase;
+      color: lighten($black, 10);
     }
 
     &__content-wrapper {
       max-width: 800px;
       padding: 2rem;
-      margin: auto;
+      margin: {
+        left: auto;
+        right: auto;
+        top: 2rem;
+        bottom: 4rem;
+      }
+      border-radius: 4px;
 
       background-color: $white;
       color: $black;

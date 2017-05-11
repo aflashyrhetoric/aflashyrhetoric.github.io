@@ -1,3 +1,3 @@
 // app.js
 
-window.hljs = require('highlight.js');
+require('./enable-highlight');

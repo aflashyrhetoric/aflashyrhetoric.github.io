@@ -1,6 +1,6 @@
 +++
 date = "2017-04-27T18:04:36-04:00"
-title = "building the nulab developer site"
+title = "string parsing & data extraction"
 slug = "developer-site"
 ogdescription = "Using NodeJS, fs, and regular expressions to parse long-form data for use in Hugo, a static site generator."
 +++
@@ -58,9 +58,11 @@ Now, for those regular expression `replace`ments:
 
 ```javascript
 let result = data.replace(/\*/g, '#');
+
 // Convert {code} to ``
 result = result.replace(/({code})/g, '```');
 result = result.replace(/({\/code})/g, '```\n');
+
 // Convert [[a:b]] to [a](b)
 result = result.replace(/(\[\[)([^\:]+)\:(([^\s]+))(\]\])/g, '[$2]($3)');
 result = result.replace(/(&br;)/g, "<br>");
@@ -81,7 +83,7 @@ author = "Kevin Oh"
 
 and the same in `JSON`:
 
-```javascript
+```json
 {
  "title" : "Hello World!",
  "author" : "Kevin Oh"
@@ -90,7 +92,7 @@ and the same in `JSON`:
 
 If we were going to use Hugo for our site, it meant we needed to convert all of our content to Markdown files, and populate each file with metadata relevant to that particular section. For example, let's say we want to create an API reference page for `someFancyAPIAction`. We would need to create a Markdown file with some title, `some-fancy-api-action.md`, with content like so:
 
-```TOML
+```toml
 +++
 title = "Some Fancy API Action"
 app = "AwesomeApp"
@@ -143,21 +145,23 @@ Finally, once more using the `fs` module, I saved each file in the correct place
 
 Some pages were top-level pages, others were nested. URL remapping was done with a simple configuration JSON object, which was stored locally and pulled in using `require`. Something like this:
 
-```javascript
+```json
 // config.js
 {
   "topLevelPages": [
     "home",
     "getting-started",
     "contact"
-  ]
+  ],
   "urlMap": {
     "error-response": "/docs/backlog/error-response",
     "version-history": "/docs/backlog/changes",
     "oauth-20" : "/docs/backlog/api/2/oauth2"
   }
 }
+```
 
+```javascript
 // mainscript.js
 let config = require('./config');
 if(config.topLevelPages.contains(somePageID)) {
