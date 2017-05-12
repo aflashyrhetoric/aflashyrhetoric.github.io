@@ -14,11 +14,17 @@ Mosu arose out of my personal frustration with the process of job hunting. There
 
 It was exhausting. I decided to build a tool for myself to manage the chaos, since I figured the job search would last at least a few months.
 
-I tuckered down with some coffee and used Laravel to build a back-end API for a user system, as well as a basic CRUD applicatblah blah blahion for saving "job applications." ReactJS was used on the front-end to display data and allow users to manage their job applications, keeping track of information like salary, location (of the position), whether it was a remote position, URLs to the job posting online, and the state of the application.
+I tuckered down with some coffee and used Laravel to build a back-end API for a user system, as well as a basic CRUD application for saving "job applications." ReactJS was used on the front-end to display data and allow users to manage their job applications, keeping track of information like salary, location (of the position), whether it was a remote position, URLs to the job posting online, and the state of the application.
 
 It worked, and I used it personally to a great degree! 
 
-I have since taken down the application (which used to reside at [Mosu.io](https://mosu.io)) to work on a proper version 1.0. I have plans to add features like saving personal data, such as:
+I have since taken down the application (which used to reside at [Mosu.io](https://mosu.io)) to work on a proper version 1.0. With some simple promotion, I managed to acquire around 20 semi-regular users, who, after about a year, stopped usage - hopefully they got a job! 
+
+#### Future Plans
+
+Several features are planned for v1.0, which is slated for release end of year 2018. 
+
+Save data:
 
 - biographies (long bios, short bios, summaries)
 - resumes
