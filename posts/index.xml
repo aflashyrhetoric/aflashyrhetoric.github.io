@@ -9,7 +9,7 @@
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>building the nulab developer site</title>
+      <title>string parsing &amp; data extraction</title>
       <link>/posts/developer-site/</link>
       <pubDate>Thu, 27 Apr 2017 18:04:36 -0400</pubDate>
       
@@ -102,9 +102,11 @@ const readline = require(&#39;readline&#39;);
 &lt;p&gt;Now, for those regular expression &lt;code&gt;replace&lt;/code&gt;ments:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let result = data.replace(/\*/g, &#39;#&#39;);
+
 // Convert {code} to ``
 result = result.replace(/({code})/g, &#39;```&#39;);
 result = result.replace(/({\/code})/g, &#39;```\n&#39;);
+
 // Convert [[a:b]] to [a](b)
 result = result.replace(/(\[\[)([^\:]+)\:(([^\s]+))(\]\])/g, &#39;[$2]($3)&#39;);
 result = result.replace(/(&amp;amp;br;)/g, &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
@@ -126,7 +128,7 @@ author = &amp;quot;Kevin Oh&amp;quot;
 
 &lt;p&gt;and the same in &lt;code&gt;JSON&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;{
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
  &amp;quot;title&amp;quot; : &amp;quot;Hello World!&amp;quot;,
  &amp;quot;author&amp;quot; : &amp;quot;Kevin Oh&amp;quot;
 }
@@ -134,7 +136,7 @@ author = &amp;quot;Kevin Oh&amp;quot;
 
 &lt;p&gt;If we were going to use Hugo for our site, it meant we needed to convert all of our content to Markdown files, and populate each file with metadata relevant to that particular section. For example, let&amp;rsquo;s say we want to create an API reference page for &lt;code&gt;someFancyAPIAction&lt;/code&gt;. We would need to create a Markdown file with some title, &lt;code&gt;some-fancy-api-action.md&lt;/code&gt;, with content like so:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-TOML&#34;&gt;+++
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;+++
 title = &amp;quot;Some Fancy API Action&amp;quot;
 app = &amp;quot;AwesomeApp&amp;quot;
 +++
@@ -194,21 +196,22 @@ This is where I could discuss the API action/method/endpoint/whatever.
 
 &lt;p&gt;Some pages were top-level pages, others were nested. URL remapping was done with a simple configuration JSON object, which was stored locally and pulled in using &lt;code&gt;require&lt;/code&gt;. Something like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// config.js
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;// config.js
 {
   &amp;quot;topLevelPages&amp;quot;: [
     &amp;quot;home&amp;quot;,
     &amp;quot;getting-started&amp;quot;,
     &amp;quot;contact&amp;quot;
-  ]
+  ],
   &amp;quot;urlMap&amp;quot;: {
     &amp;quot;error-response&amp;quot;: &amp;quot;/docs/backlog/error-response&amp;quot;,
     &amp;quot;version-history&amp;quot;: &amp;quot;/docs/backlog/changes&amp;quot;,
     &amp;quot;oauth-20&amp;quot; : &amp;quot;/docs/backlog/api/2/oauth2&amp;quot;
   }
 }
+&lt;/code&gt;&lt;/pre&gt;
 
-// mainscript.js
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// mainscript.js
 let config = require(&#39;./config&#39;);
 if(config.topLevelPages.contains(somePageID)) {
   // url remapping logic

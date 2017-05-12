@@ -1,21 +1,19 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="building the nulab developer site" />
+  <meta property="og:title" content="string parsing &amp; data extraction" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="http://kevinoh.me/posts/developer-site" />
   <meta property="og:description" content="Using NodeJS, fs, and regular expressions to parse long-form data for use in Hugo, a static site generator." />
   <meta property="og:image" content="http://kevinoh.me/img/developer-site.png" />
   <meta property="fb:app_id" content="126086191274356" />
   <link rel="stylesheet" type="text/css" href="../../css/styles.css">
-  <title>building the nulab developer site</title>
+  <title>string parsing &amp; data extraction</title>
 </head>
+
+<body class="page-post-single">
 
 <header class="header">
 <nav class="navbar 
@@ -38,14 +36,14 @@
 </header>
 
 
-<div class="section__container">
-  <div class="section__inner -wide">
-    <div class="section__label -post">
-      <h2 class="section__label-text">building the nulab developer site</h2>
-    </div>
+<div class="post-single">
+  <div class="post-single__heading-wrapper">
+    <h1 class="post-single__heading">string parsing &amp; data extraction</h1>
+    <h3 class="post-single__subheading">by Kevin Oh</h3>
+  </div>
 
-    <div class="section__content">
-      
+  <div class="post-single__content-wrapper">
+    
 
 <h3 id="summary">Summary</h3>
 
@@ -133,9 +131,11 @@ const readline = require('readline');
 <p>Now, for those regular expression <code>replace</code>ments:</p>
 
 <pre><code class="language-javascript">let result = data.replace(/\*/g, '#');
+
 // Convert {code} to ``
 result = result.replace(/({code})/g, '```');
 result = result.replace(/({\/code})/g, '```\n');
+
 // Convert [[a:b]] to [a](b)
 result = result.replace(/(\[\[)([^\:]+)\:(([^\s]+))(\]\])/g, '[$2]($3)');
 result = result.replace(/(&amp;br;)/g, &quot;&lt;br&gt;&quot;);
@@ -157,7 +157,7 @@ author = &quot;Kevin Oh&quot;
 
 <p>and the same in <code>JSON</code>:</p>
 
-<pre><code class="language-javascript">{
+<pre><code class="language-json">{
  &quot;title&quot; : &quot;Hello World!&quot;,
  &quot;author&quot; : &quot;Kevin Oh&quot;
 }
@@ -165,7 +165,7 @@ author = &quot;Kevin Oh&quot;
 
 <p>If we were going to use Hugo for our site, it meant we needed to convert all of our content to Markdown files, and populate each file with metadata relevant to that particular section. For example, let&rsquo;s say we want to create an API reference page for <code>someFancyAPIAction</code>. We would need to create a Markdown file with some title, <code>some-fancy-api-action.md</code>, with content like so:</p>
 
-<pre><code class="language-TOML">+++
+<pre><code class="language-toml">+++
 title = &quot;Some Fancy API Action&quot;
 app = &quot;AwesomeApp&quot;
 +++
@@ -225,21 +225,22 @@ This is where I could discuss the API action/method/endpoint/whatever.
 
 <p>Some pages were top-level pages, others were nested. URL remapping was done with a simple configuration JSON object, which was stored locally and pulled in using <code>require</code>. Something like this:</p>
 
-<pre><code class="language-javascript">// config.js
+<pre><code class="language-json">// config.js
 {
   &quot;topLevelPages&quot;: [
     &quot;home&quot;,
     &quot;getting-started&quot;,
     &quot;contact&quot;
-  ]
+  ],
   &quot;urlMap&quot;: {
     &quot;error-response&quot;: &quot;/docs/backlog/error-response&quot;,
     &quot;version-history&quot;: &quot;/docs/backlog/changes&quot;,
     &quot;oauth-20&quot; : &quot;/docs/backlog/api/2/oauth2&quot;
   }
 }
+</code></pre>
 
-// mainscript.js
+<pre><code class="language-javascript">// mainscript.js
 let config = require('./config');
 if(config.topLevelPages.contains(somePageID)) {
   // url remapping logic
@@ -284,12 +285,11 @@ if(config.topLevelPages.contains(somePageID)) {
 
 <p>The finished site is available <a href="https://developer.nulab-inc.com">here</a>.</p>
 
-      <hr>
-      <a class="btn btn--accent" href="../../posts">View All Posts</a>
-    </div>
-
+    <a class="btn btn--accent" href="../../posts">View All Posts</a>
   </div>
+
 </div>
+
 
 <footer class="footer">
 yo yo my name is kev o o 

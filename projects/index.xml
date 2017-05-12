@@ -17,11 +17,32 @@
 
 &lt;h4 id=&#34;beer-me-slackbot&#34;&gt;Beer me, Slackbot! 🍺&lt;/h4&gt;
 
-&lt;p&gt;The Adelie Developer&amp;rsquo;s Group is an online, Slack-based study group for web development with around 30 members (as of May &amp;lsquo;17).&lt;/p&gt;
+&lt;p&gt;The Adelie Developer&amp;rsquo;s Group is an online, Slack-based study group for web development.&lt;/p&gt;
 
 &lt;p&gt;The group is beginner-friendly and project-oriented. Currently, some of the members are working on individual developer portfolio websites using modern front-end tooling and best practices.&lt;/p&gt;
 
-&lt;p&gt;The roster for project one can be found &lt;a href=&#34;http://notes.adelie.co/s/S1A1crdpg&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;group-information-resources&#34;&gt;Group Information &amp;amp; Resources&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Group Resources&lt;/th&gt;
+&lt;th&gt;Project Resources&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://notes.adelie.co/s/SJC0xUidl&#34;&gt;Introduction To The Group&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCGamDqsdxvhd5WoLStmXMYQ&#34;&gt;Adelie YouTube Channel&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:aflashyrhetoric@gmail.com&#34;&gt;Request Invitation&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://notes.adelie.co/s/S1A1crdpg&#34;&gt;Roster&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;We use Slack, HackMD, Github, CodePen, YouTube, and other collaborative tools to communicate, share design inspiration, tips, coding help and feedback, and more.&lt;/p&gt;
 
@@ -39,15 +60,44 @@
 
 &lt;h4 id=&#34;milton-candle&#34;&gt;Milton &amp;amp; Candle&lt;/h4&gt;
 
-&lt;p&gt;The &amp;ldquo;Milton Bros&amp;rdquo; project was my first soiree into the world of character design! I&amp;rsquo;ve always had ambitions to develop a game - I think it&amp;rsquo;s the ultimate form of expression - and while I&amp;rsquo;m somewhat comfortable in learning the development side of things, creating game art was always an extremely foreign world.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;Milton Bros&amp;rdquo; project was my first soiree into the world of character design. I&amp;rsquo;ve always had ambitions to develop a game - I think it&amp;rsquo;s the ultimate form of expression - and while I&amp;rsquo;m somewhat comfortable in learning the development side of things, creating game art was always an extremely foreign world.&lt;/p&gt;
 
 &lt;p&gt;I designed Milton (pictured) and &amp;ldquo;Candle&amp;rdquo;, among several other bizarre characters, as a way to dive right into experimenting with simple shapes to build memorable characters. Of course, they&amp;rsquo;re silly and rudimentary, but I&amp;rsquo;m proud of them.&lt;/p&gt;
 
+&lt;h4 id=&#34;aseprite-animations&#34;&gt;Aseprite Animations&lt;/h4&gt;
+
+&lt;p&gt;I also wanted to try my hand at using Aseprite, a pixel-art editor. And so came a bunch of little projects.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../img/projects/evil.gif&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+ 
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../img/projects/evil2.gif&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+ 
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../img/projects/hehe.gif&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
 &lt;h4 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h4&gt;
 
-&lt;p&gt;I realized how restrained the process is. It&amp;rsquo;s tempting to add extremely eye-catching features with every stroke of the pen: scars, tattoos, hats, weapons - anything to catch the eye. Some of the best-designed characters are truly more than the sum of their parts. Garish details, jagged lines, and high-contrast colors just serve to distract and clutter.&lt;/p&gt;
+&lt;p&gt;I realized how restrained the process is. It&amp;rsquo;s tempting to add extremely eye-catching features with every stroke of the pen: scars, tattoos, hats, weapons - anything to catch the eye. The best-designed characters are truly more than the sum of their parts. Garish details, jagged lines, and high-contrast colors just serve to distract and clutter; I noticed that it&amp;rsquo;s the minutiae that really adds life and uniqueness.&lt;/p&gt;
 
-&lt;p&gt;I used &lt;a href=&#34;https://www.sketchapp.com/&#34;&gt;Sketch&lt;/a&gt; for this project.&lt;/p&gt;
+&lt;p&gt;I used &lt;a href=&#34;https://www.sketchapp.com/&#34;&gt;Sketch&lt;/a&gt; and &lt;a href=&#34;https://aseprite.org&#34;&gt;Aseprite&lt;/a&gt; for this project.&lt;/p&gt;
 
 &lt;p&gt;I definitely plan on creating more &amp;ldquo;character sets&amp;rdquo; like this in the future, particularly pixel-art with &lt;a href=&#34;https://www.aseprite.org/&#34;&gt;Aseprite&lt;/a&gt;. Hopefully, some 1,000 iterations from now, they&amp;rsquo;ll be good enough to include in a real game.&lt;/p&gt;
 </description>
