@@ -1,10 +1,18 @@
 // footer.scss
 // =============================================================
 
-footer.footer {
+.footer {
   background-color: $black;
   padding: 1rem;
   width: 100%;
   position: absolute;
   bottom: 0;
+
+  &__left {
+    float: left;
+  }
+
+  &__right {
+    float: right;
+  }
 }

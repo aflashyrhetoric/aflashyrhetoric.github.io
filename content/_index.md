@@ -1,3 +1,3 @@
 +++
-title = "Hi 엄마! Hi 아빠!"
+title = "Kevin Oh | Web Developer"
 +++
