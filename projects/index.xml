@@ -111,7 +111,7 @@
       <guid>/projects/mosu/</guid>
       <description>
 
-&lt;h4 id=&#34;linkedin-hired-vettery-indeed-monster&#34;&gt;LinkedIn, Hired, Vettery, Indeed, Monster&amp;hellip;&amp;hellip;🙅&lt;/h4&gt;
+&lt;h2 id=&#34;linkedin-hired-vettery-indeed-monster&#34;&gt;LinkedIn, Hired, Vettery, Indeed, Monster&amp;hellip;&amp;hellip;🙅&lt;/h2&gt;
 
 &lt;p&gt;Mosu arose out of my personal frustration with the process of job hunting. There are something like a dozen different &amp;ldquo;job board&amp;rdquo; websites, each with their own quirks. I found myself running around between ten different accounts, trying to remember which job applications were in which &amp;ldquo;state&amp;rdquo;:&lt;/p&gt;
 
@@ -122,28 +122,35 @@
 &lt;li&gt;Successfully received an offer&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It was exhausting. I decided to build a tool for myself to manage the chaos, since I figured the job search would last at least a few months.&lt;/p&gt;
+&lt;p&gt;The experience was complete 💩 . I decided to build a tool for myself to manage the chaos, since I figured the job search would last at least a few months.&lt;/p&gt;
 
-&lt;p&gt;I tuckered down with some coffee and used Laravel to build a back-end API for a user system, as well as a basic CRUD application for saving &amp;ldquo;job applications.&amp;rdquo; ReactJS was used on the front-end to display data and allow users to manage their job applications, keeping track of information like salary, location (of the position), whether it was a remote position, URLs to the job posting online, and the state of the application.&lt;/p&gt;
+&lt;p&gt;I sat down with some coffee and planned an organization app. The idea was that each &lt;strong&gt;Job Application&lt;/strong&gt; goes through a pipeline, compromised of the 4 &amp;ldquo;states&amp;rdquo; mentioned above.&lt;/p&gt;
 
-&lt;p&gt;It worked, and I used it personally to a great degree!&lt;/p&gt;
+&lt;p&gt;I used Laravel to build a back-end API for a user system, as well as a basic CRUD application for saving &amp;ldquo;job applications.&amp;rdquo; ReactJS was used on the front-end to display data and allow users to manage their job applications, keeping track of information like salary, location (of the position), whether it was a remote position, URLs to the job posting online, and the state of the application. Color indicators allowed you to see, at a glance, what status a particular job application was in.&lt;/p&gt;
 
-&lt;p&gt;I have since taken down the application (which used to reside at &lt;a href=&#34;https://mosu.io&#34;&gt;Mosu.io&lt;/a&gt;) to work on a proper version 1.0. With some simple promotion, I managed to acquire around 20 semi-regular users, who, after about a year, stopped usage - hopefully they got a job!&lt;/p&gt;
+&lt;p&gt;I have since taken down the pre-alpha application (which used to reside at &lt;a href=&#34;https://mosu.io&#34;&gt;Mosu.io&lt;/a&gt;) to work on a proper alpha version. With some simple promotion, I managed to acquire around 20 semi-regular users, who, after about a year, stopped using the app - hopefully they got a job!&lt;/p&gt;
 
-&lt;h4 id=&#34;future-plans&#34;&gt;Future Plans&lt;/h4&gt;
+&lt;h2 id=&#34;planned-features&#34;&gt;Planned Features&lt;/h2&gt;
 
-&lt;p&gt;Several features are planned for v1.0, which is slated for release end of year 2018.&lt;/p&gt;
+&lt;p&gt;Several features are planned for v1.0, which is (completely arbitrarily) slated for release at the end of year 2018.&lt;/p&gt;
 
-&lt;p&gt;Save data:&lt;/p&gt;
+&lt;h4 id=&#34;integration-with-linkedin&#34;&gt;Integration with LinkedIn ::&lt;/h4&gt;
 
-&lt;ul&gt;
-&lt;li&gt;biographies (long bios, short bios, summaries)&lt;/li&gt;
-&lt;li&gt;resumes&lt;/li&gt;
-&lt;li&gt;objectives (&amp;ldquo;I am a ____ seeking a ____ in NYC.&amp;ldquo;)&lt;/li&gt;
-&lt;li&gt;blah blah blah&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;LinkedIn is the de-facto &amp;ldquo;home base&amp;rdquo; for job-seekers. LinkedIn integration would allow for simple sign up and login, and the ability to pull any existing data you may have.&lt;/p&gt;
 
-&lt;p&gt;I also think it would be great to have an Aggregate View of various job postings, but this would be extremely complicated so I&amp;rsquo;m putting a pin in it.&lt;/p&gt;
+&lt;h4 id=&#34;saving-documents&#34;&gt;Saving Documents&lt;/h4&gt;
+
+&lt;p&gt;I&amp;rsquo;m not out to create another Dropbox, but some basic file storage might come in handy for things like resumes.&lt;/p&gt;
+
+&lt;h4 id=&#34;aggregate-job-board&#34;&gt;Aggregate Job Board&lt;/h4&gt;
+
+&lt;p&gt;Different job boards have different job listings. Viewing them in one place could come in very, very handy.&lt;/p&gt;
+
+&lt;h4 id=&#34;live-apply-chrome-extension&#34;&gt;&amp;ldquo;Live Apply&amp;rdquo; Chrome Extension&lt;/h4&gt;
+
+&lt;p&gt;Each &amp;ldquo;job board&amp;rdquo; site requires different pieces of information. Some require a &amp;ldquo;long bio&amp;rdquo; while others prohibit biographies that are longer than 200 words or so.&lt;/p&gt;
+
+&lt;p&gt;Write your content all in one place, and visit a job listing. The Chrome extension can detect your current website and show only the relevant information.&lt;/p&gt;
 </description>
     </item>
     

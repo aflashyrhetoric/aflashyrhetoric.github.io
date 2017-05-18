@@ -5,8 +5,105 @@
     <link>/posts/index.xml</link>
     <description>Recent content in posts on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 27 Apr 2017 18:04:36 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 17 May 2017 21:47:18 -0400</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PROJECT BOARD</title>
+      <link>/posts/project-ideas/</link>
+      <pubDate>Wed, 17 May 2017 21:47:18 -0400</pubDate>
+      
+      <guid>/posts/project-ideas/</guid>
+      <description>
+
+&lt;h4 id=&#34;this-list-is-updated-regularly&#34;&gt;This list is updated regularly.&lt;/h4&gt;
+
+&lt;p&gt;This is a list of project ideas that are either planned or in progress (but not complete enough to warrant inclusion on the main projects page).&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Technologies&lt;/th&gt;
+&lt;th&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Windfall&lt;/td&gt;
+&lt;td&gt;A web scraper that parses a variety of social networks and does sentiment analysis to make predictions about stock performance, and then uses actual stock performance data to learn which sources are the best for making predictions.&lt;/td&gt;
+&lt;td&gt;Laravel or Go + Scrapy + ReactJS + TensorFlow + Twitter/Tumblr/Reddit APIs&lt;/td&gt;
+&lt;td&gt;L&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Personal animated SVG&lt;/td&gt;
+&lt;td&gt;An animated personal logo for kevinoh.me&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://snapsvg.io/&#34;&gt;http://snapsvg.io/&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;L&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Go + ReactJS Mosu Refactor&lt;/td&gt;
+&lt;td&gt;Swap out Laravel with Go + Gin.&lt;/td&gt;
+&lt;td&gt;Go &amp;amp; Gin&lt;/td&gt;
+&lt;td&gt;WIP&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Cacoo User Celebration LED&lt;/td&gt;
+&lt;td&gt;An animated LED + speaker announces new Cacoo users!&lt;/td&gt;
+&lt;td&gt;Raspberry Pi&lt;/td&gt;
+&lt;td&gt;L&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;NightBook&lt;/td&gt;
+&lt;td&gt;A Chrome extension that provides a night mode for Facebook.com&lt;/td&gt;
+&lt;td&gt;Javascript&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Flight&lt;/td&gt;
+&lt;td&gt;A hyper-simple workout assistance app&lt;/td&gt;
+&lt;td&gt;ReactJS&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;project-status-legend&#34;&gt;Project Status Legend&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;Not yet started&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;L&lt;/td&gt;
+&lt;td&gt;Learning necessary technologies&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;WIP&lt;/td&gt;
+&lt;td&gt;Work in progress, but significant progress not yet achieved&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
     
     <item>
       <title>string parsing &amp; data extraction</title>
