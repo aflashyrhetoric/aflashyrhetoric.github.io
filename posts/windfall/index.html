@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="windfall" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://kevinoh.me/posts/" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="http://kevinoh.me/img/.png" />
+  <meta property="fb:app_id" content="126086191274356" />
+  <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+  <title>windfall</title>
+</head>
+
+<body class="page-post-single">
+
+<header class="header">
+<nav class="navbar 
+  -full-width 
+  ">
+
+    
+      <a href="../../" class="navbar__name">aflashyrhetoric</a>
+    
+    <ul class="navbar__list
+      
+    ">
+      <li class="navbar__list-item"><a href="../../" class="navbar__list-link">home</a></li>
+      <li class="navbar__list-item"><a href="../../about" class="navbar__list-link">about</a></li>
+      <li class="navbar__list-item"><a href="../../projects" class="navbar__list-link">projects</a></li>
+      <li class="navbar__list-item"><a href="../../posts" class="navbar__list-link">blog</a></li>
+      <li class="navbar__list-item"><a href="https://github.com/aflashyrhetoric" class="navbar__list-link">github</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<div class="post-single">
+  <div class="post-single__heading-wrapper">
+    <h1 class="post-single__heading">windfall</h1>
+    <h3 class="post-single__subheading">by Kevin Oh</h3>
+  </div>
+
+  <div class="post-single__content-wrapper">
+    
+
+<p>🚨 [DRAFT 1.0]</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>Windfall is a planned software project. It is engine that scrapes and parses <strong>news</strong> and <strong>social media</strong> sources and uses the gleaned data - in conjunction with machine learning - to predict stock market prices in real-time.</p>
+
+<p>Windfall is composed of a series of modules. Below is a list of them and their intended function.</p>
+
+<hr />
+
+<h1 id="getting-started">Getting Started</h1>
+
+<h2 id="scraping-module-or-scraper">Scraping Module, or <code>scraper</code></h2>
+
+<p>This module is responsible for the scraping of various news sources.</p>
+
+<p>It will use &ldquo;official&rdquo; <strong>NEWS</strong> sources, such as:
+- Bloomberg.com
+- BBC.co.uk
+- The Wall Street Journal (WSJ)</p>
+
+<p>&hellip; as well as open social media networks with an API, such as Twitter.</p>
+
+<p>This module is the entrypoint to the software and should return data in the form of JSON. Support for GraphQL is being considered.</p>
+
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Parameters</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>parseNewsSource</td>
+<td>sourceId</td>
+<td>Parses a single News source using respective Scraper or API</td>
+<td>JSON</td>
+</tr>
+
+<tr>
+<td>parseSocialSource</td>
+<td>sourceId</td>
+<td>Parses a single Social source using respective Scraper or API</td>
+<td>JSON</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="source-listener-module-or-listener">Source Listener Module, or <code>listener</code></h2>
+
+<p>This module is responsible for listening (via polling) for new publications and posts across all <strong>sources</strong> and then direct successful requests to the <code>scraper</code>.</p>
+
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Parameters</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>handle</td>
+<td>-</td>
+<td>Handles the <code>newSourceDetected</code> event</td>
+<td><code>articleURL</code>, <code>sourceId</code>, ``</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h1 id="functionality">Functionality</h1>
+
+<h2 id="first-listen-for-new-publications">First, listen for new publications.</h2>
+
+<h4 id="for-news-sources">For News Sources</h4>
+
+<p>When new posts are published, the <code>listener</code> should catch the story and pass the <code>articleURL</code> and <code>sourceId</code> to the <code>scraper</code>. Blog posts will be considered &ldquo;official news sources,&rdquo; since a certain baseline of grammar is guaranteed.</p>
+
+<h4 id="for-social-sources">For Social Sources</h4>
+
+<p>When new comments or tweets are published, the <code>listener</code> should catch the story and pass the <code>articleURL</code> and <code>sourceId</code> to the <code>scraper</code>.</p>
+
+<hr />
+
+<h2 id="process-data">Process data</h2>
+
+<p>Once the data is retrieved, we will have a corpus of text data to be analyzed.</p>
+
+<h4 id="sentiment-analysis-nlp">Sentiment Analysis &amp; NLP</h4>
+
+<p>Sentiment Analysis and other NLP analytical processes will be applied to the text, ultimately outputting a &ldquo;score action&rdquo;. The term <code>action</code> here is used in the context of <a href="http://redux.js.org/">Redux</a> actions.</p>
+
+<p>These generated <a href="http://redux.js.org/docs/basics/Actions.html">Actions</a>, coupled with <a href="http://redux.js.org/docs/basics/Reducers.html">Reducers</a>, will serve to mutate and calibrate a master <code>object</code> that represents Windfall&rsquo;s current understanding of the health of each stock.</p>
+
+<p>This operation will be done asynchronously, as per <a href="http://redux.js.org/docs/advanced/AsyncActions.html">this documentation</a>.</p>
+
+<p>With an asynchronous, redux-based implementation, we should be able to amass an extremely navigable record of changes. By observing the patterns in these changes, we can prescribe a course of action in that taunting binary choice that commands the stock market: <em>invest</em>, or <em>don&rsquo;t</em>?</p>
+
+<hr />
+
+<h4 id="machine-learning">Machine Learning</h4>
+
+<p>Financial records are immaculately preserved, and serve as a potent resource for machine learning training. It is possible that by retroactively parsing news resources and pairing them semantically with news coverage patterns within the same units of time, we can synthesize an understanding of the following:</p>
+
+<ul>
+<li>which news resources are the most accurate &amp; most consistent predictors of stock market behavior (whether by cause or effect)</li>
+<li>which kinds of vocabulary most directly correlates with which kind of stock market behavior</li>
+</ul>
+
+<p>These two data points will allow us to hone our news parsing algorithm by assigning <em>weights</em> to data gleaned from <strong>Source A</strong>* vs <strong>Source B</strong>, ultimately resulting in a far more accurate model over all.</p>
+
+<p><strong>ALTERNATIVELY</strong>, as a practical consideration and following the software principle that software should <em>complement</em>, rather than <em>completely replace</em> the element of <em>human decision</em>, we may simply opt to provide a GUI-friendly portal to this historical stock data instead of using it as a factor relevant to the scoring.</p>
+
+<hr />
+
+<h1 id="implementation">Implementation</h1>
+
+<p>Details regarding the architecture for the site.</p>
+
+<h2 id="summary-1">Summary</h2>
+
+<p>There will be two components to Windfall. The software is, ultimately, intended for use by people and not developers. Thus, the API will be internal use only.</p>
+
+<hr />
+
+<h3 id="back-end">Back-end</h3>
+
+<h4 id="processing">Processing</h4>
+
+<p>A server running Flask will be running constantly. <code>cron</code> or some <em>daemon</em> will be deployed to listen for new news stories and parse them upon release. This server will contain the code for the <code>scraper</code> and the <code>listener</code>.</p>
+
+<h4 id="user-base-data">User Base &amp; Data</h4>
+
+<p>A second server running <a href="http://laravel.com/">Laravel</a> or <a href="https://echo.labstack.com/">Echo</a> with the <a href="https://github.com/jinzhu/gorm">GORM ORM</a> will be deployed. This server will contain the code controlling user sign up and user-specific data, such as <em>stocks to track</em>, as well as interactively generate personalized financial projections.</p>
+
+<hr />
+
+<h3 id="front-end">Front-end</h3>
+
+<h4 id="historical-view">Historical View</h4>
+
+<p>The Laravel server from previously will also &ldquo;dumbly&rdquo; serve static past stock historical data, using AJAX and a search engine like <a href="http://lucene.apache.org/solr/">Apache Solr</a> and <a href="https://d3js.org/">D3</a> to allow for swift browsing of stock histories. These can just use Blade templates.</p>
+
+<h4 id="admin-panel">Admin Panel</h4>
+
+<p>A third server will serve a React-powered front-end. This &ldquo;admin panel&rdquo; of sorts will allow you to view your timeline of promising stocks, track specific stocks, create manual mappings between stocks and keywords, etc.</p>
+
+<hr />
+
+<h4 id="basic-devops-environments">Basic DevOps &amp; Environments</h4>
+
+<p>There will be staging environments for each component. Jenkins CI will be used to build each application as necessary on EC2 instances. <code>nginx</code> will be used.</p>
+
+    <a class="btn btn--accent" href="../../posts">View All Posts</a>
+  </div>
+
+</div>
+
+
+<footer class="footer">
+
+  <div class="footer__left">
+    <a href="https://twitter.com/aflashyrhetoric">twitter</a> | <a href="https://github.com/aflashyrhetoric">github</a>
+  </div>
+
+  <div class="footer__right">
+    🔥
+  </div>
+</footer>
+
+
+<script src="https://use.typekit.net/ygu2dtx.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script type="text/javascript" src="../../js/app.js"></script>  
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
