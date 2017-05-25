@@ -1,0 +1,116 @@
++++
+date = "2017-05-25T16:33:48-04:00"
+title = "windfall"
++++
+
+:rotating_light: [DRAFT 1.0]
+
+# Summary
+
+Windfall is a planned software project. It is engine that scrapes and parses **news** and **social media** sources and uses the gleaned data - in conjunction with machine learning - to predict stock market prices in real-time.
+
+Windfall is composed of a series of modules. Below is a list of them and their intended function.
+
+---
+
+# Getting Started
+
+## Scraping Module, or `scraper`
+This module is responsible for the scraping of various news sources.
+
+It will use "official" **NEWS** sources, such as:
+- Bloomberg.com
+- BBC.co.uk
+- The Wall Street Journal (WSJ)
+
+... as well as open social media networks with an API, such as Twitter.
+
+This module is the entrypoint to the software and should return data in the form of JSON. Support for GraphQL is being considered.
+
+| Methods | Parameters | Description | Returns
+|---|---|---|---|
+| parseNewsSource | sourceId | Parses a single News source using respective Scraper or API| JSON
+| parseSocialSource | sourceId | Parses a single Social source using respective Scraper or API| JSON
+
+---
+
+## Source Listener Module, or `listener`
+This module is responsible for listening (via polling) for new publications and posts across all **sources** and then direct successful requests to the `scraper`. 
+
+| Methods | Parameters | Description | Returns
+|---|---|---|---|
+| handle | - | Handles the `newSourceDetected` event | `articleURL`, `sourceId`, ``
+
+---
+
+# Functionality
+
+## First, listen for new publications.
+
+#### For News Sources
+When new posts are published, the `listener` should catch the story and pass the `articleURL` and `sourceId` to the `scraper`. Blog posts will be considered "official news sources," since a certain baseline of grammar is guaranteed.
+
+#### For Social Sources
+When new comments or tweets are published, the `listener` should catch the story and pass the `articleURL` and `sourceId` to the `scraper`.
+
+---
+
+## Process data
+Once the data is retrieved, we will have a corpus of text data to be analyzed.
+
+
+#### Sentiment Analysis & NLP
+
+Sentiment Analysis and other NLP analytical processes will be applied to the text, ultimately outputting a "score action". The term `action` here is used in the context of [Redux](http://redux.js.org/) actions. 
+
+These generated [Actions](http://redux.js.org/docs/basics/Actions.html), coupled with [Reducers](http://redux.js.org/docs/basics/Reducers.html), will serve to mutate and calibrate a master `object` that represents Windfall's current understanding of the health of each stock.
+
+This operation will be done asynchronously, as per [this documentation](http://redux.js.org/docs/advanced/AsyncActions.html).
+
+With an asynchronous, redux-based implementation, we should be able to amass an extremely navigable record of changes. By observing the patterns in these changes, we can prescribe a course of action in that taunting binary choice that commands the stock market: *invest*, or *don't*?
+
+--- 
+
+#### Machine Learning
+
+Financial records are immaculately preserved, and serve as a potent resource for machine learning training. It is possible that by retroactively parsing news resources and pairing them semantically with news coverage patterns within the same units of time, we can synthesize an understanding of the following:
+
+- which news resources are the most accurate & most consistent predictors of stock market behavior (whether by cause or effect)
+- which kinds of vocabulary most directly correlates with which kind of stock market behavior
+
+These two data points will allow us to hone our news parsing algorithm by assigning *weights* to data gleaned from **Source A*** vs **Source B**, ultimately resulting in a far more accurate model over all.
+
+**ALTERNATIVELY**, as a practical consideration and following the software principle that software should *complement*, rather than *completely replace* the element of *human decision*, we may simply opt to provide a GUI-friendly portal to this historical stock data instead of using it as a factor relevant to the scoring.
+
+---
+
+# Implementation
+
+Details regarding the architecture for the site.
+
+## Summary
+There will be two components to Windfall. The software is, ultimately, intended for use by people and not developers. Thus, the API will be internal use only. 
+
+---
+
+### Back-end
+
+#### Processing
+A server running Flask will be running constantly. `cron` or some *daemon* will be deployed to listen for new news stories and parse them upon release. This server will contain the code for the `scraper` and the `listener`. 
+
+#### User Base & Data
+A second server running [Laravel](http://laravel.com/) or [Echo](https://echo.labstack.com/) with the [GORM ORM](https://github.com/jinzhu/gorm) will be deployed. This server will contain the code controlling user sign up and user-specific data, such as *stocks to track*, as well as interactively generate personalized financial projections.
+
+---
+### Front-end
+
+#### Historical View
+The Laravel server from previously will also "dumbly" serve static past stock historical data, using AJAX and a search engine like [Apache Solr](http://lucene.apache.org/solr/) and [D3](https://d3js.org/) to allow for swift browsing of stock histories. These can just use Blade templates.
+
+#### Admin Panel
+A third server will serve a React-powered front-end. This "admin panel" of sorts will allow you to view your timeline of promising stocks, track specific stocks, create manual mappings between stocks and keywords, etc.
+
+---
+
+#### Basic DevOps & Environments
+There will be staging environments for each component. Jenkins CI will be used to build each application as necessary on EC2 instances. `nginx` will be used. 
