@@ -2,10 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on </title>
-    <link>/projects/index.xml</link>
+    <link>/projects/</link>
     <description>Recent content in Projects on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Adelie Developer&#39;s Group</title>
@@ -13,41 +15,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/adg/</guid>
-      <description>
-
-&lt;h4 id=&#34;beer-me-slackbot&#34;&gt;Beer me, Slackbot! 🍺&lt;/h4&gt;
-
-&lt;p&gt;The Adelie Developer&amp;rsquo;s Group is an online, Slack-based study group for web development.&lt;/p&gt;
-
-&lt;p&gt;The group is beginner-friendly and project-oriented. Currently, some of the members are working on individual developer portfolio websites using modern front-end tooling and best practices.&lt;/p&gt;
-
-&lt;h3 id=&#34;group-information-resources&#34;&gt;Group Information &amp;amp; Resources&lt;/h3&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Group Resources&lt;/th&gt;
-&lt;th&gt;Project Resources&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://notes.adelie.co/s/SJC0xUidl&#34;&gt;Introduction To The Group&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCGamDqsdxvhd5WoLStmXMYQ&#34;&gt;Adelie YouTube Channel&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;mailto:aflashyrhetoric@gmail.com&#34;&gt;Request Invitation&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://notes.adelie.co/s/S1A1crdpg&#34;&gt;Roster&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;We use Slack, HackMD, Github, CodePen, YouTube, and other collaborative tools to communicate, share design inspiration, tips, coding help and feedback, and more.&lt;/p&gt;
-
-&lt;p&gt;Currently, slots are closed to keep the community small, but extremely inactive members are routinely removed, so you can join the waiting list by &lt;a href=&#34;mailto:aflashyrhetoric@gmail.com&#34;&gt;emailing me at aflashyrhetoric@gmail.com&lt;/a&gt;. Thanks!&lt;/p&gt;
-</description>
+      <description>Beer me, Slackbot! 🍺 The Adelie Developer&amp;rsquo;s Group is an online, Slack-based study group for web development.
+The group is beginner-friendly and project-oriented. Currently, some of the members are working on individual developer portfolio websites using modern front-end tooling and best practices.
+Group Information &amp;amp; Resources    Group Resources Project Resources     Introduction To The Group Adelie YouTube Channel   Request Invitation Roster    We use Slack, HackMD, Github, CodePen, YouTube, and other collaborative tools to communicate, share design inspiration, tips, coding help and feedback, and more.</description>
     </item>
     
     <item>
@@ -56,51 +26,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/milton-bros/</guid>
-      <description>
-
-&lt;h4 id=&#34;milton-candle&#34;&gt;Milton &amp;amp; Candle&lt;/h4&gt;
-
-&lt;p&gt;The &amp;ldquo;Milton Bros&amp;rdquo; project was my first soiree into the world of character design. I&amp;rsquo;ve always had ambitions to develop a game - I think it&amp;rsquo;s the ultimate form of expression - and while I&amp;rsquo;m somewhat comfortable in learning the development side of things, creating game art was always an extremely foreign world.&lt;/p&gt;
-
-&lt;p&gt;I designed Milton (pictured) and &amp;ldquo;Candle&amp;rdquo;, among several other bizarre characters, as a way to dive right into experimenting with simple shapes to build memorable characters. Of course, they&amp;rsquo;re silly and rudimentary, but I&amp;rsquo;m proud of them.&lt;/p&gt;
-
-&lt;h4 id=&#34;aseprite-animations&#34;&gt;Aseprite Animations&lt;/h4&gt;
-
-&lt;p&gt;I also wanted to try my hand at using Aseprite, a pixel-art editor. And so came a bunch of little projects.&lt;/p&gt;
-
-&lt;p&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;../img/projects/evil.gif&#34; /&gt;
-    
-    
-&lt;/figure&gt;
- 
-&lt;figure &gt;
-    
-        &lt;img src=&#34;../img/projects/evil2.gif&#34; /&gt;
-    
-    
-&lt;/figure&gt;
- 
-&lt;figure &gt;
-    
-        &lt;img src=&#34;../img/projects/hehe.gif&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h4&gt;
-
-&lt;p&gt;I realized how restrained the process is. It&amp;rsquo;s tempting to add extremely eye-catching features with every stroke of the pen: scars, tattoos, hats, weapons - anything to catch the eye. The best-designed characters are truly more than the sum of their parts. Garish details, jagged lines, and high-contrast colors just serve to distract and clutter; I noticed that it&amp;rsquo;s the minutiae that really adds life and uniqueness.&lt;/p&gt;
-
-&lt;p&gt;I used &lt;a href=&#34;https://www.sketchapp.com/&#34;&gt;Sketch&lt;/a&gt; and &lt;a href=&#34;https://aseprite.org&#34;&gt;Aseprite&lt;/a&gt; for this project.&lt;/p&gt;
-
-&lt;p&gt;I definitely plan on creating more &amp;ldquo;character sets&amp;rdquo; like this in the future, particularly pixel-art with &lt;a href=&#34;https://www.aseprite.org/&#34;&gt;Aseprite&lt;/a&gt;. Hopefully, some 1,000 iterations from now, they&amp;rsquo;ll be good enough to include in a real game.&lt;/p&gt;
-</description>
+      <description>Milton &amp;amp; Candle The &amp;ldquo;Milton Bros&amp;rdquo; project was my first soiree into the world of character design. I&amp;rsquo;ve always had ambitions to develop a game - I think it&amp;rsquo;s the ultimate form of expression - and while I&amp;rsquo;m somewhat comfortable in learning the development side of things, creating game art was always an extremely foreign world.
+I designed Milton (pictured) and &amp;ldquo;Candle&amp;rdquo;, among several other bizarre characters, as a way to dive right into experimenting with simple shapes to build memorable characters.</description>
     </item>
     
     <item>
@@ -109,49 +36,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/mosu/</guid>
-      <description>
-
-&lt;h2 id=&#34;linkedin-hired-vettery-indeed-monster&#34;&gt;LinkedIn, Hired, Vettery, Indeed, Monster&amp;hellip;&amp;hellip;🙅&lt;/h2&gt;
-
-&lt;p&gt;Mosu arose out of my personal frustration with the process of job hunting. There are something like a dozen different &amp;ldquo;job board&amp;rdquo; websites, each with their own quirks. I found myself running around between ten different accounts, trying to remember which job applications were in which &amp;ldquo;state&amp;rdquo;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Saved, or &amp;ldquo;To Be Applied To&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Application sent&lt;/li&gt;
-&lt;li&gt;Currently interviewing&lt;/li&gt;
-&lt;li&gt;Successfully received an offer&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The experience was complete 💩 . I decided to build a tool for myself to manage the chaos, since I figured the job search would last at least a few months.&lt;/p&gt;
-
-&lt;p&gt;I sat down with some coffee and planned an organization app. The idea was that each &lt;strong&gt;Job Application&lt;/strong&gt; goes through a pipeline, compromised of the 4 &amp;ldquo;states&amp;rdquo; mentioned above.&lt;/p&gt;
-
-&lt;p&gt;I used Laravel to build a back-end API for a user system, as well as a basic CRUD application for saving &amp;ldquo;job applications.&amp;rdquo; ReactJS was used on the front-end to display data and allow users to manage their job applications, keeping track of information like salary, location (of the position), whether it was a remote position, URLs to the job posting online, and the state of the application. Color indicators allowed you to see, at a glance, what status a particular job application was in.&lt;/p&gt;
-
-&lt;p&gt;I have since taken down the pre-alpha application (which used to reside at &lt;a href=&#34;https://mosu.io&#34;&gt;Mosu.io&lt;/a&gt;) to work on a proper alpha version. With some simple promotion, I managed to acquire around 20 semi-regular users, who, after about a year, stopped using the app - hopefully they got a job!&lt;/p&gt;
-
-&lt;h2 id=&#34;planned-features&#34;&gt;Planned Features&lt;/h2&gt;
-
-&lt;p&gt;Several features are planned for v1.0, which is (completely arbitrarily) slated for release at the end of year 2018.&lt;/p&gt;
-
-&lt;h4 id=&#34;integration-with-linkedin&#34;&gt;Integration with LinkedIn ::&lt;/h4&gt;
-
-&lt;p&gt;LinkedIn is the de-facto &amp;ldquo;home base&amp;rdquo; for job-seekers. LinkedIn integration would allow for simple sign up and login, and the ability to pull any existing data you may have.&lt;/p&gt;
-
-&lt;h4 id=&#34;saving-documents&#34;&gt;Saving Documents&lt;/h4&gt;
-
-&lt;p&gt;I&amp;rsquo;m not out to create another Dropbox, but some basic file storage might come in handy for things like resumes.&lt;/p&gt;
-
-&lt;h4 id=&#34;aggregate-job-board&#34;&gt;Aggregate Job Board&lt;/h4&gt;
-
-&lt;p&gt;Different job boards have different job listings. Viewing them in one place could come in very, very handy.&lt;/p&gt;
-
-&lt;h4 id=&#34;live-apply-chrome-extension&#34;&gt;&amp;ldquo;Live Apply&amp;rdquo; Chrome Extension&lt;/h4&gt;
-
-&lt;p&gt;Each &amp;ldquo;job board&amp;rdquo; site requires different pieces of information. Some require a &amp;ldquo;long bio&amp;rdquo; while others prohibit biographies that are longer than 200 words or so.&lt;/p&gt;
-
-&lt;p&gt;Write your content all in one place, and visit a job listing. The Chrome extension can detect your current website and show only the relevant information.&lt;/p&gt;
-</description>
+      <description>LinkedIn, Hired, Vettery, Indeed, Monster&amp;hellip;&amp;hellip;🙅 Mosu arose out of my personal frustration with the process of job hunting. There are something like a dozen different &amp;ldquo;job board&amp;rdquo; websites, each with their own quirks. I found myself running around between ten different accounts, trying to remember which job applications were in which &amp;ldquo;state&amp;rdquo;:
+ Saved, or &amp;ldquo;To Be Applied To&amp;rdquo; Application sent Currently interviewing Successfully received an offer  The experience was complete 💩 .</description>
     </item>
     
     <item>
@@ -160,20 +46,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/nightmessenger/</guid>
-      <description>
-
-&lt;h4 id=&#34;ow-my-eyes&#34;&gt;Ow, my eyes 👀&lt;/h4&gt;
-
-&lt;p&gt;Messenger.com is a relatively little-known messaging interface for Facebook Messenger. It&amp;rsquo;s a great (and less power-hungry) alternative to the little chat window you get as part of the standard Facebook desktop experience.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;d often work late in the night, and found that using Messenger.com would hurt my eyes. I had somewhat recently discovered the world of Chrome extension development, so I decided to dive in and see if I couldn&amp;rsquo;t make a darker theme for Messenger.com.&lt;/p&gt;
-
-&lt;p&gt;It went smoother than I expected. Google provided an easy way for an extension to add stylesheets and cloud-setting-sync abilities. The concept of a &lt;code&gt;manifest.json&lt;/code&gt; was similar to a &lt;code&gt;package.json&lt;/code&gt; file, and the UI for the &amp;ldquo;Developer Dashboard&amp;rdquo; was really intuitive - if a little basic. 😉&lt;/p&gt;
-
-&lt;p&gt;You can &lt;a href=&#34;https://chrome.google.com/webstore/detail/night-messenger/hjhnmilbfdehpgfcojlmmooknnkhgdmh?hl=en&#34;&gt;download Night Messenger here&lt;/a&gt;. It currently has 650+ users, and the most recent version (v1.2.5) introduced properly-limited permissions and can be considered &lt;strong&gt;stable&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Let me know if you have feedback or feature requests. Cheers 🍺!&lt;/p&gt;
-</description>
+      <description>Ow, my eyes 👀 Messenger.com is a relatively little-known messaging interface for Facebook Messenger. It&amp;rsquo;s a great (and less power-hungry) alternative to the little chat window you get as part of the standard Facebook desktop experience.
+I&amp;rsquo;d often work late in the night, and found that using Messenger.com would hurt my eyes. I had somewhat recently discovered the world of Chrome extension development, so I decided to dive in and see if I couldn&amp;rsquo;t make a darker theme for Messenger.</description>
     </item>
     
   </channel>
