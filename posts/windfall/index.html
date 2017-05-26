@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="windfall" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://kevinoh.me/posts/" />
-  <meta property="og:description" content="" />
-  <meta property="og:image" content="http://kevinoh.me/img/.png" />
+  <meta property="og:url" content="http://kevinoh.me/posts/windfall" />
+  <meta property="og:description" content="windfall" />
+  <meta property="og:image" content="http://kevinoh.me/img/windfall.png" />
   <meta property="fb:app_id" content="126086191274356" />
   <link rel="stylesheet" type="text/css" href="../../css/styles.css">
   <title>windfall</title>
@@ -45,13 +45,13 @@
   <div class="post-single__content-wrapper">
     
 
-<p>🚨 [DRAFT 1.0]</p>
+<p>🚨 DRAFT 1.0 :rotating_light</p>
 
 <h1 id="summary">Summary</h1>
 
 <p>Windfall is a planned software project. It is engine that scrapes and parses <strong>news</strong> and <strong>social media</strong> sources and uses the gleaned data - in conjunction with machine learning - to predict stock market prices in real-time.</p>
 
-<p>Windfall is composed of a series of modules. Below is a list of them and their intended function.</p>
+<p>Windfall is composed of a series of modules. The sections below lightly detail the planned modules and provide an overview on how they should work together.</p>
 
 <hr />
 
@@ -61,14 +61,17 @@
 
 <p>This module is responsible for the scraping of various news sources.</p>
 
-<p>It will use &ldquo;official&rdquo; <strong>NEWS</strong> sources, such as:
-- Bloomberg.com
-- BBC.co.uk
-- The Wall Street Journal (WSJ)</p>
+<p>It will use &ldquo;official&rdquo; <strong>News</strong> sources, such as:</p>
 
-<p>&hellip; as well as open social media networks with an API, such as Twitter.</p>
+<ul>
+<li>Bloomberg.com</li>
+<li>BBC.co.uk</li>
+<li>The Wall Street Journal (WSJ)</li>
+</ul>
 
-<p>This module is the entrypoint to the software and should return data in the form of JSON. Support for GraphQL is being considered.</p>
+<p>&hellip; as well as <strong>Social Media</strong> sources with an API, such as Twitter. For sources without an API, data will be gathered via the <a href="scrapy.org">Scrapy</a> library.</p>
+
+<p>Support for <a href="http://graphql.org/">GraphQL</a> is being considered.</p>
 
 <table>
 <thead>
@@ -125,9 +128,9 @@
 
 <hr />
 
-<h1 id="functionality">Functionality</h1>
+<h1 id="approach">Approach</h1>
 
-<h2 id="first-listen-for-new-publications">First, listen for new publications.</h2>
+<h2 id="1-listen-for-new-publications">1. Listen for new publications.</h2>
 
 <h4 id="for-news-sources">For News Sources</h4>
 
@@ -139,7 +142,7 @@
 
 <hr />
 
-<h2 id="process-data">Process data</h2>
+<h2 id="2-process-data">2. Process data.</h2>
 
 <p>Once the data is retrieved, we will have a corpus of text data to be analyzed.</p>
 
@@ -164,7 +167,7 @@
 <li>which kinds of vocabulary most directly correlates with which kind of stock market behavior</li>
 </ul>
 
-<p>These two data points will allow us to hone our news parsing algorithm by assigning <em>weights</em> to data gleaned from <strong>Source A</strong>* vs <strong>Source B</strong>, ultimately resulting in a far more accurate model over all.</p>
+<p>These two data points will allow us to hone our news parsing algorithm by assigning <em>weights</em> to data gleaned from <strong>Source A</strong> vs <strong>Source B</strong>, ultimately resulting in a far more accurate model over all.</p>
 
 <p><strong>ALTERNATIVELY</strong>, as a practical consideration and following the software principle that software should <em>complement</em>, rather than <em>completely replace</em> the element of <em>human decision</em>, we may simply opt to provide a GUI-friendly portal to this historical stock data instead of using it as a factor relevant to the scoring.</p>
 
@@ -176,7 +179,7 @@
 
 <h2 id="summary-1">Summary</h2>
 
-<p>There will be two components to Windfall. The software is, ultimately, intended for use by people and not developers. Thus, the API will be internal use only.</p>
+<p>There will be several modules. A dedicated parser/scraper API, a server for users and back-end data, and a ReactJS front-end. The software is, ultimately, intended for use by people and not developers. Thus, the API will be internal use only.</p>
 
 <hr />
 

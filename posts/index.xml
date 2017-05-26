@@ -16,9 +16,9 @@
       <pubDate>Thu, 25 May 2017 16:33:48 -0400</pubDate>
       
       <guid>/posts/windfall/</guid>
-      <description>🚨 [DRAFT 1.0]
+      <description>🚨 DRAFT 1.0 :rotating_light
 Summary Windfall is a planned software project. It is engine that scrapes and parses news and social media sources and uses the gleaned data - in conjunction with machine learning - to predict stock market prices in real-time.
-Windfall is composed of a series of modules. Below is a list of them and their intended function.
+Windfall is composed of a series of modules. The sections below lightly detail the planned modules and provide an overview on how they should work together.
 Getting Started Scraping Module, or scraper This module is responsible for the scraping of various news sources.</description>
     </item>
     
