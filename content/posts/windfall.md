@@ -2,7 +2,7 @@
 date = "2017-05-25T16:33:48-04:00"
 title = "windfall"
 slug = "windfall"
-ogdescription = "windfall"
+ogdescription = "Windfall is a planned software project"
 +++
 
 :rotating_light: DRAFT 0.0.1 :rotating_light:
