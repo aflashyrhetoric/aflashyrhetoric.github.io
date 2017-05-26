@@ -1,15 +1,17 @@
 +++
 date = "2017-05-25T16:33:48-04:00"
 title = "windfall"
+slug = "windfall"
+ogdescription = "windfall"
 +++
 
-:rotating_light: [DRAFT 1.0]
+:rotating_light: DRAFT 1.0 :rotating_light
 
 # Summary
 
 Windfall is a planned software project. It is engine that scrapes and parses **news** and **social media** sources and uses the gleaned data - in conjunction with machine learning - to predict stock market prices in real-time.
 
-Windfall is composed of a series of modules. Below is a list of them and their intended function.
+Windfall is composed of a series of modules. The sections below lightly detail the planned modules and provide an overview on how they should work together.
 
 ---
 
@@ -18,14 +20,15 @@ Windfall is composed of a series of modules. Below is a list of them and their i
 ## Scraping Module, or `scraper`
 This module is responsible for the scraping of various news sources.
 
-It will use "official" **NEWS** sources, such as:
+It will use "official" **News** sources, such as:
+
 - Bloomberg.com
 - BBC.co.uk
 - The Wall Street Journal (WSJ)
 
-... as well as open social media networks with an API, such as Twitter.
+... as well as **Social Media** sources with an API, such as Twitter. For sources without an API, data will be gathered via the [Scrapy](scrapy.org) library.
 
-This module is the entrypoint to the software and should return data in the form of JSON. Support for GraphQL is being considered.
+Support for [GraphQL](http://graphql.org/) is being considered.
 
 | Methods | Parameters | Description | Returns
 |---|---|---|---|
@@ -43,9 +46,9 @@ This module is responsible for listening (via polling) for new publications and 
 
 ---
 
-# Functionality
+# Approach
 
-## First, listen for new publications.
+## 1. Listen for new publications.
 
 #### For News Sources
 When new posts are published, the `listener` should catch the story and pass the `articleURL` and `sourceId` to the `scraper`. Blog posts will be considered "official news sources," since a certain baseline of grammar is guaranteed.
@@ -55,9 +58,8 @@ When new comments or tweets are published, the `listener` should catch the story
 
 ---
 
-## Process data
+## 2. Process data.
 Once the data is retrieved, we will have a corpus of text data to be analyzed.
-
 
 #### Sentiment Analysis & NLP
 
@@ -78,18 +80,17 @@ Financial records are immaculately preserved, and serve as a potent resource for
 - which news resources are the most accurate & most consistent predictors of stock market behavior (whether by cause or effect)
 - which kinds of vocabulary most directly correlates with which kind of stock market behavior
 
-These two data points will allow us to hone our news parsing algorithm by assigning *weights* to data gleaned from **Source A*** vs **Source B**, ultimately resulting in a far more accurate model over all.
+These two data points will allow us to hone our news parsing algorithm by assigning *weights* to data gleaned from **Source A** vs **Source B**, ultimately resulting in a far more accurate model over all.
 
 **ALTERNATIVELY**, as a practical consideration and following the software principle that software should *complement*, rather than *completely replace* the element of *human decision*, we may simply opt to provide a GUI-friendly portal to this historical stock data instead of using it as a factor relevant to the scoring.
 
 ---
 
 # Implementation
-
 Details regarding the architecture for the site.
 
 ## Summary
-There will be two components to Windfall. The software is, ultimately, intended for use by people and not developers. Thus, the API will be internal use only. 
+There will be several modules. A dedicated parser/scraper API, a server for users and back-end data, and a ReactJS front-end. The software is, ultimately, intended for use by people and not developers. Thus, the API will be internal use only. 
 
 ---
 
