@@ -200,7 +200,7 @@
 
 <h4 id="processing">Processing</h4>
 
-<p>A server running Flask will be running constantly. <code>cron</code> or some <em>daemon</em> will be deployed to listen for new news stories and parse them upon release. This server will contain the code for the <code>scraper</code> and the <code>listener</code>.</p>
+<p>A server running Flask will contain processes that are polling all data sources at some yet-undetermined interval. <code>cron</code> or some <em>daemon</em> will be deployed to listen for new news stories and parse them upon release. This server will contain the code for the <code>scraper</code> and the <code>listener</code>.</p>
 
 <h4 id="user-base-data">User Base &amp; Data</h4>
 
@@ -223,6 +223,46 @@
 <h4 id="basic-devops-environments">Basic DevOps &amp; Environments</h4>
 
 <p>There will be staging environments for each component. Jenkins CI will be used to build each application as necessary on EC2 instances. <code>nginx</code> will be used.</p>
+
+<h4 id="libraries">Libraries</h4>
+
+<p>Although the exact libraries used are obviously difficult to predict, some likely libraries will be:</p>
+
+<ul>
+<li>Scrapy</li>
+<li>SciPy</li>
+<li>Natural Language Tool Kit, or NLTK</li>
+</ul>
+
+<p>Back-end libraries/frameworks will include Flask for the scraping API, either Laravel or Echo for the main web application back-end.</p>
+
+<p>Front-end libraries will include Bulma, along with Google WebFonts and TypeKit. Webpack will be used to build, bundle, and optimize assets.</p>
+
+<p>ReactJS will be used to power the &ldquo;dashboard&rdquo; or &ldquo;admin panel&rdquo; aspect. Redux will be used as the state container. ES6 features, such as promises, will likely be used fairly often, so Babel will be used to transpile.</p>
+
+<hr />
+
+<h1 id="faq">FAQ</h1>
+
+<h4 id="how-long-will-this-take">How long will this take?</h4>
+
+<p>Legit, it could take 30 years. I have no idea if I&rsquo;m legit enough for this project. But it&rsquo;s fascinating and I would love to give it a try.</p>
+
+<h4 id="are-you-open-to-collaborators">Are you open to collaborators?</h4>
+
+<p>No. The project doesn&rsquo;t exist in a tangible state yet. Managing a project of this scale would also be extremely difficult.</p>
+
+<h4 id="do-you-even-know-nlp-machine-learning-the-stock-market-or-any-of-that">Do you even know NLP, machine learning, the stock market, or any of that?</h4>
+
+<p>No, but I know more than I did a year ago, and next year I&rsquo;ll know more than I do today. And so it goes.</p>
+
+<h4 id="will-internet-explorer-ms-edge-be-supported">Will Internet Explorer / MS Edge be supported?</h4>
+
+<p>No.</p>
+
+<h4 id="who-is-the-target-userbase">Who is the target userbase?</h4>
+
+<p>Not sure as of yet. This, along with tons of other design decisions, will be made iteratively along the way.</p>
 
     <a class="btn btn--accent" href="../../posts">View All Posts</a>
   </div>
