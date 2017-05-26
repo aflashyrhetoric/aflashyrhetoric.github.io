@@ -108,7 +108,7 @@ There will be several modules. A dedicated parser/scraper API, a server for user
 ### Back-end
 
 #### Processing
-A server running Flask will be running constantly. `cron` or some *daemon* will be deployed to listen for new news stories and parse them upon release. This server will contain the code for the `scraper` and the `listener`. 
+A server running Flask will contain processes that are polling all data sources at some yet-undetermined interval. `cron` or some *daemon* will be deployed to listen for new news stories and parse them upon release. This server will contain the code for the `scraper` and the `listener`. 
 
 #### User Base & Data
 A second server running [Laravel](http://laravel.com/) or [Echo](https://echo.labstack.com/) with the [GORM ORM](https://github.com/jinzhu/gorm) will be deployed. This server will contain the code controlling user sign up and user-specific data, such as *stocks to track*, as well as interactively generate personalized financial projections.
@@ -126,3 +126,36 @@ A third server will serve a React-powered front-end. This "admin panel" of sorts
 
 #### Basic DevOps & Environments
 There will be staging environments for each component. Jenkins CI will be used to build each application as necessary on EC2 instances. `nginx` will be used. 
+
+#### Libraries
+
+Although the exact libraries used are obviously difficult to predict, some likely libraries will be:
+
+- Scrapy
+- SciPy
+- Natural Language Tool Kit, or NLTK
+
+Back-end libraries/frameworks will include Flask for the scraping API, either Laravel or Echo for the main web application back-end. 
+
+Front-end libraries will include Bulma, along with Google WebFonts and TypeKit. Webpack will be used to build, bundle, and optimize assets. 
+
+ReactJS will be used to power the "dashboard" or "admin panel" aspect. Redux will be used as the state container. ES6 features, such as promises, will likely be used fairly often, so Babel will be used to transpile. 
+
+---
+
+# FAQ
+
+#### How long will this take?
+Legit, it could take 30 years. I have no idea if I'm legit enough for this project. But it's fascinating and I would love to give it a try.
+
+#### Are you open to collaborators?
+No. The project doesn't exist in a tangible state yet. Managing a project of this scale would also be extremely difficult. 
+
+#### Do you even know NLP, machine learning, the stock market, or any of that?
+No, but I know more than I did a year ago, and next year I'll know more than I do today. And so it goes.
+
+#### Will Internet Explorer / MS Edge be supported?
+No.
+
+#### Who is the target userbase?
+Not sure as of yet. This, along with tons of other design decisions, will be made iteratively along the way.
