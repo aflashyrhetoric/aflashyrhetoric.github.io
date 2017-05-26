@@ -5,13 +5,24 @@ slug = "windfall"
 ogdescription = "windfall"
 +++
 
-:rotating_light: DRAFT 1.0 :rotating_light
+:rotating_light: DRAFT 0.0.1 :rotating_light:
 
-# Summary
+# Summary & Introduction
 
-Windfall is a planned software project. It is engine that scrapes and parses **news** and **social media** sources and uses the gleaned data - in conjunction with machine learning - to predict stock market prices in real-time.
+*Windfall is a planned software project.*
 
-Windfall is composed of a series of modules. The sections below lightly detail the planned modules and provide an overview on how they should work together.
+Windfall scrapes/fetches data from **news** and **social media** sources and processes it to predict stock market prices in real-time. It also seeks to retroactively generate stock-related insights by analyzing correlations between news coverage and stock performance. Lastly, it seeks to provide users with a panel through which they can navigate this nuanced data and strategize to maximize their returns.
+
+Even without that last piece, Windfall seeks to algorithmically examine the relationship - if any - between the news we consume and the way our financial markets respond in kind. Windfall doesn't seek to beat out similar software, but rather to approach the situation in its own way.
+
+Research into the various fields are being done before any official development takes place, to help ensure that:
+
+- the algorithms are mathematically sound and provide *significant* (as opposed to *meaningless*) data
+- any conclusions drawn from the gleaned data are directly and logically derived from the data
+
+Windfall will be composed of a series of modules. The sections below lightly detail the planned modules and provide an overview on how they should work together.
+
+Cheers, here's to making this pipe dream of an application into reality. :beer:
 
 ---
 
