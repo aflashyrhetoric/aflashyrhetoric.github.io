@@ -15,7 +15,7 @@ Windfall scrapes/fetches data from **news** and **social media** sources and pro
 
 Even without that last piece, Windfall seeks to algorithmically examine the relationship - if any - between the news we consume and the way our financial markets respond in kind. Windfall doesn't seek to beat out similar software, but rather to approach the situation in its own way.
 
-Research into the various fields are being done before any official development takes place, to help ensure that:
+Research into the various fields are being done before any official development takes place, both for literacy in the rigorous subject matter, and to help ensure that:
 
 - the algorithms are mathematically sound and provide *significant* (as opposed to *meaningless*) data
 - any conclusions drawn from the gleaned data are directly and logically derived from the data
