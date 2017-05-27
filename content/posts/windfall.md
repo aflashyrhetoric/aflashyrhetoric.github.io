@@ -3,6 +3,7 @@ date = "2017-05-25T16:33:48-04:00"
 title = "windfall"
 slug = "windfall"
 ogdescription = "windfall"
+series = "Windfall"
 +++
 
 :rotating_light: DRAFT 0.0.1 :rotating_light:
@@ -20,7 +21,7 @@ Research into the various fields are being done before any official development 
 - the algorithms are mathematically sound and provide *significant* (as opposed to *meaningless*) data
 - any conclusions drawn from the gleaned data are directly and logically derived from the data
 
-Windfall will be composed of a series of modules. The sections below lightly detail the planned modules and provide an overview on how they should work together.
+Windfall will be composed of a series of modules. The sections below lightly detail the modules that are planned so far, and provide an overview on how they should work together.
 
 Cheers, here's to making this pipe dream of an application into reality. :beer:
 

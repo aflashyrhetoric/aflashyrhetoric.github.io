@@ -1,7 +1,9 @@
 +++
 slug = ""
 ogdescription = ""
+series = ""
 +++
 
-### The slug should be the same as the image path and the ogdescription is for Facebook
+slug should equal the image path 
+ogdescription is for Facebook and image previews
  
