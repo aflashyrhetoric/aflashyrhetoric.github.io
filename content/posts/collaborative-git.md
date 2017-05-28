@@ -4,7 +4,7 @@ date = "2017-05-26T13:11:55-04:00"
 title = "collaborative git"
 slug = "collaborative-git"
 series = "tooling101"
-
+draft = true
 +++
 
 ## Summary

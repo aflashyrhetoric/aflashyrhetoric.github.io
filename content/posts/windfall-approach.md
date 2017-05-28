@@ -4,6 +4,7 @@ ogdescription = "windfall-approach"
 slug = "windfall-approach"
 date = "2017-05-26T14:02:52-04:00"
 title = "Windfall Approach"
+draft = true
 +++
 
 ## Approach
