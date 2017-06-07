@@ -45,24 +45,23 @@
   <div class="post-single__content-wrapper">
     
 
-<p>🚨 DRAFT 0.0.1 🚨</p>
+<p>🚨 Draft 0.0.2 🚨</p>
 
 <h1 id="summary-introduction">Summary &amp; Introduction</h1>
 
 <p><em>Windfall is a planned software project.</em></p>
 
-<p>Windfall scrapes/fetches data from <strong>news</strong> and <strong>social media</strong> sources and processes it to predict stock market prices in real-time. It also seeks to retroactively generate stock-related insights by analyzing correlations between news coverage and stock performance. Lastly, it seeks to provide users with a panel through which they can navigate this nuanced data and strategize to maximize their returns.</p>
+<p>Windfall scrapes/fetches data from <strong>news</strong> and <strong>social media</strong> sources and applies machine learning principles to predict stock market prices in real-time. It also seeks to provide users with a panel through which they can navigate this nuanced data and strategize to maximize their returns.</p>
 
-<p>Even without that last piece, Windfall seeks to algorithmically examine the relationship - if any - between the news we consume and the way our financial markets respond in kind. Windfall doesn&rsquo;t seek to beat out similar software, but rather to approach the situation in its own way.</p>
+<p>Windfall seeks to algorithmically examine the relationship - if any - between the news we consume and the way our financial markets respond in kind. Windfall doesn&rsquo;t seek to “beat” similar software - and trust us, we know we’re not the first - but rather to approach the situation in its own unique way.</p>
 
-<p>Research into the various fields are being done before any official development takes place, both for literacy in the rigorous subject matter, and to help ensure that:</p>
+<p>Continued research into the many relevant fields is being done before any official development takes place, both for literacy in the rigorous subject matter, and to help ensure that:</p>
 
 <ul>
-<li>the algorithms are mathematically sound and provide <em>significant</em> (as opposed to <em>meaningless</em>) data</li>
-<li>any conclusions drawn from the gleaned data are directly and logically derived from the data</li>
+<li>the algorithms are mathematically sound and provide <em>significant</em> data</li>
 </ul>
 
-<p>Windfall will be composed of a series of modules. The sections below lightly detail the planned modules and provide an overview on how they should work together.</p>
+<p>Windfall will be composed of a series of modules. The sections below lightly detail the modules that are planned so far, and provide an overview on how they will work together.</p>
 
 <p>Cheers, here&rsquo;s to making this pipe dream of an application into reality. 🍺</p>
 
@@ -70,108 +69,93 @@
 
 <h1 id="getting-started">Getting Started</h1>
 
-<h2 id="scraping-module-or-scraper">Scraping Module, or <code>scraper</code></h2>
+<p>Below is a list of the 5 primary modules that will comprise Windfall’s back-end. In addition to these modules, there will be a dedicated front-end and a “site” front-end that will provide a simple user CRUD system.</p>
 
-<p>This module is responsible for the scraping of various news sources.</p>
+<h2 id="data-scraping-module-or-scraper">Data Scraping Module, or <code>scraper</code></h2>
 
-<p>It will use &ldquo;official&rdquo; <strong>News</strong> sources, such as:</p>
+<p>This module is responsible for:</p>
 
-<ul>
-<li>Bloomberg.com</li>
-<li>BBC.co.uk</li>
-<li>The Wall Street Journal (WSJ)</li>
-</ul>
+<ol>
+<li>Crawling the websites from the <code>listener</code> module.</li>
+<li>Gleaning all data</li>
+<li>Packaging the data in an iterable and analyzable format (JSON)</li>
+<li>Handing off the data to the <code>analyzer</code>.
+Other data spaces are being explored.</li>
+</ol>
 
-<p>&hellip; as well as <strong>Social Media</strong> sources with an API, such as Twitter. For sources without an API, data will be gathered via the <a href="scrapy.org">Scrapy</a> library.</p>
-
-<p>Support for <a href="http://graphql.org/">GraphQL</a> is being considered.</p>
-
-<table>
-<thead>
-<tr>
-<th>Methods</th>
-<th>Parameters</th>
-<th>Description</th>
-<th>Returns</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>parseNewsSource</td>
-<td>sourceId</td>
-<td>Parses a single News source using respective Scraper or API</td>
-<td>JSON</td>
-</tr>
-
-<tr>
-<td>parseSocialSource</td>
-<td>sourceId</td>
-<td>Parses a single Social source using respective Scraper or API</td>
-<td>JSON</td>
-</tr>
-</tbody>
-</table>
+<p>Support for <a href="http://graphql.org/">GraphQL</a> is being considered as a way to retrieve data from the API, although it is uncertain whether this application will have a public API or be offered “as-is.”</p>
 
 <hr />
 
 <h2 id="source-listener-module-or-listener">Source Listener Module, or <code>listener</code></h2>
 
-<p>This module is responsible for listening (via polling) for new publications and posts across all <strong>sources</strong> and then direct successful requests to the <code>scraper</code>.</p>
+<p>This module is responsible for:</p>
 
-<table>
-<thead>
-<tr>
-<th>Methods</th>
-<th>Parameters</th>
-<th>Description</th>
-<th>Returns</th>
-</tr>
-</thead>
+<ol>
+<li>Listening (via interval polling) for new publications and posts across all <strong>sources</strong></li>
+<li>Directing successful HTTP requests to the <code>scraper</code>.</li>
+</ol>
 
-<tbody>
-<tr>
-<td>handle</td>
-<td>-</td>
-<td>Handles the <code>newSourceDetected</code> event</td>
-<td><code>articleURL</code>, <code>sourceId</code>, ``</td>
-</tr>
-</tbody>
-</table>
+<h2 id="analyzer-mediator-or-analysis-mediator">Analyzer Mediator or <code>analysis-mediator</code></h2>
+
+<p>This mediator module is responsible for:</p>
+
+<ol>
+<li>Coordinating data among the <code>analyzer</code> submodules, which will each yield insight in different ways. In other words, it is the synchronous endpoint to which the following <code>analysis-*</code> submodules will resolve.</li>
+</ol>
+
+<h3 id="sentiment-analysis-submodule-or-analysis-sa">Sentiment Analysis Submodule, or <code>analysis-sa</code></h3>
+
+<p>The goal of this submodule is to produce a “score” for each individual article/post. The hypothesis is that this score, when multiplied by the weight associated with the article’s origin (as produced by the next module below), will allow for a more accurate score overall.</p>
+
+<p>This submodule is responsible for:</p>
+
+<ol>
+<li>Performing sentiment analysis on the given text corpus</li>
+<li>Producing a “score” that will factor into the final prediction</li>
+</ol>
+
+<h3 id="retroactive-multivariate-regression-submodule-or-analysis-mr">Retroactive Multivariate Regression Submodule, or <code>analysis-mr</code></h3>
+
+<p>The goal of this submodule is to produce coefficients (or “weights”) that describe the reliability of various news sources as predictors of stock performance.</p>
+
+<p>This submodule is responsible for:</p>
+
+<ol>
+<li>Retroactively analyzing past correlations between published data and stock performance</li>
+<li>Determining which sources (as in authors as well as publications) are the best for predicting stock performance.</li>
+</ol>
+
+<h2 id="prediction-module-or-predictor">Prediction Module, or <code>predictor</code></h2>
+
+<p>Finally, the goal of this module is to “stitch” all the information so far into a bundle of information that is easy to understand.</p>
+
+<p>Below are some “User Stories” of how this module’s data might be used.</p>
+
+<ol>
+<li>Click “Featured” to see promising stock predictions in general</li>
+<li>Check a specific stock to see its current performance as well as a list of articles that indicate its reliability</li>
+</ol>
 
 <hr />
 
-<h1 id="approach">Approach</h1>
+<h1 id="broader-overview">Broader Overview</h1>
 
-<h2 id="1-listen-for-new-publications">1. Listen for new publications.</h2>
-
-<h4 id="for-news-sources">For News Sources</h4>
-
-<p>When new posts are published, the <code>listener</code> should catch the story and pass the <code>articleURL</code> and <code>sourceId</code> to the <code>scraper</code>. Blog posts will be considered &ldquo;official news sources,&rdquo; since a certain baseline of grammar is guaranteed.</p>
-
-<h4 id="for-social-sources">For Social Sources</h4>
-
-<p>When new comments or tweets are published, the <code>listener</code> should catch the story and pass the <code>articleURL</code> and <code>sourceId</code> to the <code>scraper</code>.</p>
-
-<hr />
-
-<h2 id="2-process-data">2. Process data.</h2>
-
-<p>Once the data is retrieved, we will have a corpus of text data to be analyzed.</p>
+<p>The above section detailed the modules involved. This section discusses some implementation-specific information, as <em>distinct</em> from the core <em>Windfall Engine</em>.</p>
 
 <h4 id="sentiment-analysis-nlp">Sentiment Analysis &amp; NLP</h4>
 
 <p>Sentiment Analysis and other NLP analytical processes will be applied to the text, ultimately outputting a &ldquo;score action&rdquo;. The term <code>action</code> here is used in the context of <a href="http://redux.js.org/">Redux</a> actions.</p>
 
-<p>These generated <a href="http://redux.js.org/docs/basics/Actions.html">Actions</a>, coupled with <a href="http://redux.js.org/docs/basics/Reducers.html">Reducers</a>, will serve to mutate and calibrate a master <code>object</code> that represents Windfall&rsquo;s current understanding of the health of each stock.</p>
+<p>These generated <a href="http://redux.js.org/docs/basics/Actions.html">Actions</a>, coupled with <a href="http://redux.js.org/docs/basics/Reducers.html">Reducers</a>, will serve to mutate and “train” a master <code>object</code> that represents Windfall&rsquo;s current understanding of the health of each stock.</p>
 
-<p>This operation will be done asynchronously, as per <a href="http://redux.js.org/docs/advanced/AsyncActions.html">this documentation</a>.</p>
+<p>Inasmuch as possible, this operation will be done asynchronously, as per <a href="http://redux.js.org/docs/advanced/AsyncActions.html">this documentation</a>, to prepare Windfall as an “always-on, always-analyzing” engine that is minimally capped by low-spec hardware.</p>
 
 <p>With an asynchronous, redux-based implementation, we should be able to amass an extremely navigable record of changes. By observing the patterns in these changes, we can prescribe a course of action in that taunting binary choice that commands the stock market: <em>invest</em>, or <em>don&rsquo;t</em>?</p>
 
 <hr />
 
-<h4 id="machine-learning">Machine Learning</h4>
+<h4 id="retroactive-supervised-machine-learning">Retroactive supervised machine learning</h4>
 
 <p>Financial records are immaculately preserved, and serve as a potent resource for machine learning training. It is possible that by retroactively parsing news resources and pairing them semantically with news coverage patterns within the same units of time, we can synthesize an understanding of the following:</p>
 
@@ -198,11 +182,11 @@
 
 <h3 id="back-end">Back-end</h3>
 
-<h4 id="processing">Processing</h4>
+<h4 id="primary-app-server">Primary App Server</h4>
 
-<p>A server running Flask will contain processes that are polling all data sources at some yet-undetermined interval. <code>cron</code> or some <em>daemon</em> will be deployed to listen for new news stories and parse them upon release. This server will contain the code for the <code>scraper</code> and the <code>listener</code>.</p>
+<p>A server running Flask will contain processes that are polling all data sources at some yet-undetermined interval. <code>cron</code> or some <em>daemon</em> will be deployed to listen for new news stories and parse them upon release. This server will contain the code for the primary modules mentioned above.</p>
 
-<h4 id="user-base-data">User Base &amp; Data</h4>
+<h4 id="site-server">Site Server</h4>
 
 <p>A second server running <a href="http://laravel.com/">Laravel</a> or <a href="https://echo.labstack.com/">Echo</a> with the <a href="https://github.com/jinzhu/gorm">GORM ORM</a> will be deployed. This server will contain the code controlling user sign up and user-specific data, such as <em>stocks to track</em>, as well as interactively generate personalized financial projections.</p>
 
@@ -212,7 +196,7 @@
 
 <h4 id="historical-view">Historical View</h4>
 
-<p>The Laravel server from previously will also &ldquo;dumbly&rdquo; serve static past stock historical data, using AJAX and a search engine like <a href="http://lucene.apache.org/solr/">Apache Solr</a> and <a href="https://d3js.org/">D3</a> to allow for swift browsing of stock histories. These can just use Blade templates.</p>
+<p>The Laravel server will also &ldquo;dumbly&rdquo; serve static past stock historical data, using AJAX and a search engine like <a href="http://lucene.apache.org/solr/">Apache Solr</a> and <a href="https://d3js.org/">D3</a> to allow for swift browsing of stock histories. These can just use Blade templates.</p>
 
 <h4 id="admin-panel">Admin Panel</h4>
 
@@ -220,25 +204,26 @@
 
 <hr />
 
-<h4 id="basic-devops-environments">Basic DevOps &amp; Environments</h4>
+<h3 id="basic-devops-environments">Basic DevOps &amp; Environments</h3>
 
 <p>There will be staging environments for each component. Jenkins CI will be used to build each application as necessary on EC2 instances. <code>nginx</code> will be used.</p>
 
-<h4 id="libraries">Libraries</h4>
+<h3 id="libraries">Libraries</h3>
 
 <p>Although the exact libraries used are obviously difficult to predict, some likely libraries will be:</p>
 
 <ul>
 <li>Scrapy</li>
-<li>SciPy</li>
+<li>SciPy / NumPy</li>
 <li>Natural Language Tool Kit, or NLTK</li>
+<li>Scikit-learn</li>
 </ul>
 
 <p>Back-end libraries/frameworks will include Flask for the scraping API, either Laravel or Echo for the main web application back-end.</p>
 
 <p>Front-end libraries will include Bulma, along with Google WebFonts and TypeKit. Webpack will be used to build, bundle, and optimize assets.</p>
 
-<p>ReactJS will be used to power the &ldquo;dashboard&rdquo; or &ldquo;admin panel&rdquo; aspect. Redux will be used as the state container. ES6 features, such as promises, will likely be used fairly often, so Babel will be used to transpile.</p>
+<p>ReactJS will be used to power the &ldquo;dashboard&rdquo; or &ldquo;admin panel&rdquo; aspect. Redux will be used as the state container. ES6 may be used, although the Python versions of ES6-esque features (such as “promises” ) is being researched.</p>
 
 <hr />
 
@@ -246,23 +231,47 @@
 
 <h4 id="how-long-will-this-take">How long will this take?</h4>
 
-<p>Legit, it could take 30 years. I have no idea if I&rsquo;m legit enough for this project. But it&rsquo;s fascinating and I would love to give it a try.</p>
+<p>No idea. I’ll probably never finish.</p>
 
-<h4 id="are-you-open-to-collaborators">Are you open to collaborators?</h4>
+<h4 id="you-know-that-this-has-been-done-a-million-times-before-right">You know that this has been done a million times before, right?</h4>
 
-<p>No. The project doesn&rsquo;t exist in a tangible state yet. Managing a project of this scale would also be extremely difficult.</p>
+<p>Yes.</p>
+
+<h4 id="you-know-that-there-are-massive-corporations-pouring-billions-into-software-just-like-this-right-teams-of-people-who-are-years-ahead-of-you">You know that there are massive corporations pouring billions into software just like this, right? Teams of people who are years ahead of you.</h4>
+
+<p>Yes, I’m aware. It’s essentially a pipe dream.</p>
+
+<h4 id="then-why-do-it">Then why do it?</h4>
+
+<p>A sacrosanct desire to leverage the immense computational power available to us to empower and equip the lower/middle class so that they might auspiciously compete in that global financial arena which has, for too long, been bloodied by the-</p>
+
+<h4 id="ok-damn-lol-chill">Ok, damn lol chill</h4>
+
+<p>Sorry bro I just get so heated u know</p>
+
+<h4 id="it-s-okay-how-are-you-doing">It’s okay. How are you doing?</h4>
+
+<p>I’ve been better. I’ve been getting caffeine headaches.</p>
+
+<h4 id="take-some-tylenol-it-ll-take-the-edge-off">Take some Tylenol. It’ll take the edge off.</h4>
+
+<p>Oh, okay. Thank you.</p>
+
+<h4 id="so-are-you-open-to-collaborators">So are you open to collaborators?</h4>
+
+<p>No. The project doesn&rsquo;t even exist in a tangible state yet. I’d like to have more than just the first draft of a theoretical overview before I ask people to join in.</p>
 
 <h4 id="do-you-even-know-nlp-machine-learning-the-stock-market-or-any-of-that">Do you even know NLP, machine learning, the stock market, or any of that?</h4>
 
-<p>No, but I know more than I did a year ago, and next year I&rsquo;ll know more than I do today. And so it goes.</p>
+<p>No, but I know more than I did last year. And I’ll know more next year than I do now. And so it goes.</p>
 
-<h4 id="will-internet-explorer-ms-edge-be-supported">Will Internet Explorer / MS Edge be supported?</h4>
+<h4 id="who-is-the-target-user-base">Who is the target user base?</h4>
 
-<p>No.</p>
+<p>For now, just me. Later, anyone who wants to use it.</p>
 
-<h4 id="who-is-the-target-userbase">Who is the target userbase?</h4>
+<h4 id="if-this-fails-what-s-your-fallback">If this fails, what’s your fallback?</h4>
 
-<p>Not sure as of yet. This, along with tons of other design decisions, will be made iteratively along the way.</p>
+<p><em>I’ve always wanted to be a baker.</em></p>
 
     <a class="btn btn--accent" href="../../posts">View All Posts</a>
   </div>
