@@ -1,7 +1,9 @@
 +++
-slug = ""
+slug = "Humility"
+title = "Humility"
 ogdescription = "Humility in tech."
 series = ""
+draft = true
 +++
 
 ## On Humility, Learning, and Purpose

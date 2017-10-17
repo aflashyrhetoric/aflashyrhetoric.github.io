@@ -1,7 +1,9 @@
 +++
-slug = ""
+slug = "Amplify"
+title = "Amplify"
 ogdescription = ""
 series = ""
+draft = true
 +++
 
 ## Amplify
@@ -12,38 +14,40 @@ I am not referring to the text that I write on the screen - the "code" itself. I
 
 ---
 
-There are those that enjoy waxing cars to an immaculate shine. Others enjoy talking about the technical stuff: horsepower, miles per gallon, "0 - 60 times". Others enjoy talking about the history of car brands and the minds that made them. Others still enjoy discussions of self-driving cars and the moral implications that come with it. And yet others still purchase them as status symbols.
+There are those that enjoy waxing cars to an immaculate shine. Others enjoy talking about the technical specs: horsepower, miles per gallon, "0 - 60 in 3 seconds flat." Others enjoy talking about the history of car brands and the minds that made them. Others still enjoy discussions of self-driving cars and the moral implications that come with it. And yet others still purchase cars as status symbols.
 
-But if somehow, all the rubber in the world had burnt up and we no longer could produce tires for the cars to move, I would bet good money that car culture, with all its nuanced subcultures and sub-subcultures, would die out. And all but the scientists and the historians would lose interest.
+But if somehow, all the rubber in the world had burnt up and we no longer could produce tires for the cars to move, I would bet good money that car culture, with all its nuanced subcultures and sub-subcultures, would die out. *Fast*. And only the scientists and the historians would remain.
 
-I am operating on a few assumptions, but I think they're safe ones. 
+<small>I'm implicitly operating on a few assumptions, but I think they're safe ones.</small>
 
-I believe that it's because at its core, car culture is not about immaculate paint jobs, or horsepower comparisons. The culture is upheld by a shared excitement about *what a car represents*: a sense of unparalleled freedom and potential. It is the reason people enter the culture.
+I believe that it's because at its core, car culture is not actually about immaculate paint jobs, or horsepower comparisons. The culture is upheld by a shared excitement about *what a car represents to them*. 
 
-Driving on the freeway with friends en route to a beach, or a concert, or even a late night Target run - this is the reason we like our cars. Take this away, and you are left with an expensive and useless pile of metal and leather. In our little scenario where cars no longer could move, all future generations - those who have never known the whipping winds of highway driving - might ridicule Porsche owners as being incompetent stewards of their money.
+To some, its a sense of unparalleled freedom and potential. 
+To others, a way to say, "I am undeniably more wealthy than you." 
+To others, a way to say, "I'm environmentally conscious," or "I like to invest in bleeding edge tech."
 
-Simon Sinen is a motivational speaker and marketing consultant. He's known for repeating a particular phrase: 
+Whatever the individual's specific interest, they are secondary in nature, because the core function is assumed and guaranteed. Remove a car's core function as a mode of transportation and all subcultures collapse into near-meaningless window dressing. A Porsche without wheels is a grotesquely overpriced ornament for your driveway. A Prius without wheels does nothing to transition us to a more economically-friendly society. 
+
+In a world without wheels, all future generations - those who have never known the whipping winds of highway driving - might ridicule luxury car owners as being incompetent stewards of their money.
+
+Simon Sinek is a motivational speaker and marketing consultant. He's known for repeating a particular phrase: 
 
 > "People don't buy what you do, they buy *why* you do it." 
 
-It is this claim that I'd like to echo here and now. Car culture is not about paint, it's about freedom. Code is not about text. It is about problem-solving. 
+It's this claim that I'd like to echo here and now. Car culture is not about paint, it's about freedom. Or eco-friendliness. Or status. 
 
-Or, more accurately, about leveraging the ungodly power of modern computers to solve your problems for you. 
+#### Code is not about text. It's not about writing text.
 
-In one comedy bit, Louis CK famously chastises people who whine about their cellphones and delayed flights:
+Of course not. That would be ludicrous.
 
-> We have this beautiful thing...and we *hate* it. I've never seen a person going, "look at what my phone can do!" Nobody does that. They all go, "look at this fuckin' thing, it sucks!" (...) No it doesn't! It's amazing! The shittiest cellphone in the world is a *miracle*! (...) People complain about flights: 'I had to sit on the runway for 40 minutes!' Oh really, what happened after that? Did you **fly through the air?** Like a **bird?** Incredibly? Did you soar into the clouds - impossibly?
+It is generally about problem-solving, but it's not singularly about that either. It is, to my knowledge, the only thing in the universe quite like it. Cars are cars. But "code" is a multitool. You can write code that generates art or music. You can disseminate information to millions. You can write code that steals, that lies, that deceives.
 
-In the routine, you can see Louis CK's genuine frustration at the forefront. He throws his arms up in disbelief, swearing left and right in an attempt to get the audience to step back for a moment, that they might dispel their daily-reinforced delusion that cellphones and planes are anything other than impossibly sophisticated pieces of machinery. Paradigm-changing achievements that, so many years ago, changed the landscape of humanity forever.
+The term `code` has several definitions. The most obviously relevant one is something like: "a set of program instructions for computers." Here's another:
 
-I am still young. But everywhere I look, I see evidence that suggests plainly that *this is how humans are*. We take things for granted. Of course there are exceptions and I don't mean to pain us as mindless lemmings. But on average, I think this to be true. And even for the best among us, I think it is true during certain times of stress or certain seasons of life. I don't think there are enough exceptions to disprove the rule.
+> a system of words, letters, figures, or other symbols substituted for other words, letters, etc.
 
-At this juncture, I don't think it is an over-dramatization to say that we are literally drowning in excess and burning our time and money away to meaningless pursuits. Due to an overwhelming bombardment of advertisement and social pressures, all underscored by our individual struggles to stay financially afloat, find acceptance, stay fit, etc, I again don't think it's an over-dramatization to say that the average modern citizen has become paralyzed in a way.
+I'd argue this definition is more accurate. Code is precisely Man's best attempt at codifying our thoughts to another medium in a way that retains its function. It is a terse, readable, shareable, debuggable representation of *human intention*. 
 
-This is all getting very existential very fast. But I assure you it's relevant. Because when I say that I want to get better at code, it's because I believe that code - in all its multivariate forms - is precisely *the tool* by which wicked people will try to systematically suppress their peers for greed. We talk about institutional racism, sexism, and other forms of oppression. 
+This is what is fascinating about it. It is what I love and what I find all-consuming about it. Not the stickers on my laptop, not the novelty of knowing dozens of different acronyms. 
 
-The definition of `Institution` is:
-
-> a society or organization founded for a religious, educational, social, or similar purpose.
-
-What is a codebase, if not an entity built to serve a purpose, except one without all the inherent flaws that come with humans?
+I study because I want to learn how to leverage the ungodly power of modern computers to solve my problems for me.

@@ -1,5 +1,6 @@
 +++
 slug = ""
+title = ""
 ogdescription = ""
 series = ""
 +++
