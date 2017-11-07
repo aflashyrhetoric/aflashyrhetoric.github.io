@@ -7,6 +7,28 @@ series = ""
 draft = true
 +++
 
+## Strategy
+
+#### Research
+- Find a niche
+- Find 15 keywords
+
+## Calculate expense spreadsheet
+- Advertising costs
+  - Facebook Ad
+  - Google Ad
+- Domain
+- Hosting Costs
+
+#### Technical Preparation
+- Gather Requirements
+  - Website 
+  - SSN (Udemy)
+- Define unique value proposition
+- Define unique brand (tone, colors, fonts)
+- Build a site
+- Create and upload 10 pieces of content
+
 ## Links
 - [Amazon Affiliate](https://affiliate-program.amazon.com/signup)
 - [Udemy Affiliate](https://www.udemy.com/affiliate/)
@@ -27,5 +49,12 @@ draft = true
 - 5 Shell Tricks
 - Best Paid Software
 - My Top 10 Preferred Udemy Courses
-- Top Learning Resources
+- Actually Helpful Learning Resources
 - Top SAAS products to help you code
+
+POSTING CATEGORIES
+
+STUFF
+WEB APPS
+WEB DEVELOPMENT TOOLING
+TIPS
