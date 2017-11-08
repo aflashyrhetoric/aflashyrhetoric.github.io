@@ -14,17 +14,15 @@ It's a truism to say that the world is not as it should be.
 
 But it's my belief that we've collectively lost sight of just how grotesquely imbalanced things actually are. 
 
-Well, that's not the whole picture - ignorance is just a part of the issue. There are those who simply don't know. Then, there are those who know but have lost hope. Others still who know but simply don't care.
+It's not *just* that we're ignorant. There are those who know, but have lost hope. There are those who cannot afford to care because they're burnt to exhaustion while trying to stay afloat. Some just don't give a shit.
 
-And then there are those select few that *know* and gleefully perpetuate the imbalance. The ones who are ecstatic that you don't know, don't care, and sit hopeless.
+And then there are those select few that *know* and gleefully perpetuate the imbalance. The ones who are ecstatic that you don't know, that you don't care, that you're hopeless.
 
 ---
 
-I am not here to recruit you to a cause or to perpetuate an ideology. I aim to give you a set of data and then ask you a series of questions. My hope is that by the end of all this, one of two outcomes will come to pass:
+I am not here to recruit you to a cause or to perpetuate an ideology. I aim to give you a set of facts and then ask you a series of questions so you can draw your own conclusions. My hope is that by the end of all this, one of two things will come to pass:
 
-Either, I will understand what the fuck is going on, or, you will. 
-
-Because one of us is behaving insanely. And I'm going mad trying to figure out who it is.
+Either, I will understand what the fuck is going on - or *you* will. Because one of us is behaving insanely - in a way that makes no real sense.
 
 ---
 
@@ -32,20 +30,21 @@ First, a grand question to guide all other questions: "Are we at an acceptable p
 
 If you've any ambition or empathy at all, the answer is no. Unless you're one of the exorbitantly wealthy people whose social circles entirely exclude people of the middle and lower classes, it's safe to say that either you or someone you know is suffering.
 
-Alright, so we're not in a Utopia. Moving on:
+Alright, so we're not in a Utopia. Next question:
 
-Are we making progress to *change* things to the way they should be? Are we getting closer to some ideal?
+Are we making progress, though? Are we getting closer to some ideal?
 
 I think yes. There are politicians, charities, individuals, and institutions that are actively and strategically trying to improve the state of society. We're making progress.
 
-Now, a third question: Are we making progress *fast enough*? 
+Now, my third and last question for now: Are we making progress *fast enough*? Enough to offset the damage that is being consistently doled out?
 
-I think not. 
+I think, no. Hell no. Absolutely not. I see the world in flames and am confounded as to how this came to be.
 
-I'm here to discuss the men, women, and legal clauses that have rebranded the trudge through a convoluted maze as "The American Dream." The ones who literally use formulas to make sure you're not too content, not too sad, but just content enough to remain an inert and loyal consumer. The ones who perpetuate the illusion of choice.
+Let me preface it all with a final aside: For a time, I dismissed my own thoughts before someone else could. Before you could. I didn't want to be the conspiracy theorist with the tin hat. But my assertion is this. If you read this text with the sole exclusive goal of seeking the unfiltered truth, you'll want a tin hat too. And you'll be mad.
+
+Let's remember this. The shadow of an unseen object changes with point from which the light is cast. My hope is that by casting a thousand lights, we may come to recognize the truths that matter and use it to fight back.
+
 ---
-
-So let's talk about it:
 
 ##### Discredit naysayers & uphold cheap loyalty
 - Brand wars
@@ -71,7 +70,7 @@ So let's talk about it:
 - Diamond Rings
 
 ###### They pollute values
-- Loyalty => MAGA
+- Loyalty => MAGA, military
 - Love => Diamond Rings & CDs
 - Ambition => College
 - Success => College
