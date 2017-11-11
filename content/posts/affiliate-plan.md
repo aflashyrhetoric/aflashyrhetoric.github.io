@@ -1,7 +1,7 @@
 +++
 slug = "affiliate-plan"
 title = "Affiliate Plan"
-date: 2017-10-16T23:12:16-04:00
+date = 2017-10-16T23:12:16-04:00
 ogdescription = "affiliate-plan"
 series = ""
 draft = true

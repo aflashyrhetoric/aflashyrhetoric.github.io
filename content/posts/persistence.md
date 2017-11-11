@@ -6,56 +6,127 @@ slug = "persistence"
 draft = true
 +++
 
-One week, you notice that you woke up at exactly 7:30AM on days where it rained. The next week, the pattern holds. One day, you decide to test it. You sleep late at 3AM. But sure enough, at 7:30AM, your eyes peel open and you stare at the clock on your phone, confused. To even think that there's some greater significance to this coincidence would be childish - right?
+### June 1st, 2016, 6pm
 
-But the question sits like an itch inside your chest, so you test it. You decide to test whether the relationship between **your waking time** and the **weather** is reactionary, causal, or coincidental. In other words, is it raining because you wake up at 7:30AM, or are you waking up at 7:30AM because it's raining? Or is it just a coincidence? 
+Pause the Javascript tutorial I'm watching. `CMD+W`. Whatever - I'll just revisit ES6 tomorrow. I glance at the thirty-something Chrome tabs I have open and just now notice the whirring fan, the heat emanating off the keyboard. I click the `OneTab` icon to save them all and watch as they disappear, one-by-one.
 
-> "It's obviously a coincidence," you think quietly as you bite into the toaster strudel. "But..."
+> "Tomorrow." 
 
-The next day, you set an alarm for 7:30AM. You wake up to sunny skies. So, then, it's not causal. You curse, because it'd be dope to be able to control the weather.
+I roll off the couch onto the floor and sit up. The carpet is rough, but the change of posture feels nice. 
 
-So, then, do you wake up at 7:30AM *because* it's raining? That's significantly less cool, but still interesting. But then you realize that weather is extremely regional. Rain in New York doesn't mean it's raining in France, or even Massachusetts for that matter. 
+Huh, it's still bright out. It's still weird after what felt like a 10-month winter. I look at the clouds and remember an old article about how true randomness can be sufficiently simulated by measuring weather conditions in the air and using the resultant constant as a *seed* in a formula. Something like that, anyways.
 
-In any case, months pass and you forget about this weird coincidental pattern, though you do notice it on the days it occurs. You hear of an upcoming business trip at work. You're going to Uruguay to study the local market. 
+The sink is full of dirty dishes. Move dissimilar plates to the side, group all similar ones. Wash one big cup first, followed by utensils. Store clean utensils in the initial clean cup.
 
-The day comes and you arrive in Uruguay after a seemingly thousand-hour flight. You head to your hotel, lie in bed, and drift off to sleep. At 7:30AM, you wake up to sunny skies. 
+Hot water is better at breaking the chemical bonds that cause stubborn food crumbs to adhere to plates. It's also better for washing away dish soap. Begin by bombarding the sponge with hot water for at least 1 minute to kill latent bacteria - I read somewhere that this is just as effective as microwaving the sponge. 
 
-"Well, that's that," you think, chuckling. You fluff your pillow and turn in for 30 more minutes...
+Clean dishes by starting with the similar plates. After they're clean, the newly added sink real estate makes it easier to handle the irregular plates. Soon before finishing, fill up the Brita pitcher so it has time to filter.
 
-...until a thought strikes you. You reach for your phone and flick open the weather app. No WiFi. You grunt and call Dan from back home.
+Eh. Laundry hamper is getting full. No real way to speed that up except by using **Quick Wash 25 Minute**. I don't have expensive clothes - I don't need `Deluxe Permanent Press`.
 
-> "Yo, Dan, is it raining?"
+Sit down at the PC. Hover over the `League of Legends` icon. Double-click and login. Look at the clock. It'd be dark by the time I finish a game. I close my eyes and wonder if losing a game would demoralize me and hurt my willingness to resume studying tomorrow. Wonder if I have the discipline and resolve to study anyway, like a *real* coder would. Close the game because I don't want to risk it.
 
-> "What?"
+No new emails. Nothing on Kakaotalk, Tumblr, Snapchat, Instagram. Open and close Reddit.
 
-> "Is it raining there?"
+Navigate to my OneTab dashboard and selectively restore my Javascript tutorial video. Pause. Navigate to iTerm and try out different fonts. Settle on Inconsolata, like always.
+```shell
+cd ~/projects; ls
+ls 
+ls 
+ls 
+aowiefjaoijf
+sl 
+```
+Heh. Train.
+```shell
+cd ~/projects/js-sandbox2
+sublime .
+```
+Change the font to Inconsolata to match.
+```javascript
+// testModule.js
+module.exports = newFunction;
 
-> "No."
+// main.js
+import 'newFunction' from './testModule';
+```
+Hmm.
+`site:reddit.com/r/webdev webpack tutorial`
 
-You roll your eyes, mildly disappointed that you even -
+Eh.
+`site:stackoverflow.com webpack error`
 
-> "Wait...yeah. It's raining. Sorry, I was- "
+Oh!
+```shell
+brew install nvm
+nvm install 6.9.10
+nvm use 6.9.10
+touch .nvmrc; echo '6.9.10' >> .nvmrc
+git add -A; git commit -m "lol"; gp
+```
+Copy and paste `gulpfile.js` because `webpack.config.js` is still not working out. I'm sleepy...
 
-You hang up and hold your breath.
+### June 7th, 2016
 
-What?
+Webpack is working now.
 
-So, when it's raining in your hometown, you wake up at 7:30AM. No matter where you are in the world. You look out the window at the Uruguayan landscape and wonder what you've stumbled upon. What is this thing you've found? What is this Truth? This nugget of - something, seemingly nothing, something confusing and fascinating.
+### June 9th, 2016
 
-Your mind reels. You call Dan back.
+hahah never mind
 
-> "Dan, I... Uh, I found something trippy."
-> "Man, you hung up on me. Made me sad. But what do you mean?"
-> I noticed that whenever it's raining back home, I wake up at exactly 7:30AM
-> Aw, cool man. I'ma head back to sleep though, so-
+### June 15th, 2016
 
-You hang up and hold your breath again.
+I read about how people are starting to 3D print food. Realized that one day, `burger.make(toppings)` may very well be real.
 
----
+Realize that the argument:
 
-## On The Pursuit of Truth
+> yeah code is fun for tinkering and little apps, but you can't code a burger into existence and feed the hungry
 
-For three years, I've been trying to write this same post. To find the words. This is probably the fifteenth attempt. This blog post feels, to me, a bit like Arthur pulling the sword from the stone. The words will only come when I'm worthy enough to publish them. 
+will soon be severely demoted from a fundamental truism to absolute pedantry.
 
-I want to characterize the pursuit of truth. I mean *truth* in an infinitely general sense. 
+Smile.
 
+Look at my TeamTreehouse billing history. Browse LinkedIn and notice my friends 2-year work anniversary. Browse instagram and notice my friends traveling around the world. Switch back to Terminal to a sea of red error messages.
+
+Navigate to Laracasts.com to study the latest Laravel updates.
+
+Try not to cry.
+
+### June 19th, 2016
+
+It's my birthday. Udemy doesn't offer coupon codes for birthdays, though.
+
+### June 20th, 2016.
+
+> OK, OK, what is this ReactJS thing about?
+
+### June 21th, 2016.
+
+It'd be nice to have an application to help me manage job applications.
+
+### June 22nd, 2016
+
+`mkdir mosu.io`
+
+### July 5th, 2016
+
+```shell
+git add -A;
+git commit -m "Readme updated to Mosu 0.1.0"
+gp
+```
+
+"Good enough for now."
+
+### July 12, 2016. 4:39PM
+
+> Hello Kevin. Thank you for your application. We would like you to interview at our office in Manhattan.
+
+Look outside. Try not to cry.
+
+Flip through Spotify. Decide that if I get the position, I'll listen to Cashmere Cat's song, "With Me" on repeat.
+
+### July 29, 2016. 10:11PM
+
+> Hello Kevin.
+> Congratulations.
