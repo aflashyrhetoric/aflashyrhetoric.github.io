@@ -40,9 +40,9 @@ Now, my third and last question for now: Are we making progress *fast enough*? E
 
 I think, no. Hell no. Absolutely not. I see the world in flames and am confounded as to how this came to be.
 
-Let me preface it all with a final aside: For a time, I dismissed my own thoughts before someone else could. Before you could. I didn't want to be the conspiracy theorist with the tin hat. But my assertion is this. If you read this text with the sole exclusive goal of seeking the unfiltered truth, you'll want a tin hat too. And you'll be mad.
+Let me preface it all with a final aside: For a time, I dismissed my own thoughts before someone else could. Before you could. I didn't want to be the conspiracy theorist with the tin hat. But my assertion is this. If you read this text with the sole exclusive goal of seeking the unfiltered truth, you'll want a tin hat too. And you'll be angry. I don't mean just pissed off, like when a possum knocks over the trash or someone chews loudly at the other table. I'm talking about the kind of anger that sends blood coursing through your biceps because your body is commanding you to act. To **do** something. The only kind of anger that is immune to time is the one that requires action to be resolved.
 
-Let's remember this. The shadow of an unseen object changes with point from which the light is cast. My hope is that by casting a thousand lights, we may come to recognize the truths that matter and use it to fight back.
+Let's remember this. The shadow of an unseen object changes with point from which the light is cast. My hope is that by casting a thousand lights, we may come to recognize the truths that matter and use it to fight back. Right now.
 
 ---
 
