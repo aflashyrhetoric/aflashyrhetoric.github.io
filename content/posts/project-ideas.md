@@ -3,6 +3,7 @@ title = "PROJECT BOARD"
 ogdescription = "A list of project ideas"
 slug = "project-ideas"
 date = "2017-05-17T21:47:18-04:00"
+draft = true
 +++
 
 #### This list is updated regularly.

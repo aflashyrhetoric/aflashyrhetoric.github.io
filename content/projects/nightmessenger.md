@@ -11,6 +11,9 @@ I'd often work late in the night, and found that using Messenger.com would hurt 
 
 It went smoother than I expected. Google provided an easy way for an extension to add stylesheets and cloud-setting-sync abilities. The concept of a `manifest.json` was similar to a `package.json` file, and the UI for the "Developer Dashboard" was really intuitive - if a little basic. :wink:
 
-You can [download Night Messenger here](https://chrome.google.com/webstore/detail/night-messenger/hjhnmilbfdehpgfcojlmmooknnkhgdmh?hl=en). It currently has 650+ users, and the most recent version (v1.2.5) introduced properly-limited permissions and can be considered **stable**.
+You can [download Night Messenger here](https://chrome.google.com/webstore/detail/night-messenger/hjhnmilbfdehpgfcojlmmooknnkhgdmh?hl=en). It currently has 4,000+ users, and the most recent version (v1.2.5) introduced properly-limited permissions and can be considered **stable**.
 
 Let me know if you have feedback or feature requests. Cheers :beer:!
+
+#### Contributors
+Thanks to Luis Rodriguez for his assistance in maintaining the extension!
