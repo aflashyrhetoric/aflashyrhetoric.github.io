@@ -29,13 +29,13 @@ Sorry three
 Sorry two, 
 Job 3 required 3-20 years of experience
 
-One and one is ten
+Now, One and one is ten
 Take me back to when
 Things made fucking sense
 And the choice wasn't between Satan
-And fuckin michael pence
+And fuckin Michael Pence
 They're all one and the same
 To them it's a game
 
 Well I just hit start
-Player me just joined
+Player me just joned

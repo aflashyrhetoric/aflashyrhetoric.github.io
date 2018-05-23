@@ -1,7 +1,7 @@
 +++
 slug = ""
 title = ""
-date: {{ .Date }}
+date = "{{ .Date }}"
 ogdescription = ""
 series = ""
 draft = true

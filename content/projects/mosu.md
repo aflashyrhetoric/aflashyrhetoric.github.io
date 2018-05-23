@@ -5,7 +5,7 @@ project = "mosu"
 
 ## LinkedIn, Hired, Vettery, Indeed, Monster......:no_good:
 
-Mosu arose out of my personal frustration with the process of job hunting. There are something like a dozen different "job board" websites, each with their own quirks. I found myself running around between ten different accounts, trying to remember which job applications were in which "state":
+[Mosu](https://mosu.io) arose out of my personal frustration with the process of job hunting. There are something like a dozen different "job board" websites, each with their own quirks. I found myself running around between ten different accounts, trying to remember which job applications were in which "state":
 
 - Saved, or "To Be Applied To"
 - Application sent
@@ -41,3 +41,7 @@ Different job boards have different job listings. Viewing them in one place coul
 Each "job board" site requires different pieces of information. Some require a "long bio" while others prohibit biographies that are longer than 200 words or so.
 
 Write your content all in one place, and visit a job listing. The Chrome extension can detect your current website and show only the relevant information.
+
+---
+
+> **NOTE**: Mosu is not actively maintained and is not compliant with the newest GDPR regulations.

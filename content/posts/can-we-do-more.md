@@ -1,7 +1,7 @@
 +++
-slug = ""
-title = ""
-date: 2018-01-25T11:29:21-05:00
+slug = "can-we-do-more"
+title = "Can we do more?"
+date = "2018-01-25T11:29:21-05:00"
 ogdescription = ""
 series = ""
 draft = true

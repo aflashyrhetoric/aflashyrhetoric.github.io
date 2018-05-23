@@ -8,7 +8,7 @@ draft = true
 
 ### June 1st, 2016, 6pm
 
-Pause the Javascript tutorial I'm watching. `CMD+W`. Whatever - I'll just revisit ES6 tomorrow. I glance at the thirty-something Chrome tabs I have open and just now notice the whirring fan, the heat emanating off the keyboard. I click the `OneTab` icon to save them all and watch as they disappear, one-by-one.
+I pause the Javascript tutorial I'm watching. `CMD+W`. Whatever - I'll just revisit ES6 tomorrow. I glance at the thirty-something Chrome tabs I have open and just now notice the whirring fan, the heat emanating off the keyboard. I click the `OneTab` icon to save them all and watch as they disappear, one-by-one.
 
 > "Tomorrow." 
 

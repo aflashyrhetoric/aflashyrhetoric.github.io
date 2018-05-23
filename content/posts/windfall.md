@@ -9,7 +9,7 @@ ogdescription = "Windfall is a planned software project"
 :rotating_light: Draft 0.0.2 :rotating_light:
 
 # Summary & Introduction
-*Windfall is a planned software project.*
+*Windfall is just a theoretical thought experiment at the moment.*
 
 Windfall scrapes/fetches data from **news** and **social media** sources and applies machine learning principles to predict stock market prices in real-time. It also seeks to provide users with a panel through which they can navigate this nuanced data and strategize to maximize their returns.
 
