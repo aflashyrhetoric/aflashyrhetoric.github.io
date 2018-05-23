@@ -1,0 +1,8 @@
+name = "pay up"
+filename = "payup"
+thumbnail = "/img/projects/wip.png"
+thumbnail2 = "/img/projects/wip@2x.png"
+url = ""
+tagline = "Easily track debts between you and your roommates. (iOS)"
+description = "Easily track all those little debts that pile up, from shampoo to rent. Pay back debts with a single-click through Venmo or Zelle. Hey, it's better than a spreadsheet."
+weight = 1

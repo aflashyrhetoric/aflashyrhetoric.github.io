@@ -7,9 +7,9 @@ title = "Bio"
 
 Or, *[@aflashyrhetoric](http://twitter.com/aflashyrhetoric)*.
 
-I'm a front-end developer based in New York. Currently working as a *Front-End Engineer* with the excellent team at Nulab. I lead a Slack-based [study group](/projects/adg) that focuses on building projects to gain practical experience with modern web development technologies. I co-founded Adelie, an open source software collective that currently offers - ahem - zero available products. But don't worry, I'm working on it. :cat:
+I'm a front-end developer based in New York. Currently working as a *Front-End Engineer* with the excellent team at Nulab. I lead a Slack-based [study group](/projects/adg) that focuses on building projects to gain practical experience with modern web development technologies. I co-founded Adelie, a web development shop that has since rolled back client-based operations to focus on building internal services & open source projects.
 
-On the side, I also serve as a mod over at [/r/webdev](https://reddit.com/r/webdev).
+On the side, I also serve as a mod over at [/r/webdev](https://reddit.com/r/webdev) and [/r/webdesign](https://reddit.com/r/webdesign).
 
 ---
 #### Projects?
@@ -18,30 +18,33 @@ Read about my projects [HERE](/projects).
 
 #### What technologies are you studying?
 
-I'm currently working with Laravel, React, and Vue on various projects.
-I'm also studying Amazon Web Services, Jenkins CI, Docker, and systems design.
+I'm currently working with Golang, VueJS, and ReactJS on various projects.
+I'm also studying Amazon Web Services, Jenkins, Docker, and systems design.
 
 #### Outside interests?
 
-I'm a hobbyist writer & blogger.
+I'm a hobbyist writer and blogger, mostly. I also upload stuff to [YouTube](https://youtube.com/adelieco) sometimes.
 
 **I'm also currently studying:**
 
-- **Japanese**, so that I can talk to my Japanese coworkers
-- **music production with Ableton Live**, because it's a childhood dream to make a great song
+- **video editing / screencasting**, to create helpful webdev-related YouTube content
+- **music production (w/ Ableton Live)**, because it's a childhood dream to make a great song
 - **game design**, because I feel like it's the ultimate medium of expression
 - **photography**, because life's too beautiful not to capture
-- **video editing / screencasting**, to create helpful webdev-related YouTube content
-- **web scraping** to glean huge amounts of data and get experience with `cron`
+- **web scraping** to glean huge amounts of data rapidly
+- **Japanese**
 
-Someday, I'd like to learn more about: TensorFlow, machine learning, the stock market, special relativity, StarCraft 2, blob fishes.
+Someday, I'd like to learn more about: TensorFlow, machine learning, the stock market, special relativity, StarCraft 2, and blob fishes.
 
 #### Preferred Tools & Tech
 
-I use Sublime Text 3 w/ vim keybindings. Chrome, iTerm2. Laravel + React are my recent tools of choice.
+I use Sublime Text 3 w/ vim keybindings. Chrome, iTerm2. For PHP and rapid reliable development, I love Laravel. For Go, I use Gin + React. VueJS is also amazingly easy to use. 
+
+Other technologies I've used include: Vuex, GraphQL, Typescript, Webpack, NPM & NPM scripts, NodeJS, zsh, Ruby on Rails.
+
+Project management tools I've used include: Backlog, Github w/ Github Projects, Gitlab, Asana, Trello. 
 
 #### Random Fun Facts
-- I've cut my own hair for about 3 years now, :dollar:
 - My cat Bernie is a fat demon
 - My favorite non-fiction author is Malcolm Gladwell
 - Our president is illiterate
@@ -52,7 +55,7 @@ I use Sublime Text 3 w/ vim keybindings. Chrome, iTerm2. Laravel + React are my 
 #### Shout-Outs!
 - To my parents, Kelly 춘실 Kim and 오명남. You taught me patience, true humility, persistence, grace, and selflessness. 
 - To my sister Yuna, who taught me how to hope.
-- To the Moon cousins, who taught me how to be bold, chase my interests relentlessly, complain less, and to build others up.
+- To the Moon cousins, who taught me how to be bold, chase my interests relentlessly, complain less, and to build others up; taught me the meaning of "indomitable spirit."
 - To my beautiful girlfriend Rebecca, who has seen me through thick and thin and continues to support and inspire me everyday.
 - To my friends Billy, Jaden, Squan, Jonathan, Rachel, Helen, Jenna. My squad is :fire:. I love you all.
 - To the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you.
