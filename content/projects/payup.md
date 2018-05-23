@@ -1,8 +1,9 @@
 +++
 title = "Pay Up"
 project = "payup"
-date = 2018-05-23T18:40:05-04:00
 +++
+
+## Track debts between roommates
 
 Anyone whose lived in a dorm or an apartment knows that debts can pile up fast between roommates. And they're not always neat little sums of $10. 
 
