@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/projects/payup/</loc>
+    <lastmod>2018-05-23T18:40:05-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/windfall/</loc>
     <lastmod>2017-05-25T16:33:48-04:00</lastmod>
   </url>
@@ -32,6 +37,10 @@
   </url>
   
   <url>
+    <loc>/projects/payup/</loc>
+  </url>
+  
+  <url>
     <loc>/projects/adg/</loc>
   </url>
   
@@ -49,7 +58,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-05-25T16:33:48-04:00</lastmod>
+    <lastmod>2018-05-23T18:40:05-04:00</lastmod>
   </url>
   
   <url>
@@ -66,6 +75,7 @@
   
   <url>
     <loc>/projects/</loc>
+    <lastmod>2018-05-23T18:40:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
