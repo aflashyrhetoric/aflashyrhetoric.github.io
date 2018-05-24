@@ -5,21 +5,10 @@
     <link>/</link>
     <description>Recent content in Kevin Oh | Web Developer on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 23 May 2018 18:40:05 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 25 May 2017 16:33:48 -0400</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Pay Up</title>
-      <link>/projects/payup/</link>
-      <pubDate>Wed, 23 May 2018 18:40:05 -0400</pubDate>
-      
-      <guid>/projects/payup/</guid>
-      <description>Anyone whose lived in a dorm or an apartment knows that debts can pile up fast between roommates. And they&amp;rsquo;re not always neat little sums of $10.
-After a few pizza nights, a round of beers, 5 months of rent and utilities, and so on, remembering &amp;ldquo;who owes who how much&amp;rdquo; is pretty much a hopeless pipe dream.
-A spreadsheet can keep track of everything, but somebody has to be the unlucky one tracking all the receipts.</description>
-    </item>
     
     <item>
       <title>windfall</title>
@@ -142,6 +131,17 @@ I designed Milton (pictured) and &amp;ldquo;Candle&amp;rdquo;, among several oth
       <guid>/projects/nightmessenger/</guid>
       <description>Ow, my eyes 👀 Messenger.com is a relatively little-known messaging interface for Facebook Messenger. It&amp;rsquo;s a great (and less power-hungry) alternative to the little chat window you get as part of the standard Facebook desktop experience.
 I&amp;rsquo;d often work late in the night, and found that using Messenger.com would hurt my eyes. I had somewhat recently discovered the world of Chrome extension development, so I decided to dive in and see if I couldn&amp;rsquo;t make a darker theme for Messenger.</description>
+    </item>
+    
+    <item>
+      <title>Pay Up</title>
+      <link>/projects/payup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/payup/</guid>
+      <description>Track debts between roommates Anyone whose lived in a dorm or an apartment knows that debts can pile up fast between roommates. And they&amp;rsquo;re not always neat little sums of $10.
+After a few pizza nights, a round of beers, 5 months of rent and utilities, and so on, remembering &amp;ldquo;who owes who how much&amp;rdquo; is pretty much a hopeless pipe dream.
+A spreadsheet can keep track of everything, but somebody has to be the unlucky one tracking all the receipts.</description>
     </item>
     
     <item>
