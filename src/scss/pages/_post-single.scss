@@ -22,6 +22,10 @@ $black: #222222;
     &__heading {
       // text-transform: uppercase;
       text-align: center;
+      padding: {
+        right: 5px;
+        left: 5px;
+      }
       @include setFontHeavy;
     }
     &__subheading {

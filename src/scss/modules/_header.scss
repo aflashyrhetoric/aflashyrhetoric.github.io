@@ -51,11 +51,10 @@
     margin: auto;
     text-align: center;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     @include breakpoint(medium up) {
       justify-content: flex-end;
-      flex-flow: row wrap;
       &.-is-home {
         justify-content: space-around;
       }
@@ -65,11 +64,13 @@
   &__list-item {
     display: inline;
     padding: 1rem;
-    margin: {
-      left: 12px;
-      right: 12px;
-    }
     font-weight: bold;
+    @include breakpoint(medium up) {
+      margin: {
+        left: 12px;
+        right: 12px;
+      }
+    }
   }
 
   &__list-link {

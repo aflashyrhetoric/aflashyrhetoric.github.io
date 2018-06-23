@@ -6,6 +6,8 @@ $_label-height: 50px;
 
   &__container {
     &:not(:first-child) {
+      margin: auto;
+      width: 95%;
       margin-bottom: 6rem;
     }
     &--blog {
@@ -64,7 +66,7 @@ $_label-height: 50px;
       right: $__label-border-width solid $purple;
       left: $__label-border-width solid $purple;
     }
-    height: $_label-height;
+    height: $_label-height + 1px;
     padding:{
       top: .5rem;
       left: 1rem;

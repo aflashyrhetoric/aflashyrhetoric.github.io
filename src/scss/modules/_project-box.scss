@@ -78,7 +78,7 @@
 
   &__list-image {
     height: 75px;
-    margin-bottom: 1rem;
+    margin: 1rem;
     @include breakpoint(medium up) {
       margin: 1rem;
     }

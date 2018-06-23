@@ -25,9 +25,18 @@
     }
     &__card {
       margin-bottom: 2rem;
+      img {
+        transform: none;
+        transition: transform .4s;
+      }
       @include flex-grid-column($columns: 12);
       @include breakpoint(large up) {
         @include flex-grid-column($columns: 6, $gutters: 2rem);
+      }
+      &:hover {
+        img {
+          transform: translateY(-4px);
+        }
       }
     }
     &__card-inner {

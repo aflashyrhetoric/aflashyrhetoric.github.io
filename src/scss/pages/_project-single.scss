@@ -24,11 +24,23 @@
     &__about-container {
     }
     &__about-text {
-      width: 60%;
-      padding: 2rem;
+      width: 95%;
       margin: auto;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin: {
+        top: 1rem;
+        bottom: 2rem;
+      }
+      @include breakpoint(medium up) {
+        width: 90%;
+      }
+      @include breakpoint(large up) {
+        margin: {
+          top: 2rem;
+          bottom: 3rem;
+        }
+        width: 60%;
+      }
+      padding: 2rem;
 
       color: $black;
       background-color: darken($white, 2);
