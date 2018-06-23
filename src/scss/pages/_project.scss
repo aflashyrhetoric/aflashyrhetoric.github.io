@@ -20,7 +20,13 @@
 
   .project {
     &__container {
-      padding: 2rem;
+      margin: 2rem;
+      margin-top: 1rem;
+      width: 95%;
+      @include breakpoint(medium up) {
+        width: unset;
+      }
+
       @include flex-grid-row($size: 1080px);
     }
     &__card {
@@ -30,8 +36,11 @@
         transition: transform .4s;
       }
       @include flex-grid-column($columns: 12);
+      @include breakpoint(medium up) {
+        @include flex-grid-column($columns: 6, $gutters: 1rem);
+      }
       @include breakpoint(large up) {
-        @include flex-grid-column($columns: 6, $gutters: 2rem);
+        @include flex-grid-column($columns: 4, $gutters: 2rem);
       }
       &:hover {
         img {

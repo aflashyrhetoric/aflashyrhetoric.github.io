@@ -16,6 +16,9 @@
         align-items: center;
       }
     }
+    &__heading {
+      font-size: 30px;
+    }
     &__subheading {
       font-style: italic;
       @include fz(24);

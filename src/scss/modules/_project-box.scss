@@ -79,8 +79,9 @@
   &__list-image {
     height: 75px;
     margin: 1rem;
-    @include breakpoint(medium up) {
-      margin: 1rem;
+    .page-project-single & {
+      margin: auto;
+      margin-bottom: 1rem;
     }
   }
 }

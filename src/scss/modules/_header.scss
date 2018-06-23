@@ -9,7 +9,10 @@
     // font-family: 'Iosevka-light', sans-serif !important;
     @include setFontBody;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 14px;
+    @include breakpoint(medium up) {
+      font-size: 1rem;
+    }
   }
   
   @include flex-grid-row($size: 100%);
@@ -51,7 +54,7 @@
     margin: auto;
     text-align: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
     @include breakpoint(medium up) {
       justify-content: flex-end;
@@ -63,13 +66,13 @@
 
   &__list-item {
     display: inline;
-    padding: 1rem;
     font-weight: bold;
+    padding: 5px;
     @include breakpoint(medium up) {
-      margin: {
-        left: 12px;
-        right: 12px;
-      }
+      padding: .5rem;
+    }
+    @include breakpoint(large up) {
+      padding: 1rem;
     }
   }
 

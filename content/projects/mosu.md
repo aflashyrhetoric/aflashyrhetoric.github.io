@@ -5,7 +5,7 @@ project = "mosu"
 
 ## LinkedIn, Hired, Vettery, Indeed, Monster......:no_good:
 
-[Mosu](https://mosu.io) arose out of my personal frustration with the process of job hunting. There are something like a dozen different "job board" websites, each with their own quirks. I found myself running around between ten different accounts, trying to remember which job applications were in which "state":
+[Mosu](https://mosu.io) (NOW RETIRED) arose out of my personal frustration with the process of job hunting. There are something like a dozen different "job board" websites, each with their own quirks. I found myself running around between ten different accounts, trying to remember which job applications were in which "state":
 
 - Saved, or "To Be Applied To"
 - Application sent
