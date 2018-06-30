@@ -14,15 +14,16 @@ I knew I didn't know everything, but I thought I knew a lot.
 
 By that point, I had built:
 
-- a specialized CMS in Rails (which is being used by a client to this day)
+- a specialized CMS in Rails (live and still in use today)
 - a CRUD API in Laravel
 - a simple but non-trivial front-end in ReactJS. 
+- a toggleable Chrome extension that applied a "night theme" to Messenger.com
 
 They were "built" with Grunt, Gulp, and Webpack, respectively. They used Sass, the Eloquent ORM, Liquid and ERB templating languages. I understood Inversion of Control / Dependency Injection, CSRF protection, JSON Web Token based authentication...
 
 > blah blah blah, blah blah blah. 
 
-Point being - I thought I really knew a lot. (Don't worry - I know better now.) Some time later, I was employed at Nulab at a Front-End Engineer - my current position. In all my arrogance as a younger dev, I actually thought my "full-stack" talents would be under-utilized in the given role.
+Point being - I thought I really knew a lot. (Don't worry - I know better now.) Some time later, I was employed at Nulab at a Front-End Engineer - my current position. In all my arrogance as a younger dev, I actually thought my "full-stack" talents would be under-utilized in a front-end role.
 
 ### HAHA NOPE :poop:
 
@@ -45,8 +46,9 @@ I already gave you a list of some of the things I knew.
 - How to use `tig` to intelligently navigate Git
 - How to use `git stash` to work on different feature branches
 - Nope, don't use `!important` even once
+- Et cetera...
 
-And this is mostly just the front-end.
+And this is mostly just the front-end. 
 
 #### Here's a list of technologies I'd never/barely heard of:
 - Go (Golang) 
@@ -64,7 +66,7 @@ And this is mostly just the front-end.
 - Docker (I just knew it as a contender of some sort to Vagrant)
 - Kubernetes
 - VelocityJS
-- (...)
+- Et cetera, ad infinitum...
 
 #### Finally, a list of soft skills I didn't really have yet:
 - how to code without burning out every day
@@ -73,12 +75,16 @@ And this is mostly just the front-end.
 
 ### A Real Full-Stack Developer
 
-> "'Full-stack' is such a buzzword lately. But Ryu is, I think, the first real full-stack developer I've met." - A coworker
+> "'Full-stack' is such a buzzword lately. But [Bob] is, I think, the first real full-stack developer I've met." - A coworker
 
-Ryu is a **Server Engineer** at Nulab. A core developer on Nulab's project management application [Backlog](https://backlogtool.com) and now focusing his efforts on [Cacoo](https://cacoo.com), Ryu has had extensive experience in building up and maintaining a product. His favorite language is Perl, though he has worked with Java, Haxe, Ruby, Go, PHP, and HTML/CSS/JS in non-trivial applications.
+We'll refer to him as Bob. Bob is, by title, a **Server Engineer** at Nulab. A core developer on Nulab's project management application [Backlog](https://backlogtool.com) and now focusing his efforts on [Cacoo](https://cacoo.com), [Bob] has had extensive experience in building up and maintaining a product. His favorite language is Perl, though he has worked with Java, Haxe, Ruby, Go, PHP, and HTML/CSS/JS in non-trivial applications.
 
-He oversees servers and monitors server health and updates, creates and manages many DevOps-related automation scripts for deployment and alert notifications, manages staging/production environments for multiple sites and applications, configures back-end analytics on various services, plans product feature launch schedules and coordinates things on a macro-level. And yet, he is also aware of cross-browser considerations, webpack plugins, responsive design best practices, multilingual support best practices, and CSS naming conventions. He regularly reviews Pull Requests for both front-end and back-end code.
+He oversees servers and monitors server health and updates, handles continuous integration/testing, manages staging/production environments for multiple sites and applications, configures back-end analytics on various services, plans product feature launch schedules and coordinates things on a macro-level.
+
+And yet, he is also aware of cross-browser considerations, webpack plugins, responsive design best practices, multilingual support best practices, CSS naming conventions, how to optimize Javascript bundles via code-splitting, how to tweak JS to prevent reflows/repaints, etc.
+
+He regularly reviews Pull Requests for both front-end and back-end code.
 
 #### Redefining "full-stack"
 
-This is purely a semantic discussion, but when such a vague term is used as a descriptor for a job opening, semantics matter. 
+This is a semantic argument, but this vague term is very widely being used in the job market, so it's worth a second look. "Full-stack" is a term that we should only very cautiously apply to ourselves because of how diluted and inaccurate it's become. 

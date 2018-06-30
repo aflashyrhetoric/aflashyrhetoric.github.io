@@ -26,7 +26,7 @@ Either, I will understand what the fuck is going on - or *you* will. Because one
 
 ---
 
-First, a grand question to guide all other questions: "Are we at an acceptable place in society?"
+It's been said that "if something ain't broke, don't fix it." So first, a grand question to guide all other questions: "Are we at an acceptable place in society?" Is something broken?
 
 If you've any ambition or empathy at all, the answer is no. Unless you're one of the exorbitantly wealthy people whose social circles entirely exclude people of the middle and lower classes, it's safe to say that either you or someone you know is suffering.
 
