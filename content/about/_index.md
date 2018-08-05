@@ -56,7 +56,6 @@ Project management tools I've used include: Backlog, Github w/ Github Projects, 
 - To my parents, Kelly 춘실 Kim and 오명남. You taught me patience, true humility, persistence, grace, and selflessness. 
 - To my sister Yuna, who taught me how to hope.
 - To the Moon cousins, who taught me how to be bold, chase my interests relentlessly, complain less, and to build others up; taught me the meaning of "indomitable spirit."
-- To my beautiful girlfriend Rebecca, who has seen me through thick and thin and continues to support and inspire me everyday.
 - To my friends Billy, Jaden, Squan, Jonathan, Rachel, Helen, Jenna. My squad is :fire:. I love you all.
 - To the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you.
 - To my amazingly talented coworkers and colleagues and Nulab. Working alongside every one of you is a pleasure and I learn new things all the time. お疲れさま! To Yen-Chieh Chen, thank you for helping me fix the final bug on my site! :sunglasses:
