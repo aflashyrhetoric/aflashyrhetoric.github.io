@@ -1,17 +1,17 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/spf13/hugoThemes#themetoml for an example
 
-name = "Nulab Inc"
+name = "Kevin Oh"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = "The official Hugo theme for the Nulab's developer website."
-homepage = "http://developer.nulab-inc.com"
+description = "The official Hugo theme for the Kevin Oh's Site."
+homepage = "https://kevinoh.me"
 tags = ["api", "documentation"]
 features = ["", ""]
 min_version = 0.10
 
 [author]
-  name = "Nulab, Inc"
+  name = "Kevin Oh"
   homepage = ""
 
 # If porting an existing theme
