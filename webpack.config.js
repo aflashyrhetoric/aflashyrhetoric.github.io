@@ -2,88 +2,115 @@
 const webpack = require("webpack");
 const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const cssnano = require('cssnano');
 
-var config = {
-  entry: ["./src/index"],
-  output: {
-    filename: "static/js/app.js"
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loader: "babel-loader",
-        query: {
-          presets: ["es2015"]
-        }
-      },
-      {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        loader: "url-loader?limit=100000"
-      },
-      {
-        test: /\.png$/,
-        loader: "url?limit=10000"
-      }
-    ]
-  },
-  resolve: {
-    extensions: [".js", ".jsx", ".json", ".scss"]
-  },
-  plugins: [
-    new ExtractTextPlugin({
-      filename: "static/css/styles.css"
-    })
-  ],
-  devtool: "source-map"
-};
 
-if (process.env.NODE_ENV !== "production") {
-  //
-  // Development
-  //
-  config.devtool = "inline-source-map";
-  config.entry = ["./src/index"];
-  config.module.loaders.push({
-    test: /\.scss$/,
-    exclude: /node_modules/,
-    use: ExtractTextPlugin.extract({
-      fallback: "style-loader",
-      use: [
-        "css-loader?sourceMap=true",
-        "postcss-loader",
-        "sass-loader?sourceMap=true",
-        "import-glob-loader"
-      ]
-    })
-  });
-  config.plugins = config.plugins.concat([new webpack.NoEmitOnErrorsPlugin()]);
-} else {
-  //
-  // Production
-  //
-  config.devtool = "";
-  config.entry = ["./src/index"];
-  config.module.loaders.push({
-    test: /\.scss$/,
-    exclude: /node_modules/,
-    loader: ExtractTextPlugin.extract({
-      filename: "style",
-      fallback: "style-loader",
-      use: [
-        "css-loader",
-        "postcss-loader",
-        "sass-loader?outputStyle=compressed",
-        "import-glob-loader"
-      ]
-    })
-  });
-  // config.plugins = config.plugins.concat([
-  //     new webpack.optimize.AggressiveMergingPlugin(),
-  // ]);
-}
 
 // Hide deprecation notices
 process.noDeprecation = true;
 
-module.exports = config;
+let config = {};
+
+module.exports = (env, argv) => {
+  const devMode = argv.mode !== "production";
+  config = {
+    mode: "development",
+    devtool: "inline-source-map",
+    entry: ["./src/index"],
+    output: {
+      filename: "static/js/app.js"
+    },
+    module: {
+      rules: [
+        {
+          test: /\.js$/,
+          use: [
+            {
+              loader: "babel-loader",
+              options: {
+                presets: [["@babel/preset-env"]]
+              }
+            }
+          ]
+        },
+        {
+          test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+          use: [
+            {
+              loader: "url-loader?limit=100000"
+            }
+          ]
+        }
+      ]
+    },
+    optimization: {
+      minimizer: [
+        new UglifyJsPlugin({
+          cache: true,
+          parallel: true,
+          uglifyOptions: {
+            warnings: false
+          },
+          sourceMap: true
+        })
+      ]
+    },
+    resolve: {
+      extensions: [".js", ".jsx", ".json", ".scss"]
+    },
+    plugins: [
+      new MiniCssExtractPlugin({
+        filename: "static/css/styles.css"
+      })
+    ],
+    watchOptions: {
+      ignored: /node_modules/
+    }
+  };
+
+  if (devMode) {
+    config.module.rules.push(
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          "css-loader"
+        ]
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          {
+            loader: "css-loader",
+            options: { url: true, importLoaders: 1, sourceMap: true }
+          },
+          {
+            loader: "sass-loader",
+            options: { url: true, sourceMap: true }
+          },
+          "import-glob-loader"
+        ]
+      }
+    );
+  }
+
+  if (!devMode) {
+    //
+    // Development
+    //
+    config.devtool = "";
+    config.optimization = {
+      minimize: true
+    };
+    config.plugins = config.plugins.concat([new webpack.NoEmitOnErrorsPlugin()]);
+  }
+
+  return config;
+};
