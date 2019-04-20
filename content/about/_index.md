@@ -45,17 +45,10 @@ Other technologies I've used include: Vuex, GraphQL, Typescript, Webpack, NPM & 
 Project management tools I've used include: Backlog, Github w/ Github Projects, Gitlab, Asana, Trello. 
 
 #### Random Fun Facts
-- My cat Bernie is a fat demon
 - My favorite non-fiction author is Malcolm Gladwell
 - Our president is illiterate
 - I detest almonds and you should do because yes they're healthy but let's face it, they taste like brick if brick was edible and that sickly aftertaste is out of this world, not in a good way, like in an alien way because the flavor is so foreign and hard to tolerate
 
 ---
 
-#### Shout-Outs!
-- To my parents, Kelly 춘실 Kim and 오명남. You taught me patience, true humility, persistence, grace, and selflessness. 
-- To my sister Yuna, who taught me how to hope.
-- To the Moon cousins, who taught me how to be bold, chase my interests relentlessly, complain less, and to build others up; taught me the meaning of "indomitable spirit."
-- To my friends Billy, Jaden, Squan, Jonathan, Rachel, Helen, Jenna. My squad is :fire:. I love you all.
-- To the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you.
-- To my amazingly talented coworkers and colleagues and Nulab. Working alongside every one of you is a pleasure and I learn new things all the time. お疲れさま! To Yen-Chieh Chen, thank you for helping me fix the final bug on my site! :sunglasses:
+- Shout-out to my parents, Kelly 춘실 Kim and 오명남. You taught me patience, true humility, persistence, grace, and selflessness. Shout-out to the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you. Lastly, to my talented colleagues and Nulab. Working alongside every one of you is a pleasure.
