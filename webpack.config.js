@@ -6,21 +6,20 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const cssnano = require('cssnano');
 
-
-
 // Hide deprecation notices
 process.noDeprecation = true;
 
 let config = {};
 
+const devMode = process.NODE_ENV !== "production";
+
 module.exports = (env, argv) => {
-  const devMode = argv.mode !== "production";
   config = {
     mode: "development",
     devtool: "inline-source-map",
     entry: ["./src/index"],
     output: {
-      filename: "static/js/app.js"
+      filename: "static/js/app.js",
     },
     module: {
       rules: [
@@ -30,20 +29,20 @@ module.exports = (env, argv) => {
             {
               loader: "babel-loader",
               options: {
-                presets: [["@babel/preset-env"]]
-              }
-            }
-          ]
+                presets: [["@babel/preset-env"]],
+              },
+            },
+          ],
         },
         {
           test: /\.(png|woff|woff2|eot|ttf|svg)$/,
           use: [
             {
-              loader: "url-loader?limit=100000"
-            }
-          ]
-        }
-      ]
+              loader: "url-loader?limit=100000",
+            },
+          ],
+        },
+      ],
     },
     optimization: {
       minimizer: [
@@ -51,23 +50,23 @@ module.exports = (env, argv) => {
           cache: true,
           parallel: true,
           uglifyOptions: {
-            warnings: false
+            warnings: false,
           },
-          sourceMap: true
-        })
-      ]
+          sourceMap: true,
+        }),
+      ],
     },
     resolve: {
-      extensions: [".js", ".jsx", ".json", ".scss"]
+      extensions: [".js", ".jsx", ".json", ".scss"],
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: "static/css/styles.css"
-      })
+        filename: "static/css/styles.css",
+      }),
     ],
     watchOptions: {
-      ignored: /node_modules/
-    }
+      ignored: /node_modules/,
+    },
   };
 
   if (devMode) {
@@ -76,27 +75,41 @@ module.exports = (env, argv) => {
         test: /\.css$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader
+            loader: MiniCssExtractPlugin.loader,
           },
-          "css-loader"
-        ]
+          "css-loader",
+        ],
       },
       {
         test: /\.scss$/,
+        exclude: [/node_modules/],
         use: [
           {
-            loader: MiniCssExtractPlugin.loader
+            loader: "style-loader",
           },
           {
             loader: "css-loader",
-            options: { url: true, importLoaders: 1, sourceMap: true }
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: "resolve-url-loader",
+            options: {
+              sourceMap: true,
+            },
           },
           {
             loader: "sass-loader",
-            options: { url: true, sourceMap: true }
+            options: {
+              sourceMap: true,
+              sourceMapContents: false,
+            },
           },
-          "import-glob-loader"
-        ]
+          {
+            loader: "import-glob-loader",
+          },
+        ],
       }
     );
   }
@@ -107,9 +120,11 @@ module.exports = (env, argv) => {
     //
     config.devtool = "";
     config.optimization = {
-      minimize: true
+      minimize: true,
     };
-    config.plugins = config.plugins.concat([new webpack.NoEmitOnErrorsPlugin()]);
+    config.plugins = config.plugins.concat([
+      new webpack.NoEmitOnErrorsPlugin(),
+    ]);
   }
 
   return config;
