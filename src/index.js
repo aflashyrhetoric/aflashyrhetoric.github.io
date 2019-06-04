@@ -4,4 +4,9 @@
 require('./js/app.js');
 
 // Import SCSS
-require('./scss/styles.scss');
+
+// funkytown 
+// require('./scss/styles-funkytown-theme.scss');
+
+// ryu
+require('./scss/styles-ryu-theme.scss');
