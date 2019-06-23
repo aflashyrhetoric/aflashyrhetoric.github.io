@@ -38,4 +38,4 @@ They're all one and the same
 To them it's a game
 
 Well I just hit start
-Player me just joned
+Player me just joined

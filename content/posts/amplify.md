@@ -16,29 +16,29 @@ But it's my belief that we've collectively lost sight of just how grotesquely im
 
 It's not *just* that we're ignorant. There are those who know, but have lost hope. There are those who cannot afford to care because they're burnt to exhaustion while trying to stay afloat. Some just don't give a shit.
 
-And then there are those select few that *know* and gleefully perpetuate the imbalance. The ones who are ecstatic that you don't know, that you don't care, that you're hopeless.
+And then there are those select few that *know* and gleefully perpetuate the imbalance and all the while would claim that they're the heroes. The ones who are ecstatic that you don't know, that you don't care, that you're hopeless.
 
 ---
 
 I am not here to recruit you to a cause or to perpetuate an ideology. I aim to give you a set of facts and then ask you a series of questions so you can draw your own conclusions. My hope is that by the end of all this, one of two things will come to pass:
 
-Either, I will understand what the fuck is going on - or *you* will. Because one of us is behaving insanely - in a way that makes no real sense.
+Either, I will start to understand what the fuck is going on - or *you* will. Because one of us is behaving insanely - in a way that makes no real sense.
 
 ---
 
-It's been said that "if something ain't broke, don't fix it." So first, a grand question to guide all other questions: "Are we at an acceptable place in society?" Is something broken?
+It's been said that "if something ain't broke, don't fix it." So first, a grand question to guide all other questions: "Are we at an acceptable place in society?"
 
-If you've any ambition or empathy at all, the answer is no. Unless you're one of the exorbitantly wealthy people whose social circles entirely exclude people of the middle and lower classes, it's safe to say that either you or someone you know is suffering.
+If you've any ambition or empathy at all, the answer is no. Unless you're one of the exorbitantly wealthy people whose social circles entirely exclude people of the middle and lower classes, it's safe to say that either you or someone you know is struggling beyond that which can be reasonably expected of a person to endure.
 
 Alright, so we're not in a Utopia. Next question:
 
 Are we making progress, though? Are we getting closer to some ideal?
 
-I think yes. There are politicians, charities, individuals, and institutions that are actively and strategically trying to improve the state of society. We're making progress.
+I strongly believe so - yes. There are politicians, charities, individuals, engineers, and institutions that are actively and strategically trying to improve the state of society. We're making progress.
 
 Now, my third and last question for now: Are we making progress *fast enough*? Enough to offset the damage that is being consistently doled out?
 
-I think, no. Hell no. Absolutely fucking not. I see the world in flames and am confounded as to how this came to be.
+I think, no. Hell no. Absolutely fucking not, especially considering how much technology we command at our fingertips. I see the world in flames and am confounded as to how this came to be.
 
 Let me preface it all with a final aside: For a time, I dismissed my own thoughts before someone else could. Before you could. I refused to be the conspiracy theorist with the tin hat. But my assertion is this. If you read this text with the sole exclusive goal of seeking the unfiltered truth, then by the end of it, you'll want a tin hat too. And you'll be angry. I don't mean just pissed off, like when a possum knocks over the trash or someone chews loudly at the other table. 
 

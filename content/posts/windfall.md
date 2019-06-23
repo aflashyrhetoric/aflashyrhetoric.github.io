@@ -4,6 +4,7 @@ title = "windfall"
 slug = "windfall"
 series = "Windfall"
 ogdescription = "Windfall is a planned software project"
+draft = true
 +++
 
 :rotating_light: Draft 0.0.2 :rotating_light:

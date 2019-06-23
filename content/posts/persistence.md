@@ -1,20 +1,21 @@
 +++
 date = "2017-05-05T18:03:19-04:00"
 title = "Learning Persistence"
-ogdescription = "A story about things & stuff."
+ogdescription = "A messy, unglamorous example of persistence"
 slug = "persistence"
-draft = true
 +++
 
-### June 1st, 2016, 6pm
+### July 1st, 2015, 6pm
 
-I pause the Javascript tutorial I'm watching. `CMD+W`. Whatever - I'll just revisit ES6 tomorrow. I glance at the thirty-something Chrome tabs I have open and just now notice the whirring fan, the heat emanating off the keyboard. I click the `OneTab` icon to save them all and watch as they disappear, one-by-one.
+I pause the Javascript tutorial I'm watching, then I close the tab. ES6 can wait until tomorrow - it's just a hobby anyway.
+
+I glance at the thirty-something Chrome tabs I have open and just now notice the whirring fan, the heat emanating off the keyboard. I click `OneTab` to save them all and watch as they disappear, one-by-one, as fast as Chrome's speedy little brain can manage.
 
 > "Tomorrow." 
 
 I roll off the couch onto the floor and sit up. The carpet is rough, but the change of posture feels nice. 
 
-Huh, it's still bright out. It's still weird after what felt like a 10-month winter. I look at the clouds and remember an old article about how true randomness can be sufficiently simulated by measuring weather conditions in the air and using the resultant constant as a *seed* in a formula. Something like that, anyways.
+Huh, it's still bright out. It's still weird after what felt like a 10-month winter. I look at the clouds and remember an old article about how true randomness can be satisfactorily simulated by measuring weather conditions in the air and using the resultant constant as a *seed* in a formula. Something like that, anyways.
 
 The sink is full of dirty dishes. Move dissimilar plates to the side, group all similar ones. Wash one big cup first, followed by utensils. Store clean utensils in the initial clean cup.
 
@@ -42,7 +43,9 @@ Heh. Train.
 cd ~/projects/js-sandbox2
 sublime .
 ```
+
 Change the font to Inconsolata to match.
+
 ```javascript
 // testModule.js
 module.exports = newFunction;
@@ -66,15 +69,15 @@ git add -A; git commit -m "lol"; gp
 ```
 Copy and paste `gulpfile.js` because `webpack.config.js` is still not working out. I'm sleepy...
 
-### June 7th, 2016
+### June 7th, 2015
 
 Webpack is working now.
 
-### June 9th, 2016
+### June 10th, 2015
 
 hahah never mind
 
-### June 15th, 2016
+### January 15th, 2016
 
 I read about how people are starting to 3D print food. Realized that one day, `burger.make(toppings)` may very well be real.
 
@@ -88,9 +91,9 @@ Smile.
 
 Look at my TeamTreehouse billing history. Browse LinkedIn and notice my friends 2-year work anniversary. Browse instagram and notice my friends traveling around the world. Switch back to Terminal to a sea of red error messages.
 
-Navigate to Laracasts.com to study the latest Laravel updates.
+Navigate to Laracasts.com to study the latest Laravel updates. Back hurts a bit.
 
-Try not to cry.
+Mm, try not to cry.
 
 ### June 19th, 2016
 
@@ -102,11 +105,13 @@ It's my birthday. Udemy doesn't offer coupon codes for birthdays, though.
 
 ### June 21th, 2016.
 
-It'd be nice to have an application to help me manage job applications.
+It'd be nice to have an application to help me manage job applications. Like everything in one place, like a mosaic! It can be a suite of tools to help you manage your job applications.
 
 ### June 22nd, 2016
 
-`mkdir mosu.io`
+Mosaic Suite. Hm.
+
+`mkdir mosu`
 
 ### July 5th, 2016
 
@@ -118,9 +123,13 @@ gp
 
 "Good enough for now."
 
+### July 6th, 2016
+
+No, no, I'll keep working.
+
 ### July 12, 2016. 4:39PM
 
-> Hello Kevin. Thank you for your application. We would like you to interview at our office in Manhattan.
+> Hello Kevin. Thank you for your application. We would like you to interview at our office in NYC.
 
 Look outside. Try not to cry.
 
@@ -130,3 +139,5 @@ Flip through Spotify. Decide that if I get the position, I'll listen to Cashmere
 
 > Hello Kevin.
 > Congratulations.
+
+I hit play, and walk.
