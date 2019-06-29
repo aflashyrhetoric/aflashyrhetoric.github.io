@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/posts/windfall/</loc>
-    <lastmod>2017-05-25T16:33:48-04:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2017-05-17T21:47:18-04:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/project-ideas/</loc>
     <lastmod>2017-05-17T21:47:18-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2017-05-17T21:47:18-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/persistence/</loc>
+    <lastmod>2017-05-05T18:03:19-04:00</lastmod>
   </url>
   
   <url>
@@ -33,10 +43,15 @@
   
   <url>
     <loc>/projects/payup/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/projects/adg/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/blg-cli/</loc>
   </url>
   
   <url>
@@ -49,11 +64,6 @@
   
   <url>
     <loc>/posts/design/</loc>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2017-05-25T16:33:48-04:00</lastmod>
   </url>
   
   <url>
@@ -87,11 +97,6 @@
   
   <url>
     <loc>/posts/websites-are-pants/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2017-05-25T16:33:48-04:00</lastmod>
   </url>
   
 </urlset>

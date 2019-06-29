@@ -30,6 +30,16 @@ Group Information &amp;amp; Resources    Misc Group Resources     Introduction T
     </item>
     
     <item>
+      <title>Backlog CLI</title>
+      <link>/projects/blg-cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/blg-cli/</guid>
+      <description>Backlog CLI An (unofficial) command line utility for working with Backlog, a tool by Nulab, Inc.
+ View on Github  Values  Be easy to &amp;ldquo;plug and play.&amp;rdquo; Provide shortcuts for a subset of your most frequently repeated actions, rather than achieving complete feature parity. In other words, it is designed to be a complement to Backlog, rather than a replacement for it.  Main Features  Quickly create, view, and open pull requests in the browser for your current branch &amp;amp; issue  blg pr create [-b BRANCH_TO_MERGE_TO] blg pr ls blg pr open  View and open your latest notifications  blg n  Quickly access misc links  blg me to list links related to your user account.</description>
+    </item>
+    
+    <item>
       <title>Milton Bros</title>
       <link>/projects/milton-bros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

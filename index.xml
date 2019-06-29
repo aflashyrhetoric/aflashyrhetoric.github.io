@@ -5,22 +5,10 @@
     <link>/</link>
     <description>Recent content in Kevin Oh | Web Developer on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 May 2017 16:33:48 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 17 May 2017 21:47:18 -0400</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>windfall</title>
-      <link>/posts/windfall/</link>
-      <pubDate>Thu, 25 May 2017 16:33:48 -0400</pubDate>
-      
-      <guid>/posts/windfall/</guid>
-      <description>🚨 Draft 0.0.2 🚨
-Summary &amp;amp; Introduction Windfall is just a theoretical thought experiment at the moment.
-Windfall scrapes/fetches data from news and social media sources and applies machine learning principles to predict stock market prices in real-time. It also seeks to provide users with a panel through which they can navigate this nuanced data and strategize to maximize their returns.
-Windfall seeks to algorithmically examine the relationship - if any - between the news we consume and the way our financial markets respond in kind.</description>
-    </item>
     
     <item>
       <title>PROJECT BOARD</title>
@@ -30,6 +18,16 @@ Windfall seeks to algorithmically examine the relationship - if any - between th
       <guid>/posts/project-ideas/</guid>
       <description>This list is updated regularly. This is a list of project ideas that are either planned or in progress (but not complete enough to warrant inclusion on the main projects page).
    Name Description Technologies Status     Pay Up Manage debts among friends, roommates, or housemates Go API, ReactJS WIP   ADG Community Site A place to showcase the Adelie Developer&amp;rsquo;s Group&amp;rsquo;s many talents GatsbyJS, Popmotion, GlamorJS WIP   Windfall A web scraper that parses a variety of social networks and does sentiment analysis to make predictions about stock performance, and then uses actual stock performance data to learn which sources are the best for making predictions.</description>
+    </item>
+    
+    <item>
+      <title>Learning Persistence</title>
+      <link>/posts/persistence/</link>
+      <pubDate>Fri, 05 May 2017 18:03:19 -0400</pubDate>
+      
+      <guid>/posts/persistence/</guid>
+      <description>July 1st, 2015, 6pm I pause the Javascript tutorial I&amp;rsquo;m watching, then I close the tab. ES6 can wait until tomorrow - it&amp;rsquo;s just a hobby anyway.
+I glance at the thirty-something Chrome tabs I have open and just now notice the whirring fan, the heat emanating off the keyboard. I click OneTab to save them all and watch as they disappear, one-by-one, as fast as Chrome&amp;rsquo;s speedy little brain can manage.</description>
     </item>
     
     <item>
@@ -81,6 +79,16 @@ By &amp;ldquo;obstacles,&amp;rdquo; I don&amp;rsquo;t mean the inherent difficul
       <description>Beer me, Slackbot! 🍺 The Adelie Developer&amp;rsquo;s Group is an online, Slack-based study group for web development.
 The group is beginner-friendly and project-oriented. Currently, some of the members are working on individual developer portfolio websites using modern front-end tooling and best practices.
 Group Information &amp;amp; Resources    Misc Group Resources     Introduction To The Group   Adelie YouTube Channel   Request Invitation   Roster    We use Slack, HackMD, Github, CodePen, YouTube, and other collaborative tools to communicate, share design inspiration, tips, coding help and feedback, and more.</description>
+    </item>
+    
+    <item>
+      <title>Backlog CLI</title>
+      <link>/projects/blg-cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/blg-cli/</guid>
+      <description>Backlog CLI An (unofficial) command line utility for working with Backlog, a tool by Nulab, Inc.
+ View on Github  Values  Be easy to &amp;ldquo;plug and play.&amp;rdquo; Provide shortcuts for a subset of your most frequently repeated actions, rather than achieving complete feature parity. In other words, it is designed to be a complement to Backlog, rather than a replacement for it.  Main Features  Quickly create, view, and open pull requests in the browser for your current branch &amp;amp; issue  blg pr create [-b BRANCH_TO_MERGE_TO] blg pr ls blg pr open  View and open your latest notifications  blg n  Quickly access misc links  blg me to list links related to your user account.</description>
     </item>
     
     <item>

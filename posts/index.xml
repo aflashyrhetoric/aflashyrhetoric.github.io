@@ -5,22 +5,10 @@
     <link>/posts/</link>
     <description>Recent content in posts on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 May 2017 16:33:48 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 17 May 2017 21:47:18 -0400</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>windfall</title>
-      <link>/posts/windfall/</link>
-      <pubDate>Thu, 25 May 2017 16:33:48 -0400</pubDate>
-      
-      <guid>/posts/windfall/</guid>
-      <description>🚨 Draft 0.0.2 🚨
-Summary &amp;amp; Introduction Windfall is just a theoretical thought experiment at the moment.
-Windfall scrapes/fetches data from news and social media sources and applies machine learning principles to predict stock market prices in real-time. It also seeks to provide users with a panel through which they can navigate this nuanced data and strategize to maximize their returns.
-Windfall seeks to algorithmically examine the relationship - if any - between the news we consume and the way our financial markets respond in kind.</description>
-    </item>
     
     <item>
       <title>PROJECT BOARD</title>
@@ -30,6 +18,16 @@ Windfall seeks to algorithmically examine the relationship - if any - between th
       <guid>/posts/project-ideas/</guid>
       <description>This list is updated regularly. This is a list of project ideas that are either planned or in progress (but not complete enough to warrant inclusion on the main projects page).
    Name Description Technologies Status     Pay Up Manage debts among friends, roommates, or housemates Go API, ReactJS WIP   ADG Community Site A place to showcase the Adelie Developer&amp;rsquo;s Group&amp;rsquo;s many talents GatsbyJS, Popmotion, GlamorJS WIP   Windfall A web scraper that parses a variety of social networks and does sentiment analysis to make predictions about stock performance, and then uses actual stock performance data to learn which sources are the best for making predictions.</description>
+    </item>
+    
+    <item>
+      <title>Learning Persistence</title>
+      <link>/posts/persistence/</link>
+      <pubDate>Fri, 05 May 2017 18:03:19 -0400</pubDate>
+      
+      <guid>/posts/persistence/</guid>
+      <description>July 1st, 2015, 6pm I pause the Javascript tutorial I&amp;rsquo;m watching, then I close the tab. ES6 can wait until tomorrow - it&amp;rsquo;s just a hobby anyway.
+I glance at the thirty-something Chrome tabs I have open and just now notice the whirring fan, the heat emanating off the keyboard. I click OneTab to save them all and watch as they disappear, one-by-one, as fast as Chrome&amp;rsquo;s speedy little brain can manage.</description>
     </item>
     
     <item>
