@@ -43,7 +43,7 @@
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1",
     "webpack-merge": "^4.1.4",
-    "yarn": "^1.13.0"
+    "yarn": "^1.17.3"
   },
   "main": "index.js",
   "repository": "git@github.com:aflashyrhetoric/aflashyrhetoric.github.io",
