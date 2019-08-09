@@ -1,3 +1,3 @@
 // app.js
 
-require("./enable-highlight");
+require('./enable-highlight')

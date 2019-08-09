@@ -1,12 +1,12 @@
 // index.js
 
 // Import JS
-require('./js/app.js');
+require('./js/app.js')
 
 // Import SCSS
 
-// funkytown 
+// funkytown
 // require('./scss/styles-funkytown-theme.scss');
 
 // ryu
-require('./scss/styles-ryu-theme.scss');
+require('./scss/styles-ryu-theme.scss')

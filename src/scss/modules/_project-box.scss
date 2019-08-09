@@ -1,7 +1,6 @@
 // _project-box.scss
 
 .project-box {
-
   &__list {
     margin: 0;
     padding: 0;
@@ -18,7 +17,7 @@
   &__list-item {
     display: inline-block;
     text-align: center;
-    a { 
+    a {
       display: inline-block;
       min-width: 107px;
       height: 100%;

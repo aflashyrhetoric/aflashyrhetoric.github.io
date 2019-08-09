@@ -1,37 +1,36 @@
 // styles.scss
 
-
 // Foundation 6 (flexbox)
-@import "~foundation-sites/scss/foundation.scss";
+@import '~foundation-sites/scss/foundation.scss';
 @include foundation-everything(true);
 
 // Import utilities first in case they're used
-@import "utilities/**/*";
+@import 'utilities/**/*';
 
 // Create "init" folder because
 // sass-globs create non-deterministic imports
-@import "init/colors";
-@import "init/fonts";
-@import "init/bootstrap";
-@import "init/typography";
-@import "init/code-theme";
+@import 'init/colors';
+@import 'init/fonts';
+@import 'init/bootstrap';
+@import 'init/typography';
+@import 'init/code-theme';
 
 /* An atom describes a low-level unit
 /* Usually, it refers to a single HTML element, but not always
 /**************************************************************/
-@import "atoms/**/*";
+@import 'atoms/**/*';
 
 /* Components (aka molecules)
 /* They refer to groups of Atoms
 /* They have some sort of specific functionality
 /************************************************/
-@import "components/**/*";
+@import 'components/**/*';
 
 /* Modules (aka organisms)
 /* They refer to groups of Components
 /* They are "larger", and usually take the form of page sections
 /*****************************************************************/
-@import "modules/**/*";
+@import 'modules/**/*';
 
 /* Templates
 /* Templates are generic Pages
@@ -41,5 +40,4 @@
 /* Contains page-specific code
 /* Pages are usually groups of modules
 /**************************************/
-@import "pages/**/*";
-
+@import 'pages/**/*';

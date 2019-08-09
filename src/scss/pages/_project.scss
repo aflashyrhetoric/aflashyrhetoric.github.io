@@ -3,7 +3,7 @@
 .page-projects {
   @include flex-grid-row($size: 100%);
 
-  &__heading-wrapper{
+  &__heading-wrapper {
     @include flex-grid-column($columns: 12);
     background-color: $black;
     height: 220px;
@@ -33,7 +33,7 @@
       margin-bottom: 2rem;
       img {
         transform: none;
-        transition: transform .4s;
+        transition: transform 0.4s;
       }
       @include flex-grid-column($columns: 12);
       @include breakpoint(medium up) {
@@ -61,7 +61,7 @@
       flex-flow: column nowrap;
     }
     &__title {
-      margin-bottom: .8rem;
+      margin-bottom: 0.8rem;
       font-weight: bold;
       line-height: 1;
       text-transform: lowercase;
@@ -94,5 +94,4 @@
       text-align: center;
     }
   }
-
 }

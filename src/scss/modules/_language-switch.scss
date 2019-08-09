@@ -24,7 +24,8 @@
         left: 100%;
         top: 1px;
 
-        .-dark &, .is-stuck & {
+        .-dark &,
+        .is-stuck & {
           color: $darkgray;
         }
       }
@@ -36,18 +37,20 @@
     font-weight: 700;
     text-decoration: none;
     @include fz(13);
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       //color: darken($darkgray, 10);
       color: $link-hover-color;
     }
 
-    .-dark &, .is-stuck & {
+    .-dark &,
+    .is-stuck & {
       color: $link-color;
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         //color: lighten($darkgray, 10);
         color: $link-hover-color;
       }
     }
-
   }
 }

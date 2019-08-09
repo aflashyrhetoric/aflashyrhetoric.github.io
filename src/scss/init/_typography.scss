@@ -1,7 +1,12 @@
 /* General Typography
  * ----------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @include setFontBody;
   font-weight: bold;
   margin: 0;
@@ -38,9 +43,9 @@ dl {
 // Links
 a {
   color: $link-color;
-  transition: color .2s ease 0s;
+  transition: color 0.2s ease 0s;
   @include setFontBody;
-  
+
   &:hover {
     cursor: pointer;
     color: $link-hover-color;

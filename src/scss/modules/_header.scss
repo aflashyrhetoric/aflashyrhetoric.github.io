@@ -2,9 +2,9 @@
 // Contains SCSS for navbar
 
 .header {
-  margin-bottom:  80px;
-  a, 
-  p, 
+  margin-bottom: 80px;
+  a,
+  p,
   ul li {
     // font-family: 'Iosevka-light', sans-serif !important;
     @include setFontBody;
@@ -14,7 +14,7 @@
       font-size: 1rem;
     }
   }
-  
+
   @include flex-grid-row($size: 100%);
 
   &.-no-margin-bottom {
@@ -69,7 +69,7 @@
     font-weight: bold;
     padding: 5px;
     @include breakpoint(medium up) {
-      padding: .5rem;
+      padding: 0.5rem;
     }
     @include breakpoint(large up) {
       padding: 1rem;

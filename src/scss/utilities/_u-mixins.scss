@@ -25,7 +25,7 @@
 }
 
 // For creating arrows easily
-@mixin arrow-up ($size, $color) {
+@mixin arrow-up($size, $color) {
   position: absolute;
   width: 0;
   height: 0;
@@ -39,7 +39,7 @@
 @mixin clearfix {
   &:after {
     display: block;
-    content: "";
+    content: '';
     clear: both;
   }
 }
@@ -57,18 +57,17 @@
 
 // for lang ja (japanese)
 @mixin ja {
-  html[lang="ja"] & {
+  html[lang='ja'] & {
     @content;
   }
 }
 
 // for lang en (English)
 @mixin en {
-  html[lang="en-US"] & {
+  html[lang='en-US'] & {
     @content;
   }
 }
-
 
 // styles
 // =============

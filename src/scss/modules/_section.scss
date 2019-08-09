@@ -3,7 +3,6 @@
 $__label-border-width: 7px;
 $_label-height: 50px;
 .section {
-
   &__container {
     &:not(:first-child) {
       margin: auto;
@@ -25,7 +24,7 @@ $_label-height: 50px;
       right: $__label-border-width solid $purple;
       bottom: $__label-border-width solid $purple;
     }
-    
+
     &.-regular {
       @include breakpoint(medium up) {
         @include flex-grid-column($columns: 6, $gutters: 0);
@@ -67,8 +66,8 @@ $_label-height: 50px;
       left: $__label-border-width solid $purple;
     }
     height: $_label-height + 1px;
-    padding:{
-      top: .5rem;
+    padding: {
+      top: 0.5rem;
       left: 1rem;
       right: 1.2rem;
     }
@@ -107,7 +106,7 @@ $_label-height: 50px;
   &__content {
     padding: 1rem;
     @include setFontBody;
-    h1, 
+    h1,
     h2,
     h3,
     h4,
@@ -115,10 +114,12 @@ $_label-height: 50px;
     h6 {
       font-weight: bold;
     }
-    p, li {
+    p,
+    li {
       font-size: 20px;
     }
-    ul, ol {
+    ul,
+    ol {
       padding-left: 1rem;
     }
     a {

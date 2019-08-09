@@ -37,7 +37,6 @@
   }
 
   &__container {
-
     .upper-text {
       &__wrapper {
         margin-bottom: 4rem;
@@ -61,7 +60,7 @@
     .lower-text {
       &__text {
         font-size: 14px;
-        line-height: .5rem;
+        line-height: 0.5rem;
         color: $medgray;
         @include setFontBody;
         text-transform: uppercase;
