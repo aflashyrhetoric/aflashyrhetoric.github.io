@@ -1,13 +1,12 @@
 // home.scss
-
 .page--home {
   padding: {
     top: 45px;
-  };   
+  }
   max-width: 80%;
   margin: auto;
   @include breakpoint(medium up) {
-    padding-top: 75px; 
+    padding-top: 75px;
   }
 
   .home {
@@ -67,7 +66,7 @@
       // }
       @include fz(20);
       @include breakpoint(large up) {
-        min-width: 225px; 
+        min-width: 225px;
       }
     }
     &__image {
@@ -85,13 +84,12 @@
         left: auto;
         right: auto;
         bottom: 40px;
-      };
+      }
     }
   }
 
   // Build something NU
   .build-something {
-
     &__container {
       width: 100%;
       background-color: $offwhite;
@@ -101,12 +99,12 @@
         top: 40px;
         left: 20px;
         right: 20px;
-      }        
+      }
       @include breakpoint(large up) {
         padding: {
           left: 40px;
           right: 40px;
-        }        
+        }
       }
     }
     &__header {
@@ -155,7 +153,7 @@
         }
       }
 
-      &__heading, 
+      &__heading,
       &__description {
         @include fz(16);
       }
@@ -174,7 +172,6 @@
         }
       }
     }
-
   }
 
   .getting-started {
@@ -210,7 +207,6 @@
 
     // Purple card
     &__item {
-
       padding: 0;
       margin-bottom: 1rem;
 
@@ -219,7 +215,6 @@
         @include flex-grid-column($columns: 4, $gutters: 2rem);
         margin-bottom: 0;
       }
-
 
       &-header,
       &-text {
