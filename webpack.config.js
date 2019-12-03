@@ -1,25 +1,27 @@
 // Webpack
-const webpack = require("webpack");
-const path = require("path");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const cssnano = require('cssnano');
+const webpack = require('webpack')
+const path = require('path')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 // Hide deprecation notices
-process.noDeprecation = true;
+process.noDeprecation = true
 
-let config = {};
+let config = {}
 
-const devMode = process.NODE_ENV !== "production";
+const devMode = process.env.NODE_ENV !== 'production'
+console.log(`Production Mode: ${process.env.NODE_ENV}`)
+console.log(`Development server live @ http://localhost:1313`)
 
 module.exports = (env, argv) => {
   config = {
-    mode: "development",
-    devtool: "inline-source-map",
-    entry: ["./src/index"],
+    mode: 'development',
+    devtool: 'inline-source-map',
+    entry: ['./src/index'],
     output: {
-      filename: "static/js/app.js",
+      filename: 'js/app.js',
+      path: path.resolve(__dirname, 'static'),
     },
     module: {
       rules: [
@@ -27,9 +29,9 @@ module.exports = (env, argv) => {
           test: /\.js$/,
           use: [
             {
-              loader: "babel-loader",
+              loader: 'babel-loader',
               options: {
-                presets: [["@babel/preset-env"]],
+                presets: [['@babel/preset-env']],
               },
             },
           ],
@@ -38,7 +40,7 @@ module.exports = (env, argv) => {
           test: /\.(png|woff|woff2|eot|ttf|svg)$/,
           use: [
             {
-              loader: "url-loader?limit=100000",
+              loader: 'url-loader?limit=100000',
             },
           ],
         },
@@ -57,75 +59,78 @@ module.exports = (env, argv) => {
       ],
     },
     resolve: {
-      extensions: [".js", ".jsx", ".json", ".scss"],
+      extensions: ['.js', '.jsx', '.json', '.scss'],
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: "static/css/styles.css",
+        filename: 'css/styles.css',
       }),
     ],
     watchOptions: {
       ignored: /node_modules/,
     },
-  };
+  }
 
   if (devMode) {
+    console.log(`..........DEVELOPMENT WEBPACK BUILD RUNNING.....`)
     config.module.rules.push(
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          "css-loader",
-        ],
-      },
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     {
+      //       loader: MiniCssExtractPlugin.loader,
+      //     },
+      //     "css-loader",
+      //   ],
+      // },
       {
         test: /\.scss$/,
         exclude: [/node_modules/],
         use: [
           {
-            loader: "style-loader",
+            loader: 'style-loader',
           },
           {
-            loader: "css-loader",
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
             options: {
               sourceMap: true,
             },
           },
           {
-            loader: "resolve-url-loader",
+            loader: 'resolve-url-loader',
             options: {
               sourceMap: true,
             },
           },
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
             options: {
               sourceMap: true,
               sourceMapContents: false,
             },
           },
           {
-            loader: "import-glob-loader",
+            loader: 'import-glob-loader',
           },
         ],
-      }
-    );
+      },
+    )
   }
 
   if (!devMode) {
     //
     // Development
     //
-    config.devtool = "";
+    console.log(`..........PRODUCTION WEBPACK BUILD RUNNING.....`)
+    config.devtool = ''
     config.optimization = {
       minimize: true,
-    };
-    config.plugins = config.plugins.concat([
-      new webpack.NoEmitOnErrorsPlugin(),
-    ]);
+    }
+    config.plugins = config.plugins.concat([new webpack.NoEmitOnErrorsPlugin()])
   }
 
-  return config;
-};
+  return config
+}

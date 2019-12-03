@@ -2,7 +2,7 @@
   &__container {
     width: 100%;
     padding: 2rem;
-    background-color: $black;
+    background: blue;
   }
   &__inner {
     @include flex-grid-row($size: 100%);

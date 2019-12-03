@@ -2,7 +2,7 @@
   "name": "kevinoh.me",
   "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently -k --prefix \"[{name}]\" --names \"WEBPACK,HUGO\" -c \"white.bgBlue.bold,white.bgGreen.bold\" \"webpack --mode=development --watch\" \"hugo server --verbose\"",
+    "dev": "NODE_ENV=development concurrently -k --prefix \"[{name}]\" --names \"WEBPACK,HUGO\" -c \"white.bgBlue.bold,white.bgGreen.bold\" \"webpack --watch --config webpack.config.js\" \"hugo server --verbose\"",
     "build": "NODE_ENV=production webpack --p --progress; hugo",
     "postbuild": "node update-config-version.js"
   },

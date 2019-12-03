@@ -5,7 +5,6 @@
 
   &__heading-wrapper {
     @include flex-grid-column($columns: 12);
-    background-color: $black;
     height: 220px;
     display: flex;
     align-items: center;
@@ -55,8 +54,8 @@
       padding-top: 4rem;
       min-width: 220px;
       min-height: 500px;
-      border-radius: 4px;
       background-color: $purple;
+      border-radius: 4px;
       display: flex;
       flex-flow: column nowrap;
     }

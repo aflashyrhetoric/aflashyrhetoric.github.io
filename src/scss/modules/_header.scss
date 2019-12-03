@@ -23,12 +23,11 @@
 }
 
 .navbar {
-  background-color: $black;
-  margin: auto;
-  min-height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  min-height: 55px;
   @include flex-grid-column($columns: 12);
   &.-full-width {
     @include flex-grid-column($columns: 12);
