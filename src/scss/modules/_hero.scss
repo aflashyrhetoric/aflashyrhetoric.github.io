@@ -1,74 +1,83 @@
 .hero {
   &__container {
     width: 100%;
-    padding: 2rem;
-    background: blue;
+    padding-top: 2rem;
   }
   &__inner {
-    @include flex-grid-row($size: 100%);
-    @include breakpoint(medium up) {
-      @include flex-grid-row($size: 80%);
-    }
-    @include breakpoint(large up) {
-      @include flex-grid-row($size: 50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    // @include light-gradient;
+    @include hma;
+    @include bp(medium) {
+      width: 50%;
     }
   }
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
   &__left {
-    @include flex-grid-column($columns: 12);
     text-align: center;
     margin-bottom: 1.5rem;
-    @include breakpoint(medium up) {
+    width: 100%;
+    @include breakpoint(medium) {
       margin-bottom: 0;
       text-align: left;
-      @include flex-grid-column($columns: 4);
+      width: 33%;
     }
   }
   &__right {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     text-align: center;
-    @include flex-grid-column($columns: 12);
-    @include breakpoint(medium up) {
+    width: 100%;
+    @include breakpoint(medium) {
       text-align: right;
-      @include flex-grid-column($columns: 8);
+      width: 66%;
     }
   }
   &__img {
-    max-width: 200px;
+    width: 200px;
     border-radius: 100%;
   }
-
-  &__container {
-    .upper-text {
-      &__wrapper {
-        margin-bottom: 4rem;
-      }
-      &__header {
-        font-size: 2.25rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 0;
-        @include setFontBody;
-      }
-      &__subheader {
-        font-size: 1rem;
-        a {
-          color: $medgray;
-          @include setFontLight;
-        }
-      }
-    }
-
-    .lower-text {
-      &__text {
-        font-size: 14px;
-        line-height: 0.5rem;
-        color: $medgray;
-        @include setFontBody;
-        text-transform: uppercase;
-        a {
-          @include setFontBody;
-          font-weight: bold;
-        }
+}
+.upper-text {
+  &__wrapper {
+    margin-bottom: 4rem;
+  }
+  &__header {
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    @include setFontBody;
+  }
+  &__subheader {
+    font-size: 1rem;
+    a {
+      color: $black;
+      @include setFontLight;
+      &:hover {
+        font-style: italic;
       }
     }
   }
+}
+  .lower-text {
+    &__text {
+      line-height: 0.5rem;
+      color: $black;
+      text-transform: uppercase;
+      @include setFontBody;
+      a {
+        font-weight: bold;
+        @include setFontBody;
+      }
+    }
+  
 }

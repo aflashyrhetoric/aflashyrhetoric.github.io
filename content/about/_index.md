@@ -3,15 +3,14 @@ section = "about"
 title = "Bio"
 +++
 
-# My name is Kevin Oh.
+{{< span class="about-intro" content="Hey, I'm Kevin Oh." >}} Currently working as a *Front-End Engineer* with the team at [HomeLight](https://homelight.com). Previously, I worked with the excellent team at Nulab. I built a Chrome extension called [NightMessenger](https://chrome.google.com/webstore/detail/night-messenger/hjhnmilbfdehpgfcojlmmooknnkhgdmh?hl=en), a CLI tool to complement the PM tool [Backlog](https://backlog.com), and lead a Slack-based [study group](/projects/adg) that focuses on building projects to gain practical experience with modern web development technologies. 
 
-Or, *[@aflashyrhetoric](http://twitter.com/aflashyrhetoric)*.
-
-I'm a front-end developer based in New York. Currently working as a *Front-End Engineer* with the excellent team at Nulab. I lead a Slack-based [study group](/projects/adg) that focuses on building projects to gain practical experience with modern web development technologies. I co-founded Adelie, a web development shop that has since rolled back client-based operations to focus on building internal services & open source projects.
+I co-founded Adelie, a web development shop that has since rolled back client-based operations to focus on building internal services & open source projects.
 
 On the side, I also serve as a mod over at [/r/webdev](https://reddit.com/r/webdev) and [/r/webdesign](https://reddit.com/r/webdesign).
 
 ---
+
 #### Projects?
 
 Read about my projects [HERE](/projects).

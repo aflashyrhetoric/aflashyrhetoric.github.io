@@ -6,16 +6,9 @@ license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
 description = "The official Hugo theme for the Kevin Oh's Site."
 homepage = "https://kevinoh.me"
-tags = ["api", "documentation"]
 features = ["", ""]
 min_version = 0.10
 
 [author]
   name = "Kevin Oh"
   homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""

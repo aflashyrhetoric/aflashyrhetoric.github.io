@@ -2,15 +2,16 @@
 // =============================================================
 
 $white: #fff;
-$gray: #ebebeb;
+$gray: darken($white, 1%);
 $offwhite: $gray;
 $medgray: #aaadad;
-$darkgray: lighten($black, 5);
 $black: #222222;
+$darkgray: lighten($black, 5);
 
+$teal: #befeff;
 $purple: #54004f;
-$darkpurple: #2f1e2e;
-$lightpurple: lighten(#54004f, 10);
+$darkteal: darken($purple, 2);
+$lightteal: lighten($purple, 1);
 
-$link-color: $white;
+$link-color: $purple;
 $link-hover-color: darken($white, 15);

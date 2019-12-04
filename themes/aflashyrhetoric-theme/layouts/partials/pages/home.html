@@ -10,7 +10,7 @@
           <h2 class="upper-text__subheader"><a href="https://github.com/aflashyrhetoric">@aflashyrhetoric</a></h2>
         </div>
         <div class="lower-text__wrapper">
-          <p class="lower-text__text">front-end engineer @ <a target="_blank" href="https://nulab-inc.com">nulab</a></p>
+          <p class="lower-text__text">front-end engineer @ <a target="_blank" href="https://homelight.com">homelight</a></p>
           <p class="lower-text__text">developer, co-founder @ <a target="_blank" href="http://adelieweb.com">adelie</a></p>
         </div>
       </div>
@@ -47,12 +47,17 @@
 
     <div class="section__projects">
       <ul class="project-box__list">
-        {{ range where .Data.Pages "Section" "posts" }}
-          <li class="project-box__list-post">
-            <a href="{{ .RelPermalink }}">
-              {{ .Title }}
-            </a>
-          </li>
+
+        {{/* Iterate over all pages, for which the section is posts */}}
+        {{ range $el, $val := where .Site.AllPages "Section" "posts" }} 
+          {{/* skip the first one */}}
+          {{ if ne $el 0 }}
+            <li class="project-box__list-post">
+              <a href="{{ .RelPermalink }}">
+                {{ .Title }}
+              </a>
+            </li>
+          {{ end }}
         {{ end }}
       </ul>
     </div>

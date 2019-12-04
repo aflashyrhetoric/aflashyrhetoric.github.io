@@ -1,0 +1,70 @@
+// Navbar.scss
+//===========
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 55px;
+  @include h-p(20);
+
+  @include flex-grid-column($columns: 12);
+  &.-full-width {
+    background: $black;
+    a {
+      color: $white;
+    }
+    @include flex-grid-column($columns: 12);
+  }
+  @include breakpoint(medium) {
+    @include flex-grid-column($columns: 9);
+  }
+  @include breakpoint(large) {
+    @include flex-grid-column($columns: 6);
+  }
+
+  &__name {
+    font-weight: bold;
+    margin-bottom: 0;
+    display: none;
+    @include breakpoint(medium) {
+      display: inline;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    // @include h-p(40);
+
+    @include breakpoint(medium) {
+      justify-content: flex-end;
+      &.-is-home {
+        justify-content: space-around;
+      }
+    }
+  }
+
+  &__list-item {
+    display: inline;
+    font-weight: bold;
+    padding: 5px;
+    @include breakpoint(medium) {
+      padding: 0.5rem;
+    }
+    @include breakpoint(large) {
+      padding: 1rem;
+    }
+  }
+
+  &__list-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: $link-color;
+  }
+}

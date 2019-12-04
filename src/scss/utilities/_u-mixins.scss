@@ -1,9 +1,62 @@
 // mixin.scss
 // =============================================================
 
+$breakpoints: (
+  'small': 767px,
+  'sm': 767px,
+  'medium': 992px,
+  'md': 992px,
+  'large': 1080px,
+  'lg': 1080px,
+  'xlarge': 1400px,
+  'xl': 1400px,
+) !default;
+
+@mixin bp($breakpoint) {
+  @include breakpoint($breakpoint) {
+    @content;
+  }
+}
+
+@mixin mq($breakpoint) {
+  @include breakpoint($breakpoint) {
+    @content;
+  }
+}
+
+@mixin breakpoint($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-grid-row($size, $gutters: 1) {
+  width: $size;
+}
+
+@mixin flex-grid-column($columns, $gutters: 1) {
+  $_width: $columns/12;
+  $_width: #{$_width * 100%};
+  max-width: $_width;
+  flex-basis: $_width;
+}
+
 // helper classes
 // ==============
-
 // font-size
 @mixin fz($size) {
   $size-rem: rem-calc($size);
@@ -13,6 +66,26 @@
 
 // utilities
 // =========
+@mixin hma() {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+@mixin h-p($p) {
+  padding: {
+    left: #{$p}px;
+    right: #{$p}px;
+  }
+}
+
+@mixin h-m($p) {
+  margin: {
+    left: #{$p}px;
+    right: #{$p}px;
+  }
+}
 
 // For restoring only bottom margin
 @mixin only-margin-bottom($margin) {
@@ -47,51 +120,23 @@
 // Hides on mobile (good for images)
 @mixin hide-on-mobile() {
   display: none;
-  @include breakpoint(medium up) {
+  @include breakpoint(medium) {
     display: block;
   }
 }
 
-// language
-// ==============================
-
-// for lang ja (japanese)
-@mixin ja {
-  html[lang='ja'] & {
-    @content;
+@mixin gradient($style: watermelon) {
+  @if $style != 'professional' {
+    background: linear-gradient(to bottom, #deffd3, #ffcece);
+  } @else {
+    background: linear-gradient(to bottom, #deffd3, #ffcece);
   }
 }
 
-// for lang en (English)
-@mixin en {
-  html[lang='en-US'] & {
-    @content;
-  }
-}
-
-// styles
-// =============
-
-@mixin app-color-modifiers {
-  &.-cacoo {
-    color: $cacoo-blue;
-  }
-  &.-typetalk {
-    color: $typetalk-red;
-  }
-  &.-backlog {
-    color: $backlog-green;
-  }
-}
-
-@mixin app-bg-color-modifiers {
-  &.-cacoo {
-    background-color: $cacoo-blue;
-  }
-  &.-typetalk {
-    background-color: $typetalk-red;
-  }
-  &.-backlog {
-    background-color: $backlog-green;
-  }
+@mixin light-gradient() {
+  background: linear-gradient(
+    to bottom,
+    lighten(#deffd3, 5),
+    lighten(#ffcece, 5)
+  );
 }

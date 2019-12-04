@@ -8,6 +8,10 @@
   position: absolute;
   bottom: 0;
 
+  a {
+    color: $white;
+  }
+
   &__left {
     float: left;
   }
