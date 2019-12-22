@@ -2,21 +2,19 @@
 // =============================================================
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: $black;
-  padding: 1rem;
   width: 100%;
+  max-width: 100%;
   position: absolute;
   bottom: 0;
+  @include v-p(10);
 
   a {
     color: $white;
-  }
-
-  &__left {
-    float: left;
-  }
-
-  &__right {
-    float: right;
+    @include h-m(10);
   }
 }

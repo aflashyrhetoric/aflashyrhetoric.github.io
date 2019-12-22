@@ -9,6 +9,7 @@ html {
   // margin: auto;
   // Set root font size for REM.
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 a {
@@ -26,4 +27,35 @@ body {
   // background: $black;
   // #f19d9d
   @include setFontBody;
+}
+
+$_t: 220ms;
+
+.js_color-button {
+  font-family: 'Proxima-Nova', sans-serif;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Proxima-Nova';
+  font-weight: bold;
+  top: 30px;
+  left: 30px;
+  width: 50px;
+  height: 30px;
+  border: 3px solid $black;
+  user-select: none;
+  background: $black;
+  transition: height $_t, width $_t, top $_t, left $_t, transform $_t;
+
+  &:hover {
+    height: 38px;
+    width: 58px;
+    top: 26px;
+    left: 26px;
+    transform: rotateZ(-10deg);
+  }
+
+  @include hide-on-mobile(true);
 }

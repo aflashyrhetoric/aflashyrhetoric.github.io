@@ -51,6 +51,8 @@ $_hero-box-color: $black;
 
 .upper-text {
   &__wrapper {
+    user-select: none;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,10 +64,32 @@ $_hero-box-color: $black;
     height: 144px;
 
     margin: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     color: $_hero-box-color;
 
     transition: transform 300ms;
+
+    // For animating
+    .fill {
+      display: none;
+      position: absolute;
+      width: 33%;
+      height: 100%;
+      z-index: -1;
+      &:nth-child(1) {
+        left: 0;
+      }
+      &:nth-child(2) {
+        left: 33%;
+      }
+      &:nth-child(3) {
+        width: 34%;
+        left: 66%;
+      }
+      .upper-text__wrapper:hover & {
+        display: block;
+      }
+    }
 
     &:hover {
       transform: skew(10deg, 0deg);

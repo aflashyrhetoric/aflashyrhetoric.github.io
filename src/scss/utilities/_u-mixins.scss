@@ -80,6 +80,13 @@ $breakpoints: (
   }
 }
 
+@mixin v-p($p) {
+  padding: {
+    top: #{$p}px;
+    bottom: #{$p}px;
+  }
+}
+
 @mixin h-m($p) {
   margin: {
     left: #{$p}px;
@@ -118,10 +125,14 @@ $breakpoints: (
 }
 
 // Hides on mobile (good for images)
-@mixin hide-on-mobile() {
+@mixin hide-on-mobile($flex) {
   display: none;
   @include breakpoint(medium) {
-    display: block;
+    @if $flex == true {
+      display: flex;
+    } @else {
+      display: block;
+    }
   }
 }
 

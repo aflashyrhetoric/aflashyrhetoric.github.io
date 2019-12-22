@@ -15,7 +15,8 @@ $_label-height: 35px;
   }
 
   &__inner {
-    background-color: $gray;
+    // background-color: $gray;
+    background-color: rgba(255, 255, 255, 0.5);
     color: $black;
     position: relative;
     border-top: $__label-border-width solid $purple;
@@ -62,13 +63,14 @@ $_label-height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $gray;
+    // background-color: $gray;
+    background-color: rgba(255, 255, 255, 0.5);
     border: {
       top: $__label-border-width solid $purple;
       right: $__label-border-width solid $purple;
       left: $__label-border-width solid $purple;
     }
-    height: $_label-height + 1px;
+    height: $_label-height - 6px;
     padding: {
       top: 0.5rem;
       left: 1rem;

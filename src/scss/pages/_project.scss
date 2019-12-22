@@ -20,11 +20,12 @@
 
   .project {
     &__container {
-      margin: 2rem;
+      margin: auto;
       margin-top: 1rem;
       width: 95%;
       display: flex;
       flex-flow: row wrap;
+      justify-content: space-around;
 
       @include breakpoint(medium) {
         width: unset;
@@ -32,8 +33,19 @@
     }
     &__card {
       margin-bottom: 2rem;
-      width: 30%;
-      @include h-m(15);
+      width: 100%;
+      filter: saturate(0.7);
+      transition: filter 180ms;
+
+      @include breakpoint(small) {
+        width: 47%;
+      }
+      @include breakpoint(large) {
+        width: 31%;
+      }
+      // @include breakpoint(xlarge) {
+      //   width: 22%;
+      // }
       img {
         transform: none;
         transition: transform 0.4s;
@@ -42,6 +54,7 @@
         img {
           transform: translateY(-4px);
         }
+        filter: saturate(1);
       }
     }
     &__card-inner {
