@@ -67,7 +67,7 @@ $_hero-box-color: $black;
     margin-bottom: 2.5rem;
     color: $_hero-box-color;
 
-    transition: transform 300ms;
+    transition: transform 300ms, background-color 200ms;
 
     // For animating
     .fill {

@@ -19,11 +19,11 @@ $_label-height: 35px;
     background-color: rgba(255, 255, 255, 0.5);
     color: $black;
     position: relative;
-    border-top: $__label-border-width solid $purple;
+    border-top: $__label-border-width solid $black;
     border: {
-      left: $__label-border-width solid $purple;
-      right: $__label-border-width solid $purple;
-      bottom: $__label-border-width solid $purple;
+      left: $__label-border-width solid $black;
+      right: $__label-border-width solid $black;
+      bottom: $__label-border-width solid $black;
     }
 
     &.-regular {
@@ -66,9 +66,9 @@ $_label-height: 35px;
     // background-color: $gray;
     background-color: rgba(255, 255, 255, 0.5);
     border: {
-      top: $__label-border-width solid $purple;
-      right: $__label-border-width solid $purple;
-      left: $__label-border-width solid $purple;
+      top: $__label-border-width solid $black;
+      right: $__label-border-width solid $black;
+      left: $__label-border-width solid $black;
     }
     height: $_label-height - 6px;
     padding: {
@@ -84,7 +84,7 @@ $_label-height: 35px;
     &-text {
       line-height: 24px;
       font-size: 24px;
-      color: $purple;
+      color: $black;
       font-weight: 900;
       @include setFontBody;
     }
@@ -140,7 +140,7 @@ $_label-height: 35px;
       padding-left: 1rem;
     }
     a {
-      color: $purple;
+      color: $black;
       &:hover {
         text-decoration: underline;
       }
@@ -148,7 +148,7 @@ $_label-height: 35px;
 
     // Modifiers for any content areas
     .about-intro {
-      // color: $purple;
+      // color: $black;
       font-weight: bold;
     }
   }
