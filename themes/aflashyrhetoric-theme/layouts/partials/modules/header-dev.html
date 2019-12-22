@@ -16,14 +16,13 @@
   ">
 
     {{ if not .IsHome }}
-      <a href="/" class="navbar__name">aflashyrhetoric</a>
+      <a href="/" class="navbar__name">kevinoh</a>
     {{ end }}
     <ul class="navbar__list
       {{ if .IsHome -}}
       -is-home
       {{ end }}
     ">
-      <li class="navbar__list-item"><a href="/" class="navbar__list-link">home</a></li>
       <li class="navbar__list-item"><a href="/about" class="navbar__list-link">about</a></li>
       <li class="navbar__list-item"><a href="/projects" class="navbar__list-link">projects</a></li>
       <li class="navbar__list-item"><a href="/posts" class="navbar__list-link">blog</a></li>

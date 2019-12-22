@@ -23,5 +23,7 @@ body {
   margin: 0;
   // background: #a1fdff;
   // @include gradient();
+  // background: $black;
+  // #f19d9d
   @include setFontBody;
 }

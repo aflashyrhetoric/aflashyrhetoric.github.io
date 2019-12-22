@@ -17,12 +17,11 @@ Read about my projects [HERE](/projects).
 
 #### What technologies are you studying?
 
-I'm currently working with Golang, VueJS, and ReactJS on various projects.
-I'm also studying Amazon Web Services, Jenkins, Docker, and systems design.
+I'm currently working with React w/ Redux and Go on various projects.
 
 #### Outside interests?
 
-I'm a hobbyist writer and blogger, mostly. I also upload stuff to [YouTube](https://youtube.com/adelieco) sometimes.
+I like writing. I also upload stuff to [YouTube](https://youtube.com/adelieco) sometimes.
 
 **I'm also currently studying:**
 
@@ -30,23 +29,14 @@ I'm a hobbyist writer and blogger, mostly. I also upload stuff to [YouTube](http
 - **music production (w/ Ableton Live)**, because it's a childhood dream to make a great song
 - **game design**, because I feel like it's the ultimate medium of expression
 - **photography**, because life's too beautiful not to capture
-- **web scraping** to glean huge amounts of data rapidly
+- **web scraping** and dataviz, for obvious reasons
 - **Japanese**
 
-Someday, I'd like to learn more about: TensorFlow, machine learning, the stock market, special relativity, StarCraft 2, and blob fishes.
+Someday, I'd like to learn more about: TensorFlow & ML, D3, K8, and blob fishes. I have a heart for education - I think the current system is perhaps 1/50th of what it could be - and one day hope to make a change in the industry.
 
 #### Preferred Tools & Tech
 
-I use Sublime Text 3 w/ vim keybindings. Chrome, iTerm2. For PHP and rapid reliable development, I love Laravel. For Go, I use Gin + React. VueJS is also amazingly easy to use. 
-
-Other technologies I've used include: Vuex, GraphQL, Typescript, Webpack, NPM & NPM scripts, NodeJS, zsh, Ruby on Rails.
-
-Project management tools I've used include: Backlog, Github w/ Github Projects, Gitlab, Asana, Trello. 
-
-#### Random Fun Facts
-- My favorite non-fiction author is Malcolm Gladwell
-- Our president is illiterate
-- I detest almonds and you should do because yes they're healthy but let's face it, they taste like brick if brick was edible and that sickly aftertaste is out of this world, not in a good way, like in an alien way because the flavor is so foreign and hard to tolerate
+I use VSCode, Chrome, iTerm2 on a MacBook Pro/Air. 
 
 ---
 

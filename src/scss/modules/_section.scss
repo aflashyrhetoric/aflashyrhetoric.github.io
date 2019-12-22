@@ -139,7 +139,9 @@ $_label-height: 35px;
     }
     a {
       color: $purple;
-      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     // Modifiers for any content areas

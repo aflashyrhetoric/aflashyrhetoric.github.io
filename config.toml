@@ -5,7 +5,7 @@ enableEmoji = true
 relativeURLs = true
 
 [taxonomies]
-project = "projects"
+# project = "projects"
 
 # This makes the content of the content/backlog route properly
 # [permalinks]

@@ -5,10 +5,11 @@
 
   &__heading-wrapper {
     @include flex-grid-column($columns: 12);
-    height: 220px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
   }
 
   &__heading {

@@ -14,8 +14,12 @@ $black: #222222;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
+      height: 150px;
 
-      height: 300px;
+      color: white;
+      // background: linear-gradient(to bottom, $black, darken($purple, 12));
+      background: $black;
+      border-bottom: 5px solid $purple;
     }
     &__heading {
       // text-transform: uppercase;
