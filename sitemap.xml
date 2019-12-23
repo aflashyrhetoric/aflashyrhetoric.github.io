@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -8,12 +8,12 @@
   </url>
   
   <url>
-    <loc>/posts/project-ideas/</loc>
+    <loc>/posts/</loc>
     <lastmod>2017-05-17T21:47:18-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>/posts/project-ideas/</loc>
     <lastmod>2017-05-17T21:47:18-04:00</lastmod>
   </url>
   
@@ -39,11 +39,6 @@
   
   <url>
     <loc>/projects/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/payup/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -80,11 +75,6 @@
   
   <url>
     <loc>/projects/payup/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
