@@ -73,58 +73,72 @@ module.exports = (env, argv) => {
 
   if (devMode) {
     console.log(`..........DEVELOPMENT WEBPACK BUILD RUNNING.....`)
-    config.module.rules.push(
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     {
-      //       loader: MiniCssExtractPlugin.loader,
-      //     },
-      //     "css-loader",
-      //   ],
-      // },
-      {
-        test: /\.scss$/,
-        exclude: [/node_modules/],
-        use: [
-          {
-            loader: 'style-loader',
+    config.module.rules.push({
+      test: /\.scss$/,
+      exclude: [/node_modules/],
+      use: [
+        {
+          loader: 'style-loader',
+        },
+        {
+          loader: MiniCssExtractPlugin.loader,
+        },
+        {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true,
           },
-          {
-            loader: MiniCssExtractPlugin.loader,
+        },
+        {
+          loader: 'resolve-url-loader',
+          options: {
+            sourceMap: true,
           },
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            },
+        },
+        {
+          loader: 'sass-loader',
+          options: {
+            sourceMap: true,
+            sourceMapContents: false,
           },
-          {
-            loader: 'resolve-url-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-              sourceMapContents: false,
-            },
-          },
-          {
-            loader: 'import-glob-loader',
-          },
-        ],
-      },
-    )
+        },
+        {
+          loader: 'import-glob-loader',
+        },
+      ],
+    })
   }
 
   if (!devMode) {
     //
-    // Development
+    // Production
     //
     console.log(`..........PRODUCTION WEBPACK BUILD RUNNING.....`)
+    config.module.rules.push({
+      test: /\.scss$/,
+      use: [
+        {
+          loader: MiniCssExtractPlugin.loader,
+        },
+        'css-loader',
+        {
+          loader: 'resolve-url-loader',
+          options: {
+            sourceMap: true,
+          },
+        },
+        {
+          loader: 'sass-loader',
+          options: {
+            sourceMap: false,
+            sourceMapContents: false,
+          },
+        },
+        {
+          loader: 'import-glob-loader',
+        },
+      ],
+    })
     config.devtool = ''
     config.optimization = {
       minimize: true,
