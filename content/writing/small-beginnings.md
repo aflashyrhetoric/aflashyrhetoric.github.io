@@ -30,7 +30,10 @@ They would wither without their sun
 But as its beams heat their flesh,
 So too does it claim their eyes
 Odd - that even in their blindness
-They know nothing of the dark
+They know nothing of the darkness that binds them
+
+Savor the vagabond role
+It is the cost of dual citizenship
 
 Remember the Engineer's oath
 Remember your assignment
