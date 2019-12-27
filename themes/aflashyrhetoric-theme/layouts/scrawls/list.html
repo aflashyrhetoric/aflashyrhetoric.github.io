@@ -1,0 +1,38 @@
+<!-- Page for a single web post in the posts/ dir -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <title>{{ .Title }}</title>
+  </head>
+
+  {{ partial "modules/header-dev" . }}
+
+  <div class="page-scrawls">
+    <div class="page-scrawls__heading-wrapper">
+      <h1 class="page-scrawls__heading">scrawls</h1>
+        {{ .Content }}
+    </div>
+
+    <div class="section__container section__container--blog">
+    <div class="section__inner -thin">
+      <div class="section__label -post">
+        <h2 class="section__label-text">scrawls</h2>
+      </div>
+
+      <div class="section__projects">
+        <ul class="project-box__list">
+          {{ range .Pages }}
+            <li class="project-box__list-post">
+              <a href="{{ .URL }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>  
+{{ partial "modules/footer-dev" . }}

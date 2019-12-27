@@ -2,6 +2,7 @@
 
 .project-box {
   &__list {
+    // background: linear-gradient(to bottom, #deffd3, #ffcece);
     margin: 0;
     padding: 0;
     flex-flow: row wrap;
@@ -21,6 +22,8 @@
       display: inline-block;
       min-width: 107px;
       height: 100%;
+      transition: background-color 100ms ease;
+      border-radius: 3px;
       &:hover {
         background-color: $purple;
       }
@@ -31,19 +34,17 @@
     list-style-type: none;
     text-transform: lowercase;
     @include setFontBody;
+
     a {
       display: block;
-      padding: 1rem;
       width: 100%;
       color: $black;
+      text-decoration: none;
+      padding: 1rem;
+      transition: padding 0.2s ease;
       &:hover {
         color: $purple;
-        // &:after {
-        //   content: 'click to read';
-        //   position: absolute;
-        //   right: 20px;
-        //   color: lighten($purple, 10);
-        // }
+        padding-left: 1.5rem;
       }
     }
     &:first-child {
@@ -56,14 +57,6 @@
         right: 20px;
         color: darken($gray, 15);
         pointer-events: none;
-
-        // Adds an ugly badge
-        // display: block;
-        // background-color: $gray;
-        // border: 7px solid $purple;
-        // border-left: none;
-        // height: 50px;
-        // right: -102px;
       }
     }
 

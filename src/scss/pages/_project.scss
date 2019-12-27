@@ -1,14 +1,16 @@
-// page projects
+// page scrawls
 
 .page-projects {
-  @include flex-grid-row($size: 100%);
+  @include flex-grid-row($size: 85%);
+  @include hma;
 
   &__heading-wrapper {
     @include flex-grid-column($columns: 12);
-    height: 220px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
   }
 
   &__heading {
@@ -19,32 +21,41 @@
 
   .project {
     &__container {
-      margin: 2rem;
+      margin: auto;
       margin-top: 1rem;
       width: 95%;
-      @include breakpoint(medium up) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+
+      @include breakpoint(medium) {
         width: unset;
       }
-
-      @include flex-grid-row($size: 1080px);
     }
     &__card {
       margin-bottom: 2rem;
+      width: 100%;
+      filter: saturate(0.7);
+      transition: filter 180ms;
+
+      @include breakpoint(small) {
+        width: 47%;
+      }
+      @include breakpoint(large) {
+        width: 31%;
+      }
+      // @include breakpoint(xlarge) {
+      //   width: 22%;
+      // }
       img {
         transform: none;
         transition: transform 0.4s;
-      }
-      @include flex-grid-column($columns: 12);
-      @include breakpoint(medium up) {
-        @include flex-grid-column($columns: 6, $gutters: 1rem);
-      }
-      @include breakpoint(large up) {
-        @include flex-grid-column($columns: 4, $gutters: 2rem);
       }
       &:hover {
         img {
           transform: translateY(-4px);
         }
+        filter: saturate(1);
       }
     }
     &__card-inner {
@@ -55,6 +66,7 @@
       min-width: 220px;
       min-height: 500px;
       background-color: $purple;
+      color: $white;
       border-radius: 4px;
       display: flex;
       flex-flow: column nowrap;
@@ -78,12 +90,11 @@
       text-align: center;
       display: inline-block;
       margin: auto;
-      @include breakpoint(medium up) {
+      @include breakpoint(medium) {
         max-width: 200px;
       }
     }
     &__image {
-      width: 75px;
       margin: {
         left: auto;
         right: auto;
@@ -91,6 +102,10 @@
       }
       display: inline-block;
       text-align: center;
+      img {
+        width: 125px;
+        max-height: 140px;
+      }
     }
   }
 }

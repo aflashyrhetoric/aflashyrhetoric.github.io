@@ -11,7 +11,6 @@ This is a list of project ideas that are either planned or in progress (but not 
 
 | Name | Description | Technologies | Status |
 |------|-------------|--------------|--------|
-| Pay Up | Manage debts among friends, roommates, or housemates | Go API, ReactJS | WIP
 | ADG Community Site | A place to showcase the Adelie Developer's Group's many talents | GatsbyJS, Popmotion, GlamorJS | WIP
 | Windfall | A web scraper that parses a variety of social networks and does sentiment analysis to make predictions about stock performance, and then uses actual stock performance data to learn which sources are the best for making predictions. | Laravel or Go + Scrapy + ReactJS + TensorFlow + Twitter/Tumblr/Reddit APIs | L
 | Personal animated SVG | An animated personal logo for kevinoh.me | http://snapsvg.io/ | L

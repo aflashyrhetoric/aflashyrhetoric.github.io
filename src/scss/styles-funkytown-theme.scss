@@ -1,8 +1,8 @@
 // styles.scss
 
 // Foundation 6 (flexbox)
-@import '~foundation-sites/scss/foundation.scss';
-@include foundation-everything(true);
+// @import '~foundation-sites/scss/foundation.scss';
+// @include foundation-everything(true);
 
 // Import utilities first in case they're used
 @import 'utilities/**/*';
@@ -11,7 +11,7 @@
 // sass-globs create non-deterministic imports
 @import 'init/colors';
 @import 'init/fonts';
-@import 'init/bootstrap';
+@import 'init/base';
 @import 'init/typography';
 @import 'init/code-theme';
 

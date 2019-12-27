@@ -1,0 +1,69 @@
+// base.scss
+// =============================================================
+
+@import 'colors';
+
+// Base
+html {
+  // max-width: 1920px;
+  // margin: auto;
+  // Set root font size for REM.
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  padding-bottom: 2rem;
+  text-size-adjust: 100%;
+  color: $black;
+  margin: 0;
+  // background: #a1fdff;
+  // @include gradient();
+  background-color: #ececec;
+  transition: background 200ms;
+  // #f19d9d
+  @include setFontBody;
+}
+
+$_t: 220ms;
+
+.js_color-button {
+  font-family: 'Proxima-Nova', sans-serif;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Proxima-Nova';
+  font-weight: bold;
+  top: 30px;
+  left: 30px;
+  width: 50px;
+  height: 30px;
+  border: 3px solid $black;
+  user-select: none;
+  transition: height $_t, width $_t, top $_t, left $_t, transform $_t, letter-spacing $_t;
+  background-color: $black;
+
+  // border: 5px solid transparent;
+  // border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  // border-image-slice: 1;
+  // margin: 20px auto;
+
+  &:hover {
+    letter-spacing: 3px;
+    height: 38px;
+    width: 58px;
+    top: 26px;
+    left: 26px;
+    transform: rotateZ(-10deg);
+    // border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  }
+
+  @include hide-on-mobile(true);
+}

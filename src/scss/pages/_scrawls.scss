@@ -1,0 +1,21 @@
+// page projects
+
+.page-scrawls {
+  @include flex-grid-row($size: 100%);
+
+  &__heading-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 100px;
+  }
+
+  &__heading {
+    @include setFontBody;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

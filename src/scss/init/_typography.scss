@@ -20,16 +20,26 @@ h1 {
 
 h2 {
   @include setFontHighlight;
+  @include fz(30);
+}
+
+h3 {
   @include fz(25);
+}
+
+h4, h5, h6 {
+  @include fz(22);
 }
 
 p {
   @include setFontBody;
   @include fz(18);
+  line-height: 28px;
 }
 
 li {
   @include fz(18);
+  line-height: 28px;
 }
 
 // Lists
@@ -39,6 +49,7 @@ dl {
   margin-top: 0;
   padding: 0;
 }
+ 
 
 // Links
 a {

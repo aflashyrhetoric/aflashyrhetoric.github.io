@@ -4,7 +4,8 @@ title = "strategy"
 draft = true
 +++
 
-Walk past the wind burnt veteran
+Walk past
+The wind burnt veteran
 There's that smell again, a gust and it's gone, keep on
 Movin on, moving in,
 New Ikea frames to frame that thing,
@@ -14,7 +15,7 @@ Keep moving on, movin in
 I remember when,
 Red and blue were nothing more
 Than the color of the 3d lenses
-Ten years on, came to my senses
+Ten years on, he came to his senses
 
 Now it's 2017
 And the red beat blue 
@@ -38,4 +39,4 @@ They're all one and the same
 To them it's a game
 
 Well I just hit start
-Player me just joined
+Player three's me 

@@ -1,8 +1,8 @@
 // pre.scss
 
 pre {
-  background-color: $darkpurple;
-  color: $gray;
+  background-color: $darkteal;
+  // color: $gray;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
@@ -11,6 +11,6 @@ pre {
 pre code {
   border: 0;
   background: none;
-  color: $gray;
+  // color: $gray;
   padding: 0;
 }

@@ -36,10 +36,10 @@
   }
 
   &--accent {
-    background-color: $lightpurple;
+    background-color: $lightteal;
     color: white !important;
     &:hover {
-      background-color: lighten($lightpurple, 10);
+      background-color: lighten($lightteal, 10);
       color: white;
     }
   }

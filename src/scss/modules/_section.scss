@@ -1,7 +1,7 @@
 // section.scss
 
 $__label-border-width: 7px;
-$_label-height: 50px;
+$_label-height: 35px;
 .section {
   &__container {
     &:not(:first-child) {
@@ -15,57 +15,62 @@ $_label-height: 50px;
   }
 
   &__inner {
-    background-color: $gray;
+    // background-color: $gray;
+    background-color: rgba(255, 255, 255, 0.5);
     color: $black;
     position: relative;
-    border-top: $__label-border-width solid $purple;
+    border-top: $__label-border-width solid $black;
     border: {
-      left: $__label-border-width solid $purple;
-      right: $__label-border-width solid $purple;
-      bottom: $__label-border-width solid $purple;
+      left: $__label-border-width solid $black;
+      right: $__label-border-width solid $black;
+      bottom: $__label-border-width solid $black;
     }
 
     &.-regular {
-      @include breakpoint(medium up) {
+      @include breakpoint(medium) {
         @include flex-grid-column($columns: 6, $gutters: 0);
       }
     }
     &.-thin {
-      @include breakpoint(medium up) {
+      @include breakpoint(medium) {
         @include flex-grid-column($columns: 6, $gutters: 0);
       }
-      @include breakpoint(large up) {
+      @include breakpoint(large) {
         @include flex-grid-column($columns: 4, $gutters: 0);
       }
     }
     &.-wide {
-      @include breakpoint(medium up) {
+      @include breakpoint(medium) {
         @include flex-grid-column($columns: 11, $gutters: 0);
       }
-      @include breakpoint(large up) {
+      @include breakpoint(large) {
         @include flex-grid-column($columns: 8, $gutters: 0);
       }
     }
 
-    @include breakpoint(medium up) {
+    @include breakpoint(medium) {
       margin: auto;
       @include flex-grid-column($columns: 11, $gutters: 0);
     }
 
-    @include breakpoint(large up) {
+    @include breakpoint(large) {
       margin: auto;
       @include flex-grid-column($columns: 10, $gutters: 0);
     }
   }
 
   &__label {
-    background-color: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: $gray;
+    background-color: rgba(255, 255, 255, 0.5);
     border: {
-      top: $__label-border-width solid $purple;
-      right: $__label-border-width solid $purple;
-      left: $__label-border-width solid $purple;
+      top: $__label-border-width solid $black;
+      right: $__label-border-width solid $black;
+      left: $__label-border-width solid $black;
     }
-    height: $_label-height + 1px;
+    height: $_label-height - 6px;
     padding: {
       top: 0.5rem;
       left: 1rem;
@@ -74,11 +79,12 @@ $_label-height: 50px;
     // width: 200px;
     text-align: center;
     position: absolute;
-    top: -$_label-height - 1px;
+    top: -$_label-height - 15px -1px;
+
     &-text {
       line-height: 24px;
       font-size: 24px;
-      color: $purple;
+      color: $black;
       font-weight: 900;
       @include setFontBody;
     }
@@ -91,7 +97,7 @@ $_label-height: 50px;
       right: 30px;
     }
     &.-post {
-      @include breakpoint(medium up) {
+      @include breakpoint(medium) {
         right: 30px;
       }
     }
@@ -114,16 +120,35 @@ $_label-height: 50px;
     h6 {
       font-weight: bold;
     }
+
+    // h4's are used as section headings sometimes so i'll just tag that directly here
+    h4 {
+      font-size: 22px;
+    }
+
+    hr {
+      margin-bottom: 2rem;
+    }
+
     p,
     li {
       font-size: 20px;
+      line-height: 30px;
     }
     ul,
     ol {
       padding-left: 1rem;
     }
     a {
-      color: $purple;
+      color: $black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    // Modifiers for any content areas
+    .about-intro {
+      // color: $black;
       font-weight: bold;
     }
   }
