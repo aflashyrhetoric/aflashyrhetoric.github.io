@@ -34,7 +34,7 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max))
 }
 
-function randomColor() {
+export function randomColor() {
   const hue = getRandomInt(360)
   const saturation = 75
   const luminosity = 75

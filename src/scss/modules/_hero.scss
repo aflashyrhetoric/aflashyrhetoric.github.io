@@ -21,6 +21,7 @@
   }
 
   &__left {
+    opacity: 0;
     text-align: center;
     margin-bottom: 1.5rem;
     width: 100%;
@@ -57,8 +58,6 @@ $_hero-box-color: $black;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 11px solid $_hero-box-color;
-    transform: skew(-10deg, 0deg);
 
     width: 300px;
     height: 144px;
@@ -69,31 +68,18 @@ $_hero-box-color: $black;
 
     transition: transform 300ms, background-color 200ms;
 
-    // For animating
-    .fill {
-      display: none;
+    svg {
       position: absolute;
-      width: 33%;
-      height: 100%;
       z-index: -1;
-      &:nth-child(1) {
-        left: 0;
-      }
-      &:nth-child(2) {
-        left: 33%;
-      }
-      &:nth-child(3) {
-        width: 34%;
-        left: 66%;
-      }
-      .upper-text__wrapper:hover & {
-        display: block;
-      }
     }
 
     &:hover {
       transform: skew(10deg, 0deg);
     }
+  }
+  &__header,
+  &__subheader {
+    opacity: 0;
   }
   &__header {
     font-size: 2.25rem;
@@ -114,6 +100,9 @@ $_hero-box-color: $black;
   }
 }
 .lower-text {
+  &__wrapper {
+    opacity: 0;
+  }
   &__text {
     line-height: 0.5rem;
     color: $black;

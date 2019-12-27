@@ -1,4 +1,5 @@
 // app.js
 
-require('./misc')
+require('./animation')
+require('./colorize')
 require('./enable-highlight')
