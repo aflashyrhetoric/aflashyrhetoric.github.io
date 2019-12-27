@@ -1,7 +1,8 @@
-// page projects
+// page scrawls
 
 .page-projects {
-  @include flex-grid-row($size: 100%);
+  @include flex-grid-row($size: 85%);
+  @include hma;
 
   &__heading-wrapper {
     @include flex-grid-column($columns: 12);
