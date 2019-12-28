@@ -35,6 +35,7 @@ tl.add({
   targets: headings,
   opacity: [0, 1],
   duration: 500,
+  delay: 200
 })
   .add({
     targets: [box.left, box.right],
@@ -50,7 +51,7 @@ tl.add({
       opacity: [0, 1],
       easing: 'easeOutExpo',
     },
-    1400,
+    900,
   )
   .add(
     {
@@ -60,7 +61,7 @@ tl.add({
       duration: 400,
       easing: 'easeOutExpo',
     },
-    1400,
+    900,
   )
   .add(
     {
@@ -68,13 +69,14 @@ tl.add({
       skewX: '-10deg',
       duration: 80,
     },
-    1400,
+    900,
   )
   .add(
     {
       targets: box.bg,
       fill: c,
     },
+    900
   )
   .add({
     targets: '.lower-text__wrapper',
