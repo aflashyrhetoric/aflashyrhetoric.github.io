@@ -10,6 +10,28 @@ const heroRef = document.querySelector('.upper-text__wrapper')
 const c = randomColor()
 
 anime({
+  targets: '.section__container',
+  translateY: [-30, 0],
+  opacity: [0, 1],
+  duration: 1000,
+  delay: anime.stagger(100, {
+    from: 'first',
+  }),
+  // increase delay by 100ms for each elements.
+})
+
+anime({
+  targets: '.navbar__list-link',
+  translateY: [-30, 0],
+  opacity: [0, 1],
+  duration: 1000,
+  delay: anime.stagger(100, {
+    from: 'first',
+  }),
+  // increase delay by 100ms for each elements.
+})
+
+anime({
   targets: '.project-box__list-item',
   translateY: [-30, 0],
   opacity: [0, 1],
@@ -42,7 +64,7 @@ tl.add({
     translateY: [-100, 0],
     opacity: [0, 1],
     duration: 300,
-  })
+  }, 400)
   .add(
     {
       targets: box.top,
@@ -51,7 +73,7 @@ tl.add({
       opacity: [0, 1],
       easing: 'easeOutExpo',
     },
-    900,
+    600,
   )
   .add(
     {
@@ -61,7 +83,7 @@ tl.add({
       duration: 400,
       easing: 'easeOutExpo',
     },
-    900,
+    600,
   )
   .add(
     {
@@ -69,18 +91,18 @@ tl.add({
       skewX: '-10deg',
       duration: 80,
     },
-    900,
+    600,
   )
   .add(
     {
       targets: box.bg,
       fill: c,
     },
-    900
+    600
   )
   .add({
     targets: '.lower-text__wrapper',
     transformY: [100, 0],
     opacity: [0, 1],
-    duration: 1000,
-  })
+    duration: 1200,
+  }, 200)
