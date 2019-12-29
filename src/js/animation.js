@@ -77,7 +77,7 @@ tl.add({
   .add(
     {
       targets: box.bottom,
-      strokeDashoffset: [anime.setDashoffset, -1],
+      strokeDashoffset: [anime.setDashoffset, 0],
       opacity: [0, 1],
       duration: 400,
       easing: 'easeOutExpo',
