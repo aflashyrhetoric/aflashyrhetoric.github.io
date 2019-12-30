@@ -4,5 +4,5 @@ thumbnail = "/img/projects/adg.png"
 thumbnail2 = "/img/projects/adg@2x.png"
 url = "https://adelieteam.slack.com"
 tagline = "A project-oriented web-development study collective"
-description = "The Adelie Developer's Group is a community of developers who work on projects to get practical experience with web development tools and practices."
+description = "Once a dedicated study group, the Adelie Developer's Group has become more of a small online hub of developers who discuss the craft, share resources and thoughts, and support each other through the power of friendship (but mostly JS tips)"
 weight = 5

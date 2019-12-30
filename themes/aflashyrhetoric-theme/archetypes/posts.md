@@ -7,6 +7,7 @@ series = ""
 draft = true
 +++
 
-slug should equal the image path 
-ogdescription is for Facebook and image previews
+### ERASE THE BOTTOM STUFF WHEN YOU GO TO WRITE:
+### slug should equal the image path 
+### ogdescription is for Facebook and image previews
  
