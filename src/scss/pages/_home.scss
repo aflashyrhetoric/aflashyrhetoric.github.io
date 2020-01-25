@@ -9,7 +9,9 @@
     padding-top: 75px;
   }
 
-  svg {
+  svg,
+  svg line,
+  svg rect {
     opacity: 0;
   }
 
