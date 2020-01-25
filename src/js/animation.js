@@ -56,14 +56,17 @@ tl.add({
   targets: headings,
   opacity: [0, 1],
   duration: 500,
-  delay: 200
+  delay: 200,
 })
-  .add({
-    targets: [box.left, box.right],
-    translateY: [-100, 0],
-    opacity: [0, 1],
-    duration: 300,
-  }, 400)
+  .add(
+    {
+      targets: [box.left, box.right],
+      translateY: [-100, 0],
+      opacity: [0, 1],
+      duration: 300,
+    },
+    400,
+  )
   .add(
     {
       targets: box.top,
@@ -97,11 +100,14 @@ tl.add({
       targets: box.bg,
       fill: c,
     },
-    600
+    600,
   )
-  .add({
-    targets: '.lower-text__wrapper',
-    transformY: [100, 0],
-    opacity: [0, 1],
-    duration: 1200,
-  }, 200)
+  .add(
+    {
+      targets: '.lower-text__wrapper',
+      transformY: [100, 0],
+      opacity: [0, 1],
+      duration: 1200,
+    },
+    200,
+  )

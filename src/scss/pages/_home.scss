@@ -9,6 +9,10 @@
     padding-top: 75px;
   }
 
+  svg {
+    opacity: 0;
+  }
+
   .home {
     &__header-wrapper {
       text-align: center;
