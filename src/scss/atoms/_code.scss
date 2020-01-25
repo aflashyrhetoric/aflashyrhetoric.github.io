@@ -6,4 +6,7 @@ code {
   border: 0;
   @include fz(16);
   @include setFontStandard;
+  span {
+    white-space: pre-wrap;
+  }
 }

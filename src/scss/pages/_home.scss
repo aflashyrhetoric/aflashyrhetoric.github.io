@@ -8,13 +8,6 @@
   @include breakpoint(medium) {
     padding-top: 75px;
   }
-
-  svg,
-  svg line,
-  svg rect {
-    opacity: 0;
-  }
-
   .home {
     &__header-wrapper {
       text-align: center;

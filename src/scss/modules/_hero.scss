@@ -4,14 +4,15 @@
     padding-top: 2rem;
   }
   &__inner {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    // padding: 1rem;
     margin-bottom: 1rem;
     // @include light-gradient;
     @include hma;
     @include bp(medium) {
+      width: 90%;
       width: 50%;
     }
   }
@@ -59,22 +60,36 @@ $_hero-box-color: $black;
     align-items: center;
     flex-direction: column;
 
-    width: 300px;
-    height: 144px;
+    width: 250px;
+    max-width: 80vw;
+    height: 120px;
 
     margin: auto;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     color: $_hero-box-color;
 
     transition: transform 300ms, background-color 200ms;
 
+    &:hover {
+      transform: skew(10deg, 0deg);
+    }
+
+    @include breakpoint(sm) {
+      width: 300px;
+      height: 144px;
+      margin-bottom: 2.5rem;
+    }
+
     svg {
       position: absolute;
       z-index: -1;
-    }
-
-    &:hover {
-      transform: skew(10deg, 0deg);
+      &,
+      svg rect {
+        width: 250px;
+        @include breakpoint(sm) {
+          width: 300px;
+        }
+      }
     }
   }
   &__header,
@@ -107,7 +122,11 @@ $_hero-box-color: $black;
     line-height: 0.5rem;
     color: $black;
     text-transform: uppercase;
+    font-size: 15px;
     @include setFontBody;
+    @include breakpoint(xs) {
+      font-size: 18px;
+    }
     a {
       font-weight: bold;
       @include setFontBody;
