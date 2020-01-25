@@ -16,7 +16,7 @@
       <pubDate>Fri, 24 Jan 2020 12:28:17 -0500</pubDate>
       
       <guid>/posts/workflow-tips/</guid>
-      <description>Tips &amp;amp; Tricks for Developer Efficiency This is a [WIP] tl;dr of legitimate tricks that I wish I knew years ago.
+      <description>Tips &amp;amp; Tricks for Developer Efficiency (WIP) This is a tl;dr of legitimate tricks that I wish I knew years ago.
 For context, I work with VS Code on Mac.
 macOS Tips  Use BetterTouchTool. I have three trackpad gestures I use a million times a day:  3-finger swipe up: Maximizes current window (not fullscreen) 3-finger swipe left: Moves window to left half of screen 3-finger swipe right: Moves window to right half of screen   `CMD`+``` switches between windows of the same app.</description>
     </item>
@@ -152,17 +152,6 @@ I designed Milton (pictured) and &amp;ldquo;Candle&amp;rdquo;, among several oth
       <guid>/projects/nightmessenger/</guid>
       <description>Ow, my eyes 👀 Messenger.com is a relatively little-known messaging interface for Facebook Messenger. It&#39;s a great (and less power-hungry) alternative to the little chat window you get as part of the standard Facebook desktop experience.
 I&#39;d often work late in the night, and found that using Messenger.com would hurt my eyes. I had somewhat recently discovered the world of Chrome extension development, so I decided to dive in and see if I couldn&#39;t make a darker theme for Messenger.</description>
-    </item>
-    
-    <item>
-      <title>Pay Up</title>
-      <link>/projects/payup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/payup/</guid>
-      <description>Track debts between roommates Anyone whose lived in a dorm or an apartment knows that debts can pile up fast between roommates. And they&#39;re not always neat little sums of $10.
-After a few pizza nights, a round of beers, 5 months of rent and utilities, and so on, remembering &amp;ldquo;who owes who how much&amp;rdquo; is pretty much a hopeless pipe dream.
-A spreadsheet can keep track of everything, but somebody has to be the unlucky one tracking all the receipts.</description>
     </item>
     
     <item>

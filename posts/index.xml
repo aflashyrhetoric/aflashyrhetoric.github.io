@@ -16,7 +16,7 @@
       <pubDate>Fri, 24 Jan 2020 12:28:17 -0500</pubDate>
       
       <guid>/posts/workflow-tips/</guid>
-      <description>Tips &amp;amp; Tricks for Developer Efficiency This is a [WIP] tl;dr of legitimate tricks that I wish I knew years ago.
+      <description>Tips &amp;amp; Tricks for Developer Efficiency (WIP) This is a tl;dr of legitimate tricks that I wish I knew years ago.
 For context, I work with VS Code on Mac.
 macOS Tips  Use BetterTouchTool. I have three trackpad gestures I use a million times a day:  3-finger swipe up: Maximizes current window (not fullscreen) 3-finger swipe left: Moves window to left half of screen 3-finger swipe right: Moves window to right half of screen   `CMD`+``` switches between windows of the same app.</description>
     </item>
