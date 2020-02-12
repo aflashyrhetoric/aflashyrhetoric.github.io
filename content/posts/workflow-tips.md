@@ -5,7 +5,7 @@ ogdescription = "SUPER CHARGED DEV WORKFLOW TIPS"
 series = "tooling101"
 +++
 
-# Tips & Tricks for Developer Efficiency (WIP)
+# Tips & Tricks for Developer Efficiency (Indefinitely a WIP)
 
 This is a tl;dr of legitimate tricks that I wish I knew years ago.
 
@@ -26,6 +26,7 @@ For context, I work with VS Code on Mac.
 
 ## iTerm
 
+- If you ever encounter complicated merge conflicts, it can be difficult to visually spot all the `CONFLICT` files in the terminal output. iTerm has a "Triggers" feature that will let you create a regular expression that, when matched against some text, can fire off an event. Navigate to Profiles > Advanced > Triggers > `+`. For the regular expression, simply write, `CONFLICT`, and select the `Highlight Text` trigger. Boom - whenever your next merge conflict hits, you'll see blips of red (or whatever color you selected) to mark each offending file. Happy resolving :thumbsup:
 - Learn how to create `.bash_aliases`, in addition to being convenient and making you faster, they reduce human error!
 - Use `CMD+D` and `CMD+SHIFT+D` to split panes. Too many of y'all don't use this, I don't know why.
 - Dump of brew packages:
