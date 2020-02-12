@@ -44,64 +44,79 @@
   </div>
 
   <div class="post-single__content-wrapper">
-    <h1 id="tips--tricks-for-developer-efficiency-wip">Tips &amp; Tricks for Developer Efficiency (WIP)</h1>
+    
+
+<h1 id="tips-tricks-for-developer-efficiency-indefinitely-a-wip">Tips &amp; Tricks for Developer Efficiency (Indefinitely a WIP)</h1>
+
 <p>This is a tl;dr of legitimate tricks that I wish I knew years ago.</p>
+
 <p>For context, I work with VS Code on Mac.</p>
+
 <h2 id="macos-tips">macOS Tips</h2>
+
 <ul>
 <li>Use BetterTouchTool. I have three trackpad gestures I use a million times a day:
+
 <ul>
 <li>3-finger swipe up: Maximizes current window (not fullscreen)</li>
 <li>3-finger swipe left: Moves window to left half of screen</li>
 <li>3-finger swipe right: Moves window to right half of screen</li>
-</ul>
-</li>
-<li>`CMD`+``` switches between windows of the same app. This is handy for switching between a Chrome window and Chrome DevTools rapidly.</li>
+</ul></li>
+<li><code>CMD</code>+``` switches between windows of the same app. This is handy for switching between a Chrome window and Chrome DevTools rapidly.</li>
 <li>Go into System Preferences &gt; Keyboard &gt; Shortcuts Tab &gt; App Shortcuts. There, you can bind your own keyboard shortcuts to Menu Items for apps.
+
 <ul>
 <li>For example, Chrome has a little-known &ldquo;Pin Tab&rdquo; feature that I bound to <code>CMD + Shift + P</code> and I use it several times a day.</li>
 <li>Also, VSCode has quick window-pane options: Two Columns, Three Columns, etc. I bind the Two Columns to <code>CMD+OPT+2</code> and Three Columns to <code>CMD+OPT+3</code>, and so on.</li>
-</ul>
-</li>
+</ul></li>
 <li>In Finder, you can toggle visibility of &ldquo;invisible&rdquo; files (e.g. <code>.env</code> files) visible with <code>CMD+SHIFT+.</code>.</li>
 <li>In Finder, <code>CMD+OPT+L</code> goes to the downloads folder immediately.</li>
-<li>Saving screenshots in a designated folder: press <code>CMD+SHIFT+5</code> (anywhere, it's a system shortcut), and click Options -&gt; Other Location. Create a new folder and point to it.</li>
+<li>Saving screenshots in a designated folder: press <code>CMD+SHIFT+5</code> (anywhere, it&rsquo;s a system shortcut), and click Options -&gt; Other Location. Create a new folder and point to it.</li>
 </ul>
+
 <h2 id="iterm">iTerm</h2>
+
 <ul>
+<li>If you ever encounter complicated merge conflicts, it can be difficult to visually spot all the <code>CONFLICT</code> files in the terminal output. iTerm has a &ldquo;Triggers&rdquo; feature that will let you create a regular expression that, when matched against some text, can fire off an event. Navigate to Profiles &gt; Advanced &gt; Triggers &gt; <code>+</code>. For the regular expression, simply write, <code>CONFLICT</code>, and select the <code>Highlight Text</code> trigger. Boom - whenever your next merge conflict hits, you&rsquo;ll see blips of red (or whatever color you selected) to mark each offending file. Happy resolving 👍</li>
 <li>Learn how to create <code>.bash_aliases</code>, in addition to being convenient and making you faster, they reduce human error!</li>
-<li>Use <code>CMD+D</code> and <code>CMD+SHIFT+D</code> to split panes. Too many of y'all don't use this, I don't know why.</li>
+<li>Use <code>CMD+D</code> and <code>CMD+SHIFT+D</code> to split panes. Too many of y&rsquo;all don&rsquo;t use this, I don&rsquo;t know why.</li>
 <li>Dump of brew packages:</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"> <span style="color:#75715e"># holy grail of git cli guis</span>
+
+<pre><code class="language-sh"> # holy grail of git cli guis
 brew install tig
- <span style="color:#75715e"># interactive top</span>
+ # interactive top
 brew install htop
- <span style="color:#75715e"># cat ++</span>
+ # cat ++
 brew install bat
- <span style="color:#75715e"># ls ++</span>
+ # ls ++
 brew install exa
-<span style="color:#75715e"># super-set of `git` with github features</span>
+# super-set of `git` with github features
 brew install hub 
- <span style="color:#75715e"># node version manager</span>
+ # node version manager
 brew install nvm
- <span style="color:#75715e"># &#34;man&#34; cmd but tldr&#39;d</span>
+ # &quot;man&quot; cmd but tldr'd
 brew install tldr
- <span style="color:#75715e"># auto-corrects your last command</span>
+ # auto-corrects your last command
 brew install thefuck
-<span style="color:#75715e"># dl youtube videos</span>
+# dl youtube videos
 brew install youtube-dl 
- <span style="color:#75715e"># rainbow-fies text</span>
+ # rainbow-fies text
 brew install lolcat
- <span style="color:#75715e"># make the cow do the say</span> 
+ # make the cow do the say 
 brew install cowsay
-</code></pre></div><h2 id="editor-tricks">Editor Tricks</h2>
+</code></pre>
+
+<h2 id="editor-tricks">Editor Tricks</h2>
+
 <ul>
-<li>I don't think everyone should use Vim necessarily, but I do think everyone should <em>try</em> learning Vim keybindings 👍</li>
+<li>I don&rsquo;t think everyone should use Vim necessarily, but I do think everyone should <em>try</em> learning Vim keybindings 👍</li>
 <li>Theme &amp; Editor: I use Night Owl by Sarah Drasner and Dank Mono.</li>
 <li>I rebound the chorded shortcut <code>CMD+K -&gt; CMD+B</code> to toggle sidebar, as a throwback to my Sublime Text days. The key for it is <code>workbench.action.toggleSidebarVisibility</code>.</li>
 </ul>
+
 <h2 id="more-to-come">More to come</h2>
+
 <p>Probably.</p>
 
     <a class="btn btn--accent" href="../../posts">View All Posts</a>
