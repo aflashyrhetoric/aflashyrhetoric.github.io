@@ -11,12 +11,13 @@ This is a list of project ideas that are either planned or in progress (but not 
 
 | Name | Description | Technologies | Status |
 |------|-------------|--------------|--------|
+| Archetype | An online utility to build your own workstations and optionally purchase them | GatsbyJS / Shopify | WIP
 | ADG Community Site | A place to showcase the Adelie Developer's Group's many talents | GatsbyJS, Popmotion, GlamorJS | WIP
-| Windfall | A web scraper that parses a variety of social networks and does sentiment analysis to make predictions about stock performance, and then uses actual stock performance data to learn which sources are the best for making predictions. | Laravel or Go + Scrapy + ReactJS + TensorFlow + Twitter/Tumblr/Reddit APIs | L
-| Personal animated SVG | An animated personal logo for kevinoh.me | http://snapsvg.io/ | L
-| Go + ReactJS Mosu Refactor | Swap out Laravel with Go + Gin. | Go & Gin | P 
-| NightBook | A Chrome extension that provides a night mode for Facebook.com | Javascript | N 
-| Flight | A hyper-simple workout assistance app | ReactJS | N
+| Flight | A hyper-simple workout assistance app | ReactJS | WIP 
+| SLIPPA | A reporting tool for speech language pathologists | Go, ReactJS | P 
+| Backlog CLI | A CLI tool for interacting with Backlog, a PM tool | N/A | D
+| Personal animated SVG | An animated personal logo for kevinoh.me | http://animejs.com/ | D
+| NightMessenger | A night mode for Facebook's messenger.com interface | Webpack, ES6, SCSS | D
 
 ### Project Status Legend
 Key | Meaning
@@ -24,4 +25,5 @@ Key | Meaning
 N | Not yet started
 L | Learning necessary technologies
 P | Paused
-WIP | Work in progress, but significant progress not yet achieved
+D | Done / Maintained
+WIP | Work in progress

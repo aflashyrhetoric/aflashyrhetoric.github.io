@@ -98,6 +98,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
     )
     .add(
       {
+        targets: heroRef,
+        backgroundColor: c,
+        duration: 80,
+      },
+      600,
+    )
+    .add(
+      {
         targets: box.bg,
         fill: c,
       },

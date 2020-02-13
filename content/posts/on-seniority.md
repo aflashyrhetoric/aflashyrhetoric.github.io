@@ -12,9 +12,9 @@ ogdescription is for Facebook and image previews
  
 # Seniority
 
-The word "engineer" in Canada means something other than what it does here. I'm not interested in the semantics of 'engineer', which is bound to welcome a dumpster fire of `No True Scotsman`s and the like.
+The word "engineer" in Canada means something other than what it does here. I'm not interested in the semantics of 'engineer', which would invariably lead to an _ad hominem_ dumpster fire.
 
-Rather I'm interested in discussing what seniority and leadership looks like in the specific context of web development.
+Rather, I'm interested in discussing what seniority and leadership looks like in the specific context of web development.
 
 - humility
 - communication

@@ -78,9 +78,9 @@ You’ve probably heard this word from some movie as part of a techno-babble spe
 1.  Wake up.
 2.  Is it a week day? If so, continue to Step 3\. If not, go back to sleep.
 3.  Go to the bathroom.
-4.  Brush your teeth.
-5.  Are you a girl? If so, proceed to Step 6\. If not, skip to Step 7.
-6.  Do you have a makeup routine? If so, do your makeup routine. If not, proceed to Step 7.
+4.  Wash your face.
+5.  Do you drink coffee? If so, proceed to Step 6\. If not, skip to Step 7.
+6.  Do you have coffee? If so, make coffee. If not - tough luck - proceed to Step 7.
 7.  Are you on a diet? If so, get an apple. If not, bust out three poptarts.
 8.  Eat whatever you created in Step 7.
 9.  Go to work.

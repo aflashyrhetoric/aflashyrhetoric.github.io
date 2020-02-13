@@ -12,7 +12,7 @@ I've often heard the question:
 
 > "How long will it take me to learn how to code?" 
 
-Well, let's informally break down some factors that affect a person's ability to learn. Some obvious ones factors: intelligence, persistence, past experience, resourcefulness, and how much time you have to study. Excelling at any one of these means you'll be able to learn far more quickly.
+Well, let's informally break down some factors that affect a person's ability to learn. Some obvious ones: intelligence, persistence, past experience, resourcefulness, and how much time you have to study. Excelling at any one of these means you'll be able to learn far more quickly.
 
 - If you're a genius, you'll be better off.
 - If you're extremely persistent, you'll be better off.
@@ -20,7 +20,7 @@ Well, let's informally break down some factors that affect a person's ability to
 - If you know how to answer your own questions, you'll be better off.
 - If you can study full-time, you'll be better off.
 
-I propose we've been missing (or willfully ignoring) a piece of the puzzle: humility.
+I propose we've been missing a critical soft skill: humility.
 
 Often, inexperience naturally leads to humility. But I've noticed something interesting about the nature of code and the process of learning it. My own trajectory while learning code wasn't quite exponential, but it certainly wasn't linear. 
 

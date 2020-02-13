@@ -17,7 +17,7 @@ function colorizeAll() {
 
 const c = randomColor()
 // document.body.style.backgroundColor = c
-hero.style.backgroundColor = c
+// hero.style.backgroundColor = c
 button.style.color = c
 
 hero.addEventListener('click', colorizeAll)
