@@ -13,11 +13,11 @@ On the side, I also serve as a mod over at [/r/webdev](https://reddit.com/r/webd
 
 #### Projects?
 
-Read about my projects [HERE](/projects).
+Read about my projects [**here**](/projects).
 
 #### What technologies are you studying?
 
-I'm currently working with React w/ Redux and Go on various projects.
+I'm currently working with React w/ Typscript, Redux and Go on various projects.
 
 #### Outside interests?
 
@@ -25,12 +25,9 @@ I like writing. I also upload stuff to [YouTube](https://youtube.com/adelieco) s
 
 **I'm also currently studying:**
 
-- **video editing / screencasting**, to create helpful webdev-related YouTube content
+- **affiliate marketing**, because it's a fascinating data-driven discipline 
 - **music production (w/ Ableton Live)**, because it's a childhood dream to make a great song
 - **game design**, because I feel like it's the ultimate medium of expression
-- **photography**, because life's too beautiful not to capture
-- **web scraping** and dataviz, for obvious reasons
-- **Japanese**
 
 Someday, I'd like to learn more about: TensorFlow & ML, D3, K8, and blob fishes. I have a heart for education - I think the current system is perhaps 1/50th of what it could be - and one day hope to make a change in the industry.
 
