@@ -37,4 +37,4 @@ I use VSCode, Chrome, iTerm2 on a MacBook Pro/Air.
 
 ---
 
-- Shout-out to my parents, Kelly 춘실 Kim and 오명남. You taught me patience, true humility, persistence, grace, and selflessness. Shout-out to the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you. Lastly, to my talented colleagues and Nulab. Working alongside every one of you is a pleasure.
+- Shout-out to my parents, Kelly 춘실 Kim and 오명남. You taught me patience, true humility, persistence, grace, and selflessness. Shout-out to the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you. Lastly, to my talented colleagues at Homelight and formerly, Nulab. Working alongside every one of you is a pleasure.
