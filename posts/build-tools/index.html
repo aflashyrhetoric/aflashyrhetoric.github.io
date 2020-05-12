@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Tooling 101: Build Tools" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://kevinoh.me/posts/build-tools" />
+  <meta property="og:description" content="Grunt, Gulp, Webpack" />
+  <meta property="og:image" content="http://kevinoh.me/img/build-tools.png" />
+  <meta property="fb:app_id" content="126086191274356" />
+  <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+  <title>Tooling 101: Build Tools</title>
+</head>
+
+<body class="page-post-single">
+
+<header class="header">
+<nav class="navbar 
+  -full-width 
+  ">
+
+    
+      <a href="../../" class="navbar__name">kevinoh</a>
+    
+    <ul class="navbar__list
+      
+    ">
+      <li class="navbar__list-item"><a href="../../" class="navbar__list-link">home</a></li>
+      <li class="navbar__list-item"><a href="../../about" class="navbar__list-link">about</a></li>
+      
+      <li class="navbar__list-item"><a href="../../projects" class="navbar__list-link">projects</a></li>
+      <li class="navbar__list-item"><a href="../../posts" class="navbar__list-link">blog</a></li>
+      <li class="navbar__list-item"><a href="https://github.com/aflashyrhetoric" class="navbar__list-link">github</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<div class="post-single">
+  <div class="post-single__heading-wrapper">
+    <h1 class="post-single__heading">Tooling 101: Build Tools</h1>
+    <h3 class="post-single__subheading">by Kevin Oh</h3>
+  </div>
+
+  <div class="post-single__content-wrapper">
+    <h1 id="build-tools-a-hasty-overview">Build Tools: A Hasty Overview</h1>
+<p>Front-end build tools allow us to transpile, bundle, and optimize assets in various ways.</p>
+<p>Now, technically, <code>webpack</code> is a module bundler and doesn&rsquo;t quite fit in with Gulp and Grunt, which are &ldquo;task runners,&rdquo; but since there is great overlap in the functionality offered by each tool, I&rsquo;ll just refer to them all collectively as &ldquo;build tools.&rdquo;</p>
+<p>Grunt came first - let&rsquo;s start with that.</p>
+<h4 id="grunt">Grunt</h4>
+<p>Grunt is a task runner. Like all build tools, it uses a modular, plugin-type system.</p>
+<p>Its execution can be configured using a <code>Gruntfile.js</code>. This file uses a declarative style of configuration to <em>describe</em> the changes. In other words, the Gruntfile doesn&rsquo;t get &ldquo;run&rdquo; or &ldquo;executed&rdquo;. Once you run the <code>grunt</code> command, the Grunt process will look for the Gruntfile and subsequently parse it to extract the configuration. Using this config, it will perform a variety of tasks, like transpiling SCSS to CSS, uglifying Javascript, copying image assets to a designated output folder, and so on.</p>
+<h4 id="gulp">Gulp</h4>
+<p>Gulp is also a task runner. It also uses a modular, plugin system.</p>
+<p>It uses a file called <code>gulpfile.js</code>. However, this particular file is essentially a script that <em>can</em> be run. This means that your build tool&rsquo;s configuration can now be given sequential instructions instead of just a grab bag of values.</p>
+<p>Similar to Grunt, you can transpile and uglify code, copy assets, and more. However, because this is a program that gets &ldquo;run&rdquo;, you can use standard Javascript methods to <em>code</em> your configuration instead of <em>describing</em> its execution. Queue excitement over being able to use ES6 in config files.</p>
+<p>This lets you control more intuitively the order in which tasks get executed: you can minify first, or copy first, or whatever. (Gulp&rsquo;s syntax enables you to chain methods.)</p>
+<h4 id="webpack">Webpack</h4>
+<p>Webpack is a <em>module bundler</em>.</p>
+<p>Let&rsquo;s break this down. In Webpack&rsquo;s eyes, all sites and applications can be described in a modular fashion: as discrete chunks of functionality that cooperate to achieve the final result. Each module is seen as having its own set of &ldquo;dependencies&rdquo; - things that it needs to run as expected. This can be a traditional code dependency (ie: <code>import someModule from 'some-npm-package';</code>), but Webpack abstracts it further: <em>anything</em> that a module needs to run is seen as a &ldquo;dependency.&rdquo; That could mean an SVG image, an image, an MP3 file, an SVG, or more. After all - sites aren&rsquo;t just <em>code</em>. They are a mishmosh of varied things.</p>
+<p>Webpack&rsquo;s game is optimization, and it gives you several tools to that end, but it can be mindbending. Why, for example, should your homepage&rsquo;s code contain CSS for the <code>about/</code> page? The user doesn&rsquo;t need the <code>about/</code> page code, images, and fonts yet, so why send it to them?</p>
+<p>The <code>Homepage</code>, then can be seen as a &ldquo;module&rdquo; with a set of dependencies, while the <code>About</code> page can be its own separate module. So on and so forth. In fact, Webpack gives you the tools to take it a step further with lazy loading. In the same way that the User doesn&rsquo;t need the About page code on the Homepage, so too does the User <strong>not</strong> need the footer code at the top of a page. So then, the homepage could be 2 modules rather than one: firstly, the code for all &ldquo;components&rdquo; above-the-fold, and a second module for components below-the-fold. Initially, the first module is loaded only. If the user begins to scroll and it seems like they intend to see the rest of the page, <em>then</em> the second module can be loaded.</p>
+<p>Webpack uses a <code>webpack.config.js</code> file and also uses a declarative syntax to allow you to describe these dependency relationships using standard <code>.json</code> syntax. When <code>webpack</code> is run, it will parse the <code>webpack.config.js</code> file, examine the relationships, calculate each module&rsquo;s dependencies, and output them however it needs to.</p>
+
+    <a class="btn btn--accent" href="../../posts">View All Posts</a>
+  </div>
+
+</div>
+
+
+<footer class="footer">
+
+  
+
+  <div class="footer__right">
+    🔥
+  </div>
+</footer>
+
+
+<script src="https://use.typekit.net/ygu2dtx.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script type="text/javascript" src="../../js/app.js"></script>  
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
