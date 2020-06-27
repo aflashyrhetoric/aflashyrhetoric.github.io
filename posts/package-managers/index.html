@@ -46,12 +46,12 @@
   <div class="post-single__content-wrapper">
     <!-- raw HTML omitted -->
 <hr>
-<p>Zoom back to 2012. I'm in my dorm room trying to learn <a href="http://rubyonrails.org/">Ruby on Rails</a>. Everything is going smoothly! Rails seems magical - perhaps a bit too much. I try to add a feature or two, and my progress comes to a screeching halt. I'm chasing down errors in the terminal with no conception of what's going on.</p>
+<p>Zoom back to 2012. I&rsquo;m in my dorm room trying to learn <a href="http://rubyonrails.org/">Ruby on Rails</a>. Everything is going smoothly! Rails seems magical - perhaps a bit too much. I try to add a feature or two, and my progress comes to a screeching halt. I&rsquo;m chasing down errors in the terminal with no conception of what&rsquo;s going on.</p>
 <blockquote>
 <p>What the hell is a &ldquo;gem&rdquo;?!?!?</p>
 </blockquote>
 <p>And thus, I was introduced to the world of Package Managers.</p>
-<p>Let's review some of the more popular ones.</p>
+<p>Let&rsquo;s review some of the more popular ones.</p>
 <table>
 <thead>
 <tr>
@@ -89,24 +89,24 @@
 </tbody>
 </table>
 <h3 id="so-what-is-a-package-manager">So, what is a package manager?</h3>
-<p>Package managers make it easy for you to use other people's code in your own projects to add functionality. Code that you add (or &ldquo;install&rdquo;) to your own project in this manner are referred to as &ldquo;packages&rdquo; or &ldquo;dependencies.&rdquo;</p>
+<p>Package managers make it easy for you to use other people&rsquo;s code in your own projects to add functionality. Code that you add (or &ldquo;install&rdquo;) to your own project in this manner are referred to as &ldquo;packages&rdquo; or &ldquo;dependencies.&rdquo;</p>
 <p>Package managers come in the form of command-line interfaces, so you will need a terminal such as <a href="https://www.iterm2.com/">iTerm2</a> or <a href="http://cmder.net/">cmder</a> to use them.</p>
 <h3 id="how-do-they-work">How do they work?</h3>
-<p>Each package manager has its own instructions on installing the tool, so I won't go into that here. But once installed, they tend to function very similarly.</p>
-<h3 id="first-theyre-all-terminalbased-utilities">First, they're all terminal-based utilities.</h3>
+<p>Each package manager has its own instructions on installing the tool, so I won&rsquo;t go into that here. But once installed, they tend to function very similarly.</p>
+<h3 id="first-theyre-all-terminal-based-utilities">First, they&rsquo;re all terminal-based utilities.</h3>
 <p>Typically, the name of the package manager is the name of the command. For example, to do something with the Yarn package manager, you will type <code>yarn</code> into the terminal, followed by some secondary command. (More on that later.)</p>
 <h3 id="next-they-all-use-a-configuration-file">Next, they all use a configuration file.</h3>
-<p>This is a file that contains information about your project's dependencies. Different package managers use different formats for this file, although <code>.json</code> (short for &ldquo;Javascript Object Notation&rdquo;) is one of the most common.</p>
+<p>This is a file that contains information about your project&rsquo;s dependencies. Different package managers use different formats for this file, although <code>.json</code> (short for &ldquo;Javascript Object Notation&rdquo;) is one of the most common.</p>
 <p>You can create and edit this file just like you would with any ordinary file, but some package managers have ways to generate it easily. NPM, for example has <code>npm init</code>, which will handily give you a line-by-line prompt to create <code>package.json</code> - the configuration file for <code>npm</code>.</p>
 <p>Each package manager will also have ways to easily add (and sometimes remove) dependencies without having to manually edit the configuration file. For example, to add <code>foobar</code> as an NPM dependency and install it, you type:</p>
 <pre><code>npm install -S foobar
-</code></pre><p>It's similar for composer:</p>
+</code></pre><p>It&rsquo;s similar for composer:</p>
 <pre><code>composer require foobar
-</code></pre><h3 id="dont-check-them-into-version-control">Don't check them into version control</h3>
-<p>Once the dependencies are downloaded, you'll have one folder in your project that is significantly later than others. Be sure to add the name of that folder to your <code>.gitignore</code> file. NPM has <code>node_modules/</code>, others may have &ldquo;vendor/&quot;.</p>
+</code></pre><h3 id="dont-check-them-into-version-control">Don&rsquo;t check them into version control</h3>
+<p>Once the dependencies are downloaded, you&rsquo;ll have one folder in your project that is significantly later than others. Be sure to add the name of that folder to your <code>.gitignore</code> file. NPM has <code>node_modules/</code>, others may have &ldquo;vendor/&rdquo;.</p>
 <hr>
-<h3 id="some-npmspecific-tips">Some NPM-Specific Tips</h3>
-<p>Since NPM is seemingly one of the most popular package managers, here's a grab bag of tips. (This section will be continually revised/edited. If you have any tips, let me know by <a href="https://twitter.com/aflashyrhetoric">tweeting at me</a>)!</p>
+<h3 id="some-npm-specific-tips">Some NPM-Specific Tips</h3>
+<p>Since NPM is seemingly one of the most popular package managers, here&rsquo;s a grab bag of tips. (This section will be continually revised/edited. If you have any tips, let me know by <a href="https://twitter.com/aflashyrhetoric">tweeting at me</a>)!</p>
 <h4 id="1-requireing-an-npm-package-omit-all-pathing-junk">1. <code>require</code>ing an npm package? Omit all pathing junk.</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// YES, this will work
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;package-name-here&#34;</span>);
