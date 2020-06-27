@@ -3,7 +3,7 @@ section = "about"
 title = "Bio"
 +++
 
-{{< span class="about-intro" content="Hey, I'm Kevin Oh." >}} Currently working as a *Front-End Engineer* with the team at [HomeLight](https://homelight.com). Previously, I worked with the excellent team at Nulab. I built a Chrome extension called [NightMessenger](https://chrome.google.com/webstore/detail/night-messenger/hjhnmilbfdehpgfcojlmmooknnkhgdmh?hl=en), a CLI tool to complement the PM tool [Backlog](https://backlog.com), and lead a Slack-based [study group](/projects/adg) that focuses on building projects to gain practical experience with modern web development technologies. 
+{{< span class="about-intro" content="Hey, I'm Kevin Oh." >}} Currently working as a *Front-End Engineer* with the team at [HomeLight](https://www.homelight.com). Previously, I worked with the excellent team at Nulab. I built a Chrome extension called [NightMessenger](https://chrome.google.com/webstore/detail/night-messenger/hjhnmilbfdehpgfcojlmmooknnkhgdmh?hl=en), a CLI tool to complement the PM tool [Backlog](https://backlog.com), and lead a Slack-based [study group](/projects/adg) that focuses on building projects to gain practical experience with modern web development technologies. 
 
 I co-founded Adelie, a web development shop that has since rolled back client-based operations to focus on building internal services & open source projects.
 
@@ -37,4 +37,4 @@ I use VSCode, Chrome, iTerm2 on a MacBook Pro/Air.
 
 ---
 
-- Shout-out to my parents, Kelly 춘실 Kim and 오명남. You taught me patience, true humility, persistence, grace, and selflessness. Shout-out to the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you. Lastly, to my talented colleagues and Nulab. Working alongside every one of you is a pleasure.
+- Shout-out to my parents, Kelly 춘실 Kim and 오명남. You taught me patience, true humility, persistence, grace, and selflessness. Shout-out to the awesome, ambitious people at the Adelie Developer's Group. It's been a pleasure meeting all of you. Lastly, to my talented colleagues at Homelight and formerly, Nulab. Working alongside every one of you is a pleasure.

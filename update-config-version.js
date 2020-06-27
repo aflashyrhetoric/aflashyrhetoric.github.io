@@ -1,5 +1,5 @@
 /*
- * This script updates nulab-inc theme's "version" in config.toml
+ * This script updates this website's theme's "version" in config.toml
  */
 const fs = require("fs");
 const path = require("path");
