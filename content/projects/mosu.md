@@ -20,9 +20,9 @@ I used Laravel to build a back-end API for a user system, as well as a basic CRU
 
 I have since taken down the pre-alpha application (which used to reside at [Mosu.io](https://mosu.io)) to work on a proper alpha version. With some simple promotion, I managed to acquire around 20 semi-regular users, who, after about a year, stopped using the app - hopefully they got a job! 
 
-## Planned Features
+## Planned Features (RETIRED)
 
-Several features are planned for v1.0, which is (completely arbitrarily) slated for release at the end of year 2018. 
+This project is archived. Below are an overview of ideas I had for cool features to add.
 
 #### Integration with LinkedIn ::
 

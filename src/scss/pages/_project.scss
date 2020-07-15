@@ -8,9 +8,13 @@
     @include flex-grid-column($columns: 12);
     height: 70px;
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
+    p {
+      font-style: italic;
+    }
   }
 
   &__heading {
