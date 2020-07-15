@@ -30,7 +30,7 @@ unwillingness to accept flaws of their own side
   trump
 not asking, "is this really a part of my identity?" enough, and making unassailable many things that should be criticized on an individual level
 motivational beliefs often encourage a disregard for realism that is meant to bolster the self. this cannot and should not be the same way that you interpret other people's lived stories. 
-quick to accuse
+how to handle irreconciliable differences
 
 ## biggest problem
 all of this requires nuance, and we have nowhere to seek that out.
