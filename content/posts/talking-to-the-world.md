@@ -35,6 +35,12 @@ how to handle irreconciliable differences
 ## biggest problem
 all of this requires nuance, and we have nowhere to seek that out.
 
+## Patterns
+
+Oversimplifying the sentiment of the their sub/forum to be overly hostile
+  - /r/cars loving manual to death
+  - /r/apple loving apple to death and being super hostile to android, vice versaa
+Logical emotion
 
 
 ### ERASE THE BOTTOM STUFF WHEN YOU GO TO WRITE:
