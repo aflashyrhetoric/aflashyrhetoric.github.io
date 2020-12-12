@@ -14,3 +14,7 @@ It went smoother than I expected. Google provided an easy way for an extension t
 You can [download Night Messenger here](https://chrome.google.com/webstore/detail/night-messenger/hjhnmilbfdehpgfcojlmmooknnkhgdmh?hl=en). At the time of this post, it currently has 30k+ users. Version v1.2.9 introduced properly-limited extension permissions and can be considered **stable**, although changes on Facebook's end still could break the extension unexpectedly.
 
 Let me know if you have feedback or feature requests. Cheers :beer:!
+
+---
+
+NightMessenger has been sunset in December of 2020, after breaking changes from Facebook rendered the extension prohibitively time-consuming to maintain. Thanks to everyone for the ride.
