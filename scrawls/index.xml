@@ -4,7 +4,11 @@
     <title></title>
     <link>/scrawls/</link>
     <description>Recent content on </description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/scrawls/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/scrawls/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Small beginnings</title>
       <link>/scrawls/small-beginnings/</link>
