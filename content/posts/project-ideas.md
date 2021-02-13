@@ -11,19 +11,15 @@ This is a list of project ideas that are either planned or in progress (but not 
 
 | Name | Description | Technologies | Status |
 |------|-------------|--------------|--------|
-| Archetype | An online utility to build your own workstations and optionally purchase them | GatsbyJS / Shopify | WIP
-| ADG Community Site | A place to showcase the Adelie Developer's Group's many talents | GatsbyJS, Popmotion, GlamorJS | WIP
-| Flight | A hyper-simple workout assistance app | ReactJS | WIP 
-| SLIPPA | A reporting tool for speech language pathologists | Go, ReactJS | P 
-| Backlog CLI | A CLI tool for interacting with Backlog, a PM tool | N/A | D
-| Personal animated SVG | An animated personal logo for kevinoh.me | http://animejs.com/ | D
-| NightMessenger | A night mode for Facebook's messenger.com interface | Webpack, ES6, SCSS | D
+| Aria | A platform to help teachers and educators manage their caseload and generate reports efficiently | Go, NextJS |  Active Development
+| Lantern | A modular personal dashboard with web scraping and built-in personal CRM | Go, ReactJS | Active Development
+| Archetype | An online utility to build your own workstations and optionally purchase them | GatsbyJS / Shopify | Paused
+| Sudo.GG | An online blog with product recommendations, developer tips, and thoughts on tech | SquareSpace | Paused
 
-### Project Status Legend
-Key | Meaning
-----|--------
-N | Not yet started
-L | Learning necessary technologies
-P | Paused
-D | Done / Maintained
-WIP | Work in progress
+# Completed / Sunset Projects
+
+| Name | Description | Technologies |
+|------|-------------|--------------|
+| Backlog CLI | A CLI tool for interacting with Backlog, a PM tool | N/A 
+| Personal animated SVG | An animated personal logo for kevinoh.me | http://animejs.com/ and Figma
+| NightMessenger | A night mode for Facebook's messenger.com interface | Webpack, ES6, SCSS

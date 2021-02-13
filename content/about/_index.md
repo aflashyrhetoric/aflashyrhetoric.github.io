@@ -17,7 +17,7 @@ Read about my projects [**here**](/projects).
 
 #### What technologies are you studying?
 
-I'm currently working with React w/ Typscript, Redux and Go on various projects.
+I'm currently working with React (TSX) w/ Go on various projects.
 
 #### Outside interests?
 
@@ -25,15 +25,15 @@ I like writing. I also upload stuff to [YouTube](https://youtube.com/adelieco) s
 
 **I'm also currently studying:**
 
-- **affiliate marketing**, because it's a fascinating data-driven discipline 
+- **investing**, because it's a fascinating data-driven discipline 
 - **music production (w/ Ableton Live)**, because it's a childhood dream to make a great song
 - **game design**, because I feel like it's the ultimate medium of expression
 
-Someday, I'd like to learn more about: TensorFlow & ML, D3, K8, and blob fishes. I have a heart for education - I think the current system is perhaps 1/50th of what it could be - and one day hope to make a change in the industry.
+Someday, I'd like to learn more about: TensorFlow & ML, D3, K8, and blob fishes. I have a heart for education - I think the current system is perhaps 1/50th of what it could be - and one day hope to make a change in the industry. To that end, I am currently
 
 #### Preferred Tools & Tech
 
-I use VSCode, Chrome, iTerm2 on a MacBook Pro/Air. 
+I use VSCode Insider Edition, Chrome, and iTerm2. I prefer working on an 2019 MacBook Pro, an M1 Macbook Air, and a base-level Mac Mini. I just picked up a Keychron K2 and am a big fan.
 
 ---
 
