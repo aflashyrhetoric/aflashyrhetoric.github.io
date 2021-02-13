@@ -73,6 +73,10 @@
   </url>
   
   <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/coding/</loc>
   </url>
   
@@ -94,6 +98,10 @@
   
   <url>
     <loc>/scrawls/small-beginnings/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
   </url>
   
   <url>

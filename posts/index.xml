@@ -5,11 +5,7 @@
     <link>/posts/</link>
     <description>Recent content in posts on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 Jun 2020 17:00:21 -0500</lastBuildDate>
-    
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 25 Jun 2020 17:00:21 -0500</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Toddlers in Porsches with Plasma Weapons</title>
       <link>/posts/toddlers-in-porsches/</link>
@@ -48,7 +44,7 @@ Grunt came first - let&amp;rsquo;s start with that.</description>
       
       <guid>/posts/project-ideas/</guid>
       <description>This list is updated regularly. This is a list of project ideas that are either planned or in progress (but not complete enough to warrant inclusion on the main projects page).
-   Name Description Technologies Status     Archetype An online utility to build your own workstations and optionally purchase them GatsbyJS / Shopify WIP   ADG Community Site A place to showcase the Adelie Developer&amp;rsquo;s Group&amp;rsquo;s many talents GatsbyJS, Popmotion, GlamorJS WIP   Flight A hyper-simple workout assistance app ReactJS WIP   SLIPPA A reporting tool for speech language pathologists Go, ReactJS P   Backlog CLI A CLI tool for interacting with Backlog, a PM tool N/A D   Personal animated SVG An animated personal logo for kevinoh.</description>
+   Name Description Technologies Status     Aria A platform to help teachers and educators manage their caseload and generate reports efficiently Go, NextJS Active Development   Lantern A modular personal dashboard with web scraping and built-in personal CRM Go, ReactJS Active Development   Archetype An online utility to build your own workstations and optionally purchase them GatsbyJS / Shopify Paused   Sudo.</description>
     </item>
     
     <item>
@@ -109,7 +105,7 @@ The conversation always goes the same way. They want to learn, they have ideas, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/design/</guid>
-      <description>*This post was written back when Adelie was openly accepting new inquiries and projects.* There are times when the difference between two choices is completely lateral — two substitutable alternatives that are equal in importance and consequence. If you’re craving some fruit, it doesn’t matter whether you choose the apple or the orange. In these instances, it’s okay to defer to preference, precedent, or a coin toss. But these cases are the (rare) exception, not the rule.</description>
+      <description>This post was written back when Adelie was openly accepting new inquiries and projects. There are times when the difference between two choices is completely lateral — two substitutable alternatives that are equal in importance and consequence. If you’re craving some fruit, it doesn’t matter whether you choose the apple or the orange. In these instances, it’s okay to defer to preference, precedent, or a coin toss. But these cases are the (rare) exception, not the rule.</description>
     </item>
     
     <item>
@@ -128,7 +124,7 @@ I donned my Nulab tee and hoodie, strapped on the goldenrod &amp;ldquo;Tech Day 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/tools/</guid>
-      <description>*This post was written back when Adelie was openly accepting new inquiries and projects.* I once heard two friends arguing. One of them had recently come upon a windfall of cash, and wanted to make a big purchase: an upscale sports car. Upon hearing this, his miserly friend fired back, “you don’t even go places! Don’t buy a Porsche to drive to 711.”
+      <description>This post was written back when Adelie was openly accepting new inquiries and projects. I once heard two friends arguing. One of them had recently come upon a windfall of cash, and wanted to make a big purchase: an upscale sports car. Upon hearing this, his miserly friend fired back, “you don’t even go places! Don’t buy a Porsche to drive to 711.”
 When I heard this biting exchange, I chuckled.</description>
     </item>
     
@@ -138,7 +134,7 @@ When I heard this biting exchange, I chuckled.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/websites-are-pants/</guid>
-      <description>*This post was written back when Adelie was openly accepting new inquiries and projects.* In 2005, psychologist Barry Schwartz took the stage at TEDGlobal in Oxford and proposed an idea: that “more is less.” You can watch the full video here, but the core idea is simple. To quote Schwartz, “With so many options to choose from, people find it very difficult to choose at all.” He tells a simple anecdote to that effect: many years ago, when he walked into a clothing store, there were only a few pairs of jeans to choose from.</description>
+      <description>This post was written back when Adelie was openly accepting new inquiries and projects. In 2005, psychologist Barry Schwartz took the stage at TEDGlobal in Oxford and proposed an idea: that “more is less.” You can watch the full video here, but the core idea is simple. To quote Schwartz, “With so many options to choose from, people find it very difficult to choose at all.” He tells a simple anecdote to that effect: many years ago, when he walked into a clothing store, there were only a few pairs of jeans to choose from.</description>
     </item>
     
   </channel>
