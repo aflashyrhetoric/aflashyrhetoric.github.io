@@ -7,7 +7,7 @@
     "postbuild": "node update-config-version.js"
   },
   "dependencies": {
-    "highlight.js": "^9.11.0",
+    "highlight.js": "^10.4.1",
     "hsl-to-hex": "^1.0.0",
     "normalize.css": "^5.0.0",
     "uglifyjs-webpack-plugin": "2.0.0"
