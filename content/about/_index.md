@@ -17,7 +17,7 @@ Read about my projects [**here**](/projects).
 
 #### What technologies are you studying?
 
-I'm currently working with React (TSX) w/ Go on various projects.
+I'm currently working with React (TSX) w/ Go on various projects. NextJS and `gin-gonic` are awesome.
 
 #### Outside interests?
 
@@ -29,7 +29,7 @@ I like writing. I also upload stuff to [YouTube](https://youtube.com/adelieco) s
 - **music production (w/ Ableton Live)**, because it's a childhood dream to make a great song
 - **game design**, because I feel like it's the ultimate medium of expression
 
-Someday, I'd like to learn more about: TensorFlow & ML, D3, K8, and blob fishes. I have a heart for education - I think the current system is perhaps 1/50th of what it could be - and one day hope to make a change in the industry. To that end, I am currently
+Someday, I'd like to learn more about: TensorFlow & ML, D3, K8, and blob fishes. I have a heart for education - I think the current system is perhaps 1/50th of what it could be - and one day hope to make a change in the industry. 
 
 #### Preferred Tools & Tech
 

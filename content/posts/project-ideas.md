@@ -2,19 +2,25 @@
 title = "PROJECT BOARD"
 ogdescription = "A list of project ideas"
 slug = "project-ideas"
-date = "2017-05-17T21:47:18-04:00"
+date = "2021-02-26T21:47:18-04:00"
 +++
 
 #### This list is updated regularly.
 
-This is a list of project ideas that are either planned or in progress (but not complete enough to warrant inclusion on the main projects page).
+This is a list of current projects that are either planned, in progress, or retired.
 
-| Name | Description | Technologies | Status |
-|------|-------------|--------------|--------|
-| Aria | A platform to help teachers and educators manage their caseload and generate reports efficiently | Go, NextJS |  Active Development
-| Lantern | A modular personal dashboard with web scraping and built-in personal CRM | Go, NextJS | Active Development
-| Archetype | A service for building your own workstations and easily purchase them | GatsbyJS / Shopify | Paused
-| Sudo.GG | Casual blog with product recommendations, developer tips, and thoughts on tech | SquareSpace | Paused
+#### Initial Development 
+
+| Name | Description | Technologies |
+|------|-------------|--------------|
+| Aria | A platform to help teachers and educators manage their caseload and generate reports efficiently | NextJS / Go |
+| Archetype | Build and track your own personal desk setups | NextJS / Go |
+#### Active Projects
+
+| Name | Description | Technologies | 
+|------|-------------|--------------|
+| Lantern | A modular personal dashboard with web scraping, personal CRM | Go, NextJS | 
+| Sudo.GG | Casual blog with product recommendations, developer tips, and thoughts on tech | SquareSpace |
 
 # Completed / Sunset Projects
 
