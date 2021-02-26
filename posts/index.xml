@@ -5,7 +5,17 @@
     <link>/posts/</link>
     <description>Recent content in posts on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 Jun 2020 17:00:21 -0500</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Feb 2021 21:47:18 -0400</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PROJECT BOARD</title>
+      <link>/posts/project-ideas/</link>
+      <pubDate>Thu, 25 Feb 2021 21:47:18 -0400</pubDate>
+      
+      <guid>/posts/project-ideas/</guid>
+      <description>This list is updated regularly. This is a list of current projects that are either planned, in progress, or retired.
+Initial Development    Name Description Technologies     Aria A platform to help teachers and educators manage their caseload and generate reports efficiently NextJS / Go   Archetype Build and track your own personal desk setups NextJS / Go    Active Projects    Name Description Technologies     Lantern A modular personal dashboard with web scraping, personal CRM Go, NextJS   Sudo.</description>
+    </item>
+    
     <item>
       <title>Toddlers in Porsches with Plasma Weapons</title>
       <link>/posts/toddlers-in-porsches/</link>
