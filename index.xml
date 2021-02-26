@@ -38,16 +38,6 @@ Grunt came first - let&amp;rsquo;s start with that.</description>
     </item>
     
     <item>
-      <title>PROJECT BOARD</title>
-      <link>/posts/project-ideas/</link>
-      <pubDate>Wed, 17 May 2017 21:47:18 -0400</pubDate>
-      
-      <guid>/posts/project-ideas/</guid>
-      <description>This list is updated regularly. This is a list of project ideas that are either planned or in progress (but not complete enough to warrant inclusion on the main projects page).
-   Name Description Technologies Status     Aria A platform to help teachers and educators manage their caseload and generate reports efficiently Go, NextJS Active Development   Lantern A modular personal dashboard with web scraping and built-in personal CRM Go, NextJS Active Development   Archetype A service for building your own workstations and easily purchase them GatsbyJS / Shopify Paused   Sudo.</description>
-    </item>
-    
-    <item>
       <title>Learning Persistence</title>
       <link>/posts/persistence/</link>
       <pubDate>Fri, 05 May 2017 18:03:19 -0400</pubDate>
