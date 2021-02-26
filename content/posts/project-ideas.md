@@ -22,7 +22,7 @@ This is a list of current projects that are either planned, in progress, or reti
 | Lantern | A modular personal dashboard with web scraping, personal CRM | Go, NextJS | 
 | Sudo.GG | Casual blog with product recommendations, developer tips, and thoughts on tech | SquareSpace |
 
-# Completed / Sunset Projects
+#### Completed / Sunset Projects
 
 | Name | Description | Technologies |
 |------|-------------|--------------|
