@@ -6,9 +6,9 @@ draft = true
 
 Walk past
 The wind burnt veteran
-There's that smell again, a gust and it's gone, keep on
+There's that smell again, a gust and it's gone,
 Movin on, moving in,
-New Ikea frames to frame that thing,
+New Ikea frames to frame this, that thing,
 Looks real good, head to Amazon, 
 Keep moving on, movin in
 

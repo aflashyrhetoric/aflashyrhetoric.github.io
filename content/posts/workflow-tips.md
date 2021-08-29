@@ -59,7 +59,7 @@ brew install cowsay
 ## Editor Tricks
 
 - I don't think everyone should use Vim necessarily, but I do think everyone should _try_ learning Vim keybindings :thumbsup:
-- Theme & Editor: I use Night Owl by Sarah Drasner and Dank Mono.
+- Theme & Editor: I use Bluloco Dark Italic, and Dank Mono.
 - I rebound the chorded shortcut `CMD+K -> CMD+B` to toggle sidebar, as a throwback to my Sublime Text days. The key for it is `workbench.action.toggleSidebarVisibility`.
 
 ## More to come
