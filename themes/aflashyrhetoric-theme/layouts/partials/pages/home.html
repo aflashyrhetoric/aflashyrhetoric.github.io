@@ -35,25 +35,6 @@
 
 {{ partial "modules/header-dev" . }}
 
-<div class="section__container">
-  <div class="section__inner -regular">
-    <div class="section__label -project-box">
-      <h2 class="section__label-text">projects</h2>
-    </div>
-
-    <div class="section__projects">
-      <ul class="project-box__list -projects">
-        {{ range .Site.Data.projects }}
-          <li class="project-box__list-item">
-            <a target="_blank" href="/projects/{{ .filename }} ">
-              <img class="project-box__list-image" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
-            </a>
-          </li>
-        {{ end }}
-      </ul>
-    </div>
-  </div>
-</div>
 
 <div class="section__container">
   <div class="section__inner -regular">
@@ -74,6 +55,25 @@
               </a>
             </li>
           {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="section__container">
+  <div class="section__inner -regular">
+    <div class="section__label -project-box">
+      <h2 class="section__label-text">projects</h2>
+    </div>
+
+    <div class="section__projects">
+      <ul class="project-box__list -projects">
+        {{ range .Site.Data.projects }}
+          <li class="project-box__list-item">
+            <a target="_blank" href="/projects/{{ .filename }} ">
+              <img class="project-box__list-image" src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x">
+            </a>
+          </li>
         {{ end }}
       </ul>
     </div>

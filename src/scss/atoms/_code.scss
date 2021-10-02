@@ -1,9 +1,10 @@
 // code.scss
 
 code {
-  // display: block;
   border-radius: 4px;
   border: 0;
+  background: #ddd;
+  padding: 3px;
   @include fz(16);
   @include setFontStandard;
   span {
