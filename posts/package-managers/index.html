@@ -99,23 +99,23 @@
 <p>This is a file that contains information about your project&rsquo;s dependencies. Different package managers use different formats for this file, although <code>.json</code> (short for &ldquo;Javascript Object Notation&rdquo;) is one of the most common.</p>
 <p>You can create and edit this file just like you would with any ordinary file, but some package managers have ways to generate it easily. NPM, for example has <code>npm init</code>, which will handily give you a line-by-line prompt to create <code>package.json</code> - the configuration file for <code>npm</code>.</p>
 <p>Each package manager will also have ways to easily add (and sometimes remove) dependencies without having to manually edit the configuration file. For example, to add <code>foobar</code> as an NPM dependency and install it, you type:</p>
-<pre><code>npm install -S foobar
+<pre tabindex="0"><code>npm install -S foobar
 </code></pre><p>It&rsquo;s similar for composer:</p>
-<pre><code>composer require foobar
+<pre tabindex="0"><code>composer require foobar
 </code></pre><h3 id="dont-check-them-into-version-control">Don&rsquo;t check them into version control</h3>
 <p>Once the dependencies are downloaded, you&rsquo;ll have one folder in your project that is significantly later than others. Be sure to add the name of that folder to your <code>.gitignore</code> file. NPM has <code>node_modules/</code>, others may have &ldquo;vendor/&rdquo;.</p>
 <hr>
 <h3 id="some-npm-specific-tips">Some NPM-Specific Tips</h3>
 <p>Since NPM is seemingly one of the most popular package managers, here&rsquo;s a grab bag of tips. (This section will be continually revised/edited. If you have any tips, let me know by <a href="https://twitter.com/aflashyrhetoric">tweeting at me</a>)!</p>
 <h4 id="1-requireing-an-npm-package-omit-all-pathing-junk">1. <code>require</code>ing an npm package? Omit all pathing junk.</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// YES, this will work
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// YES, this will work
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;package-name-here&#34;</span>);
 
 <span style="color:#75715e">// NO. This may work, but it&#39;s brittle.
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;../../../node_modules/package-name-here.js&#34;</span>);
 </code></pre></div><h4 id="2-the-meaning-of--and--characters-in-the-version-numbers">2. The meaning of <code>~</code> and <code>^</code> characters in the version numbers.</h4>
 <p>You may see something like this in <code>package.json</code> files:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// You&#39;ll find one of these
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// You&#39;ll find one of these
 </span><span style="color:#75715e"></span><span style="color:#e6db74">&#34;some-package-name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;^6.3.0&#34;</span>
 <span style="color:#e6db74">&#34;some-package-name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;~6.3.0&#34;</span>
 </code></pre></div><p>The use of the ~ and ^ characters are a (confusing) short-hand wildcard syntax for specifying versions of packages. Look at the chart below for a key.</p>

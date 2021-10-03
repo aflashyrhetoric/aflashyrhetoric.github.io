@@ -4,18 +4,15 @@
     <title></title>
     <link>/projects/</link>
     <description>Recent content on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adelie Developer&#39;s Group</title>
       <link>/projects/adg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/adg/</guid>
-      <description>🚨 A Note  Since the community first formed, many of ADG&amp;rsquo;s members have since gone onto gainful full-time employment and I&amp;rsquo;ve had the bitter-sweet realization that the group was no longer needed - not in its current form, to its current roster of members. While this isn&amp;rsquo;t quite &amp;ldquo;software&amp;rdquo; and I&amp;rsquo;d be happy to see the group evolve into something else, the chat group that was is due for a proper sunsetting.</description>
+      <description>🚨 A Note  This group has long ago stopped being a resource for newer developers to share tips and support; it is now just a group of colleagues staying in touch. 😄  Beer me, Slackbot! 🍺 The Adelie Developer&amp;rsquo;s Group was an online, Slack-based study group for web development.
+The group is beginner-friendly and project-oriented. Currently, some of the members are working on individual developer portfolio websites using modern front-end tooling and best practices.</description>
     </item>
     
     <item>
@@ -26,6 +23,15 @@
       <guid>/projects/blg-cli/</guid>
       <description>Backlog CLI An (unofficial) command line utility for working with Backlog, a tool by Nulab, Inc.
  View on Github  Values  Be easy to &amp;ldquo;plug and play.&amp;rdquo; Provide shortcuts for a subset of your most frequently repeated actions, rather than achieving complete feature parity. In other words, it is designed to be a complement to Backlog, rather than a replacement for it.  Main Features  Quickly create, view, and open pull requests in the browser for your current branch &amp;amp; issue  blg pr create [-b BRANCH_TO_MERGE_TO] blg pr ls blg pr open   View and open your latest notifications  blg n   Quickly access misc links  blg me to list links related to your user account.</description>
+    </item>
+    
+    <item>
+      <title>Keys</title>
+      <link>/projects/keys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/keys/</guid>
+      <description>Keys: A work-in-progress  Explore and create shareable mechanical keyboard builds using the configurator tool. Get recommendations based on your preferences and use-case  Roadmap  Explore deals Coordinate group-buys  </description>
     </item>
     
     <item>
