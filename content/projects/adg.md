@@ -4,9 +4,7 @@ project = "adg"
 +++
 
 #### :rotating_light: A Note
-- Since the community first formed, many of ADG's members have since gone onto gainful full-time employment and I've had the bitter-sweet realization that the group was no longer needed - not in its current form, to its current roster of members. 
-- While this isn't quite "software" and I'd be happy to see the group evolve into something else, the chat group that _was_ is due for a proper sunsetting. To those who were there through it all - thank you for sharing your knowledge, experiences, and stories. You were an inspiration and I'm honored to have met you all. Hope to see you in the next life. Or maybe on Discord :wink:
-
+- This group has long ago stopped being a resource for newer developers to share tips and support; it is now just a group of colleagues staying in touch. :smile:
 
 <hr />
 

@@ -5,4 +5,3 @@ thumbnail2 = "/img/projects/blg-cli@2x.png"
 url = ""
 tagline = "a cli tool for backlog"
 description = "An unofficial command line utility for using Backlog, a project management tool"
-weight = 1

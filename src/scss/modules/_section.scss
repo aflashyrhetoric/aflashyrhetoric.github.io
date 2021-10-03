@@ -28,7 +28,7 @@ $_label-height: 35px;
 
     &.-regular {
       @include breakpoint(medium) {
-        @include flex-grid-column($columns: 6, $gutters: 0);
+        @include flex-grid-column($columns: 8, $gutters: 0);
       }
     }
     &.-thin {
@@ -36,7 +36,7 @@ $_label-height: 35px;
         @include flex-grid-column($columns: 6, $gutters: 0);
       }
       @include breakpoint(large) {
-        @include flex-grid-column($columns: 4, $gutters: 0);
+        @include flex-grid-column($columns: 6, $gutters: 0);
       }
     }
     &.-wide {

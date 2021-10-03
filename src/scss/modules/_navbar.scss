@@ -22,7 +22,7 @@
     @include flex-grid-column($columns: 9);
   }
   @include breakpoint(large) {
-    @include flex-grid-column($columns: 6);
+    @include flex-grid-column($columns: 8);
   }
 
   &__name {

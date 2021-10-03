@@ -2,6 +2,7 @@
 title = ""
 project = ""
 date = {{ .Date }}
+weight = 0
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, consectetur!

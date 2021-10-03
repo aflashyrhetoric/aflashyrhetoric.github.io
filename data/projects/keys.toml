@@ -1,0 +1,9 @@
+name = "keys"
+filename = "keys"
+thumbnail = "/img/projects/keys.png"
+thumbnail2 = "/img/projects/keys@2x.png"
+url = "#"
+tagline = "A mechanical keyboard configurator tool."
+description = "Explore and create shareable mechanical keyboard builds, coordinate group-buys, and more."
+hasCircularLogo = true
+weight=0
