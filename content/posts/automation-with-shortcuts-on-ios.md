@@ -1,7 +1,7 @@
 +++
-title = "Automation with iOS Shortcuts, Raspberry Pi, NextJS, and Puppeteer"
+title = "Automation with Shortcuts on iOS"
 date = "2021-06-25T17:00:21-05:00"
-ogdescription = "Automation with iOS Shortcuts, Raspberry Pi, NextJS, and Puppeteer"
+ogdescription = "Automation with Shortcuts on iOS"
 slug = "ios-shortcuts-automation"
 +++
 
