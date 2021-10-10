@@ -3,6 +3,7 @@ title = "PROJECT BOARD"
 ogdescription = "A list of project ideas"
 slug = "project-ideas"
 date = "2021-02-25T21:47:18-04:00"
+draft = true
 +++
 
 This is a list of current projects that are either planned, in progress, or retired.

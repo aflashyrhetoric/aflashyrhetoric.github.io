@@ -47,8 +47,8 @@
 
         {{/* Iterate over all pages, for which the section is posts */}}
         {{ range $el, $val := where .Site.AllPages "Section" "posts" }} 
-          {{/* skip the first one */}}
-          {{ if ne $el 0 }}
+          {{/* skip the first one, because it's a link to all */}}
+          {{ if ne $val.Title "posts" }}
             <li class="project-box__list-post">
               <a href="{{ .RelPermalink }}">
                 {{ .Title }}
