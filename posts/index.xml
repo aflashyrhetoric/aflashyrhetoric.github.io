@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>posts on </title>
+    <link>/posts/</link>
+    <description>Recent content in posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 25 Jun 2021 17:00:21 -0500</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automation with iOS Shortcuts, Raspberry Pi, NextJS, and Puppeteer</title>
+      <link>/posts/ios-shortcuts-automation/</link>
+      <pubDate>Fri, 25 Jun 2021 17:00:21 -0500</pubDate>
+      
+      <guid>/posts/ios-shortcuts-automation/</guid>
+      <description>Yo, iOS Shortcuts is pretty cool I never really got into Automator, the long-lived macOS scripting utility. I assumed Shortcuts would be similar to Automator - lots of theoretical potential, but nothing that yielded a net value in that equation of Time Spent Automating vs Time Saved From The Automation. Not for my use-cases anyway.
+But Shortcuts has a unique benefit over Automator. You can trigger scripts with Hey Siri! Easily, I mean.</description>
+    </item>
+    
+    <item>
+      <title>Toddlers in Porsches with Plasma Weapons</title>
+      <link>/posts/toddlers-in-porsches/</link>
+      <pubDate>Thu, 25 Jun 2020 17:00:21 -0500</pubDate>
+      
+      <guid>/posts/toddlers-in-porsches/</guid>
+      <description>Toddlers in Porsches with Plasma Weapons In this one TED talk, Malcolm Gladwell told a story about how the U.S. military once spent $3 billion dollars developing a &amp;ldquo;scope&amp;rdquo; (as in, a telescopic sight for a weapon) for planes to attack their targets with terrifying accuracy. When it worked, it was considered revolutionary. The so-called Norden Bombsight made it possible to &amp;ldquo;drop bombs into a pickle barrel from 20,000 feet.&amp;rdquo; God-like accuracy for the time.</description>
+    </item>
+    
+    <item>
+      <title>Developer Workflow Tips</title>
+      <link>/posts/workflow-tips/</link>
+      <pubDate>Fri, 24 Jan 2020 12:28:17 -0500</pubDate>
+      
+      <guid>/posts/workflow-tips/</guid>
+      <description>Tips &amp;amp; Tricks for Developer Efficiency (Indefinitely a WIP) This is a tl;dr of legitimate tricks that I wish I knew years ago.
+For context, I work with VS Code on Mac.
+macOS Tips  Use BetterTouchTool. I have three trackpad gestures I use a million times a day:  3-finger swipe up: Maximizes current window (not fullscreen) 3-finger swipe left: Moves window to left half of screen 3-finger swipe right: Moves window to right half of screen   CMD+``` switches between windows of the same app.</description>
+    </item>
+    
+    <item>
+      <title>Tooling 101: Build Tools</title>
+      <link>/posts/build-tools/</link>
+      <pubDate>Wed, 24 May 2017 18:35:19 -0400</pubDate>
+      
+      <guid>/posts/build-tools/</guid>
+      <description>Build Tools: A Hasty Overview Front-end build tools allow us to transpile, bundle, and optimize assets in various ways.
+Now, technically, webpack is a module bundler and doesn&amp;rsquo;t quite fit in with Gulp and Grunt, which are &amp;ldquo;task runners,&amp;rdquo; but since there is great overlap in the functionality offered by each tool, I&amp;rsquo;ll just refer to them all collectively as &amp;ldquo;build tools.&amp;rdquo;
+Grunt came first - let&amp;rsquo;s start with that.</description>
+    </item>
+    
+    <item>
+      <title>Learning Persistence</title>
+      <link>/posts/persistence/</link>
+      <pubDate>Fri, 05 May 2017 18:03:19 -0400</pubDate>
+      
+      <guid>/posts/persistence/</guid>
+      <description>June 1st, 2015, 6pm I pause the Javascript tutorial I&amp;rsquo;m watching, then I close the tab. ES6 can wait until tomorrow - it&amp;rsquo;s just a hobby anyway.
+I glance at the thirty-something Chrome tabs I have open and just now notice the whirring fan, the heat emanating off the keyboard. I click OneTab to save them all and watch as they disappear, one-by-one, as fast as Chrome&amp;rsquo;s speedy little brain can manage.</description>
+    </item>
+    
+    <item>
+      <title>string parsing &amp; data extraction</title>
+      <link>/posts/developer-site/</link>
+      <pubDate>Thu, 27 Apr 2017 18:04:36 -0400</pubDate>
+      
+      <guid>/posts/developer-site/</guid>
+      <description>Summary My latest project at Nulab was to migrate over the old Developer Website (containing API documentation, mostly) from Drupal to something new. The old site had become somewhat clumsy to manage, and we needed a new solution.
+After initially considering WordPress, we ultimately landed on Hugo, a static site generator (SSG) written in Go. An SSG was perfect for our use-case. But migrating the data was non-trivial. But first things first&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Tooling 101: Package Managers</title>
+      <link>/posts/package-managers/</link>
+      <pubDate>Mon, 17 Apr 2017 18:42:48 -0400</pubDate>
+      
+      <guid>/posts/package-managers/</guid>
+      <description>Zoom back to 2012. I&amp;rsquo;m in my dorm room trying to learn Ruby on Rails. Everything is going smoothly! Rails seems magical - perhaps a bit too much. I try to add a feature or two, and my progress comes to a screeching halt. I&amp;rsquo;m chasing down errors in the terminal with no conception of what&amp;rsquo;s going on.
+ What the hell is a &amp;ldquo;gem&amp;rdquo;?!?!?
+ And thus, I was introduced to the world of Package Managers.</description>
+    </item>
+    
+    <item>
+      <title>Tooling 101: Introduction</title>
+      <link>/posts/tooling-101/</link>
+      <pubDate>Mon, 10 Apr 2017 21:36:04 -0400</pubDate>
+      
+      <guid>/posts/tooling-101/</guid>
+      <description>While the barriers to web development are substantially lower than many other fields, there&amp;rsquo;s still a bunch of junk that makes it frustrating for beginners to jump in.
+By &amp;ldquo;obstacles,&amp;rdquo; I don&amp;rsquo;t mean the inherent difficulty in learning a new field, nor the complexity of advanced web development topics. I&amp;rsquo;m referring to the snags that slow progress without benefit.
+For example, consider the act of going for a jog. Running.</description>
+    </item>
+    
+    <item>
+      <title>Coding Is Not That Hard</title>
+      <link>/posts/coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/coding/</guid>
+      <description>Within the past two years, about a dozen people told me they’re extremely interested in learning how to code. Today, none of them are programmers, developers, or even hobby coders. Most of them, as far as I know, have never even opened a text editor.
+The conversation always goes the same way. They want to learn, they have ideas, but it’s all too hard. One of my more determined friends — an art major — admired the idea of focusing on a single project all day, but he would routinely shudder at the sight of actual code.</description>
+    </item>
+    
+    <item>
+      <title>Good Design Is Not Subjective.</title>
+      <link>/posts/design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/design/</guid>
+      <description>This post was written back when Adelie was openly accepting new inquiries and projects. There are times when the difference between two choices is completely lateral — two substitutable alternatives that are equal in importance and consequence. If you’re craving some fruit, it doesn’t matter whether you choose the apple or the orange. In these instances, it’s okay to defer to preference, precedent, or a coin toss. But these cases are the (rare) exception, not the rule.</description>
+    </item>
+    
+    <item>
+      <title>Tech Day 2017</title>
+      <link>/posts/techday/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/techday/</guid>
+      <description>Today, I got the awesome opportunity to represent one of Nulab&amp;rsquo;s apps, Typetalk.
+I donned my Nulab tee and hoodie, strapped on the goldenrod &amp;ldquo;Tech Day Exhibitor&amp;rdquo; bracelet, and walked into the sprawling space. At first, I saw the big names - AWS, American Airlines, Vimeo. I continued to the rear end of the space, where we had a table. Japanese candies, t-shirts &amp;amp; totes, business cards, iPads, Macbook Pros with our apps on full-screen - we&amp;rsquo;re ready.</description>
+    </item>
+    
+    <item>
+      <title>The Dangers of Blindly Loving Your Tools</title>
+      <link>/posts/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tools/</guid>
+      <description>This post was written back when Adelie was openly accepting new inquiries and projects. I once heard two friends arguing. One of them had recently come upon a windfall of cash, and wanted to make a big purchase: an upscale sports car. Upon hearing this, his miserly friend fired back, “you don’t even go places! Don’t buy a Porsche to drive to 711.”
+When I heard this biting exchange, I chuckled.</description>
+    </item>
+    
+    <item>
+      <title>Websites Are Like Pants</title>
+      <link>/posts/websites-are-pants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/websites-are-pants/</guid>
+      <description>This post was written back when Adelie was openly accepting new inquiries and projects. In 2005, psychologist Barry Schwartz took the stage at TEDGlobal in Oxford and proposed an idea: that “more is less.” You can watch the full video here, but the core idea is simple. To quote Schwartz, “With so many options to choose from, people find it very difficult to choose at all.” He tells a simple anecdote to that effect: many years ago, when he walked into a clothing store, there were only a few pairs of jeans to choose from.</description>
+    </item>
+    
+  </channel>
+</rss>

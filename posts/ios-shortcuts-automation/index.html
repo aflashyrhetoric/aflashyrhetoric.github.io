@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Automation with iOS Shortcuts, Raspberry Pi, NextJS, and Puppeteer" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://kevinoh.me/posts/ios-shortcuts-automation" />
+  <meta property="og:description" content="Automation with iOS Shortcuts, Raspberry Pi, NextJS, and Puppeteer" />
+  <meta property="og:image" content="http://kevinoh.me/img/ios-shortcuts-automation.png" />
+  <meta property="fb:app_id" content="126086191274356" />
+  <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+  <title>Automation with iOS Shortcuts, Raspberry Pi, NextJS, and Puppeteer</title>
+</head>
+
+<body class="page-post-single">
+
+<header class="header">
+<nav class="navbar 
+  -full-width 
+  ">
+
+    
+      <a href="../../" class="navbar__name">kevinoh</a>
+    
+    <ul class="navbar__list
+      
+    ">
+      <li class="navbar__list-item"><a href="../../" class="navbar__list-link">home</a></li>
+      <li class="navbar__list-item"><a href="../../about" class="navbar__list-link">about</a></li>
+      
+      <li class="navbar__list-item"><a href="../../projects" class="navbar__list-link">projects</a></li>
+      <li class="navbar__list-item"><a href="../../posts" class="navbar__list-link">blog</a></li>
+      <li class="navbar__list-item"><a href="https://github.com/aflashyrhetoric" class="navbar__list-link">github</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<div class="post-single">
+  <div class="post-single__heading-wrapper">
+    <h1 class="post-single__heading">Automation with iOS Shortcuts, Raspberry Pi, NextJS, and Puppeteer</h1>
+    <h3 class="post-single__subheading">by Kevin Oh</h3>
+  </div>
+
+  <div class="post-single__content-wrapper">
+    <h1 id="yo-ios-shortcuts-is-pretty-cool">Yo, iOS Shortcuts is pretty cool</h1>
+<p>I never really got into Automator, the long-lived macOS scripting utility. I assumed Shortcuts would be similar to Automator - lots of theoretical potential, but nothing that yielded a net value in that equation of <strong>Time Spent Automating</strong> vs <strong>Time Saved From The Automation</strong>. Not for my use-cases anyway.</p>
+<p>But Shortcuts has a unique benefit over Automator. <strong>You can trigger scripts with <code>Hey Siri</code>!</strong> Easily, I mean. I&rsquo;m sure there was a way to wire it up with Automator, but with Shortcuts, <code>Hey Siri</code> is included by default. Being able to trigger scripts from any Apple device - in particular, an Apple Watch - is uniquely empowering. I decided to look into automating some stuff.</p>
+<h2 id="todays-goal"><strong>Today&rsquo;s Goal</strong></h2>
+<p>Today&rsquo;s Goal: Automate away the need to fill out daily COVID health screening quizzes. I filled out the quiz with an eye on the Chrome Network tab. Initially, I just wanted to copy the POST request that gets sent on the form submission.</p>
+<p>The flow would be simple:</p>
+<ol>
+<li>&ldquo;Hey Siri, Check In&rdquo;</li>
+<li>Shortcuts runs the <code>Check In</code> script, in which&hellip;</li>
+<li>A pre-configured POST request gets sent, thus completing the required survey for the day.</li>
+</ol>
+<h2 id="nope">Nope</h2>
+<p>Unfortunately, the &ldquo;success&rdquo; screen that&rsquo;s shown when completing the survey is a visual queue to school staff - silently completing the survey with the correct responses wasn&rsquo;t enough. That meant we needed a more formal scraping operation, one that could render/capture images.</p>
+<h2 id="nextjs--puppeteer">NextJS + Puppeteer</h2>
+<p>I&rsquo;ve been on a NextJS kick, and I&rsquo;m a sucker for easy deploys with Vercel, so I spun up a NextJS app using their CLI. If you create a <code>/api</code> directory inside the <code>pages/</code> directory that NextJS scaffolds for you, you can create a series of endpoints that will operate like serverless functions on build. So, <code>pages/api/hello.js</code> becomes an endpoint at <code>whatever.com/api/hello</code>.</p>
+<h2 id="putting-it-all-together">Putting it all together</h2>
+<p>I walked through the quiz once, and kept any eye out for any key values sent in the requests: cookies, JWT tokens, etc.</p>
+<p>As it happens, a cookie value was all that was needed; I saved it in an <code>.env</code> file.</p>
+<p>I created a simple endpoint that listens for GET requests at <code>/api/checkin</code>. When hit, the script will spin up <a href="https://github.com/puppeteer/puppeteer">Puppeteer</a> with <a href="https://www.npmjs.com/package/chrome-aws-lambda">AWS Chrome Lambda</a>, a pared-down version of Chromium that&rsquo;s optimized for headless operation.</p>
+<p>The script instantiates a browser object, which in turn lets us instantiate a page, which we can configure to simulate the device parameters for an iPhone X (user-agent, device dimensions, etc). The iPhone X was chosen, since the final screenshot that is shown to staff would be shown on a mobile device.</p>
+<p>The script then actually visits the health screening page, sending along the authentication cookie that we pull from the <code>.env</code> file.</p>
+<p>A simple array of CSS selectors allows the script to progressively find and <code>page.click()</code> the options for each question correctly: &ldquo;No, I do not have any symptoms&rdquo;, etc. The page has some fade-in animations, so we use <code>page.waitFor(selector, {visible: true})</code> to ensure that the item is within the viewport before attempting a click. The <code>visible</code> attribute is relative to visibility <em>within the viewport</em>, not on the page, so adding a few <code>page.scrollY()</code> calls lets us scroll down as we fill out the survey. Simple and effective.</p>
+<p>Upon hitting <code>submit</code>, we add a simple delay, then do two things:</p>
+<ul>
+<li>Look for an <code>h1.success</code> and grab its <code>textContent</code> as a way to add some semantics to our success message, and&hellip;</li>
+<li>Take a <code>page.screenshot()</code>, and encode the image as a base64-encoded string, which gets sent back as a response.</li>
+</ul>
+<h2 id="the-shortcut-itself">The Shortcut itself:</h2>
+<ol>
+<li>Find <code>All Photos</code> where <code>Album</code> is <code>VERIFICATION</code></li>
+<li>Delete <code>Photos</code></li>
+<li>Get contents of <code>http://192.168.[YOUR_STATIC_IP]/api/checkin</code></li>
+<li>Get dictionary from <code>Contents of URL</code></li>
+<li>Get dictionary from <code>data</code> (the previous step)</li>
+<li>Get <code>Value</code> for <code>confirmation</code> in <code>Dictionary</code> (the value of the <code>h1.success</code>&rsquo;s  <code>textContent</code>)</li>
+<li>Set variable <code>Confirmation</code> to <code>Dictionary Value</code></li>
+<li>Decode <code>Dictionary Value</code> (from step 4) with base64</li>
+<li>Save <code>Base64 Encoded</code> to <code>VERIFICATION</code> (the photo album name)</li>
+<li>If <code>Dictionary Value</code> has any value
+<ol>
+<li>Show Notification from <code>Confirmation</code> (from Step 7)</li>
+<li>Otherwise: <code>Show Notification: &quot;Something went wrong.&quot;</code></li>
+</ol>
+</li>
+<li>Find <code>All Photos</code> where <code>Album</code> is <code>VERIFICATION</code>
+<ol>
+<li>Limit
+<ol>
+<li>Get 1 Photo</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Show <code>Photos</code> (from Step 11)</li>
+</ol>
+<h2 id="subpar-ux-">Subpar UX 🤷</h2>
+<p>While all of this is happening, the user is simply shown a spinning pinwheel - not the best, but also not too bad considering the time saved. On successful operation, the iOS Shortcut script fires a notification containing the <code>textContent</code> we grabbed earlier.</p>
+<p>Shortcuts also, surprisingly, has an &ldquo;action&rdquo; for decoding base64-encoded strings - by piping the encoded screenshot image we grabbed earlier into this action, and then &ldquo;creating a new image&rdquo; from the resulting decoded string, we can construct an actual image and save it to the user&rsquo;s phone.</p>
+<p>To eliminate the need to constantly clear out these verification images, we can create dedicated album for these images, (e.g. <code>VERIFICATION</code>), and then delete all photos from that album at the very start of each script.</p>
+<h2 id="deployment">Deployment</h2>
+<p>Deployment on Vercel didn&rsquo;t pan out as effortlessly as I&rsquo;d hoped - Vercel understandably has <a href="https://vercel.com/docs/concepts/limits/overview#general-limits">timeouts</a> for the serverless functions. Running the script ten times, the average time for the script to complete was right around this limit, causing intermittent failures.</p>
+<h2 id="raspberry-pi-and-compromises-to-the-rescue">Raspberry Pi (and compromises) to the Rescue</h2>
+<p>This script would always just be run from home, meaning this endpoint didn&rsquo;t <em>need</em> to be publicly deployed. Simply building the NextJS app and running the production build on a port on a Raspberry Pi, then reconfiguring the shortcut script to hit the local IP, worked fine.</p>
+<h2 id="optimization">Optimization</h2>
+<p>Any additional overhead introduced by NextJS can probably be side-stepped by porting to a simple Express server, but I suspect it wouldn&rsquo;t amount to that much. Although we didn&rsquo;t benefit from it much, the NextJS architecture may prove to be useful in other ways, so porting away from it seems a hair immature as well. Eventually, manually deploying NextJS to some cheap DigitalOcean droplet would probably be ideal, allowing us to run the script from anywhere, reconfigure timeout durations, and giving us an infrastructure that could house other additional endpoints.</p>
+<h2 id="learnings">Learnings</h2>
+<p>This combination of iOS Shortcuts with our own arbitrary back-end is formidable, but in a way that feels fun and scrappy. Shortcuts offers us a way to vocally issue POST requests (which can be customized on a per-invocation basis) to arbitrary endpoints and process responses.</p>
+<p>This opens a ton of doors:</p>
+<ul>
+<li>scraping Meh.com for the deal of the day</li>
+<li>automating a daily entry into those social media giveaways that require checking in</li>
+<li>save data in our own database</li>
+<li>run reports on those data sets</li>
+<li>i&rsquo;m just naming examples of everything a back-end can do so I&rsquo;ll stop here</li>
+</ul>
+<h2 id="try-it-out-">Try it out 😎</h2>
+<hr>
+
+    <a class="btn btn--accent" href="../../posts">View All Posts</a>
+  </div>
+
+</div>
+
+
+<footer class="footer">
+
+  
+
+  <div class="footer__right">
+    🔥
+  </div>
+</footer>
+
+
+<script src="https://use.typekit.net/ygu2dtx.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script type="text/javascript" src="../../js/app.js"></script>  
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
