@@ -5,7 +5,7 @@ ogdescription = "Automation with Shortcuts on iOS"
 slug = "ios-shortcuts-automation"
 +++
 
-# Yo, iOS Shortcuts is pretty cool
+# Automation with iOS Shortcuts
 
 I never really got into Automator, the long-lived macOS scripting utility. I assumed Shortcuts would be similar to Automator - lots of theoretical potential, but nothing that yielded a net value in that equation of **Time Spent Automating** vs **Time Saved From The Automation**. Not for my use-cases anyway.
 
