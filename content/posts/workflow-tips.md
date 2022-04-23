@@ -3,6 +3,7 @@ title = "Developer Workflow Tips"
 date = "2020-01-24T12:28:17-05:00"
 ogdescription = "SUPER CHARGED DEV WORKFLOW TIPS"
 series = "tooling101"
+summary = "The list of workflow tips I wish I had when I started. Indefinitely a WIP."
 +++
 
 # Tips & Tricks for Developer Efficiency (Indefinitely a WIP)
@@ -10,6 +11,9 @@ series = "tooling101"
 This is a tl;dr of legitimate tricks that I wish I knew years ago.
 
 For context, I work with VS Code on Mac.
+
+## General
+- Learn Vim. 
 
 ## macOS Tips
 - Use BetterTouchTool. I have three trackpad gestures I use a million times a day:

@@ -6,7 +6,7 @@ const els = [document.body, hero, button]
 
 const fills = document.querySelectorAll('.fill')
 
-function colorizeAll() {
+export function colorizeAll() {
   const c = randomColor()
   const c2 = randomColor()
   document.body.style.background = `linear-gradient(to bottom right, ${c}, ${c2})`

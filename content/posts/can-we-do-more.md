@@ -6,8 +6,6 @@ ogdescription = "A recalibration of an engineer's priorities and perspective."
 series = ""
 +++
 
-## Toddlers in Porsches with Plasma Weapons
- 
 In this one TED talk, Malcolm Gladwell told a story about how the U.S. military once spent $3 billion dollars developing a "scope" (as in, _a telescopic sight for a weapon_) for planes to attack their targets with terrifying accuracy. When it worked, it was considered revolutionary. The so-called **Norden Bombsight** made it possible to "drop bombs into a pickle barrel from 20,000 feet." God-like accuracy for the time. 
 
 However - Gladwell later laments that regardless of the US Military's newfound technical capability, it led to little actual progress because:

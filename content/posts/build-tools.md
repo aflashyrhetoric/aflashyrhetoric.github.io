@@ -4,6 +4,8 @@ date = "2017-05-24T18:35:19-04:00"
 title = "Tooling 101: Build Tools"
 series = "tooling101"
 ogdescription = "Grunt, Gulp, Webpack"
+summary = "An overview of front-end build tools."
+draft = true
 +++
 
 # Build Tools: A Hasty Overview

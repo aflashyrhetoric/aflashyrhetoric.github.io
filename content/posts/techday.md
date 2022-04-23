@@ -1,8 +1,9 @@
 +++
 title = "Tech Day 2017"
+summary = "I recently attended Tech Day 2017. (...) Soon, I ditched the elevator pitch I had prepared almost immediately and just simply began to have earnest conversations with them about their current tools and processes. It was awesome."
 +++
 
-Today, I got the awesome opportunity to represent one of [Nulab](https://nulab-inc.com)'s apps, Typetalk.
+I recently had the opportunity to represent one of [Nulab](https://nulab-inc.com)'s apps, Typetalk.
 
 I donned my Nulab tee and hoodie, strapped on the goldenrod "Tech Day Exhibitor" bracelet, and walked into the sprawling space. At first, I saw the big names - AWS, American Airlines, Vimeo. I continued to the rear end of the space, where we had a table. Japanese candies, t-shirts & totes, business cards, iPads, Macbook Pros with our apps on full-screen - we're ready.
 

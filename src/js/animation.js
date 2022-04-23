@@ -1,5 +1,6 @@
 import anime from 'animejs/lib/anime.es.js'
-import { randomColor } from './colorize'
+
+import { colorizeAll, randomColor } from './colorize'
 
 const headings = [
   document.querySelector('.upper-text__header'),
@@ -9,11 +10,15 @@ const heroRef = document.querySelector('.upper-text__wrapper')
 const c = randomColor()
 
 document.addEventListener('DOMContentLoaded', function(event) {
-  anime({
-    targets: '.section__container',
+  const shared = {
     translateY: [-30, 0],
     opacity: [0, 1],
-    duration: 1000,
+    duration: 300,
+    easing: 'spring',
+  }
+  anime({
+    ...shared,
+    targets: '.section__container',
     delay: anime.stagger(100, {
       from: 'first',
     }),
@@ -22,21 +27,17 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   anime({
     targets: '.navbar__list-link',
-    translateY: [-30, 0],
-    opacity: [0, 1],
-    duration: 1000,
-    delay: anime.stagger(100, {
+    ...shared,
+    delay: anime.stagger(50, {
       from: 'first',
     }),
     // increase delay by 100ms for each elements.
   })
 
   anime({
-    targets: '.project-box__list-item',
-    translateY: [-30, 0],
-    opacity: [0, 1],
-    duration: 1000,
-    delay: anime.stagger(100, {
+    targets: '.project-box__list-post',
+    ...shared,
+    delay: anime.stagger(50, {
       from: 'first',
     }),
     // increase delay by 100ms for each elements.

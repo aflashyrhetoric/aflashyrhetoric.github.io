@@ -1,8 +1,10 @@
 +++
-title = "Coding Is Not That Hard"
+title = "\"Coding Is Too Hard\""
 +++
 
 Within the past two years, about a dozen people told me they’re extremely interested in learning how to code. Today, _none_ of them are programmers, developers, or even hobby coders. Most of them, as far as I know, have never even opened a text editor.
+
+<!--more-->
 
 The conversation always goes the same way. They want to learn, they have ideas, but it’s all _too hard_. One of my more determined friends — an art major — admired the idea of focusing on a single project all day, but he would routinely shudder at the sight of actual code.
 
@@ -10,9 +12,7 @@ In his words: “That crazy $%@! just makes me…just…ugh dude.” He clutched
 
 I want to explore the reason they gave for not learning — that _it’s too hard_.
 
-To be clear: I’m not going to try and say that coding is a walk in the park. A newbie cannot manage Facebook’s back-end systems. Obviously. Every programmer I know, myself included, worked very hard to untangle and understand the abstract concepts of programming, computer science, and development. Coding is most certainly _not easy_.
-
-**But it’s probably easier than you think**. And that’s what important.
+To be clear: I’m not going to try and say that coding is a walk in the park. It's not something you pick up on a weekend. Coding is most certainly _not easy_. **But getting started is easier than you may think**. And that’s what important.
 
 ### True Story Time!
 
@@ -34,13 +34,11 @@ He didn’t immediately understand how words on a screen (that is, how _code_) c
 
 I stepped through some more examples with him. An hour later, we were talking about puzzles, loops, and simple algorithms.
 
-And that’s when I realized. When non-coders see code, they see the text itself, not the ideas that drive the text. (It’s an obvious realization in hindsight, but yeah.) And in so doing, they miss out on everything: the elegance of the concepts, the fun of building something from scratch, the raw ingenuity of it all.
+When non-coders see code, they see the intimidating syntax-highlighted wall of text itself, not the ideas that drive the text. And in so doing, they miss out on everything: the elegance of the concepts, the fun of building something from scratch, the ingenuity of it all. These are qualities that most every thoughtful person has an appreciation for.
 
-These are qualities that everyone has an appreciation for, not just some rare breed of human known as a _programmer._
+Here’s my goal with this post.
 
-Here’s my goal with this post:
-
-To make non-programmers realize that they _already understand, intuitively, many of the basics of programming_. I’m going to give you extremely basic introductions to four essential concepts in programming: **syntax, variables, control flow/conditionals, and algorithms**. My guess is: you won’t struggle at all to understand them.
+To make non-programmers (and any interested early-career devs with impostor syndrome or doubts) realize that they _already understand, intuitively, many of the basics of programming_. I’m going to give you extremely basic introductions to four essential concepts in programming: **syntax, variables, control flow/conditionals, and algorithms**. My guess is: you won’t struggle at all to understand them.
 
 #### 1. Syntax
 
@@ -52,11 +50,11 @@ Just like we expect certain patterns of speech, so do computers — the only
 
 #### 2. Variables
 
-You’re moving to LA to pursue a rapping career. Good on you. You’ve got stuff to pack, and different things have to go in different boxes. You use labels to help keep your junk organized.
+You’re moving to LA to pursue an acting career. Good on you. You’ve got stuff to pack, and different things have to go in different boxes. You use labels to help keep your junk organized.
 
-**How It Relates To Code**: A code variable is like the label on a box. Since you can use a box to store anything (clothes, headphones, cats, etc), labels help you know what’s inside the box without having to open it up.
+**How It Relates To Code**: In code, we have something called a "variable." And a variable is like the label on a box. Since you can use a box to store anything (clothes, headphones, cats, etc), labels help you know what’s inside the box without having to open it up.
 
-Computers do the same thing — they use a system of “boxes and labels” to store data. (This is a simplification, obviously.)
+Computers do the same thing — they use a system of “boxes and labels” to store, process and retrieve data.
 
 #### 3. Control Flow & Conditionals
 
@@ -76,14 +74,14 @@ You’ve probably heard this word from some movie as part of a techno-babble spe
 #### Your Morning Preparation Algorithm, probably:
 
 1.  Wake up.
-2.  Is it a week day? If so, continue to Step 3\. If not, go back to sleep.
+2.  Is it a school/work day? If so, continue to Step 3\. If not, go back to sleep.
 3.  Go to the bathroom.
 4.  Wash your face.
 5.  Do you drink coffee? If so, proceed to Step 6\. If not, skip to Step 7.
 6.  Do you have coffee? If so, make coffee. If not - tough luck - proceed to Step 7.
 7.  Are you on a diet? If so, get an apple. If not, bust out three poptarts.
 8.  Eat whatever you created in Step 7.
-9.  Go to work.
+9.  Go to work or school.
 
 This is an algorithm in plain English. It’s a single set of steps, but it’ll yield different results on different days and for different people. It may also utilize variables.
 

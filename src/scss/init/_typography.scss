@@ -41,13 +41,13 @@ h6 {
 
 p {
   @include setFontBody;
-  @include fz(18);
+  @include fz(20);
   line-height: 28px;
 }
 
 li {
-  @include fz(18);
-  line-height: 28px;
+  @include fz(20);
+  line-height: 30px;
 }
 
 // Lists

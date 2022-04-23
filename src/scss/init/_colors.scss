@@ -10,8 +10,9 @@ $darkgray: lighten($black, 5);
 
 $teal: #befeff;
 $purple: #54004f;
-$darkteal: darken($purple, 2);
-$lightteal: lighten($purple, 1);
+$darkteal: darken($teal, 2);
+$darkpurple: darken($purple, 2);
+$lightteal: lighten($teal, 1);
 
 $link-color: $purple;
-$link-hover-color: darken($purple, 10);
+$link-hover-color: darken($link-color, 10);

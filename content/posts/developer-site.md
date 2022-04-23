@@ -3,6 +3,7 @@ date = "2017-04-27T18:04:36-04:00"
 title = "string parsing & data extraction"
 slug = "developer-site"
 ogdescription = "Using NodeJS, fs, and regular expressions to parse long-form data for use in Hugo, a static site generator."
+summary = "A recent project required converting a many-thousand-line document written in a proprietary syntax to Markdown. This is a peek at the messiness that ensued."
 +++
 
 ### Summary 

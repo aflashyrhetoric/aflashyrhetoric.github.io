@@ -3,9 +3,8 @@ title = "Automation with Shortcuts on iOS"
 date = "2021-06-25T17:00:21-05:00"
 ogdescription = "Automation with Shortcuts on iOS"
 slug = "ios-shortcuts-automation"
+summary = "Shortcuts lets you automate stuff easily. I used it to build a COVID-19 health screening check in automation with Raspberry Pi back-end running Puppeteer. Fun stuff."
 +++
-
-# Automation with iOS Shortcuts
 
 I never really got into Automator, the long-lived macOS scripting utility. I assumed Shortcuts would be similar to Automator - lots of theoretical potential, but nothing that yielded a net value in that equation of **Time Spent Automating** vs **Time Saved From The Automation**. Not for my use-cases anyway.
 

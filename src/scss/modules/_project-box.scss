@@ -31,22 +31,29 @@
   }
 
   &__list-post {
-    margin-left: 0;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
     list-style-type: none;
-    text-transform: lowercase;
+    // text-transform: lowercase;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 1rem;
     @include setFontBody;
 
     a {
       display: block;
       width: 100%;
-      color: $black;
+      color: #2b2b2b;
       text-decoration: none;
-      padding: 1rem;
       transition: padding 0.2s ease;
-      font-size: 22px;
+      font-size: 24px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
       &:hover {
-        color: $purple;
-        padding-left: 1.5rem;
+        padding-left: 10px;
+        cursor: pointer;
+        font-style: italic;
       }
     }
     &:first-child {
@@ -58,19 +65,20 @@
           font-style: italic;
           position: absolute;
           font-size: 14px;
-          top: 14px;
+          top: 20px;
           right: -60px;
-          color: darken($gray, 25);
+          color: darken($gray, 45);
           pointer-events: none;
         }
       }
     }
 
     &:hover {
-      background-color: $purple;
-      a {
-        color: $white;
-      }
+      box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.05);
+      // background-color: $purple;
+      // a {
+      //   color: $white;
+      // }
     }
   }
 

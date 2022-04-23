@@ -3,6 +3,7 @@ date = "2017-05-05T18:03:19-04:00"
 title = "Learning Persistence"
 ogdescription = "A messy, unglamorous example of persistence"
 slug = "persistence"
+summary = "I pause the Javascript tutorial I'm watching, then I close the tab. ES6 can wait until tomorrow - it's just a hobby anyway."
 +++
 
 ### June 1st, 2015, 6pm
