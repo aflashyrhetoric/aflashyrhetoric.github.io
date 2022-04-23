@@ -19,6 +19,7 @@ a {
 body {
   overflow-x: hidden;
   position: relative;
+  min-height: calc(100vh - 32px);
   padding-bottom: 2rem;
   text-size-adjust: 100%;
   color: $black;

@@ -3,26 +3,29 @@
 <!-- Include head tag manually -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <title>{{ .Title }}</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <title>{{ .Title }}</title>
+  </head>
 
-{{ partial "modules/header-dev" . }}
+  {{ partial "modules/header-dev" . }}
 
+  <div class="section__container">
+    <div class="section__inner -wide">
+      {{/*
+      <div class="section__label -post">
+        <h2 class="section__label-text">bio</h2>
+      </div>
+      */}}
 
-<div class="section__container">
-  <div class="section__inner -wide">
-    {{/*  <div class="section__label -post">
-      <h2 class="section__label-text">bio</h2>
-    </div>  */}}
-
-    <div class="section__content">
-      {{ .Content }}
+      <div class="section__content">
+        <h2>BIO</h2>
+        {{ .Content }}
+      </div>
     </div>
   </div>
-</div>
 
-{{ partial "modules/footer-dev" }}
+  {{ partial "modules/footer-dev" }}
+</html>
