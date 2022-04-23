@@ -26,7 +26,7 @@
     <ul class="navbar__list
       
     ">
-      <li class="navbar__list-item"><a href="../../" class="navbar__list-link">home</a></li>
+      
       <li class="navbar__list-item"><a href="../../about" class="navbar__list-link">about</a></li>
       
       <li class="navbar__list-item"><a href="../../projects" class="navbar__list-link">projects</a></li>
@@ -99,13 +99,13 @@
 </tbody>
 </table>
 <p>First things, I had to import some libraries to help me.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>);
 <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;path&#39;</span>);
 <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">chalk</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;chalk&#39;</span>);
 <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">readline</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;readline&#39;</span>);
 </code></pre></div><p><code>fs</code> to manage files. <code>path</code> for managing file paths easily. <code>chalk</code> allows for colorized messages in the terminal which can improve readability and aid in debugging. <code>readline</code> allows us to a read a file line-by-line.</p>
 <p>Now, for those regular expression <code>replace</code>ments:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/\*/g</span>, <span style="color:#e6db74">&#39;#&#39;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/\*/g</span>, <span style="color:#e6db74">&#39;#&#39;</span>);
 
 <span style="color:#75715e">// Convert {code} to ``
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/({code})/g</span>, <span style="color:#e6db74">&#39;```&#39;</span>);
@@ -119,15 +119,15 @@
 <h3 id="2-reviewing-front-matter">2. Reviewing Front-Matter</h3>
 <p>Front-Matter is a way to include metadata in a Markdown file by having a little bit of <code>yaml</code>, <code>json</code>, or <code>toml</code> at the top of the file.</p>
 <p>Here&rsquo;s an example in <code>TOML</code>, which is Hugo&rsquo;s default:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TOML" data-lang="TOML"><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Hello World&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TOML" data-lang="TOML"><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Hello World&#34;</span>
 <span style="color:#a6e22e">author</span> = <span style="color:#e6db74">&#34;Kevin Oh&#34;</span>
 </code></pre></div><p>and the same in <code>JSON</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
  <span style="color:#f92672">&#34;title&#34;</span> : <span style="color:#e6db74">&#34;Hello World!&#34;</span>,
  <span style="color:#f92672">&#34;author&#34;</span> : <span style="color:#e6db74">&#34;Kevin Oh&#34;</span>
 }
 </code></pre></div><p>If we were going to use Hugo for our site, it meant we needed to convert all of our content to Markdown files, and populate each file with metadata relevant to that particular section. For example, let&rsquo;s say we want to create an API reference page for <code>someFancyAPIAction</code>. We would need to create a Markdown file with some title, <code>some-fancy-api-action.md</code>, with content like so:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#960050;background-color:#1e0010">+++</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#960050;background-color:#1e0010">+++</span>
 <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Some Fancy API Action&#34;</span>
 <span style="color:#a6e22e">app</span> = <span style="color:#e6db74">&#34;AwesomeApp&#34;</span>
 <span style="color:#960050;background-color:#1e0010">+++</span>
@@ -166,8 +166,8 @@
 <h4 id="lets-save-it-all">Let&rsquo;s save it all.</h4>
 <p>Finally, once more using the <code>fs</code> module, I saved each file in the correct place.</p>
 <p>Some pages were top-level pages, others were nested. URL remapping was done with a simple configuration JSON object, which was stored locally and pulled in using <code>require</code>. Something like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#960050;background-color:#1e0010">//</span> <span style="color:#960050;background-color:#1e0010">config.js</span>
-{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#75715e">// config.js
+</span><span style="color:#75715e"></span>{
   <span style="color:#f92672">&#34;topLevelPages&#34;</span>: [
     <span style="color:#e6db74">&#34;home&#34;</span>,
     <span style="color:#e6db74">&#34;getting-started&#34;</span>,
@@ -179,7 +179,7 @@
     <span style="color:#f92672">&#34;oauth-20&#34;</span> : <span style="color:#e6db74">&#34;/docs/backlog/api/2/oauth2&#34;</span>
   }
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// mainscript.js
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// mainscript.js
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">config</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./config&#39;</span>);
 <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">topLevelPages</span>.<span style="color:#a6e22e">contains</span>(<span style="color:#a6e22e">somePageID</span>)) {
   <span style="color:#75715e">// url remapping logic

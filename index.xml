@@ -12,8 +12,7 @@
       <pubDate>Fri, 25 Jun 2021 17:00:21 -0500</pubDate>
       
       <guid>/posts/ios-shortcuts-automation/</guid>
-      <description>Yo, iOS Shortcuts is pretty cool I never really got into Automator, the long-lived macOS scripting utility. I assumed Shortcuts would be similar to Automator - lots of theoretical potential, but nothing that yielded a net value in that equation of Time Spent Automating vs Time Saved From The Automation. Not for my use-cases anyway.
-But Shortcuts has a unique benefit over Automator. You can trigger scripts with Hey Siri! Easily, I mean.</description>
+      <description>Shortcuts lets you automate stuff easily. I used it to build a COVID-19 health screening check in automation with Raspberry Pi back-end running Puppeteer. Fun stuff.</description>
     </item>
     
     <item>
@@ -22,7 +21,8 @@ But Shortcuts has a unique benefit over Automator. You can trigger scripts with 
       <pubDate>Thu, 25 Jun 2020 17:00:21 -0500</pubDate>
       
       <guid>/posts/toddlers-in-porsches/</guid>
-      <description>Toddlers in Porsches with Plasma Weapons In this one TED talk, Malcolm Gladwell told a story about how the U.S. military once spent $3 billion dollars developing a &amp;ldquo;scope&amp;rdquo; (as in, a telescopic sight for a weapon) for planes to attack their targets with terrifying accuracy. When it worked, it was considered revolutionary. The so-called Norden Bombsight made it possible to &amp;ldquo;drop bombs into a pickle barrel from 20,000 feet.&amp;rdquo; God-like accuracy for the time.</description>
+      <description>In this one TED talk, Malcolm Gladwell told a story about how the U.S. military once spent $3 billion dollars developing a &amp;ldquo;scope&amp;rdquo; (as in, a telescopic sight for a weapon) for planes to attack their targets with terrifying accuracy. When it worked, it was considered revolutionary. The so-called Norden Bombsight made it possible to &amp;ldquo;drop bombs into a pickle barrel from 20,000 feet.&amp;rdquo; God-like accuracy for the time.
+However - Gladwell later laments that regardless of the US Military&amp;rsquo;s newfound technical capability, it led to little actual progress because:</description>
     </item>
     
     <item>
@@ -31,20 +31,7 @@ But Shortcuts has a unique benefit over Automator. You can trigger scripts with 
       <pubDate>Fri, 24 Jan 2020 12:28:17 -0500</pubDate>
       
       <guid>/posts/workflow-tips/</guid>
-      <description>Tips &amp;amp; Tricks for Developer Efficiency (Indefinitely a WIP) This is a tl;dr of legitimate tricks that I wish I knew years ago.
-For context, I work with VS Code on Mac.
-macOS Tips  Use BetterTouchTool. I have three trackpad gestures I use a million times a day:  3-finger swipe up: Maximizes current window (not fullscreen) 3-finger swipe left: Moves window to left half of screen 3-finger swipe right: Moves window to right half of screen   CMD+``` switches between windows of the same app.</description>
-    </item>
-    
-    <item>
-      <title>Tooling 101: Build Tools</title>
-      <link>/posts/build-tools/</link>
-      <pubDate>Wed, 24 May 2017 18:35:19 -0400</pubDate>
-      
-      <guid>/posts/build-tools/</guid>
-      <description>Build Tools: A Hasty Overview Front-end build tools allow us to transpile, bundle, and optimize assets in various ways.
-Now, technically, webpack is a module bundler and doesn&amp;rsquo;t quite fit in with Gulp and Grunt, which are &amp;ldquo;task runners,&amp;rdquo; but since there is great overlap in the functionality offered by each tool, I&amp;rsquo;ll just refer to them all collectively as &amp;ldquo;build tools.&amp;rdquo;
-Grunt came first - let&amp;rsquo;s start with that.</description>
+      <description>The list of workflow tips I wish I had when I started. Indefinitely a WIP.</description>
     </item>
     
     <item>
@@ -53,8 +40,7 @@ Grunt came first - let&amp;rsquo;s start with that.</description>
       <pubDate>Fri, 05 May 2017 18:03:19 -0400</pubDate>
       
       <guid>/posts/persistence/</guid>
-      <description>June 1st, 2015, 6pm I pause the Javascript tutorial I&amp;rsquo;m watching, then I close the tab. ES6 can wait until tomorrow - it&amp;rsquo;s just a hobby anyway.
-I glance at the thirty-something Chrome tabs I have open and just now notice the whirring fan, the heat emanating off the keyboard. I click OneTab to save them all and watch as they disappear, one-by-one, as fast as Chrome&amp;rsquo;s speedy little brain can manage.</description>
+      <description>I pause the Javascript tutorial I&amp;rsquo;m watching, then I close the tab. ES6 can wait until tomorrow - it&amp;rsquo;s just a hobby anyway.</description>
     </item>
     
     <item>
@@ -63,30 +49,16 @@ I glance at the thirty-something Chrome tabs I have open and just now notice the
       <pubDate>Thu, 27 Apr 2017 18:04:36 -0400</pubDate>
       
       <guid>/posts/developer-site/</guid>
-      <description>Summary My latest project at Nulab was to migrate over the old Developer Website (containing API documentation, mostly) from Drupal to something new. The old site had become somewhat clumsy to manage, and we needed a new solution.
-After initially considering WordPress, we ultimately landed on Hugo, a static site generator (SSG) written in Go. An SSG was perfect for our use-case. But migrating the data was non-trivial. But first things first&amp;hellip;</description>
+      <description>A recent project required converting a many-thousand-line document written in a proprietary syntax to Markdown. This is a peek at the messiness that ensued.</description>
     </item>
     
     <item>
-      <title>Tooling 101: Package Managers</title>
-      <link>/posts/package-managers/</link>
-      <pubDate>Mon, 17 Apr 2017 18:42:48 -0400</pubDate>
+      <title>&#34;Coding Is Too Hard&#34;</title>
+      <link>/posts/coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/package-managers/</guid>
-      <description>Zoom back to 2012. I&amp;rsquo;m in my dorm room trying to learn Ruby on Rails. Everything is going smoothly! Rails seems magical - perhaps a bit too much. I try to add a feature or two, and my progress comes to a screeching halt. I&amp;rsquo;m chasing down errors in the terminal with no conception of what&amp;rsquo;s going on.
- What the hell is a &amp;ldquo;gem&amp;rdquo;?!?!?
- And thus, I was introduced to the world of Package Managers.</description>
-    </item>
-    
-    <item>
-      <title>Tooling 101: Introduction</title>
-      <link>/posts/tooling-101/</link>
-      <pubDate>Mon, 10 Apr 2017 21:36:04 -0400</pubDate>
-      
-      <guid>/posts/tooling-101/</guid>
-      <description>While the barriers to web development are substantially lower than many other fields, there&amp;rsquo;s still a bunch of junk that makes it frustrating for beginners to jump in.
-By &amp;ldquo;obstacles,&amp;rdquo; I don&amp;rsquo;t mean the inherent difficulty in learning a new field, nor the complexity of advanced web development topics. I&amp;rsquo;m referring to the snags that slow progress without benefit.
-For example, consider the act of going for a jog. Running.</description>
+      <guid>/posts/coding/</guid>
+      <description>&lt;p&gt;Within the past two years, about a dozen people told me they’re extremely interested in learning how to code. Today, &lt;em&gt;none&lt;/em&gt; of them are programmers, developers, or even hobby coders. Most of them, as far as I know, have never even opened a text editor.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -107,16 +79,6 @@ The group is beginner-friendly and project-oriented. Currently, some of the memb
       <guid>/projects/blg-cli/</guid>
       <description>Backlog CLI An (unofficial) command line utility for working with Backlog, a tool by Nulab, Inc.
  View on Github  Values  Be easy to &amp;ldquo;plug and play.&amp;rdquo; Provide shortcuts for a subset of your most frequently repeated actions, rather than achieving complete feature parity. In other words, it is designed to be a complement to Backlog, rather than a replacement for it.  Main Features  Quickly create, view, and open pull requests in the browser for your current branch &amp;amp; issue  blg pr create [-b BRANCH_TO_MERGE_TO] blg pr ls blg pr open   View and open your latest notifications  blg n   Quickly access misc links  blg me to list links related to your user account.</description>
-    </item>
-    
-    <item>
-      <title>Coding Is Not That Hard</title>
-      <link>/posts/coding/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/coding/</guid>
-      <description>Within the past two years, about a dozen people told me they’re extremely interested in learning how to code. Today, none of them are programmers, developers, or even hobby coders. Most of them, as far as I know, have never even opened a text editor.
-The conversation always goes the same way. They want to learn, they have ideas, but it’s all too hard. One of my more determined friends — an art major — admired the idea of focusing on a single project all day, but he would routinely shudder at the sight of actual code.</description>
     </item>
     
     <item>
@@ -192,8 +154,7 @@ As their aspersions echo in triplicate,</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/techday/</guid>
-      <description>Today, I got the awesome opportunity to represent one of Nulab&amp;rsquo;s apps, Typetalk.
-I donned my Nulab tee and hoodie, strapped on the goldenrod &amp;ldquo;Tech Day Exhibitor&amp;rdquo; bracelet, and walked into the sprawling space. At first, I saw the big names - AWS, American Airlines, Vimeo. I continued to the rear end of the space, where we had a table. Japanese candies, t-shirts &amp;amp; totes, business cards, iPads, Macbook Pros with our apps on full-screen - we&amp;rsquo;re ready.</description>
+      <description>I recently attended Tech Day 2017. (&amp;hellip;) Soon, I ditched the elevator pitch I had prepared almost immediately and just simply began to have earnest conversations with them about their current tools and processes. It was awesome.</description>
     </item>
     
     <item>
