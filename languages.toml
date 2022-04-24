@@ -1,8 +1,0 @@
-# # Create a "Languages" table
-# [Languages]
-# [Languages.en]
-# title = "Developers Nulab Website"
-# blog_id = 1
-
-# # A nested table for english social media links
-# # [Languages.en.params]

@@ -1,7 +1,0 @@
-baseurl = "/"
-theme = "aflashyrhetoric-theme"
-
-enableEmoji = true
-relativeURLs = true
-
-version=1
