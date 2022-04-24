@@ -27,7 +27,7 @@ echo "*** Adding CNAME"
 cd public
 echo kevinoh.me >> CNAME
 
-echo "*** Updating master branch with new output"
-git add -A && git commit -m "Publishing to master (publish.sh)"
+echo "*** Updating main branch with new output"
+git add -A && git commit -m "Publishing to main (publish.sh)"
 git push
 
