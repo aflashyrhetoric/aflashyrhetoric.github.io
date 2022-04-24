@@ -15,7 +15,7 @@ git worktree prune
 rm -rf .git/worktrees/public/
 
 echo "*** Checking out master branch into public"
-git worktree add -B master public origin/master
+git worktree add -B main public origin/main
 
 echo "*** Removing existing files"
 rm -rf public/*
