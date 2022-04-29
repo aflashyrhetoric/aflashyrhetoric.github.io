@@ -12,7 +12,7 @@ This is a list of current projects that are either planned, in progress, or reti
 
 | Name | Description | Technologies |
 |------|-------------|--------------|
-| Mosu | Mechanical keyboard configurator tool | NextJS / Scrapy / Zyte |
+| Archetype | Product recommendation & Curation. Mechanical keyboard configurator | NextJS / Go / Scrapy / Zyte |
 #### Active Projects
 
 | Name | Description | Technologies | 
@@ -25,7 +25,6 @@ This is a list of current projects that are either planned, in progress, or reti
 |------|-------------|--------------|
 | Sudo.GG | Casual blog with product recommendations, developer tips, and thoughts on tech | SquareSpace |
 | Aria | A platform to help teachers and educators manage their caseload and generate reports efficiently | NextJS / Go |
-| Archetype | Build and track your own personal desk setups | NextJS / Go |
 
 
 #### Completed / Sunset Projects
