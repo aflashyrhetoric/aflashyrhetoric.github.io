@@ -45,6 +45,10 @@
       justify-content: flex-end;
       &.-is-home {
         justify-content: space-around;
+        // For list-links on the home-page.
+        .navbar__list-link {
+          opacity: 0;
+        }
       }
     }
   }
@@ -64,7 +68,6 @@
   }
 
   &__list-link {
-    opacity: 0;
     text-decoration: none;
     color: $link-color;
   }
