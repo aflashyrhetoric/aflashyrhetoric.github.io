@@ -11,9 +11,8 @@ const c = randomColor()
 
 document.addEventListener('DOMContentLoaded', function(event) {
   const shared = {
-    translateY: [-30, 0],
+    translateX: [-15, 0],
     opacity: [0, 1],
-    duration: 300,
     easing: 'spring',
   }
   anime({
@@ -28,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   anime({
     targets: '.navbar__list-link',
     ...shared,
-    delay: anime.stagger(50, {
+    delay: anime.stagger(100, {
       from: 'first',
     }),
     // increase delay by 100ms for each elements.
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   anime({
     targets: '.project-box__list-post',
     ...shared,
-    delay: anime.stagger(50, {
+    delay: anime.stagger(80, {
       from: 'first',
     }),
     // increase delay by 100ms for each elements.
@@ -54,26 +53,41 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   const tl = anime.timeline()
 
+  let startingDelay = 0
+  const delay = () => startingDelay + 200
+
   tl.add({
     targets: headings,
     opacity: [0, 1],
-    duration: 500,
-    delay: 200,
+    duration: 100,
+    delay: 250,
   })
     .add(
       {
-        targets: [box.left, box.right],
+        targets: [box.left],
+        translateY: [100, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 1000,
+        delay: delay(),
+      },
+      100,
+    )
+    .add(
+      {
+        targets: [box.right],
         translateY: [-100, 0],
         opacity: [0, 1],
-        duration: 300,
+        easing: 'easeOutExpo',
+        duration: 1000,
+        delay: delay(),
       },
-      400,
+      100,
     )
     .add(
       {
         targets: box.top,
         strokeDashoffset: [anime.setDashoffset, 0],
-        duration: 400,
         opacity: [0, 1],
         easing: 'easeOutExpo',
       },
@@ -84,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         targets: box.bottom,
         strokeDashoffset: [anime.setDashoffset, 0],
         opacity: [0, 1],
-        duration: 400,
+        // duration: 400,
         easing: 'easeOutExpo',
       },
       600,

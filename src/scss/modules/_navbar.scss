@@ -40,7 +40,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    // @include h-p(40);
 
     @include breakpoint(medium) {
       justify-content: flex-end;
@@ -65,8 +64,8 @@
   }
 
   &__list-link {
+    opacity: 0;
     text-decoration: none;
-    font-size: 18px;
     color: $link-color;
   }
 }

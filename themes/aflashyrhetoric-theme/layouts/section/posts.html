@@ -3,31 +3,31 @@
 <!-- Include head tag manually -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <title>Blog</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <title>Blog</title>
+  </head>
 
-{{ partial "modules/header-dev" . }}
-
-<div class="section__container section__container--blog">
-  <div class="section__inner -thin">
-    <div class="section__projects">
-      <ul class="project-box__list">
-        {{ range where .Site.Pages "Section" "posts" }}
-          {{ if ne .Title "posts" }}
+  {{ partial "modules/header-dev" . }}
+  <div style="margin-bottom: 40px;" />
+  <div class="section__container section__container--blog">
+    <div class="section__inner -thin">
+      <div class="section__projects">
+        <ul class="project-box__list">
+          {{ range where .Site.Pages "Section" "posts" }} {{ if ne .Title
+          "posts" }}
           <li class="project-box__list-post">
             <a href="{{ .RelPermalink }}">
               {{ .Title }}
             </a>
           </li>
-          {{ end }}
-        {{ end }}
-      </ul>
+          {{ end }} {{ end }}
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 
-{{ partial "modules/footer-dev" }}
+  {{ partial "modules/footer-dev" }}
+</html>
