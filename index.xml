@@ -8,12 +8,11 @@
     <lastBuildDate>Thu, 05 May 2022 12:54:35 -0400</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Futility</title>
-      <link>/posts/on-futility/</link>
+      <link>/posts/futility/</link>
       <pubDate>Thu, 05 May 2022 12:54:35 -0400</pubDate>
       
-      <guid>/posts/on-futility/</guid>
-      <description>An elderly woman wakes up at 7AM on a brisk Saturday morning. She picks up a bucket of white paint - an impulse buy from a week prior at a local Sherwin-Williams. Grabbing a brush and a tattered rag, she walks to the backyard.
-She lives in the lower level of a duplex, so the backyard is hers. Lining the perimeter is an old fence - rusty streaks snake downward from every unsealed joint and the sight casts a macabre pallor over the space.</description>
+      <guid>/posts/futility/</guid>
+      <description>An elderly woman wakes up at 7AM on a brisk Saturday morning.</description>
     </item>
     
     <item>
@@ -91,6 +90,16 @@ The group is beginner-friendly and project-oriented. Currently, some of the memb
     </item>
     
     <item>
+      <title>Archetype</title>
+      <link>/projects/archetype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/archetype/</guid>
+      <description>All these product curation websites lately are just - &amp;ldquo;Top 10 Products For Working Professionals,&amp;rdquo; without any insight provided as to how those products - and more vitally, their combination - confer real value to its users. Products don&amp;rsquo;t exist in vacuums, they sit next to each other on your workspace.
+Archetype is at once a financial and cultural experiment, built with the intent to stop this thinly-veiled, indiscriminate rehashing of the same hundred-odd products, over and over.</description>
+    </item>
+    
+    <item>
       <title>Backlog CLI</title>
       <link>/projects/blg-cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -115,7 +124,19 @@ The group is beginner-friendly and project-oriented. Currently, some of the memb
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/keys/</guid>
-      <description>Keys: A work-in-progress  Explore and create shareable mechanical keyboard builds using the configurator tool. Get recommendations based on your preferences and use-case  Roadmap  Explore deals Coordinate group-buys  </description>
+      <description>Keys  Explore and create shareable mechanical keyboard builds using the configurator tool. Get recommendations based on your preferences and use-case  In development.
+Also check out archetype, a product curation blog I&amp;rsquo;m working on.
+Roadmap  Explore deals Coordinate group-buys  </description>
+    </item>
+    
+    <item>
+      <title>Lantern</title>
+      <link>/projects/lantern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/lantern/</guid>
+      <description>Checking Meh.com for the product of the day. Checking the availability of an Nvidia GTX 3080 at B&amp;amp;H Photo and a PS5 at Best Buy. Calculating compound interest over y years, with m monthly contributions assuming an s starting amount and r rate - among other factors. A relationship CRM to help me remember key dates and notes without having to labor over Google Calendar event creation.
+Lantern is the result of having to repeat the same manual routines daily for weeks.</description>
     </item>
     
     <item>

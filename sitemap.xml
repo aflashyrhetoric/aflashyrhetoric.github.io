@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/on-futility/</loc>
+    <loc>/posts/futility/</loc>
     <lastmod>2022-05-05T12:54:35-04:00</lastmod>
   </url><url>
     <loc>/</loc>
@@ -37,6 +37,8 @@
   </url><url>
     <loc>/projects/adg/</loc>
   </url><url>
+    <loc>/projects/archetype/</loc>
+  </url><url>
     <loc>/projects/blg-cli/</loc>
   </url><url>
     <loc>/about/</loc>
@@ -46,6 +48,8 @@
     <loc>/posts/design/</loc>
   </url><url>
     <loc>/projects/keys/</loc>
+  </url><url>
+    <loc>/projects/lantern/</loc>
   </url><url>
     <loc>/projects/milton-bros/</loc>
   </url><url>
