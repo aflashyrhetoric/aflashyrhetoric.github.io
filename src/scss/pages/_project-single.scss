@@ -20,6 +20,8 @@
     }
     &__subheading {
       font-style: italic;
+      max-width: 75vw;
+      text-align: center;
       @include fz(24);
       @include setFontLight;
     }

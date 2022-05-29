@@ -1,7 +1,17 @@
 // Navbar.scss
 //===========
 
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
 .navbar {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +38,7 @@
   &__name {
     margin-bottom: 0;
     display: none;
+    font-size: 30px;
     @include breakpoint(medium) {
       display: inline;
     }
@@ -54,10 +65,13 @@
   }
 
   &__list-item {
-    display: inline;
+    display: inline-flex;
+    align-items: center;
     // font-weight: bold;
     padding: 5px;
     font-size: 16px;
+    min-width: 90px;
+
     @include breakpoint(medium) {
       font-size: 22px;
       padding: 0.5rem;
@@ -65,10 +79,18 @@
     @include breakpoint(large) {
       padding: 1rem;
     }
+    cursor: pointer;
   }
 
   &__list-link {
     text-decoration: none;
     color: $link-color;
+    letter-spacing: 1px;
+    transition: letter-spacing 300ms;
+    cursor: pointer;
+    &:hover {
+      font-weight: bold;
+      letter-spacing: 1.9px;
+    }
   }
 }

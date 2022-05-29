@@ -1,5 +1,7 @@
 // page scrawls
 
+$_layout-bp: small;
+
 .page-projects {
   padding-top: 60px;
   @include flex-grid-row($size: 85%);
@@ -41,26 +43,40 @@
     &__right {
       display: flex;
       flex-flow: column nowrap;
-      width: 50%;
+
+      @include bp($_layout-bp) {
+        width: 50%;
+      }
     }
     &__left {
       justify-content: center;
     }
     &__right {
       justify-content: space-between;
+      margin-left: 1rem;
     }
     &__card {
+      box-sizing: border-box;
       position: relative;
       margin-bottom: 2rem;
       width: 80%;
-      height: 325px;
+      border-radius: 10px;
+      // min-height: 505px;
       filter: saturate(0.7);
       transition: filter 180ms;
       background-color: rgb(49, 49, 49);
       color: $white;
 
-      @include breakpoint(xlarge) {
+      @include bp($_layout-bp) {
+        min-height: 325px;
+      }
+
+      @include breakpoint(large) {
         width: 48%;
+      }
+
+      @include breakpoint(xxlarge) {
+        width: 31%;
       }
       img {
         transform: none;
@@ -71,7 +87,7 @@
       }
       &:hover {
         img {
-          transform: translateY(-4px);
+          transform: translateY(-4px) scale(1.1);
         }
         filter: saturate(1);
       }
@@ -80,7 +96,7 @@
       box-sizing: border-box;
 
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: column nowrap;
       justify-content: center;
 
       height: 100%;
@@ -88,6 +104,10 @@
 
       padding: 2rem;
       border-radius: 4px;
+
+      @include bp($_layout-bp) {
+        flex-flow: row nowrap;
+      }
     }
     &__title {
       margin-bottom: 0.8rem;
@@ -99,7 +119,7 @@
     }
     &__description {
       max-width: 420px;
-      @include fz(16);
+      @include fz(20);
     }
     &__learn-more {
       text-align: center;

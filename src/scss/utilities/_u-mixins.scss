@@ -12,6 +12,8 @@ $breakpoints: (
   'lg': 1080px,
   'xlarge': 1400px,
   'xl': 1400px,
+  'xxlarge': 1920px,
+  'xxl': 1920px,
 ) !default;
 
 @mixin bp($breakpoint) {
