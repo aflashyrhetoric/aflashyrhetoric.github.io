@@ -43,7 +43,7 @@ $_layout-bp: small;
       justify-content: space-around;
 
       @include breakpoint(medium) {
-        width: unset;
+        width: 85%;
       }
     }
     &__left,
