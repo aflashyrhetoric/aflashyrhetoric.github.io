@@ -4,8 +4,12 @@ $_layout-bp: small;
 
 .page-projects {
   padding-top: 60px;
-  @include flex-grid-row($size: 85%);
+  @include flex-grid-row($size: 95%);
   @include hma;
+
+  @include bp($_layout-bp) {
+    @include flex-grid-row($size: 100%);
+  }
 
   &__heading-wrapper {
     @include flex-grid-column($columns: 12);
@@ -16,6 +20,9 @@ $_layout-bp: small;
     justify-content: center;
     margin-bottom: 80px;
     p {
+      display: inline-block;
+      width: 80vw;
+      text-align: center;
       font-style: italic;
     }
   }
@@ -59,7 +66,7 @@ $_layout-bp: small;
       box-sizing: border-box;
       position: relative;
       margin-bottom: 2rem;
-      width: 80%;
+      width: 99%;
       border-radius: 10px;
       // min-height: 505px;
       filter: saturate(0.7);
@@ -68,6 +75,7 @@ $_layout-bp: small;
       color: $white;
 
       @include bp($_layout-bp) {
+        width: 80%;
         min-height: 325px;
       }
 
