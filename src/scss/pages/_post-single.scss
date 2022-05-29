@@ -1,7 +1,5 @@
 // Page: Post (single)
 
-$black: #222222;
-
 .page-post-single {
   background-color: $white;
 
@@ -18,6 +16,7 @@ $black: #222222;
 
       color: white;
       // background: linear-gradient(to bottom, $black, darken($purple, 12));
+      // background: linear-gradient(to bottom, #deffd3, #ffcece);
       background: $black;
       border-bottom: 5px solid $purple;
       @include bp(md) {
@@ -36,7 +35,7 @@ $black: #222222;
     &__subheading {
       @include setFontBody;
       text-transform: lowercase;
-      color: lighten($black, 10);
+      color: lighten($black, 25);
     }
 
     &__content-wrapper {

@@ -1,0 +1,8 @@
+name = "archetype"
+filename = "archetype"
+thumbnail = "/img/projects/adg.png"
+thumbnail2 = "/img/projects/adg@2x.png"
+tagline = "attempting to buck the trend of just recommending airpods and calling it avant-garde product curation"
+description = "Born out of a frustration with generic product recommendations, Archetype attempts to curate specialized bundles of products for specific archetypes of users."
+hasCircularLogo = false
+archived = false

@@ -11,6 +11,7 @@ $_label-height: 35px;
     }
     &--blog {
       min-height: 440px;
+      margin: 1rem;
     }
 
     &.-invisible-on-load {
@@ -141,7 +142,9 @@ $_label-height: 35px;
       padding-left: 1rem;
     }
     a {
-      color: $black;
+      color: $purple;
+      font-weight: bold;
+      text-decoration: underline;
       &:hover {
         text-decoration: underline;
       }

@@ -11,23 +11,37 @@
   </head>
 
   {{ partial "modules/header-dev" . }}
-  <div style="margin-bottom: 40px;" />
-  <div class="section__container section__container--blog">
-    <div class="section__inner -thin">
-      <div class="section__projects">
-        <ul class="project-box__list">
-          {{ range where .Site.Pages "Section" "posts" }} {{ if ne .Title
-          "posts" }}
-          <li class="project-box__list-post">
-            <a href="{{ .RelPermalink }}">
-              {{ .Title }}
-            </a>
-          </li>
-          {{ end }} {{ end }}
-        </ul>
+  <div style="margin-bottom: 40px;"></div>
+  <main class="main">
+    <div class="section__container section__container--blog">
+      <div class="section__inner -thin">
+        <h1>blog  {{ ":cat2:" | emojify }}</h1>
+        <span style="display: inline-block; margin-bottom: 20px; font-size: 18px;">i have like a hundred drafts tho so i'm still gonna call myself a prolific writer</span>
+        <div class="section__projects">
+          <ul class="project-box__list">
+            {{ range $el, $val := where .Site.Pages "Section" "posts" }}
+              {{ if
+                ne .Title "posts"
+              }}
+                <li class="project-box__list-post">
+                  <a class="inner-link" href="{{ .RelPermalink }}">
+                    <span class="post-heading" href="{{ .RelPermalink }}">
+                      {{ .Title }}
+                    </span>
+                    <span class="post-excerpt">
+                      <!-- Will use 'summary' if defined in the front matter, otherwise
+                will generate a 70 word summary -->
+                      {{ $val.Summary }}
+                    </span>
+                  </a>
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 
   {{ partial "modules/footer-dev" }}
 </html>

@@ -3,13 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <title>{{ .Title }}</title>
   </head>
 
   {{ partial "modules/header-dev" . }}
+
 
   <div class="page-projects">
     <div class="page-projects__heading-wrapper">
@@ -19,24 +20,75 @@
 
     <div class="project__container">
       {{ range .Site.Data.projects }}
-        <div class="project__card">
-          <div class="project__card-inner">
-            <a class="project__image" href="/projects/{{ .filename }}">
-              <img src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x" 
-                {{if .hasCircularLogo }}
-                  class="-circle-logo" />
-                {{else}}
-                  class="" />
-                {{ end }}
-            </a>
-            <h3 class="project__title">{{ .name }}</h3>
-            <p class="project__description">
-              {{ .description }}
-            </p>
-            <a href="/projects/{{ .filename }}" class="project__learn-more btn btn--primary">Learn More</a>
+        {{ if not .archived }}
+          <div class="project__card">
+            <div class="project__card-inner">
+              <div class="project__left">
+                <a class="project__image" href="/projects/{{ .filename }}">
+                  <img src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x"
+                  {{ if .hasCircularLogo }}
+                    class="-circle-logo" />
+                  {{ else }}
+                    class="" />
+                  {{ end }}
+                </a>
+                <h3 class="project__title">{{ .name }}</h3>
+              </div>
+              <div class="project__right">
+                <p class="project__description">
+                  {{ .description }}
+                </p>
+                <a
+                  href="/projects/{{ .filename }}"
+                  class="project__learn-more btn btn--primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
           </div>
-        </div>
+        {{ end }}
       {{ end }}
+    </div>
+
+    <div style="margin-bottom: 40px"></div>
+    <div class="page-projects__heading-wrapper">
+      <h1 class="page-projects__heading">archived projects</h1>
+      <p>
+        projects that have since been sunset or thrown into an incinerator for
+        crimes against coding conventions
+      </p>
+    </div>
+    <div class="project__container">
+      {{ range .Site.Data.projects }}
+        {{ if .archived }}
+          <div class="project__card">
+            <div class="project__card-inner">
+              <div class="project__left">
+                <a class="project__image" href="/projects/{{ .filename }}">
+                  <img src="{{ .thumbnail }}" srcset="{{ .thumbnail2 }} 2x"
+                  {{ if .hasCircularLogo }}
+                    class="-circle-logo" />
+                  {{ else }}
+                    class="" />
+                  {{ end }}
+                </a>
+                <h3 class="project__title">{{ .name }}</h3>
+              </div>
+              <div class="project__right">
+                <p class="project__description">
+                  {{ .description }}
+                </p>
+                <a
+                  href="/projects/{{ .filename }}"
+                  class="project__learn-more btn btn--primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
   </div>
-</div>  
-{{ partial "modules/footer-dev" . }}
+  {{ partial "modules/footer-dev" . }}
+</html>

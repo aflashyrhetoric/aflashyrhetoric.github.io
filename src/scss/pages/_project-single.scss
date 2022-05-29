@@ -1,7 +1,7 @@
 // page project single
 .page-project-single {
   // Collapse border
-  margin-top: -80px;
+  margin-top: 30px;
   .project-single {
     &__hero {
       display: flex;
@@ -16,6 +16,7 @@
     }
     &__heading {
       font-size: 30px;
+      margin-bottom: 20px;
     }
     &__subheading {
       font-style: italic;
@@ -46,6 +47,9 @@
       border-radius: 4px;
       box-shadow: 0 2px 2px 2px darken(rgba(0, 0, 0, 0.2), 20);
 
+      p:first-child {
+        margin-top: 0;
+      }
       p,
       ul li,
       a {

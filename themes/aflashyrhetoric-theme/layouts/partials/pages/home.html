@@ -1,3 +1,6 @@
+{{ partial "modules/header-dev" . }}
+
+
 <div class="hero__container">
   <div class="hero__inner">
     <div class="hero__right">
@@ -81,52 +84,56 @@
   </div>
 </div>
 
-{{ partial "modules/header-dev" . }}
-
 <div class="section__container -invisible-on-load">
   <div class="section__inner -regular">
     <div class="section__projects">
       <ul class="project-box__list">
         <!-- Iterate over all pages, for which the section is posts -->
-        {{ range $el, $val := where .Site.AllPages "Section" "posts" }} {{ if ne
-        $val.Title "posts" }}
-
-        <!-- skip the first one, because it's a link to all -->
-        <li class="project-box__list-post">
-          <a href="{{ .RelPermalink }}">
-            {{ .Title }}
-          </a>
-          <span>
-            <!-- Will use 'summary' if defined in the front matter, otherwise
+        {{ range $el, $val := where .Site.AllPages "Section" "posts" }}
+          {{ if ne
+            $val.Title "posts"
+          }}
+            <!-- skip the first one, because it's a link to all -->
+            <li class="project-box__list-post">
+              <a class="inner-link" href="{{ .RelPermalink }}">
+                <span class="post-heading" href="{{ .RelPermalink }}">
+                  {{ .Title }}
+                </span>
+                <span class="post-excerpt">
+                  <!-- Will use 'summary' if defined in the front matter, otherwise
             will generate a 70 word summary -->
-            {{ $val.Summary }}
-          </span>
-        </li>
-        {{ end }} {{ end }}
+                  {{ $val.Summary }}
+                </span>
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
       </ul>
     </div>
   </div>
 </div>
 <div class="section__container">
   <div class="section__inner -regular">
-    {{/*
-    <div class="section__label -project-box">
+    {{/* <div class="section__label -project-box">
       <h2 class="section__label-text">projects</h2>
-    </div>
+      </div>
     */}}
+
 
     <div class="section__projects">
       <ul class="project-box__list -projects">
         {{ range .Site.Data.projects }}
-        <li class="project-box__list-item">
-          <a target="_blank" href="/projects/{{ .filename }} ">
-            <img
-              class="project-box__list-image"
-              src="{{ .thumbnail }}"
-              srcset="{{ .thumbnail2 }} 2x"
-            />
-          </a>
-        </li>
+          {{ if not .archived }}
+            <li class="project-box__list-item">
+              <a target="_blank" href="/projects/{{ .filename }} ">
+                <img
+                  class="project-box__list-image"
+                  src="{{ .thumbnail }}"
+                  srcset="{{ .thumbnail2 }} 2x"
+                />
+              </a>
+            </li>
+          {{ end }}
         {{ end }}
       </ul>
     </div>
