@@ -1,6 +1,6 @@
 +++
 slug = "futility"
-title = "Futility"
+title = "On futility"
 date = "2022-05-05T12:54:35-04:00"
 ogdescription = ""
 summary = "An elderly woman wakes up at 7AM on a brisk Saturday morning."
