@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>posts on </title>
+    <link>/posts/</link>
+    <description>Recent content in posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 Apr 2022 17:00:21 -0500</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Soft Skills - Compromising</title>
+      <link>/posts/on-compromise/</link>
+      <pubDate>Mon, 25 Apr 2022 17:00:21 -0500</pubDate>
+      
+      <guid>/posts/on-compromise/</guid>
+      <description>&lt;p&gt;An indiscriminately stubborn engineer is a ceiling for their team&amp;rsquo;s potential.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Automation with Shortcuts on iOS</title>
+      <link>/posts/ios-shortcuts-automation/</link>
+      <pubDate>Fri, 25 Jun 2021 17:00:21 -0500</pubDate>
+      
+      <guid>/posts/ios-shortcuts-automation/</guid>
+      <description>Shortcuts lets you automate stuff easily. I used it to build a COVID-19 health screening check in automation with Raspberry Pi back-end running Puppeteer. Fun stuff.</description>
+    </item>
+    
+    <item>
+      <title>Toddlers in Porsches with Plasma Weapons</title>
+      <link>/posts/toddlers-in-porsches/</link>
+      <pubDate>Thu, 25 Jun 2020 17:00:21 -0500</pubDate>
+      
+      <guid>/posts/toddlers-in-porsches/</guid>
+      <description>In this one TED talk, Malcolm Gladwell told a story about how the U.S. military once spent $3 billion dollars developing a &amp;ldquo;scope&amp;rdquo; (as in, a telescopic sight for a weapon) for planes to attack their targets with terrifying accuracy. When it worked, it was considered revolutionary. The so-called Norden Bombsight made it possible to &amp;ldquo;drop bombs into a pickle barrel from 20,000 feet.&amp;rdquo; God-like accuracy for the time.
+However - Gladwell later laments that regardless of the US Military&amp;rsquo;s newfound technical capability, it led to little actual progress because:</description>
+    </item>
+    
+    <item>
+      <title>Developer Workflow Tips</title>
+      <link>/posts/workflow-tips/</link>
+      <pubDate>Fri, 24 Jan 2020 12:28:17 -0500</pubDate>
+      
+      <guid>/posts/workflow-tips/</guid>
+      <description>The list of workflow tips I wish I had when I started. Indefinitely a WIP.</description>
+    </item>
+    
+    <item>
+      <title>Learning Persistence</title>
+      <link>/posts/persistence/</link>
+      <pubDate>Fri, 05 May 2017 18:03:19 -0400</pubDate>
+      
+      <guid>/posts/persistence/</guid>
+      <description>I pause the Javascript tutorial I&amp;rsquo;m watching, then I close the tab. ES6 can wait until tomorrow - it&amp;rsquo;s just a hobby anyway.</description>
+    </item>
+    
+    <item>
+      <title>string parsing &amp; data extraction</title>
+      <link>/posts/developer-site/</link>
+      <pubDate>Thu, 27 Apr 2017 18:04:36 -0400</pubDate>
+      
+      <guid>/posts/developer-site/</guid>
+      <description>A recent project required converting a many-thousand-line document written in a proprietary syntax to Markdown. This is a peek at the messiness that ensued.</description>
+    </item>
+    
+    <item>
+      <title>&#34;Coding Is Too Hard&#34;</title>
+      <link>/posts/coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/coding/</guid>
+      <description>&lt;p&gt;Within the past two years, about a dozen people told me they’re extremely interested in learning how to code. Today, &lt;em&gt;none&lt;/em&gt; of them are programmers, developers, or even hobby coders. Most of them, as far as I know, have never even opened a text editor.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Good Design Is Not Subjective.</title>
+      <link>/posts/design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/design/</guid>
+      <description>This post was written back when Adelie was openly accepting new inquiries and projects.
+There are times when the difference between two choices is completely lateral — two substitutable alternatives that are equal in importance and consequence. If you’re craving some fruit, it doesn’t matter whether you choose the apple or the orange. In these instances, it’s okay to defer to preference, precedent, or a coin toss. But these cases are the (rare) exception, not the rule.</description>
+    </item>
+    
+    <item>
+      <title>Tech Day 2017</title>
+      <link>/posts/techday/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/techday/</guid>
+      <description>I recently attended Tech Day 2017. (&amp;hellip;) Soon, I ditched the elevator pitch I had prepared almost immediately and just simply began to have earnest conversations with them about their current tools and processes. It was awesome.</description>
+    </item>
+    
+    <item>
+      <title>The Dangers of Blindly Loving Your Tools</title>
+      <link>/posts/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tools/</guid>
+      <description>This post was written back when Adelie was openly accepting new inquiries and projects.
+I once heard two friends arguing. One of them had recently come upon a windfall of cash, and wanted to make a big purchase: an upscale sports car. Upon hearing this, his miserly friend fired back, “you don’t even go places! Don’t buy a Porsche to drive to 711.”
+When I heard this biting exchange, I chuckled.</description>
+    </item>
+    
+    <item>
+      <title>Websites Are Like Pants</title>
+      <link>/posts/websites-are-pants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/websites-are-pants/</guid>
+      <description>This post was written back when Adelie was openly accepting new inquiries and projects.
+In 2005, psychologist Barry Schwartz took the stage at TEDGlobal in Oxford and proposed an idea: that “more is less.” You can watch the full video here, but the core idea is simple. To quote Schwartz, “With so many options to choose from, people find it very difficult to choose at all.” He tells a simple anecdote to that effect: many years ago, when he walked into a clothing store, there were only a few pairs of jeans to choose from.</description>
+    </item>
+    
+  </channel>
+</rss>
