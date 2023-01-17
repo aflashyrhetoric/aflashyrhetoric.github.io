@@ -5,6 +5,7 @@ date = "2022-05-05T12:54:35-04:00"
 ogdescription = ""
 summary = "An elderly woman wakes up at 7AM on a brisk Saturday morning."
 series = ""
+draft = true
 +++
 
 An elderly woman wakes up at 7AM on a brisk Saturday morning. She picks up a bucket of white paint - an impulse buy from a week prior at a local Sherwin-Williams. Grabbing a brush and a tattered rag, she walks to the backyard.
