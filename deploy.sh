@@ -31,3 +31,10 @@ echo "*** Updating main branch with new output"
 git add -A && git commit -m "Publishing to main (publish.sh)"
 git push
 
+
+echo "*** Cleaning build files "
+cd ..
+rm -rf static
+mkdir static
+touch static.gitkeep
+
