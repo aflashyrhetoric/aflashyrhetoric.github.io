@@ -36,5 +36,5 @@ echo "*** Cleaning build files "
 cd ..
 rm -rf static
 mkdir static
-touch static.gitkeep
+touch static/.gitkeep
 
