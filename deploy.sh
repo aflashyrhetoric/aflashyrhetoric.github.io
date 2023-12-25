@@ -34,7 +34,6 @@ git push
 
 echo "*** Cleaning build files "
 cd ..
-rm -rf static
-mkdir static
-touch static/.gitkeep
+git add -A && git commit -m "Post-deploy commit of static files"
+git push
 
