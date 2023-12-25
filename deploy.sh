@@ -21,6 +21,7 @@ echo "*** Removing existing files"
 rm -rf public/*
 
 echo "*** Running yarn build"
+npx tailwindcss -i ./src/input.css -o ./dist/output.css 
 yarn build
 
 echo "*** Adding CNAME"

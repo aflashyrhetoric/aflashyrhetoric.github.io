@@ -6,7 +6,7 @@ date = "2022-04-25T17:00:21-05:00"
 series = "soft skills"
 +++
 
-An indiscriminately stubborn engineer is a ceiling for their team's potential.
+An unjustifiably stubborn engineer is a ceiling for their team's potential.
 
 <!--more-->
 
@@ -40,7 +40,7 @@ Story time. Years ago, I wanted to adopt Prettier with some colleagues. Some wer
 
 But that kinda defeats the whole purpose. We did get some partial benefits, but in order to leverage the order-of-magnitude-increase in value that Prettier offers, it has to be a team-wide effort.
 
-Partial adoption leads to, “hey, this code formatter is handy.” 
+Partial adoption leads to, “hey, this code formatter is handy.”
 
 Full adoption leads to, “wow, we do not have to waste time at all on discussing codestyle during code reviews.”
 
@@ -53,7 +53,7 @@ Use time as a factor in these discussions. Let’s revisit the same scenario abo
 - Engineer A wants to use a new technology, which will require adding 4 NPM dependencies.
 - Engineer B does not want to use it.
 
-In this case, if Engineer A’s proposal does offer some value, how might we use time as a tool? 
+In this case, if Engineer A’s proposal does offer some value, how might we use time as a tool?
 
 **Consider**: Engineer A and B agree to _a trial period_. Engineer A offers to take ownership of the project and get it set up, with the understanding that in `n` weeks, they’ll revisit the tool’s value after taking some metrics:
 
