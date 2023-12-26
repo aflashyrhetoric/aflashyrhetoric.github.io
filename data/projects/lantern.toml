@@ -5,4 +5,4 @@ thumbnail2 = "/img/projects/lantern@2x.png"
 tagline = "a personal dashboard hyper-customized for my own purposes"
 description = "I spent two full months building a hyper-personalized dashboard application for myself so I could save, like, 3 minutes here and there."
 hasCircularLogo = false
-archived = false
+archived = true

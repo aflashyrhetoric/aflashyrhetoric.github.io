@@ -14,6 +14,7 @@ A while ago, I built a Chrome extension called [NightMessenger](/projects/nightm
 On the side, I also help out as a mod over at [**/r/webdev**](https://reddit.com/r/webdev) and [**/r/webdesign**](https://reddit.com/r/webdesign).
 
 ---
+
 ## Q&A
 
 **Whatcha workin on?**
@@ -32,7 +33,7 @@ I've been diving into the deeper end of TypeScript. Post on that Soon. :tm: Or m
 - [**Blender**](https://www.blender.org/), for 3D animations and visuals, with particular interest about potential exports to WebGL/similar
 - [**Godot**](https://godotengine.org/), for **game development**. I recently made an iOS recreation of an old mini-game from the video game Jak 2, and it was far more intuitive than I thought it'd be.
 
-Someday, I'd like to learn more about: TensorFlow & ML, D3, K8, and blob fishes. 
+Someday, I'd like to learn more about: TensorFlow & ML, D3, K8, and blob fishes.
 
 ---
 

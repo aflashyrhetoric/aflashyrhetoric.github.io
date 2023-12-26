@@ -5,53 +5,8 @@
   <div class="hero__inner">
     <div class="hero__right">
       <div class="upper-text__wrapper">
-        <svg
-          height="144"
-          viewBox="0 0 300 144"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g id="hero">
-            <rect id="bg" height="144" />
-            <line
-              id="leftbar"
-              x1="5.5"
-              x2="5.5"
-              y2="144"
-              stroke="#222222"
-              opacity="0"
-              stroke-width="11"
-            />
-            <line
-              id="rightbar"
-              x1="294.5"
-              x2="294.5"
-              y2="144"
-              stroke="#222222"
-              opacity="0"
-              stroke-width="11"
-            />
-            <line
-              id="topbar"
-              y1="5.5"
-              x2="300"
-              y2="5.5"
-              stroke="black"
-              opacity="0"
-              stroke-width="11"
-            />
-            <line
-              id="bottombar"
-              y1="-5.5"
-              x2="300"
-              y2="-5.5"
-              transform="matrix(-1 0 0 1 300 144)"
-              stroke="black"
-              stroke-width="11"
-              opacity="0"
-            />
-          </g>
-        </svg>
+        {{ partial "components/app-logo" . }}
+
 
         <h1 class="upper-text__header">kevin oh</h1>
         <h2 class="upper-text__subheader">> @aflashyrhetoric</h2>
@@ -59,30 +14,10 @@
 
       <div class="lower-text__wrapper">
         <p class="lower-text__text">
-          {{/* @
-            <a
-            style="display: inline;"
-            target="_blank"
-            href="https://www.homelight.com"
-            >homelight</a
-            >
-            <a
-            style="display: inline;"
-            target="_blank"
-            href="https://homelighthomeloans.com"
-            >/ hlhl</a
-            >
-            */}}
-        </p>
-        <p class="lower-text__text">
           software engineer <br />
           <br /><br />
           ex:
-          <a
-            class=" !text-blue-500"
-            target="_blank"
-            href="https://homelighthomeloans.com"
-            >homelight</a
+          <a target="_blank" href="https://homelighthomeloans.com">homelight</a
           >, <a target="_blank" href="https://nulab.com">nulab</a>,
           <a target="_blank" href="https://adelie.co">adelie</a>
         </p>

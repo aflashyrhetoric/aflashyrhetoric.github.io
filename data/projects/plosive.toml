@@ -1,0 +1,8 @@
+name = "plosive"
+filename = "plosive"
+thumbnail = "/img/projects/plosive.png"
+thumbnail2 = "/img/projects/plosive@2x.png"
+tagline = "a web application for speech language pathologists"
+description = "A palette of practical power-ups for school-based speech language pathologists to manage their caseloads, session notes, materials, and more."
+hasCircularLogo = false
+archived = false 

@@ -4,15 +4,17 @@
 // Defining font family
 // ==============================
 
-$fontBody: 'Figtree', 'Proxima-Nova', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica,
-  Roboto, Arial, sans-serif !default;
-$fontLight: 'Figtree', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica,
-  Roboto, Arial, sans-serif !default;
-$fontHeavy: 'Figtree', 'Helvetica', 'Arial', 'Helvetica Neue', Helvetica,
-  Roboto, Arial, sans-serif !default;
-$fontHighlight: 'Figtree', 'Helvetica Neue', Helvetica, Roboto, Arial,
+$fontBody: "Figtree", "Proxima-Nova", "Helvetica", "Arial", "Helvetica Neue",
+  Helvetica, Roboto, Arial, sans-serif !default;
+$fontLight: "Figtree", "Helvetica", "Arial", "Helvetica Neue", Helvetica, Roboto,
+  Arial, sans-serif !default;
+$fontHeavy: "Figtree", "Helvetica", "Arial", "Helvetica Neue", Helvetica, Roboto,
+  Arial, sans-serif !default;
+$fontHighlight: "Figtree", "Helvetica Neue", Helvetica, Roboto, Arial,
   sans-serif !default;
-$fontStandard: 'Iosevka', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontStandard: "Iosevka", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+
+$fontGilroy: "Gilroy", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
 
 // mixins for font-family
 // ==============================
@@ -29,25 +31,40 @@ $fontStandard: 'Iosevka', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif
 @mixin setFontHeavy {
   font-family: $fontHeavy;
 }
-
 @mixin setFontHighlight {
   font-family: $fontHighlight;
+}
+@mixin setFontGilroy {
+  font-family: $fontGilroy;
 }
 
 // @font-face Settings
 // ==============================
 
 @font-face {
-  font-family: 'Iosevka';
-  src: url('/fonts/iosevka-regular.ttf') format('truetype');
+  font-family: "Iosevka";
+  src: url("/fonts/iosevka-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Iosevka-light';
-  src: url('/fonts/iosevka-extralight.ttf') format('truetype');
+  font-family: "Iosevka-light";
+  src: url("/fonts/iosevka-extralight.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Iosevka-heavy';
-  src: url('/fonts/iosevka-heavy.ttf') format('truetype');
+  font-family: "Iosevka-heavy";
+  src: url("/fonts/iosevka-heavy.ttf") format("truetype");
+}
+
+// Fonts for gilroy
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/gilroy-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/gilroy-bold-webfont.woff") format("woff");
+  font-weight: 700;
 }

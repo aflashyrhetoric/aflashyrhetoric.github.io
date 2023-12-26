@@ -119,11 +119,11 @@ $_layout-bp: small;
     }
     &__title {
       margin-bottom: 0.8rem;
-      font-weight: bold;
+      font-weight: 500;
       line-height: 1;
-      text-transform: lowercase;
+      // text-transform: uppercase;
       text-align: center;
-      @include setFontStandard;
+      @include setFontBody;
     }
     &__description {
       max-width: 420px;

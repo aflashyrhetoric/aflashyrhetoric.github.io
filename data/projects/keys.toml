@@ -7,3 +7,4 @@ tagline = "A mechanical keyboard configurator tool."
 description = "Explore and create shareable mechanical keyboard builds, coordinate group-buys, and more."
 hasCircularLogo = true
 weight=0
+archived = true

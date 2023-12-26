@@ -8,13 +8,14 @@ h4,
 h5,
 h6 {
   @include setFontBody;
-  font-weight: 50;
+  font-weight: 600;
   margin: 0;
   margin-bottom: 8px;
 }
 
 h1 {
   font-weight: bold;
+  @include setFontBody;
   @include fz(35);
   @include bp(md) {
     @include fz(40);
@@ -22,7 +23,7 @@ h1 {
 }
 
 h2 {
-  @include setFontHighlight;
+  @include setFontBody;
   @include fz(28);
   @include bp(md) {
     @include fz(30);

@@ -6,3 +6,4 @@ url = "https://chrome.google.com/webstore/detail/night-messenger/hjhnmilbfdehpgf
 tagline = "Use Messenger.com at night."
 description = "Night Messenger was a Chrome extension offering an (unofficial) dark theme for Messenger.com. At its peak, it was used by over 30k concurrent daily active users."
 hasCircularLogo = true
+archived = true

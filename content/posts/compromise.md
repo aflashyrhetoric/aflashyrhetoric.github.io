@@ -1,18 +1,11 @@
 +++
 slug = "on-compromise"
-title = "Soft Skills - Compromising"
+title = "Stubborn"
 ogdescription = ""
 date = "2022-04-25T17:00:21-05:00"
 series = "soft skills"
+summary="An unjustifiably stubborn engineer is a ceiling for their team's potential."
 +++
-
-An unjustifiably stubborn engineer is a ceiling for their team's potential.
-
-<!--more-->
-
-## Semantics first.
-
-_Opinions are my own._
 
 Healthy, productive compromise **IS NOT**:
 

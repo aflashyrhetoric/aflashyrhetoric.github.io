@@ -15,8 +15,10 @@
   <main class="main">
     <div class="section__container section__container--blog">
       <div class="section__inner -thin">
-        <h1>blog  {{ ":cat2:" | emojify }}</h1>
-        <span style="display: inline-block; margin-bottom: 20px; font-size: 18px;">i have like a hundred drafts tho so i'm still gonna call myself a prolific writer</span>
+        <h1>blog {{ ":cat2:" | emojify }}</h1>
+        <span
+          style="display: inline-block; margin-bottom: 20px; font-size: 18px;"
+        ></span>
         <div class="section__projects">
           <ul class="project-box__list">
             {{ range $el, $val := where .Site.Pages "Section" "posts" }}

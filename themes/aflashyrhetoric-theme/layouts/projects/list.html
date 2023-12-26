@@ -14,13 +14,13 @@
 
   <div class="page-projects">
     <div class="page-projects__heading-wrapper">
-      <h1 class="page-projects__heading">projects</h1>
-      <p>a collection of stuff i've worked on, past and present.</p>
+      <h1 class="page-projects__heading">apps {{ ":laptop:" | emojify }}</h1>
+      {{/* <p>freshly baked goodies</p> */}}
     </div>
 
     <div class="project__container">
       {{ range .Site.Data.projects }}
-        {{ if not .archived }}
+        {{ if (and (not .archived) (not .hidden)) }}
           <div class="project__card">
             <div class="project__card-inner">
               <div class="project__left">
@@ -54,13 +54,13 @@
     <div class="page-projects__heading-wrapper">
       <h1 class="page-projects__heading">archived projects</h1>
       <p>
-        projects that have since been sunset or thrown into an incinerator for
-        crimes against coding conventions
+        projects that have since been sunset, abandoned, or thrown into an
+        incinerator for crimes against coding conventions
       </p>
     </div>
     <div class="project__container">
       {{ range .Site.Data.projects }}
-        {{ if .archived }}
+        {{ if (and (.archived) (not .hidden)) }}
           <div class="project__card">
             <div class="project__card-inner">
               <div class="project__left">
