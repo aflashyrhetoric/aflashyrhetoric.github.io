@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	<meta name="generator" content="Hugo 0.117.0">
     
     <script>
       (function(w, d, s, l, i) {
@@ -18,7 +16,12 @@
     
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    
+    <link href="./css/tailwind.css" rel="stylesheet"> 
     <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
     <meta property="og:title" content="Kevin Oh | FE Engineer" />
     <meta property="og:type" content="website" />
@@ -66,61 +69,60 @@
     <div class="hero__right">
       <div class="upper-text__wrapper">
         <svg
-          height="144"
-          viewBox="0 0 300 144"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g id="hero">
-            <rect id="bg" height="144" />
-            <line
-              id="leftbar"
-              x1="5.5"
-              x2="5.5"
-              y2="144"
-              stroke="#222222"
-              opacity="0"
-              stroke-width="11"
-            />
-            <line
-              id="rightbar"
-              x1="294.5"
-              x2="294.5"
-              y2="144"
-              stroke="#222222"
-              opacity="0"
-              stroke-width="11"
-            />
-            <line
-              id="topbar"
-              y1="5.5"
-              x2="300"
-              y2="5.5"
-              stroke="black"
-              opacity="0"
-              stroke-width="11"
-            />
-            <line
-              id="bottombar"
-              y1="-5.5"
-              x2="300"
-              y2="-5.5"
-              transform="matrix(-1 0 0 1 300 144)"
-              stroke="black"
-              stroke-width="11"
-              opacity="0"
-            />
-          </g>
-        </svg>
+  height="144"
+  viewBox="0 0 300 144"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g id="hero">
+    <rect id="bg" height="144" />
+    <line
+      id="leftbar"
+      x1="5.5"
+      x2="5.5"
+      y2="144"
+      stroke="#222222"
+      opacity="0"
+      stroke-width="11"
+    />
+    <line
+      id="rightbar"
+      x1="294.5"
+      x2="294.5"
+      y2="144"
+      stroke="#222222"
+      opacity="0"
+      stroke-width="11"
+    />
+    <line
+      id="topbar"
+      y1="5.5"
+      x2="300"
+      y2="5.5"
+      stroke="black"
+      opacity="0"
+      stroke-width="11"
+    />
+    <line
+      id="bottombar"
+      y1="-5.5"
+      x2="300"
+      y2="-5.5"
+      transform="matrix(-1 0 0 1 300 144)"
+      stroke="black"
+      stroke-width="11"
+      opacity="0"
+    />
+  </g>
+</svg>
+
+
 
         <h1 class="upper-text__header">kevin oh</h1>
         <h2 class="upper-text__subheader">> @aflashyrhetoric</h2>
       </div>
 
       <div class="lower-text__wrapper">
-        <p class="lower-text__text">
-          
-        </p>
         <p class="lower-text__text">
           software engineer <br />
           <br /><br />
@@ -142,17 +144,32 @@
         
         
           
+            
+            <li class="project-box__list-post">
+              <a class="inner-link" href="./posts/building-plosive/">
+                <span class="post-heading" href="./posts/building-plosive/">
+                  Plosive - Built for SLPs
+                </span>
+                <span class="post-excerpt">
+                  
+                  How can we help speech language pathologists to do their best work?
+                </span>
+              </a>
+            </li>
+          
+        
+          
         
           
             
             <li class="project-box__list-post">
               <a class="inner-link" href="./posts/on-compromise/">
                 <span class="post-heading" href="./posts/on-compromise/">
-                  Soft Skills - Compromising
+                  Stubborn
                 </span>
                 <span class="post-excerpt">
                   
-                  <p>An indiscriminately stubborn engineer is a ceiling for their team&rsquo;s potential.</p>
+                  An unjustifiably stubborn engineer is a ceiling for their team&rsquo;s potential.
                 </span>
               </a>
             </li>
@@ -167,7 +184,7 @@
                 </span>
                 <span class="post-excerpt">
                   
-                  Shortcuts lets you automate stuff easily. I used it to build a COVID-19 health screening check in automation with Raspberry Pi back-end running Puppeteer. Fun stuff.
+                  I used the iOS Shortcuts automation tool and a Raspberry Pi to build a COVID-19 health screening check-in tool.
                 </span>
               </a>
             </li>
@@ -182,8 +199,7 @@
                 </span>
                 <span class="post-excerpt">
                   
-                  In this one TED talk, Malcolm Gladwell told a story about how the U.S. military once spent $3 billion dollars developing a &ldquo;scope&rdquo; (as in, a telescopic sight for a weapon) for planes to attack their targets with terrifying accuracy. When it worked, it was considered revolutionary. The so-called Norden Bombsight made it possible to &ldquo;drop bombs into a pickle barrel from 20,000 feet.&rdquo; God-like accuracy for the time.
-However - Gladwell later laments that regardless of the US Military&rsquo;s newfound technical capability, it led to little actual progress because:
+                  A note to self: remember to solve important problems.
                 </span>
               </a>
             </li>
@@ -258,8 +274,7 @@ However - Gladwell later laments that regardless of the US Military&rsquo;s newf
                 </span>
                 <span class="post-excerpt">
                   
-                  This post was written back when Adelie was openly accepting new inquiries and projects.
-There are times when the difference between two choices is completely lateral — two substitutable alternatives that are equal in importance and consequence. If you’re craving some fruit, it doesn’t matter whether you choose the apple or the orange. In these instances, it’s okay to defer to preference, precedent, or a coin toss. But these cases are the (rare) exception, not the rule.
+                  <p>&ldquo;I&rsquo;m not a designer, but I think the button should be blue. Just my two cents.&rdquo;</p>
                 </span>
               </a>
             </li>
@@ -326,41 +341,13 @@ In 2005, psychologist Barry Schwartz took the stage at TEDGlobal in Oxford and p
           
         
           
-            <li class="project-box__list-item">
-              <a target="_blank" href="./projects/archetype ">
-                <img
-                  class="project-box__list-image"
-                  src="./img/projects/adg.png"
-                  srcset="./img/projects/adg@2x.png 2x"
-                />
-              </a>
-            </li>
+        
           
         
           
         
           
-            <li class="project-box__list-item">
-              <a target="_blank" href="./projects/keys ">
-                <img
-                  class="project-box__list-image"
-                  src="./img/projects/keys.png"
-                  srcset="./img/projects/keys@2x.png 2x"
-                />
-              </a>
-            </li>
-          
         
-          
-            <li class="project-box__list-item">
-              <a target="_blank" href="./projects/lantern ">
-                <img
-                  class="project-box__list-image"
-                  src="./img/projects/lantern.png"
-                  srcset="./img/projects/lantern@2x.png 2x"
-                />
-              </a>
-            </li>
           
         
           
@@ -369,11 +356,11 @@ In 2005, psychologist Barry Schwartz took the stage at TEDGlobal in Oxford and p
         
           
             <li class="project-box__list-item">
-              <a target="_blank" href="./projects/nightmessenger ">
+              <a target="_blank" href="./projects/plosive ">
                 <img
                   class="project-box__list-image"
-                  src="./img/projects/nightmessenger.png"
-                  srcset="./img/projects/nightmessenger@2x.png 2x"
+                  src="./img/projects/plosive.png"
+                  srcset="./img/projects/plosive@2x.png 2x"
                 />
               </a>
             </li>

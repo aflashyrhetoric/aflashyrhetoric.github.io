@@ -6,14 +6,23 @@
     <description>Recent content in posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Apr 2022 17:00:21 -0500</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Dec 2023 17:00:21 -0500</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Soft Skills - Compromising</title>
+      <title>Plosive - Built for SLPs</title>
+      <link>/posts/building-plosive/</link>
+      <pubDate>Mon, 25 Dec 2023 17:00:21 -0500</pubDate>
+      
+      <guid>/posts/building-plosive/</guid>
+      <description>How can we help speech language pathologists to do their best work?</description>
+    </item>
+    
+    <item>
+      <title>Stubborn</title>
       <link>/posts/on-compromise/</link>
       <pubDate>Mon, 25 Apr 2022 17:00:21 -0500</pubDate>
       
       <guid>/posts/on-compromise/</guid>
-      <description>&lt;p&gt;An indiscriminately stubborn engineer is a ceiling for their team&amp;rsquo;s potential.&lt;/p&gt;</description>
+      <description>An unjustifiably stubborn engineer is a ceiling for their team&amp;rsquo;s potential.</description>
     </item>
     
     <item>
@@ -22,7 +31,7 @@
       <pubDate>Fri, 25 Jun 2021 17:00:21 -0500</pubDate>
       
       <guid>/posts/ios-shortcuts-automation/</guid>
-      <description>Shortcuts lets you automate stuff easily. I used it to build a COVID-19 health screening check in automation with Raspberry Pi back-end running Puppeteer. Fun stuff.</description>
+      <description>I used the iOS Shortcuts automation tool and a Raspberry Pi to build a COVID-19 health screening check-in tool.</description>
     </item>
     
     <item>
@@ -31,8 +40,7 @@
       <pubDate>Thu, 25 Jun 2020 17:00:21 -0500</pubDate>
       
       <guid>/posts/toddlers-in-porsches/</guid>
-      <description>In this one TED talk, Malcolm Gladwell told a story about how the U.S. military once spent $3 billion dollars developing a &amp;ldquo;scope&amp;rdquo; (as in, a telescopic sight for a weapon) for planes to attack their targets with terrifying accuracy. When it worked, it was considered revolutionary. The so-called Norden Bombsight made it possible to &amp;ldquo;drop bombs into a pickle barrel from 20,000 feet.&amp;rdquo; God-like accuracy for the time.
-However - Gladwell later laments that regardless of the US Military&amp;rsquo;s newfound technical capability, it led to little actual progress because:</description>
+      <description>A note to self: remember to solve important problems.</description>
     </item>
     
     <item>
@@ -77,8 +85,7 @@ However - Gladwell later laments that regardless of the US Military&amp;rsquo;s 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/design/</guid>
-      <description>This post was written back when Adelie was openly accepting new inquiries and projects.
-There are times when the difference between two choices is completely lateral — two substitutable alternatives that are equal in importance and consequence. If you’re craving some fruit, it doesn’t matter whether you choose the apple or the orange. In these instances, it’s okay to defer to preference, precedent, or a coin toss. But these cases are the (rare) exception, not the rule.</description>
+      <description>&lt;p&gt;&amp;ldquo;I&amp;rsquo;m not a designer, but I think the button should be blue. Just my two cents.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     
     <item>
