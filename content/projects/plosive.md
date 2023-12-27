@@ -5,6 +5,8 @@ project = "plosive"
 
 _**Note**: Plosive is currently only for school-based speech language pathologists in the United States. Since we're based in New York, some of the features may also be calibrated to the needs of New York-based SLPs, though we want to be inclusive of all use-cases. More announcements to come._
 
+![a screenshot of the plosive app homepage](/img/plosive-homepage.png)
+
 ## What is a Speech Language Pathologist?
 
 Speech-language pathologists (or "SLPs") assess and help treat people who have speech, language, voice, and fluency disorders.

@@ -1,0 +1,8 @@
+name = "untitled platformer"
+filename = "untitled-platformer"
+thumbnail = "/img/projects/untitled-platformer.png"
+thumbnail2 = "/img/projects/untitled-platformer@2x.png"
+tagline = "a platforming game built with the Godot game engine"
+description = "Games are one of the highest forms of artistic expression, and something I've aspired to do since forever. This is my start."
+hasCircularLogo = false
+archived = false 
