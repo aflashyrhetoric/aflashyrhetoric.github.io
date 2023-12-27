@@ -156,7 +156,7 @@ I designed Milton (pictured) and &amp;ldquo;Candle&amp;rdquo;, among several oth
       
       <guid>/projects/mosu/</guid>
       <description>LinkedIn, Hired, Vettery, Indeed, Monster&amp;hellip;&amp;hellip;🙅‍♀️ Mosu (NOW RETIRED) arose out of my personal frustration with the process of job hunting. There are something like a dozen different &amp;ldquo;job board&amp;rdquo; websites, each with their own quirks. I found myself running around between ten different accounts, trying to remember which job applications were in which &amp;ldquo;state&amp;rdquo;:
-Saved, or &amp;ldquo;To Be Applied To&amp;rdquo; Application sent Currently interviewing Successfully received an offer The experience was complete 💩 .</description>
+Saved, or &amp;ldquo;To Be Applied To&amp;rdquo; Application sent Currently interviewing Successfully received an offer The experience was horrible.</description>
     </item>
     
     <item>
@@ -216,6 +216,17 @@ As their aspersions echo in triplicate,</description>
       <description>This post was written back when Adelie was openly accepting new inquiries and projects.
 I once heard two friends arguing. One of them had recently come upon a windfall of cash, and wanted to make a big purchase: an upscale sports car. Upon hearing this, his miserly friend fired back, “you don’t even go places! Don’t buy a Porsche to drive to 711.”
 When I heard this biting exchange, I chuckled.</description>
+    </item>
+    
+    <item>
+      <title>Untitled Platformer</title>
+      <link>/projects/untitled-platformer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/untitled-platformer/</guid>
+      <description>Games are the art, music, dialog, and interactivity. I&amp;rsquo;ve always wanted to see what I would be able to produce.
+After years of intermittently trying and giving up on other game engines like Unity and Unreal, I found Godot. It&amp;rsquo;s node-based approach made sense to me, and I was off to the races.
+The project is on pause while I work on plosive, but far from abandoned in my heart.</description>
     </item>
     
     <item>

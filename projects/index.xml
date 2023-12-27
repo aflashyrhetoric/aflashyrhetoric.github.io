@@ -74,7 +74,7 @@ I designed Milton (pictured) and &amp;ldquo;Candle&amp;rdquo;, among several oth
       
       <guid>/projects/mosu/</guid>
       <description>LinkedIn, Hired, Vettery, Indeed, Monster&amp;hellip;&amp;hellip;🙅‍♀️ Mosu (NOW RETIRED) arose out of my personal frustration with the process of job hunting. There are something like a dozen different &amp;ldquo;job board&amp;rdquo; websites, each with their own quirks. I found myself running around between ten different accounts, trying to remember which job applications were in which &amp;ldquo;state&amp;rdquo;:
-Saved, or &amp;ldquo;To Be Applied To&amp;rdquo; Application sent Currently interviewing Successfully received an offer The experience was complete 💩 .</description>
+Saved, or &amp;ldquo;To Be Applied To&amp;rdquo; Application sent Currently interviewing Successfully received an offer The experience was horrible.</description>
     </item>
     
     <item>
@@ -95,6 +95,17 @@ I&amp;rsquo;d often work late in the night, and found that using Messenger.com w
       <guid>/projects/plosive/</guid>
       <description>Note: Plosive is currently only for school-based speech language pathologists in the United States. Since we&amp;rsquo;re based in New York, some of the features may also be calibrated to the needs of New York-based SLPs, though we want to be inclusive of all use-cases. More announcements to come.
 What is a Speech Language Pathologist? Speech-language pathologists (or &amp;ldquo;SLPs&amp;rdquo;) assess and help treat people who have speech, language, voice, and fluency disorders.</description>
+    </item>
+    
+    <item>
+      <title>Untitled Platformer</title>
+      <link>/projects/untitled-platformer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/untitled-platformer/</guid>
+      <description>Games are the art, music, dialog, and interactivity. I&amp;rsquo;ve always wanted to see what I would be able to produce.
+After years of intermittently trying and giving up on other game engines like Unity and Unreal, I found Godot. It&amp;rsquo;s node-based approach made sense to me, and I was off to the races.
+The project is on pause while I work on plosive, but far from abandoned in my heart.</description>
     </item>
     
   </channel>
